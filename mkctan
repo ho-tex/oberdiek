@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# build oberdiek ctan distrib
+# perhaps use l3build one day, but not today
+# only partial build here: just touch ifpdf
+# all other files unchanged.
+
+# starting from oberdiek.zip and oberdiek.tds.zip from ctan
+
+tex oberdiek.ins
+tex ifpdf.ins
+pdflatex ifpdf.dtx
+pdflatex ifpdf.dtx
+
+mkdir -p doc/latex/oberdiek
+mkdir -p source/latex/oberdiek
+mkdir -p tex/generic/oberdiek
+
+cp ifpdf.pdf doc/latex/oberdiek
+cp ifpdf.dtx source/latex/oberdiek
+cp ifpdf.sty tex/generic/oberdiek
+cp hobsub-generic.sty tex/generic/oberdiek
+
+zip oberdiek.tds.zip \
+    doc/latex/oberdiek/ifpdf.pdf \
+    source/latex/oberdiek/ifpdf.dtx \
+    tex/generic/oberdiek/ifpdf.sty \
+    tex/generic/oberdiek/hobsub-generic.sty
+
+cd ..
+zip oberdiek.zip oberdiek/{oberdiek.tds.zip,README,ifpdf.dtx}
