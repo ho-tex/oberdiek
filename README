@@ -1,4 +1,4 @@
-README                              2012/04/26
+README                              2016/05/05
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
@@ -42,3 +42,5 @@ Other files in the CTAN directory:
 
 Happy TeXing
   Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+Preferred bug reporting address is now
+  https://github.com/ho-tex/oberdiek/issues
