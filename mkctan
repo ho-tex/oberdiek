@@ -21,11 +21,15 @@ cp ifpdf.dtx source/latex/oberdiek
 cp ifpdf.sty tex/generic/oberdiek
 cp hobsub-generic.sty tex/generic/oberdiek
 
+echo making tds zip
+
 zip oberdiek.tds.zip \
     doc/latex/oberdiek/ifpdf.pdf \
     source/latex/oberdiek/ifpdf.dtx \
     tex/generic/oberdiek/ifpdf.sty \
     tex/generic/oberdiek/hobsub-generic.sty
+mv oberdiek.tds.zip ..
 
 cd ..
-zip oberdiek.zip oberdiek/{oberdiek.tds.zip,README,ifpdf.dtx}
+echo making main zip
+zip oberdiek.zip oberdiek.tds.zip oberdiek/{README,ifpdf.dtx}
