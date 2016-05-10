@@ -8,18 +8,57 @@
 # starting from oberdiek.zip and oberdiek.tds.zip from ctan
 
 tex oberdiek.ins
-tex ifpdf.ins
-pdflatex ifpdf.dtx
-pdflatex ifpdf.dtx
 
-mkdir -p doc/latex/oberdiek
+for i in ifpdf pdftexcmds luatex
+do
+pdflatex ${i}.dtx
+pdflatex ${i}.dtx
+makeindex -s gind.ist ${i}.idx
+pdflatex ${i}.dtx
+done
+	 
+
+mkdir -p doc/latex/oberdiek/test
 mkdir -p source/latex/oberdiek
 mkdir -p tex/generic/oberdiek
+mkdir -p scripts/oberdiek
 
 cp ifpdf.pdf doc/latex/oberdiek
-cp ifpdf.dtx source/latex/oberdiek
+cp ifpdf.dtx source/latex/oberdiek/catalogue
 cp ifpdf.sty tex/generic/oberdiek
+
+
+cp pdftexcmds.pdf doc/latex/oberdiek/pdftexcmds.pdf
+cp pdftexcmds-test-escape.tex doc/latex/oberdiek/test/pdftexcmds-test-escape.tex
+cp pdftexcmds-test-shell.tex doc/latex/oberdiek/test/pdftexcmds-test-shell.tex
+cp pdftexcmds-test1.tex doc/latex/oberdiek/test/pdftexcmds-test1.tex
+cp pdftexcmds-test2.tex doc/latex/oberdiek/test/pdftexcmds-test2.tex
+cp pdftexcmds.lua scripts/oberdiek/pdftexcmds.lua
+cp pdftexcmds.xml source/latex/oberdiek/catalogue/pdftexcmds.xml
+cp pdftexcmds.dtx source/latex/oberdiek/pdftexcmds.dtx
+cp pdftexcmds.sty tex/generic/oberdiek/pdftexcmds.sty
+
+cp luatex.pdf doc/latex/oberdiek/luatex.pdf
+cp luatex-test1.tex doc/latex/oberdiek/test/luatex-test1.tex
+cp luatex-test2.tex doc/latex/oberdiek/test/luatex-test2.tex
+cp luatex-test3.tex doc/latex/oberdiek/test/luatex-test3.tex
+cp luatex-test4.tex doc/latex/oberdiek/test/luatex-test4.tex
+cp luatex-test5.tex doc/latex/oberdiek/test/luatex-test5.tex
+cp luatex.xml source/latex/oberdiek/catalogue/luatex.xml
+cp luatex.dtx source/latex/oberdiek/luatex.dtx
+cp luatex-loader.sty tex/generic/oberdiek/luatex-loader.sty
+cp luatex.sty tex/generic/oberdiek/luatex.sty
+cp oberdiek.luatex.lua scripts/oberdiek/oberdiek.luatex.lua
+
+
 cp hobsub-generic.sty tex/generic/oberdiek
+
+
+echo diff pdftexcmds.lua      .
+diff /usr/local/texlive/2015/texmf-dist/scripts/oberdiek/pdftexcmds.lua  .
+echo diff oberdiek.luatex.lua      .
+diff /usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua   .
+
 
 echo making tds zip
 
@@ -27,9 +66,29 @@ zip oberdiek.tds.zip \
     doc/latex/oberdiek/ifpdf.pdf \
     source/latex/oberdiek/ifpdf.dtx \
     tex/generic/oberdiek/ifpdf.sty \
+       doc/latex/oberdiek/pdftexcmds.pdf \
+       doc/latex/oberdiek/test/pdftexcmds-test-escape.tex \
+       doc/latex/oberdiek/test/pdftexcmds-test-shell.tex \
+       doc/latex/oberdiek/test/pdftexcmds-test1.tex \
+       doc/latex/oberdiek/test/pdftexcmds-test2.tex \
+       scripts/oberdiek/pdftexcmds.lua \
+       source/latex/oberdiek/catalogue/pdftexcmds.xml \
+       source/latex/oberdiek/pdftexcmds.dtx \
+       tex/generic/oberdiek/pdftexcmds.sty \
+  doc/latex/oberdiek/luatex.pdf \
+  doc/latex/oberdiek/test/luatex-test1.tex \
+  doc/latex/oberdiek/test/luatex-test2.tex \
+  doc/latex/oberdiek/test/luatex-test3.tex \
+  doc/latex/oberdiek/test/luatex-test4.tex \
+  doc/latex/oberdiek/test/luatex-test5.tex \
+  source/latex/oberdiek/catalogue/luatex.xml \
+  source/latex/oberdiek/luatex.dtx \
+  tex/generic/oberdiek/luatex-loader.sty \
+  tex/generic/oberdiek/luatex.sty \
+  scripts/oberdiek/oberdiek.luatex.lua \
     tex/generic/oberdiek/hobsub-generic.sty
 mv oberdiek.tds.zip ..
 
 cd ..
 echo making main zip
-zip oberdiek.zip oberdiek.tds.zip oberdiek/{README,ifpdf.dtx}
+zip oberdiek.zip oberdiek.tds.zip oberdiek/{README,ifpdf.dtx,ifpdf.pdf,pdftexcmds.dtx,pdftexcmds.pdf,luatex.dtx,luatex.pdf}
