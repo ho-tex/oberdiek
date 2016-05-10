@@ -19,12 +19,12 @@ done
 	 
 
 mkdir -p doc/latex/oberdiek/test
-mkdir -p source/latex/oberdiek
+mkdir -p source/latex/oberdiek/catalogue
 mkdir -p tex/generic/oberdiek
 mkdir -p scripts/oberdiek
 
 cp ifpdf.pdf doc/latex/oberdiek
-cp ifpdf.dtx source/latex/oberdiek/catalogue
+cp ifpdf.dtx source/latex/oberdiek
 cp ifpdf.sty tex/generic/oberdiek
 
 
@@ -62,7 +62,7 @@ diff /usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua   .
 
 echo making tds zip
 
-zip oberdiek.tds.zip \
+zip ../oberdiek.tds.zip \
     doc/latex/oberdiek/ifpdf.pdf \
     source/latex/oberdiek/ifpdf.dtx \
     tex/generic/oberdiek/ifpdf.sty \
@@ -87,7 +87,7 @@ zip oberdiek.tds.zip \
   tex/generic/oberdiek/luatex.sty \
   scripts/oberdiek/oberdiek.luatex.lua \
     tex/generic/oberdiek/hobsub-generic.sty
-mv oberdiek.tds.zip ..
+
 
 cd ..
 echo making main zip
