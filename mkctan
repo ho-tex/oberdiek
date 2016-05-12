@@ -9,7 +9,7 @@
 
 tex oberdiek.ins
 
-for i in ifpdf pdftexcmds luatex
+for i in ifpdf pdftexcmds luatex hologo
 do
 pdflatex ${i}.dtx
 pdflatex ${i}.dtx
@@ -50,14 +50,16 @@ cp luatex-loader.sty tex/generic/oberdiek/luatex-loader.sty
 cp luatex.sty tex/generic/oberdiek/luatex.sty
 cp oberdiek.luatex.lua scripts/oberdiek/oberdiek.luatex.lua
 
+cp hologo-example.tex doc/latex/oberdiek/example/hologo-example.tex
+cp hologo-test-list.tex doc/latex/oberdiek/test/hologo-test-list.tex
+cp hologo-test-spacefactor.tex doc/latex/oberdiek/test/hologo-test-spacefactor.tex
+cp hologo-test1.tex doc/latex/oberdiek/test/hologo-test1.tex
+cp hologo.pdf doc/latex/oberdiek/hologo.pdf
+cp hologo.xml source/latex/oberdiek/catalogue/hologo.xml
+cp hologo.dtx source/latex/oberdiek/hologo.dtx
+cp hologo.sty tex/generic/oberdiek/hologo.sty
 
 cp hobsub-generic.sty tex/generic/oberdiek
-
-
-echo diff pdftexcmds.lua      .
-diff /usr/local/texlive/2015/texmf-dist/scripts/oberdiek/pdftexcmds.lua  .
-echo diff oberdiek.luatex.lua      .
-diff /usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua   .
 
 
 echo making tds zip
@@ -86,9 +88,23 @@ zip ../oberdiek.tds.zip \
   tex/generic/oberdiek/luatex-loader.sty \
   tex/generic/oberdiek/luatex.sty \
   scripts/oberdiek/oberdiek.luatex.lua \
+  doc/latex/oberdiek/example/hologo-example.tex \
+doc/latex/oberdiek/test/hologo-test-list.tex \
+doc/latex/oberdiek/test/hologo-test-spacefactor.tex \
+doc/latex/oberdiek/test/hologo-test1.tex \
+doc/latex/oberdiek/hologo.pdf \
+source/latex/oberdiek/catalogue/hologo.xml \
+source/latex/oberdiek/hologo.dtx \
+tex/generic/oberdiek/hologo.sty \
     tex/generic/oberdiek/hobsub-generic.sty
 
 
 cd ..
 echo making main zip
-zip oberdiek.zip oberdiek.tds.zip oberdiek/{README,ifpdf.dtx,ifpdf.pdf,pdftexcmds.dtx,pdftexcmds.pdf,luatex.dtx,luatex.pdf}
+zip oberdiek.zip oberdiek.tds.zip oberdiek/\
+    {README,\
+	 ifpdf.dtx,ifpdf.pdf,\
+	 pdftexcmds.dtx,pdftexcmds.pdf,\
+	 luatex.dtx,luatex.pdf\
+	 hologo.dtx,hologo.pdf\
+    }
