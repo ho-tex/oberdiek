@@ -34,6 +34,7 @@ cp pdftexcmds-test-shell.tex doc/latex/oberdiek/test/pdftexcmds-test-shell.tex
 cp pdftexcmds-test1.tex doc/latex/oberdiek/test/pdftexcmds-test1.tex
 cp pdftexcmds-test2.tex doc/latex/oberdiek/test/pdftexcmds-test2.tex
 cp pdftexcmds.lua scripts/oberdiek/pdftexcmds.lua
+cp oberdiek.pdftexcmds.lua scripts/oberdiek/oberdiek.pdftexcmds.lua
 cp pdftexcmds.xml source/latex/oberdiek/catalogue/pdftexcmds.xml
 cp pdftexcmds.dtx source/latex/oberdiek/pdftexcmds.dtx
 cp pdftexcmds.sty tex/generic/oberdiek/pdftexcmds.sty
@@ -73,6 +74,7 @@ zip ../oberdiek.tds.zip \
        doc/latex/oberdiek/test/pdftexcmds-test-shell.tex \
        doc/latex/oberdiek/test/pdftexcmds-test1.tex \
        doc/latex/oberdiek/test/pdftexcmds-test2.tex \
+       scripts/oberdiek/oberdiek.pdftexcmds.lua \
        scripts/oberdiek/pdftexcmds.lua \
        source/latex/oberdiek/catalogue/pdftexcmds.xml \
        source/latex/oberdiek/pdftexcmds.dtx \
