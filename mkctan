@@ -19,6 +19,7 @@ done
 	 
 
 mkdir -p doc/latex/oberdiek/test
+mkdir -p doc/latex/oberdiek/example
 mkdir -p source/latex/oberdiek/catalogue
 mkdir -p tex/generic/oberdiek
 mkdir -p scripts/oberdiek
@@ -104,9 +105,9 @@ tex/generic/oberdiek/hologo.sty \
 cd ..
 echo making main zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
-    {README,\
-	 ifpdf.dtx,ifpdf.pdf,\
-	 pdftexcmds.dtx,pdftexcmds.pdf,\
-	 luatex.dtx,luatex.pdf\
-	 hologo.dtx,hologo.pdf\
-    }
+{README,\
+ifpdf.dtx,ifpdf.pdf,\
+pdftexcmds.dtx,pdftexcmds.pdf,\
+luatex.dtx,luatex.pdf,\
+hologo.dtx,hologo.pdf\
+}
