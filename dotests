@@ -1,0 +1,28 @@
+#!/bin/bash
+
+SOURCE=$PWD
+TEXMFHOME=`kpsexpand '$TEXMFHOME'`
+
+# make current versions
+#
+./mkctan
+
+# install in local tree
+#
+cd $TEXMFHOME
+unzip -o $SOURCE/../oberdiek.tds.zip
+
+# see what broke
+#
+cd $SOURCE
+for i in *test*.tex
+do
+echo "===========" $i
+echo x | lualatex $i
+done
+
+
+# list of errors from the tests
+#
+grep '^\!' *test*.log
+
