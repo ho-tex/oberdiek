@@ -61,6 +61,4 @@ zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 *.dtx\
 }
 
-# old file check
-echo "old files"
-find bibtex doc scripts source tex -type f -mtime +1
+
