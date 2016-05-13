@@ -2,112 +2,65 @@
 
 # build oberdiek ctan distrib
 # perhaps use l3build one day, but not today
-# only partial build here: just touch ifpdf
-# all other files unchanged.
+
 
 # starting from oberdiek.zip and oberdiek.tds.zip from ctan
 
+
+#
+# cleanup
+rm -r bibtex doc scripts source tex
+mv oberdiek.pdf oberdiek.pdf-
+rm *.pdf
+mv oberdiek.pdf- oberdiek.pdf
+
+# unzip oberdiek.tds.zip to generate initial tds structure
+unzip ../oberdiek.tds.zip
+
+
+# unpack
+#
 tex oberdiek.ins
 
-for i in ifpdf pdftexcmds luatex hologo
+# make pdf
+for i in *.dtx
 do
-pdflatex ${i}.dtx
-pdflatex ${i}.dtx
-makeindex -s gind.ist ${i}.idx
-pdflatex ${i}.dtx
+pdflatex ${i}
+pdflatex ${i}
+makeindex -s gind.ist ${i/.dtx/.idx}
+pdflatex ${i}
 done
-	 
 
-mkdir -p doc/latex/oberdiek/test
-mkdir -p doc/latex/oberdiek/example
-mkdir -p source/latex/oberdiek/catalogue
-mkdir -p tex/generic/oberdiek
-mkdir -p scripts/oberdiek
+# keep existing one for now
+#pdflatex oberdiek
+#pdflatex oberdiek
+# runs forever on my machine biber oberdiek
+#pdflatex oberdiek
 
-cp ifpdf.pdf doc/latex/oberdiek
-cp ifpdf.dtx source/latex/oberdiek
-cp ifpdf.sty tex/generic/oberdiek
+# special cases
+cp ./doc/latex/oberdiek/test/ifpdf-test1.tex .
+cp README readme-ctan.txt
+rm -f ./tex/latex/oberdiek/foo.sty
 
-
-cp pdftexcmds.pdf doc/latex/oberdiek/pdftexcmds.pdf
-cp pdftexcmds-test-escape.tex doc/latex/oberdiek/test/pdftexcmds-test-escape.tex
-cp pdftexcmds-test-shell.tex doc/latex/oberdiek/test/pdftexcmds-test-shell.tex
-cp pdftexcmds-test1.tex doc/latex/oberdiek/test/pdftexcmds-test1.tex
-cp pdftexcmds-test2.tex doc/latex/oberdiek/test/pdftexcmds-test2.tex
-cp pdftexcmds.lua scripts/oberdiek/pdftexcmds.lua
-cp oberdiek.pdftexcmds.lua scripts/oberdiek/oberdiek.pdftexcmds.lua
-cp pdftexcmds.xml source/latex/oberdiek/catalogue/pdftexcmds.xml
-cp pdftexcmds.dtx source/latex/oberdiek/pdftexcmds.dtx
-cp pdftexcmds.sty tex/generic/oberdiek/pdftexcmds.sty
-
-cp luatex.pdf doc/latex/oberdiek/luatex.pdf
-cp luatex-test1.tex doc/latex/oberdiek/test/luatex-test1.tex
-cp luatex-test2.tex doc/latex/oberdiek/test/luatex-test2.tex
-cp luatex-test3.tex doc/latex/oberdiek/test/luatex-test3.tex
-cp luatex-test4.tex doc/latex/oberdiek/test/luatex-test4.tex
-cp luatex-test5.tex doc/latex/oberdiek/test/luatex-test5.tex
-cp luatex.xml source/latex/oberdiek/catalogue/luatex.xml
-cp luatex.dtx source/latex/oberdiek/luatex.dtx
-cp luatex-loader.sty tex/generic/oberdiek/luatex-loader.sty
-cp luatex.sty tex/generic/oberdiek/luatex.sty
-cp oberdiek.luatex.lua scripts/oberdiek/oberdiek.luatex.lua
-
-cp hologo-example.tex doc/latex/oberdiek/example/hologo-example.tex
-cp hologo-test-list.tex doc/latex/oberdiek/test/hologo-test-list.tex
-cp hologo-test-spacefactor.tex doc/latex/oberdiek/test/hologo-test-spacefactor.tex
-cp hologo-test1.tex doc/latex/oberdiek/test/hologo-test1.tex
-cp hologo.pdf doc/latex/oberdiek/hologo.pdf
-cp hologo.xml source/latex/oberdiek/catalogue/hologo.xml
-cp hologo.dtx source/latex/oberdiek/hologo.dtx
-cp hologo.sty tex/generic/oberdiek/hologo.sty
-
-cp hobsub-generic.sty tex/generic/oberdiek
-
+# fill tds tree
+for i in `find bibtex doc scripts source tex -type f `
+do
+    cp `basename $i` $i
+done
 
 echo making tds zip
 
-zip ../oberdiek.tds.zip \
-    doc/latex/oberdiek/ifpdf.pdf \
-    source/latex/oberdiek/ifpdf.dtx \
-    tex/generic/oberdiek/ifpdf.sty \
-       doc/latex/oberdiek/pdftexcmds.pdf \
-       doc/latex/oberdiek/test/pdftexcmds-test-escape.tex \
-       doc/latex/oberdiek/test/pdftexcmds-test-shell.tex \
-       doc/latex/oberdiek/test/pdftexcmds-test1.tex \
-       doc/latex/oberdiek/test/pdftexcmds-test2.tex \
-       scripts/oberdiek/oberdiek.pdftexcmds.lua \
-       scripts/oberdiek/pdftexcmds.lua \
-       source/latex/oberdiek/catalogue/pdftexcmds.xml \
-       source/latex/oberdiek/pdftexcmds.dtx \
-       tex/generic/oberdiek/pdftexcmds.sty \
-  doc/latex/oberdiek/luatex.pdf \
-  doc/latex/oberdiek/test/luatex-test1.tex \
-  doc/latex/oberdiek/test/luatex-test2.tex \
-  doc/latex/oberdiek/test/luatex-test3.tex \
-  doc/latex/oberdiek/test/luatex-test4.tex \
-  doc/latex/oberdiek/test/luatex-test5.tex \
-  source/latex/oberdiek/catalogue/luatex.xml \
-  source/latex/oberdiek/luatex.dtx \
-  tex/generic/oberdiek/luatex-loader.sty \
-  tex/generic/oberdiek/luatex.sty \
-  scripts/oberdiek/oberdiek.luatex.lua \
-  doc/latex/oberdiek/example/hologo-example.tex \
-doc/latex/oberdiek/test/hologo-test-list.tex \
-doc/latex/oberdiek/test/hologo-test-spacefactor.tex \
-doc/latex/oberdiek/test/hologo-test1.tex \
-doc/latex/oberdiek/hologo.pdf \
-source/latex/oberdiek/catalogue/hologo.xml \
-source/latex/oberdiek/hologo.dtx \
-tex/generic/oberdiek/hologo.sty \
-    tex/generic/oberdiek/hobsub-generic.sty
-
+zip -r ../oberdiek.tds.zip \
+    bibtex doc scripts source tex
 
 cd ..
 echo making main zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 {README,\
-ifpdf.dtx,ifpdf.pdf,\
-pdftexcmds.dtx,pdftexcmds.pdf,\
-luatex.dtx,luatex.pdf,\
-hologo.dtx,hologo.pdf\
+*.pdf,\
+*.dtx\
 }
+
+# old file check
+echo "old files"
+find bibtex doc scripts source tex -type f -mtime +1
