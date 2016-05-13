@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: luacolor.dtx
-% Version: 2011/11/01 v1.8
+% Version: 2016/05/13 v1.9
 % Info: Color support via LuaTeX's attributes
 %
 % Copyright (C) 2007, 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -85,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: luacolor 2011/11/01 v1.8 Color support via LuaTeX's attributes (HO)}
+\Msg{* Package: luacolor 2016/05/13 v1.9 Color support via LuaTeX's attributes (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +99,7 @@
 This is a generated file.
 
 Project: luacolor
-Version: 2011/11/01 v1.8
+Version: 2016/05/13 v1.9
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -183,7 +185,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{luacolor.drv}%
-  [2011/11/01 v1.8 Color support via LuaTeX's attributes (HO)]%
+  [2016/05/13 v1.9 Color support via LuaTeX's attributes (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -198,7 +200,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{473}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -219,8 +220,10 @@ and the derived files
 % \GetFileInfo{luacolor.drv}
 %
 % \title{The \xpackage{luacolor} package}
-% \date{2011/11/01 v1.8}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/13 v1.9}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -361,7 +364,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{luacolor}%
-  [2011/11/01 v1.8 Color support via LuaTeX's attributes (HO)]
+  [2016/05/13 v1.9 Color support via LuaTeX's attributes (HO)]
 %    \end{macrocode}
 %
 % \subsection{Check for \LuaTeX}
@@ -376,10 +379,12 @@ and the derived files
 %    \end{macrocode}
 %    \begin{macrocode}
 \ifluatex
+  \ifx\newattribute\@undefined
   \ltx@ifpackageloaded{luatexbase-attr}{%
   }{%
     \RequirePackage{luatex}[2010/03/09]%
   }%
+ \fi
 \else
   \@PackageError{luacolor}{%
     This package may only be run using LuaTeX%
@@ -423,7 +428,7 @@ and the derived files
 %    \end{macrocode}
 %    \begin{macrocode}
 \begingroup
-  \edef\x{\LuaCol@directlua{tex.write("2011/11/01 v1.8")}}%
+  \edef\x{\LuaCol@directlua{tex.write("2016/05/13 v1.9")}}%
   \edef\y{%
     \LuaCol@directlua{%
       if oberdiek.luacolor.getversion then %
@@ -501,7 +506,7 @@ and the derived files
 \protected\def\set@color{%
   \LuaCol@setattribute\LuaCol@Attribute{%
     \LuaCol@directlua{%
-      oberdiek.luacolor.get("\luatexluaescapestring{\current@color}")%
+      oberdiek.luacolor.get("\luaescapestring{\current@color}")%
     }%
   }%
 }
@@ -541,6 +546,9 @@ and the derived files
 %
 %    \begin{macrocode}
 \ifpdf
+  \ifx\pdfxform\@undefined
+    \let\pdfxform\saveboxresource
+  \fi
   \ltx@IfUndefined{pdfxform}{%
     \ifnum\luatexversion>36 %
       \directlua{%
@@ -598,7 +606,7 @@ module("oberdiek.luacolor", package.seeall)
 %    \begin{macro}{getversion()}
 %    \begin{macrocode}
 function getversion()
-  tex.write("2011/11/01 v1.8")
+  tex.write("2016/05/13 v1.9")
 end
 %    \end{macrocode}
 %    \end{macro}
@@ -607,7 +615,7 @@ end
 %
 %    \begin{macrocode}
 local ifpdf
-if tonumber(tex.pdfoutput) > 0 then
+if tonumber(tex.outputmode or tex.pdfoutput) > 0 then
   ifpdf = true
 else
   ifpdf = false
@@ -732,7 +740,7 @@ local node_types = {
   [node.id("whatsit")] = {
     [node.subtype("special")] = COLOR,
     [node.subtype("pdf_literal")] = COLOR,
-    [node.subtype("pdf_refximage")] = COLOR,
+-- TODO (DPC)    [node.subtype("pdf_refximage")] = COLOR,
   },
   [node.id("glue")] =
     function(n)
@@ -763,8 +771,8 @@ end
 %    \begin{macrocode}
 local mode = 2 -- luatex.pdfliteral.direct
 local WHATSIT = node.id("whatsit")
-local SPECIAL = 3
-local PDFLITERAL = 8
+local SPECIAL = node.subtype("special")
+local PDFLITERAL = node.subtype("pdf_literal")
 local DRY_FALSE = false
 local DRY_TRUE = true
 %    \end{macrocode}
@@ -978,7 +986,7 @@ end
   \pdfoutput=0 %
 \fi
 \documentclass{minimal}
-\usepackage{luacolor}[2011/11/01]
+\usepackage{luacolor}[2016/05/13]
 \csname @@end\endcsname
 \end
 %</test2>
@@ -990,7 +998,7 @@ end
 %    \end{macrocode}
 %    \begin{macrocode}
 \documentclass{minimal}
-\usepackage{luacolor}[2011/11/01]
+\usepackage{luacolor}[2016/05/13]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -1206,7 +1214,7 @@ end
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.8'/>
+  <version number='1.9'/>
   <description>
       This package implements color support based on LuaTeX's node
       attributes.
@@ -1287,6 +1295,11 @@ end
 %   \begin{Version}{2011/11/01 v1.8}
 %   \item
 %     Use of \texttt{node.subtype} instead of magic numbers.
+%   \end{Version}
+%   \begin{Version}{2016/05/13 v1.9}
+%   \item
+%     More use of \texttt{node.subtype} instead of magic numbers.
+%   \item luatex 85 updates
 %   \end{Version}
 % \end{History}
 %
