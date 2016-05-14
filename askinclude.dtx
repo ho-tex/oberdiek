@@ -1,12 +1,14 @@
 % \iffalse meta-comment
 %
 % File: askinclude.dtx
-% Version: 2011/12/02 v2.2
+% Version: 2016/05/14 v2.3
 % Info: Interactive asking of included files
 %
 % Copyright (C) 1991-1994 by Pablo A. Straub
 % Copyright (C) 2007, 2008, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -118,7 +120,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: askinclude 2011/12/02 v2.2 Interactive asking of included files}
+\Msg{* Package: askinclude 2016/05/14 v2.3 Interactive asking of included files}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -130,7 +132,7 @@
 This is a generated file.
 
 Project: askinclude
-Version: 2011/12/02 v2.2
+Version: 2016/05/14 v2.3
 
 Copyright (C) 1991-1994 by Pablo A. Straub
 Copyright (C) 2007, 2008, 2011 by
@@ -272,7 +274,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{askinclude.drv}%
-  [2011/12/02 v2.2 Interactive asking of included files]%
+  [2016/05/14 v2.3 Interactive asking of included files]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{ifluatex}
@@ -294,7 +296,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2078}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -315,11 +316,13 @@ and the derived files
 % \GetFileInfo{askinclude.drv}
 %
 % \title{The \xpackage{askinclude} package}
-% \date{2011/12/02 v2.2}
+% \date{2016/05/14 v2.3}
 % \author{
 %   Pablo A. Straub\\[1ex]
-%   Heiko Oberdiek (maintainer)\\\xemail{heiko.oberdiek at googlemail.com}
-% }
+%    Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
+% 
 %
 % \maketitle
 %
@@ -701,7 +704,14 @@ and the derived files
 \TMP@EnsureCode{96}{12}% `
 \edef\AskInc@AtEnd{\AskInc@AtEnd\noexpand\endinput}
 \ProvidesPackage{askinclude}%
-  [2011/12/02 v2.2 Interactive asking of included files]%
+  [2016/05/14 v2.3 Interactive asking of included files]%
+%    \end{macrocode}
+%
+% Luatex compat
+%    \begin{macrocode}
+\ifx\pdfextension\@undefined\else
+  \RequirePackage{luatex85}
+\fi
 %    \end{macrocode}
 %
 % \subsection{Delay action after preamble}
@@ -1696,11 +1706,12 @@ and the derived files
 %    \begin{macrocode}
 %<*test0>
 \ifx\CompatibilityMode Y%
-  \documentstyle[filecontents,qstest,askinclude]{book}%
+  \documentstyle[filecontents,qstest,askinclude,pdftexcmds]{book}%
 \else
   \documentclass{book}%
   \usepackage{filecontents}%
   \usepackage{qstest}%
+  \usepackage{pdftexcmds}%
 %<*test1>
   \makeatletter
   \def\RestoreCatcodes{}%
@@ -1745,11 +1756,11 @@ and the derived files
 %<*!test1>
   \ifx\AtBeginDocumentMode Y%
     \AtBeginDocument{%
-      \usepackage{askinclude}[2011/12/02]%
+      \usepackage{askinclude}[2016/05/14]%
     }%
   \else
 %</!test1>
-    \usepackage{askinclude}[2011/12/02]%
+    \usepackage{askinclude}[2016/05/14]%
 %<*!test1>
   \fi
 %</!test1>
@@ -1836,8 +1847,8 @@ and the derived files
 \def\@CheckAux{%
   \begin{qstest}{CheckAux}{CheckAux}%
     \def\GetFileContents##1{%
-      \pdfunescapehex{%
-        \pdffiledump length\pdffilesize{##1}{##1}%
+      \pdf@unescapehex{%
+        \pdf@filedump{0}{\pdf@filesize{##1}}{##1}%
       }%
     }%
     \Expect*{\GetFileContents{\jobname.aux}}%
@@ -2645,7 +2656,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/askinclude}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/askinclude.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/askinclude.pdf}] Documentation.
@@ -2868,7 +2879,7 @@ and the derived files
   <copyright owner="Pablo A. Straub" year='1991-1994'/>
   <copyright owner="Heiko Oberdiek" year='2007,2008,2011'/>
   <license type='lppl1.3'/>
-  <version number='2.2'/>
+  <version number='2.3'/>
   <description>
     The package asks the user which files to put in a \includeonly
     command.  There is provision for answering &#x201C;same as last
@@ -2959,6 +2970,10 @@ and the derived files
 %   \begin{Version}{2011/12/02 v2.2}
 %   \item
 %     Bibliography rewritten for biblatex.
+%   \end{Version}
+%   \begin{Version}{2016/05/14 v2.3}
+%   \item
+%    Luatex compatibility
 %   \end{Version}
 % \end{History}
 %
