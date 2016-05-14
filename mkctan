@@ -38,8 +38,6 @@ done
 #pdflatex oberdiek
 
 # special cases
-cp ./doc/latex/oberdiek/test/ifpdf-test1.tex .
-cp ./doc/latex/oberdiek/test/ifpdf.xml .
 cp README readme-ctan.txt
 rm -f ./tex/latex/oberdiek/foo.sty
 
