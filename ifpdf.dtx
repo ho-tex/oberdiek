@@ -9,13 +9,14 @@
           \ProvidesFile{ifpdf.dtx}
 %</dtx>
 %<package>\ifx\ProvidesPackage\undefined
-%<package>\def\next#1#2[#3]{\wlog{#2 #3}}
+%<package>\def\next#1#2[#3]{\wlog{#2 #3}\expandafter\gdef
+%<package>\csname ver@ifpdf.sty\endcsname{#3}}
 %<package>\expandafter\next\fi
 %<package>\ProvidesPackage{ifpdf}
 %<driver> \ProvidesFile{ifpdf.drv}
 % \fi
 %         \ProvidesFile{ifpdf.dtx}
-[2016/04/04 v3.0 Provides the ifpdf switch]
+[2016/05/14 v3.1 Provides the ifpdf switch]
 %
 % \iffalse
 %<*driver>
@@ -106,3 +107,7 @@ end
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
+%
+% \endinput
+% 2016/04/04 v3.0  rewrite to be self standing and work with new luatex/
+% 2016/05/14 v3.1  define ver@ifpdf.sty in plain tex.
