@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pdflscape.dtx
-% Version: 2008/08/11 v0.10
+% Version: 2016/05/14 v0.11
 % Info: Display of landscape pages in PDF
 %
 % Copyright (C) 2001, 2004, 2006-2008 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -87,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)}
+\Msg{* Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +101,7 @@
 This is a generated file.
 
 Project: pdflscape
-Version: 2008/08/11 v0.10
+Version: 2016/05/14 v0.11
 
 Copyright (C) 2001, 2004, 2006-2008 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -173,7 +175,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdflscape.drv}%
-  [2008/08/11 v0.10 Display of landscape pages in PDF (HO)]%
+  [2016/05/14 v0.11 Display of landscape pages in PDF (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{graphics}
@@ -183,7 +185,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{473}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -204,8 +205,10 @@ and the derived files
 % \GetFileInfo{pdflscape.drv}
 %
 % \title{The \xpackage{pdflscape} package}
-% \date{2008/08/11 v0.10}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/14 v0.11}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -222,7 +225,7 @@ and the derived files
 % \subsection{Supported drivers}
 %
 % \begin{itemize}
-% \item \xoption{pdftex}
+% \item \xoption{pdftex},\xoption{luatex}
 % \item \xoption{dvips}, \xoption{dvipsone},
 %       \xoption{pctex32}, \xoption{pctexps}
 %       (and other drivers that provide a non-empty \cs{Gin@PS@raw})
@@ -245,7 +248,7 @@ and the derived files
 % \begin{itemize}
 % \item The package \xpackage{lscape}.
 % \item The package \xpackage{atbegshi} for all drivers
-%        except \xoption{pdftex}.
+%        except \xoption{pdftex},\xoption{luatex}.
 % \end{itemize}
 %
 % \subsection{Usage}
@@ -270,7 +273,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{pdflscape}%
-  [2008/08/11 v0.10 Display of landscape pages in PDF (HO)]
+  [2016/05/14 v0.11 Display of landscape pages in PDF (HO)]
 %    \end{macrocode}
 %
 % \subsection{Driver options}
@@ -285,6 +288,7 @@ and the derived files
   }%
 }
 \PLS@temp{pdftex}{pdftex}
+\PLS@temp{luatex}{pdftex}
 \PLS@temp{dvips}{dvips}
 \PLS@temp{dvipsone}{dvips}
 \PLS@temp{pctexps}{dvips}
@@ -428,6 +432,14 @@ and the derived files
 % Not too nice is the global setting of \cs{pdfpageattr}.
 % Perhaps this can be changed in future versions.
 %
+% luatex compat.
+%    \begin{macrocode}
+\ifx\pdfpageattr\@undefined
+  \ifx\pdfvariable\@undefined\else 
+    \protected\edef\pdfpageattr{\pdfvariable pageattr}
+  \fi
+\fi
+%    \end{macrocode}
 %    \begin{macrocode}
 \def\PLS@temp{pdftex}
 \ifx\PLS@temp\PLS@driver
@@ -623,21 +635,21 @@ and the derived files
 \ifxetex
   \def\ExpectDriver{dvipdfm}%
 \fi
-\usepackage{pdflscape}[2008/08/11]
+\usepackage{pdflscape}[2016/05/14]
 %</test1>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 %<*test2>
 \def\ExpectDriver{pdftex}
-\usepackage[pdftex]{pdflscape}[2008/08/11]
+\usepackage[pdftex]{pdflscape}[2016/05/14]
 %</test2>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 %<*test3>
 \def\ExpectDriver{dvipdfm}
-\usepackage[dvipdfmx]{pdflscape}[2008/08/11]
+\usepackage[dvipdfmx]{pdflscape}[2016/05/14]
 %</test3>
 %    \end{macrocode}
 %
@@ -645,7 +657,7 @@ and the derived files
 %<*test4>
 \def\ExpectDriver{dvips}
 \usepackage[dvipsone]{graphics}
-\usepackage{pdflscape}[2008/08/11]
+\usepackage{pdflscape}[2016/05/14]
 %</test4>
 %    \end{macrocode}
 %
@@ -669,7 +681,7 @@ and the derived files
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
-\usepackage{pdflscape}[2008/08/11]
+\usepackage{pdflscape}[2016/05/14]
 \begin{document}
 \begin{qstest}{checkangle}{checkangle}
   \makeatletter
@@ -723,7 +735,7 @@ and the derived files
 %<*test6>
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{article}
-\usepackage{pdflscape}[2008/08/11]
+\usepackage{pdflscape}[2016/05/14]
 \begin{document}
 \section{Portrait page}
 \begin{landscape}
@@ -815,7 +827,7 @@ public class ExtractRotate {
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pdflscape}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdflscape.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdflscape.pdf}] Documentation.
@@ -1016,7 +1028,7 @@ public class ExtractRotate {
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2001,2004,2006-2008'/>
   <license type='lppl1.3'/>
-  <version number='0.10'/>
+  <version number='0.11'/>
   <description>
     The package adds PDF support to the landscape environment of
     package <xref refid='lscape'>lscape</xref>, by setting the PDF
@@ -1092,6 +1104,10 @@ public class ExtractRotate {
 %     Code is not changed.
 %   \item
 %     URLs updated.
+%   \end{Version}
+%   \begin{Version}{2016/05/14 v0.11}
+%   \item
+%     LuaTeX Compatibility
 %   \end{Version}
 % \end{History}
 %
