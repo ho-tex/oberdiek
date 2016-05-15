@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: epstopdf.dtx
-% Version: 2010/02/09 v2.5
+% Version: 2016/05/15 v2.6
 % Info: Conversion with epstopdf on the fly
 %
 % Copyright (C) 2001, 2006-2010 by
@@ -78,7 +78,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)}
+\Msg{* Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +90,7 @@
 This is a generated file.
 
 Project: epstopdf
-Version: 2010/02/09 v2.5
+Version: 2016/05/15 v2.6
 
 Copyright (C) 2001, 2006-2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{epstopdf.drv}%
-  [2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)]%
+  [2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -164,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1040}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -185,8 +184,10 @@ and the derived files
 % \GetFileInfo{epstopdf.drv}
 %
 % \title{The \xpackage{epstopdf} package}
-% \date{2010/02/09 v2.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/15 v2.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -586,7 +587,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@epstopdf.sty\endcsname
 \ProvidesPackage{epstopdf}%
-  [2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)]%
+  [2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)]%
 %    \end{macrocode}
 %    Larger catcode set because of configuration files needed.
 %    \begin{macrocode}
@@ -635,7 +636,7 @@ and the derived files
 %
 %    \begin{macrocode}
 \let\ETE@SavedAtEnd\ETE@AtEnd
-\RequirePackage{epstopdf-base}[2010/02/09]
+\RequirePackage{epstopdf-base}[2016/05/15]
 \let\ETE@AtEnd\ETE@SavedAtEnd
 %    \end{macrocode}
 %
@@ -734,7 +735,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@epstopdf-base.sty\endcsname
 \ProvidesPackage{epstopdf-base}%
-  [2010/02/09 v2.5 Base part for package epstopdf]%
+  [2016/05/15 v2.6 Base part for package epstopdf]%
 %    \end{macrocode}
 %
 % \subsubsection{Catcodes}
@@ -816,15 +817,19 @@ and the derived files
 % available with miniltx.tex, thus we test for \cs{Gin@driver}.
 %    \begin{macrocode}
 \begingroup
+  \def\x{luatex.def}%
+  \ifx\Gin@driver\x
+  \else
   \def\x{pdftex.def}%
   \ifx\Gin@driver\x
   \else
     \@PackageWarningNoLine{epstopdf}{%
-      Drivers other than `pdftex.def' are not supported%
+      Drivers other than `pdftex' and `luatex' are not supported%
     }%
     \endgroup
     \newcommand*{\epstopdfsetup}[1]{}%
     \expandafter\ETE@AtEnd
+  \fi%
   \fi%
 \endgroup
 %    \end{macrocode}
@@ -1305,7 +1310,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/epstopdf}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/epstopdf.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/epstopdf.pdf}] Documentation.
@@ -1500,7 +1505,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2001,2006-2010'/>
   <license type='lppl1.3'/>
-  <version number='2.5'/>
+  <version number='2.6'/>
   <description>
     The package adds support for EPS files in the
     <xref refid='graphicx'>graphicx</xref> package when running under
@@ -1624,11 +1629,15 @@ and the derived files
 %     The name of the program `epstopdf' can be configured via
 %     the new option \xoption{program@epstopdf}.
 %   \end{Version}
-%   \begin{Version}{2010/02/09 v2.5}
+%   \begin{Version}{2016/05/15 v2.5}
 %   \item
 %     Wording of warning message fixed (Karl Berry).
 %   \item
 %     \cs{ETE@Gin@setfile} added (Karl Berry).
+%   \end{Version}
+%   \begin{Version}{2016/05/15 v2.6}
+%   \item
+%     luaTeX compatibility
 %   \end{Version}
 % \end{History}
 %
