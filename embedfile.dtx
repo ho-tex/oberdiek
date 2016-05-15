@@ -6,6 +6,8 @@
 %
 % Copyright (C) 2006-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -209,7 +211,9 @@ and the derived files
 %
 % \title{The \xpackage{embedfile} package}
 % \date{2016/05/15 v2.7}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -1838,6 +1842,12 @@ Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
       'pdfoutput'%
     })%
   }%
+  \ifx\pdfextension\undefined\else
+    \protected\def\pdflastobj {\numexpr\pdffeedback lastobj\relax}
+    \protected\def\pdfnames   {\pdfextension names }
+    \protected\def\pdfobj     {\pdfextension obj }
+    \let\pdfoutput            \outputmode
+  \fi
 \fi
 \pdfoutput=1 %
 \input embedfile.sty %
@@ -1857,7 +1867,7 @@ Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/embedfile}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/embedfile.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/embedfile.pdf}] Documentation.
