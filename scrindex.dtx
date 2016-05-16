@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: scrindex.dtx
-% Version: 2008/08/11 v1.1
+% Version: 2016/05/16 v1.2
 % Info: Package index with KOMA-Script classes
 %
 % Copyright (C) 2008 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -78,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: scrindex 2008/08/11 v1.1 Package index with KOMA-Script classes (HO)}
+\Msg{* Package: scrindex 2016/05/16 v1.2 Package index with KOMA-Script classes (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +92,7 @@
 This is a generated file.
 
 Project: scrindex
-Version: 2008/08/11 v1.1
+Version: 2016/05/16 v1.2
 
 Copyright (C) 2008 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +157,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{scrindex.drv}%
-  [2008/08/11 v1.1 Package index with KOMA-Script classes (HO)]%
+  [2016/05/16 v1.2 Package index with KOMA-Script classes (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{calc}
@@ -165,7 +167,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{237}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -186,8 +187,10 @@ and the derived files
 % \GetFileInfo{scrindex.drv}
 %
 % \title{The \xpackage{scrindex} package}
-% \date{2008/08/11 v1.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -334,7 +337,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{scrindex}
-  [2008/08/11 v1.1 Package index with KOMA-Script classes (HO)]%
+  [2016/05/16 v1.2 Package index with KOMA-Script classes (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -533,7 +536,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/scrindex}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/scrindex.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/scrindex.pdf}] Documentation.
@@ -728,7 +731,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2008'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     This package redefines environment `theindex' of package `index',
     if a class from <xref refid='koma-script'>KOMA-Script</xref> is loaded.
@@ -761,6 +764,10 @@ and the derived files
 %     Code is not changed.
 %   \item
 %     URLs updated.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

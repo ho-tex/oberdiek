@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: atveryend.dtx
-% Version: 2011/06/30 v1.8
+% Version: 2016/05/16 v1.9
 % Info: Hooks at the very end of document
 %
 % Copyright (C) 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -77,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)}
+\Msg{* Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +91,7 @@
 This is a generated file.
 
 Project: atveryend
-Version: 2011/06/30 v1.8
+Version: 2016/05/16 v1.9
 
 Copyright (C) 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -153,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atveryend.drv}%
-  [2011/06/30 v1.8 Hooks at the very end of document (HO)]%
+  [2016/05/16 v1.9 Hooks at the very end of document (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -162,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1203}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -183,8 +184,10 @@ and the derived files
 % \GetFileInfo{atveryend.drv}
 %
 % \title{The \xpackage{atveryend} package}
-% \date{2011/06/30 v1.8}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.9}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -339,7 +342,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{atveryend}%
-  [2011/06/30 v1.8 Hooks at the very end of document (HO)]
+  [2016/05/16 v1.9 Hooks at the very end of document (HO)]
 %    \end{macrocode}
 %
 % \subsection{Tools}
@@ -1295,7 +1298,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/atveryend}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/atveryend.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/atveryend.pdf}] Documentation.
@@ -1489,7 +1492,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.8'/>
+  <version number='1.9'/>
   <description>
     This LaTeX packages provides two hooks for <tt>\end{document}</tt>
     that are executed after the hook of <tt>\AtEndDocument</tt>:
@@ -1608,6 +1611,10 @@ and the derived files
 %   \begin{Version}{2011/06/30 v1.8}
 %   \item
 %     Support of changed \cs{enddocument} of \hologo{LaTeX2e} 2011/06/27.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.9}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

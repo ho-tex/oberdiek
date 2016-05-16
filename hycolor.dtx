@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: hycolor.dtx
-% Version: 2011/01/30 v1.7
+% Version: 2016/05/16 v1.8
 % Info: Color options for hyperref/bookmark
 %
 % Copyright (C) 2007-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -87,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)}
+\Msg{* Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +101,7 @@
 This is a generated file.
 
 Project: hycolor
-Version: 2011/01/30 v1.7
+Version: 2016/05/16 v1.8
 
 Copyright (C) 2007-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -173,7 +175,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hycolor.drv}%
-  [2011/01/30 v1.7 Color options for hyperref/bookmark (HO)]%
+  [2016/05/16 v1.8 Color options for hyperref/bookmark (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage[ruled]{algorithm2e}
@@ -217,7 +219,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1726}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -238,8 +239,10 @@ and the derived files
 % \GetFileInfo{hycolor.drv}
 %
 % \title{The \xpackage{hycolor} package}
-% \date{2011/01/30 v1.7}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.8}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -340,11 +343,11 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hycolor}%
-  [2011/01/30 v1.7 Color options for hyperref/bookmark (HO)]%
+  [2016/05/16 v1.8 Color options for hyperref/bookmark (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\RequirePackage{xcolor-patch}[2011/01/30]
+\RequirePackage{xcolor-patch}[2016/05/16]
 %    \end{macrocode}
 %
 % \subsection{Normalization}
@@ -1250,10 +1253,10 @@ and the derived files
 %    \begin{macrocode}
 %<*xcolor>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{xcolor-patch}[2011/01/30 xcolor patch]
+\ProvidesPackage{xcolor-patch}[2016/05/16 xcolor patch]
 %    \end{macrocode}
 %    \begin{macrocode}
-\RequirePackage{hopatch}[2011/01/30]
+\RequirePackage{hopatch}[2016/05/16]
 \hopatch@AfterPackage{xcolor}{%
 %    \end{macrocode}
 %    \begin{macro}{\XC@ifxcase}
@@ -1440,19 +1443,19 @@ and the derived files
 %
 %    \begin{macrocode}
 %<*test1>
-\ProvidesFile{hycolor-test1.tex}[2011/01/30 test file 1]
+\ProvidesFile{hycolor-test1.tex}[2016/05/16 test file 1]
 %</test1>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 %<*test2>
-\ProvidesFile{hycolor-test2.tex}[2011/01/30 test file 2]
+\ProvidesFile{hycolor-test2.tex}[2016/05/16 test file 2]
 \let\pdfmatch\relax
 %</test2>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-%<test3>\ProvidesFile{hycolor-test3.tex}[2011/01/30 test file 3]
+%<test3>\ProvidesFile{hycolor-test3.tex}[2016/05/16 test file 3]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1498,7 +1501,7 @@ and the derived files
   \Expect*{\@ResultErrorMessage}*{\@ExpectErrorMessage}%
 }
 \usepackage{scrlfile}
-\usepackage{hycolor}[2011/01/30]
+\usepackage{hycolor}[2016/05/16]
 %</test>
 %    \end{macrocode}
 %
@@ -1887,15 +1890,15 @@ and the derived files
 \documentclass{minimal}
 %<*xcol1>
 \usepackage{xcolor}
-\usepackage{xcolor-patch}[2011/01/30]
+\usepackage{xcolor-patch}[2016/05/16]
 %</xcol1>
 %<*xcol2>
 \usepackage{scrlfile}
-\usepackage{xcolor-patch}[2011/01/30]
+\usepackage{xcolor-patch}[2016/05/16]
 \usepackage{xcolor}
 %</xcol2>
 %<*xcol3>
-\usepackage{xcolor-patch}[2011/01/30]
+\usepackage{xcolor-patch}[2016/05/16]
 \usepackage{xcolor}
 \begin{document}
 %</xcol3>
@@ -1942,7 +1945,7 @@ and the derived files
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{article}
 \usepackage{xcolor}
-\usepackage{xcolor-patch}[2011/01/30]
+\usepackage{xcolor-patch}[2016/05/16]
 \makeatletter
 \protected@edef\x{\fbox{abc}}
 \let\@tempa\@undefined
@@ -1959,7 +1962,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/hycolor}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/hycolor.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/hycolor.pdf}] Documentation.
@@ -2160,7 +2163,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.7'/>
+  <version number='1.8'/>
   <description>
     This package provides the code for the color option
     that is used by packages <xref refid='hyperref'>hyperref</xref>
@@ -2213,6 +2216,10 @@ and the derived files
 %   \begin{Version}{2011/01/30 v1.7}
 %   \item
 %     Package \xpackage{xcolor-patch} uses package \xpackage{hopatch}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.8}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

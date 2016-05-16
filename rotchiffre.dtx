@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: rotchiffre.dtx
-% Version: 2010/11/12 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Perform simple rotation ciphers
 %
 % Copyright (C) 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -81,7 +83,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: rotchiffre 2010/11/12 v1.0 Perform simple rotation ciphers (HO)}
+\Msg{* Package: rotchiffre 2016/05/16 v1.1 Perform simple rotation ciphers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +95,7 @@
 This is a generated file.
 
 Project: rotchiffre
-Version: 2010/11/12 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -161,10 +163,10 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{rotchiffre.drv}%
-  [2010/11/12 v1.0 Perform simple rotation ciphers (HO)]%
+  [2016/05/16 v1.1 Perform simple rotation ciphers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
-\usepackage{rotchiffre}[2010/11/12]
+\usepackage{rotchiffre}[2016/05/16]
 \usepackage{wasysym}
 \begin{document}
   \DocInput{rotchiffre.dtx}%
@@ -172,7 +174,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{934}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -193,8 +194,10 @@ and the derived files
 % \GetFileInfo{rotchiffre.drv}
 %
 % \title{The \xpackage{rotchiffre} package}
-% \date{2010/11/12 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -375,7 +378,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@rotchiffre.sty\endcsname
 \ProvidesPackage{rotchiffre}%
-  [2010/11/12 v1.0 Perform simple rotation ciphers (HO)]%
+  [2016/05/16 v1.1 Perform simple rotation ciphers (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -841,7 +844,7 @@ and the derived files
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input rotchiffre.sty\relax
 \else
-  \RequirePackage{rotchiffre}[2010/11/12]%
+  \RequirePackage{rotchiffre}[2016/05/16]%
   \RequirePackage{ifluatex}[2010/03/01]%
   \RequirePackage{ifxetex}[2010/09/12]%
 \fi
@@ -1121,7 +1124,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/rotchiffre}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/rotchiffre.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/rotchiffre.pdf}] Documentation.
@@ -1316,7 +1319,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2010'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     The package defines a command <tt>\EdefRot</tt> that defines a
     macro (whose name is given as an argument) to the rotation of the
@@ -1400,6 +1403,10 @@ and the derived files
 %   \begin{Version}{2010/11/12 v1.0}
 %   \item
 %     First version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: kvoptions.dtx
-% Version: 2011/06/30 v3.11
+% Version: 2016/05/16 v3.12
 % Info: Key value format for package options
 %
 % Copyright (C) 2004, 2006, 2007, 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -86,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)}
+\Msg{* Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -98,7 +100,7 @@
 This is a generated file.
 
 Project: kvoptions
-Version: 2011/06/30 v3.11
+Version: 2016/05/16 v3.12
 
 Copyright (C) 2004, 2006, 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -172,7 +174,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{kvoptions.drv}%
-  [2011/06/30 v3.11 Key value format for package options (HO)]%
+  [2016/05/16 v3.12 Key value format for package options (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -181,7 +183,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2398}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -202,8 +203,10 @@ and the derived files
 % \GetFileInfo{kvoptions.drv}
 %
 % \title{The \xpackage{kvoptions} package}
-% \date{2011/06/30 v3.11}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v3.12}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -768,7 +771,7 @@ and the derived files
     % Package identification
     % -----------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{example-mycolorsetup}[2011/06/30 Managing my colors]
+\ProvidesPackage{example-mycolorsetup}[2016/05/16 Managing my colors]
 
 \RequirePackage{ifpdf}
 \RequirePackage{kvoptions}
@@ -1151,7 +1154,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@kvoptions.sty\endcsname
 \ProvidesPackage{kvoptions}%
-  [2011/06/30 v3.11 Key value format for package options (HO)]%
+  [2016/05/16 v3.12 Key value format for package options (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Catcodes}
@@ -1256,7 +1259,7 @@ and the derived files
 %    \begin{macrocode}
 \DeclareOption{patch}{%
   \AtEndOfPackage{%
-    \RequirePackage{kvoptions-patch}[2011/06/30]%
+    \RequirePackage{kvoptions-patch}[2016/05/16]%
   }%
 }
 %    \end{macrocode}
@@ -2285,7 +2288,7 @@ and the derived files
 \TMP@EnsureCode{124}{12}% |
 \edef\KVO@AtEnd{\KVO@AtEnd\noexpand\endinput}
 \ProvidesPackage{kvoptions-patch}%
-  [2011/06/30 v3.11 LaTeX patch for keyval options (HO)]%
+  [2016/05/16 v3.12 LaTeX patch for keyval options (HO)]%
 %    \end{macrocode}
 %
 %    Check for \eTeX.
@@ -2957,7 +2960,7 @@ and the derived files
 %<*test3>
 \NeedsTeXFormat{LaTeX2e}
 \makeatletter
-\RequirePackage{kvoptions}[2011/06/30]
+\RequirePackage{kvoptions}[2016/05/16]
 \def\msg#{\immediate\write16}
 \define@key{testfamily}{testkey}{%
   \msg{[testfamily/testkey/#1]}%
@@ -2997,8 +3000,8 @@ and the derived files
 %    \begin{macrocode}
 %<*test4pkg>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{kvoptions-test4}[2011/06/30 package for testing]
-\RequirePackage{kvoptions}[2011/06/30]
+\ProvidesPackage{kvoptions-test4}[2016/05/16 package for testing]
+\RequirePackage{kvoptions}[2016/05/16]
 \SetupKeyvalOptions{%
   family=FOO,%
   prefix=foo,%
@@ -3017,10 +3020,10 @@ and the derived files
 %    \begin{macrocode}
 %<*test4>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{kvoptions-test4.tex}[2011/06/30 test file]
+\ProvidesFile{kvoptions-test4.tex}[2016/05/16 test file]
 \RequirePackage[%
   str=A,set=B,str=C,%
-]{kvoptions-test4}[2011/06/30]
+]{kvoptions-test4}[2016/05/16]
 \def\TestExpected{C}
 \ifx\foostr\TestExpected
   \typeout{* Test ok.}%
@@ -3038,7 +3041,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/kvoptions}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvoptions.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvoptions.pdf}] Documentation.
@@ -3238,7 +3241,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2004,2006,2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='3.11'/>
+  <version number='3.12'/>
   <description>
     This package offers support for package authors who want to
     use options in key-value format for their package options.
@@ -3423,6 +3426,10 @@ and the derived files
 %   \item
 %     Fix because of design bug in package \xpackage{xkeyval} that
 %     removes global options with equal signs.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v3.12}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

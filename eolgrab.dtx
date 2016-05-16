@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: eolgrab.dtx
-% Version: 2011/01/12 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Catch arguments delimited by end of line
 %
 % Copyright (C) 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -86,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: eolgrab 2011/01/12 v1.0 Catch arguments delimited by end of line (HO)}
+\Msg{* Package: eolgrab 2016/05/16 v1.1 Catch arguments delimited by end of line (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -98,7 +100,7 @@
 This is a generated file.
 
 Project: eolgrab
-Version: 2011/01/12 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -172,7 +174,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{eolgrab.drv}%
-  [2011/01/12 v1.0 Catch arguments delimited by end of line (HO)]%
+  [2016/05/16 v1.1 Catch arguments delimited by end of line (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -181,7 +183,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{478}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -202,8 +203,10 @@ and the derived files
 % \GetFileInfo{eolgrab.drv}
 %
 % \title{The \xpackage{eolgrab} package}
-% \date{2011/01/12 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -519,7 +522,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@eolgrab.sty\endcsname
 \ProvidesPackage{eolgrab}%
-  [2011/01/12 v1.0 Catch arguments delimited by end of line (HO)]%
+  [2016/05/16 v1.1 Catch arguments delimited by end of line (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -830,7 +833,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/eolgrab}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/eolgrab.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/eolgrab.pdf}] Documentation.
@@ -1028,7 +1031,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2011'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     The package defines the command <tt>\eolgrab</tt> that reads an
     string terminated by end of line, and then calls a macro with that
@@ -1080,6 +1083,10 @@ and the derived files
 %   \begin{Version}{2011/01/12 v1.0}
 %   \item
 %     First public version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: accsupp.dtx
-% Version: 2010/01/16 v0.3
+% Version: 2016/05/16 v0.4
 % Info: Accessibility support by marked content
 %
 % Copyright (C) 2007, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -84,7 +86,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: accsupp 2010/01/16 v0.3 Accessibility support by marked content (HO)}
+\Msg{* Package: accsupp 2016/05/16 v0.4 Accessibility support by marked content (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +98,7 @@
 This is a generated file.
 
 Project: accsupp
-Version: 2010/01/16 v0.3
+Version: 2016/05/16 v0.4
 
 Copyright (C) 2007, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -169,7 +171,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp.drv}%
-  [2010/01/16 v0.3 Accessibility support by marked content (HO)]%
+  [2016/05/16 v0.4 Accessibility support by marked content (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -178,7 +180,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{462}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -199,8 +200,10 @@ and the derived files
 % \GetFileInfo{accsupp.drv}
 %
 % \title{The \xpackage{accsupp} package}
-% \date{2010/01/16 v0.3}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v0.4}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -508,7 +511,7 @@ A\notparallel B
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{accsupp}%
-  [2010/01/16 v0.3 Accessibility support by marked content (HO)]
+  [2016/05/16 v0.4 Accessibility support by marked content (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -792,7 +795,7 @@ A\notparallel B
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-pdftex.def}%
-  [2010/01/16 v0.3 accsupp driver for pdfTeX (HO)]%
+  [2016/05/16 v0.4 accsupp driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -813,7 +816,7 @@ A\notparallel B
 %<*dvipdfm>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvipdfm.def}%
-  [2010/01/16 v0.3 accsupp driver for dvipdfm (HO)]%
+  [2016/05/16 v0.4 accsupp driver for dvipdfm (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -834,7 +837,7 @@ A\notparallel B
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvips.def}%
-  [2010/01/16 v0.3 accsupp driver for dvips (HO)]%
+  [2016/05/16 v0.4 accsupp driver for dvips (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -894,7 +897,7 @@ A\notparallel B
   \catcode`\%=14 %
   \catcode`\ =10 %
   \catcode13=5 %
-  \RequirePackage{accsupp}[2010/01/16]\relax
+  \RequirePackage{accsupp}[2016/05/16]\relax
   \RestoreCatcodes
 }
 \Test
@@ -910,7 +913,7 @@ A\notparallel B
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/accsupp}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/accsupp.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/accsupp.pdf}] Documentation.
@@ -1109,7 +1112,7 @@ A\notparallel B
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2010'/>
   <license type='lppl1.3'/>
-  <version number='0.3'/>
+  <version number='0.4'/>
   <description>
     Since PDF 1.5 portions of a page can be marked for better accessibility
     support. For example, replacement texts or expansions of abbreviations can
@@ -1152,6 +1155,10 @@ A\notparallel B
 %     \cs{AccSuppSetup} added.
 %   \item
 %     Options \xoption{space}, \xoption{spacefont}, \xoption{spacechar} added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v0.4}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

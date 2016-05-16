@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: flags.dtx
-% Version: 2007/09/30 v0.4
+% Version: 2016/05/16 v0.5
 % Info: Setting/clearing of flags in bit fields
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -75,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: flags 2007/09/30 v0.4 Setting/clearing of flags in bit fields (HO)}
+\Msg{* Package: flags 2016/05/16 v0.5 Setting/clearing of flags in bit fields (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -87,7 +89,7 @@
 This is a generated file.
 
 Project: flags
-Version: 2007/09/30 v0.4
+Version: 2016/05/16 v0.5
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -148,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{flags.drv}%
-  [2007/09/30 v0.4 Setting/clearing of flags in bit fields (HO)]%
+  [2016/05/16 v0.5 Setting/clearing of flags in bit fields (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -157,7 +159,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{247}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -178,8 +179,10 @@ and the derived files
 % \GetFileInfo{flags.drv}
 %
 % \title{The \xpackage{flags} package}
-% \date{2007/09/30 v0.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v0.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -271,7 +274,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{flags}%
-  [2007/09/30 v0.4 Setting/clearing of flags in bit fields (HO)]%
+  [2016/05/16 v0.5 Setting/clearing of flags in bit fields (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -470,7 +473,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/flags}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/flags.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/flags.pdf}] Documentation.
@@ -663,7 +666,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='0.4'/>
+  <version number='0.5'/>
   <description>
     This package allows the setting and clearing
     of flags in bit fields and converts the bit field into a
@@ -705,6 +708,10 @@ and the derived files
 %   \item
 %     Package is deprecated because of new more powerful
 %     package \xpackage{bitset}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v0.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

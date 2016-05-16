@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: intcalc.dtx
-% Version: 2007/09/27 v1.1
+% Version: 2016/05/16 v1.2
 % Info: Expandable calculations with integers
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -84,7 +86,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)}
+\Msg{* Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +98,7 @@
 This is a generated file.
 
 Project: intcalc
-Version: 2007/09/27 v1.1
+Version: 2016/05/16 v1.2
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -167,7 +169,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{intcalc.drv}%
-  [2007/09/27 v1.1 Expandable calculations with integers (HO)]%
+  [2016/05/16 v1.2 Expandable calculations with integers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{wasysym}
 \let\iint\relax
@@ -210,7 +212,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{3222}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -231,8 +232,10 @@ and the derived files
 % \GetFileInfo{intcalc.drv}
 %
 % \title{The \xpackage{intcalc} package}
-% \date{2007/09/27 v1.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -700,7 +703,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@intcalc.sty\endcsname
 \ProvidesPackage{intcalc}%
-  [2007/09/27 v1.1 Expandable calculations with integers (HO)]%
+  [2016/05/16 v1.2 Expandable calculations with integers (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -3236,7 +3239,7 @@ and the derived files
 \makeatletter
 \chardef\InCa@TestMode=1 %
 \makeatother
-\usepackage{intcalc}[2007/09/27]
+\usepackage{intcalc}[2016/05/16]
 %<noetex>\let\numexpr\SavedNumexpr
 \usepackage{qstest}
 \IncludeTests{*}
@@ -4064,7 +4067,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/intcalc}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/intcalc.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/intcalc.pdf}] Documentation.
@@ -4261,7 +4264,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     This package provides expandable arithmetic operations
     with integers, using the e-TeX extension <tt>\numexpr</tt> if it
@@ -4299,6 +4302,10 @@ and the derived files
 %     Shorter internal prefix.
 %   \item
 %     Some programmer's interface.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

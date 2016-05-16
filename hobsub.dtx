@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: hobsub.dtx
-% Version: 2012/05/28 v1.13
+% Version: 2016/05/16 v1.14
 % Info: Construct package bundles
 %
 % Copyright (C) 2011, 2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)}
+\Msg{* Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: hobsub
-Version: 2012/05/28 v1.13
+Version: 2016/05/16 v1.14
 
 Copyright (C) 2011, 2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -285,7 +287,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hobsub.drv}%
-  [2012/05/28 v1.13 Construct package bundles (HO)]%
+  [2016/05/16 v1.14 Construct package bundles (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{array}
@@ -298,7 +300,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{765}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -319,8 +320,10 @@ and the derived files
 % \GetFileInfo{hobsub.drv}
 %
 % \title{The \xpackage{hobsub} package}
-% \date{2012/05/28 v1.13}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.14}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -350,7 +353,7 @@ and the derived files
 % }
 % \def\TableHyperref{^^A
 %   \TableEntry{\xpackage{letltxmacro}}{}{2010/09/02 v1.4}^^A
-%   \TableEntry{\xpackage{hopatch}}{}{2012/05/28 v1.2}^^A
+%   \TableEntry{\xpackage{hopatch}}{}{2016/05/16 v1.2}^^A
 %   \TableEntry{\xpackage{xcolor-patch}}{}{2011/01/30 v1.7}^^A
 %   \TableEntry{\xpackage{atveryend}}{}{2011/06/30 v1.8}^^A
 %   \TableEntry{\xpackage{atbegshi}}{\xpackage{ifpdf}, \xpackage{infwarerr}, \xpackage{ltxcmds}}{2011/10/05 v1.16}^^A
@@ -529,7 +532,7 @@ and the derived files
 % using \xpackage{hobsub}:
 % \begin{quote}
 %   \dots\\
-%   |\RequirePackage{hobsub}[2012/05/28]|\\
+%   |\RequirePackage{hobsub}[2016/05/16]|\\
 %   \dots\\
 %   |\hobsub@StartPackage{foo1}|\\
 %   \textit{\dots\unskip\ package code of \xfile{foo1.sty} \dots}\\
@@ -632,7 +635,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@hobsub.sty\endcsname
 \ProvidesPackage{hobsub}%
-  [2012/05/28 v1.13 Construct package bundles (HO)]%
+  [2016/05/16 v1.14 Construct package bundles (HO)]%
 %    \end{macrocode}
 %    \begin{macrocode}
 %</package>
@@ -714,7 +717,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@hobsub-generic.sty\endcsname
 \ProvidesPackage{hobsub-generic}%
-  [2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)]%
+  [2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)]%
 %    \end{macrocode}
 %    \begin{macrocode}
 %</generic>
@@ -796,7 +799,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@hobsub-hyperref.sty\endcsname
 \ProvidesPackage{hobsub-hyperref}%
-  [2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)]%
+  [2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)]%
 %    \end{macrocode}
 %    \begin{macrocode}
 %</hyperref>
@@ -860,7 +863,7 @@ and the derived files
 %    \begin{macrocode}
 %<*hyperref>
 \NeedsTeXFormat{LaTeX2e}
-\RequirePackage{hobsub-generic}[2012/05/28]
+\RequirePackage{hobsub-generic}[2016/05/16]
 %</hyperref>
 %    \end{macrocode}
 %
@@ -1011,11 +1014,11 @@ and the derived files
 \begingroup\expandafter\expandafter\expandafter\endgroup
 \expandafter\ifx\csname ProvidesPackage\endcsname\relax
   \immediate\write-1{%
-    Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)%
+    Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)%
   }%
 \else
   \ProvidesPackage{hobsub}%
-  [2012/05/28 v1.13 Construct package bundles (HO)]%
+  [2016/05/16 v1.14 Construct package bundles (HO)]%
 \fi
 %</preamble>
 %    \end{macrocode}
@@ -1183,7 +1186,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/hobsub}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/hobsub.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/hobsub.pdf}] Documentation.
@@ -1379,7 +1382,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2011,2012'/>
   <license type='lppl1.3'/>
-  <version number='1.13'/>
+  <version number='1.14'/>
   <description>
     The package offers a means of loading a bundle of (other) packages
     &#x201C;at once&#x201D;, offering a means of reducing the amount of log output
@@ -1474,6 +1477,10 @@ and the derived files
 %   \begin{Version}{2012/05/28 v1.13}
 %   \item
 %     Package updates.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.14}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

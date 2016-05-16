@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: alphalph.dtx
-% Version: 2011/05/13 v2.4
+% Version: 2016/05/16 v2.5
 % Info: Convert numbers to letters
 %
 % Copyright (C) 1999, 2006-2008, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: alphalph 2011/05/13 v2.4 Convert numbers to letters (HO)}
+\Msg{* Package: alphalph 2016/05/16 v2.5 Convert numbers to letters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: alphalph
-Version: 2011/05/13 v2.4
+Version: 2016/05/16 v2.5
 
 Copyright (C) 1999, 2006-2008, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -163,9 +165,9 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{alphalph.drv}%
-  [2011/05/13 v2.4 Convert numbers to letters (HO)]%
+  [2016/05/16 v2.5 Convert numbers to letters (HO)]%
 \documentclass{ltxdoc}
-\usepackage{alphalph}[2011/05/13]
+\usepackage{alphalph}[2016/05/16]
 \makeatletter
 \newalphalph{\fnsymbolwrap}[wrap]{\@fnsymbol}{}
 \newcommand*{\fnsymbolsingle}[1]{%
@@ -198,7 +200,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1218}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -219,8 +220,10 @@ and the derived files
 % \GetFileInfo{alphalph.drv}
 %
 % \title{The \xpackage{alphalph} package}
-% \date{2011/05/13 v2.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v2.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -645,7 +648,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@alphalph.sty\endcsname
 \ProvidesPackage{alphalph}%
-  [2011/05/13 v2.4 Convert numbers to letters (HO)]%
+  [2016/05/16 v2.5 Convert numbers to letters (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1423,7 +1426,7 @@ and the derived files
 }
 \DisableNumexpr
 %</noetex>
-\usepackage{alphalph}[2011/05/13]
+\usepackage{alphalph}[2016/05/16]
 %<noetex>\RestoreNumexpr
 \usepackage{qstest}
 \IncludeTests{*}
@@ -1647,7 +1650,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/alphalph}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/alphalph.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/alphalph.pdf}] Documentation.
@@ -1843,7 +1846,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1999,2006-2008,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='2.4'/>
+  <version number='2.5'/>
   <description>
     Provides commands <tt>\alphalph</tt> and <tt>\AlphAlph.</tt> They
     are like <tt>\number</tt> but the expansion consists of lowercase
@@ -1947,6 +1950,10 @@ and the derived files
 %     \xpackage{hologo} for the documentation.
 %   \item
 %     Catalogue file added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v2.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

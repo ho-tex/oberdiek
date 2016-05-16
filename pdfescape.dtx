@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pdfescape.dtx
-% Version: 2011/11/25 v1.13
+% Version: 2016/05/16 v1.14
 % Info: Implements pdfTeX's escape features
 %
 % Copyright (C) 2007, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -87,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)}
+\Msg{* Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +101,7 @@
 This is a generated file.
 
 Project: pdfescape
-Version: 2011/11/25 v1.13
+Version: 2016/05/16 v1.14
 
 Copyright (C) 2007, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -173,7 +175,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfescape.drv}%
-  [2011/11/25 v1.13 Implements pdfTeX's escape features (HO)]%
+  [2016/05/16 v1.14 Implements pdfTeX's escape features (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -182,7 +184,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2516}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -203,8 +204,10 @@ and the derived files
 % \GetFileInfo{pdfescape.drv}
 %
 % \title{The \xpackage{pdfescape} package}
-% \date{2011/11/25 v1.13}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.14}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -354,7 +357,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdfescape.sty\endcsname
 \ProvidesPackage{pdfescape}%
-  [2011/11/25 v1.13 Implements pdfTeX's escape features (HO)]%
+  [2016/05/16 v1.14 Implements pdfTeX's escape features (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1426,7 +1429,7 @@ $       \the\count\ltx@cclv
 %    \begin{macrocode}
 %<*test2>
 \ProvidesFile{pdfescape-test2.tex}%
-    [2011/11/25 v1.13 Test with \string\pdfescape... commands]%
+    [2016/05/16 v1.14 Test with \string\pdfescape... commands]%
 %</test2>
 %    \end{macrocode}
 %
@@ -1435,7 +1438,7 @@ $       \the\count\ltx@cclv
 %    \begin{macrocode}
 %<*test3>
 \ProvidesFile{pdfescape-test3.tex}%
-    [2011/11/25 v1.13 Test without \string\pdfescape..., with e-TeX]%
+    [2016/05/16 v1.14 Test without \string\pdfescape..., with e-TeX]%
 %</test3>
 %    \end{macrocode}
 %
@@ -1444,7 +1447,7 @@ $       \the\count\ltx@cclv
 %    \begin{macrocode}
 %<*test4>
 \ProvidesFile{pdfescape-test4.tex}%
-    [2011/11/25 v1.13 Test without \string\pdfescape... and e-TeX]%
+    [2016/05/16 v1.14 Test without \string\pdfescape... and e-TeX]%
 %</test4>
 %    \end{macrocode}
 %
@@ -1453,7 +1456,7 @@ $       \the\count\ltx@cclv
 %    \begin{macrocode}
 %<*test5>
 \ProvidesFile{pdfescape-test5.tex}%
-    [2011/11/25 v1.13 Test with LuaTeX]%
+    [2016/05/16 v1.14 Test with LuaTeX]%
 %</test5>
 %    \end{macrocode}
 %
@@ -2035,7 +2038,7 @@ $       \the\count\ltx@cclv
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pdfescape}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdfescape.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdfescape.pdf}] Documentation.
@@ -2234,7 +2237,7 @@ $       \the\count\ltx@cclv
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.13'/>
+  <version number='1.14'/>
   <description>
     This package implements <xref refid='pdftex'>pdfTeX</xref>'s
     escape features (<tt>\pdfescapehex</tt>, <tt>\pdfunescapehex</tt>,
@@ -2330,6 +2333,10 @@ $       \the\count\ltx@cclv
 %     Higher order bit of octal sequences in \cs{EdefUnescapeString}
 %     ignored according to the PDF specification
 %     (Bug found by Bruno Le Floch).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.14}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

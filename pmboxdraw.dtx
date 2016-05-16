@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pmboxdraw.dtx
-% Version: 2011/03/24 v1.1
+% Version: 2016/05/16 v1.2
 % Info: Poor man's box drawing characters
 %
 % Copyright (C) 2006, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -78,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pmboxdraw 2011/03/24 v1.1 Poor man's box drawing characters (HO)}
+\Msg{* Package: pmboxdraw 2016/05/16 v1.2 Poor man's box drawing characters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +92,7 @@
 This is a generated file.
 
 Project: pmboxdraw
-Version: 2011/03/24 v1.1
+Version: 2016/05/16 v1.2
 
 Copyright (C) 2006, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +157,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pmboxdraw.drv}%
-  [2011/03/24 v1.1 Poor man's box drawing characters (HO)]%
+  [2016/05/16 v1.2 Poor man's box drawing characters (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{color}
@@ -172,7 +174,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{8447}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -193,8 +194,10 @@ and the derived files
 % \GetFileInfo{pmboxdraw.drv}
 %
 % \title{The \xpackage{pmboxdraw} package}
-% \date{2011/03/24 v1.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -223,7 +226,7 @@ and the derived files
 % \textSFxxxix===================\textSFxxv\\
 % | P M B O X D R A W |\\
 % \textSFxxxviii ==\textSFxlvii============\textSFxlvii===\textSFxxvi\\
-% ~~~\textSFxi~2011/03/24 \textSFxi\\
+% ~~~\textSFxi~2016/05/16 \textSFxi\\
 % ~~~\textSFii------------\textSFiv
 % \end{quote}
 %
@@ -559,7 +562,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pmboxdraw.sty\endcsname
 \ProvidesPackage{pmboxdraw}%
-  [2011/03/24 v1.1 Poor man's box drawing characters (HO)]%
+  [2016/05/16 v1.2 Poor man's box drawing characters (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -5115,7 +5118,7 @@ $ \kern.5\pmbd@C
 %    \begin{macrocode}
 %<*utf8>
 \ProvidesFile{pmboxdrawenc.dfu}%
-  [2011/03/24 v1.1 UTF-8 support for box drawing characters]%
+  [2016/05/16 v1.2 UTF-8 support for box drawing characters]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -5263,7 +5266,7 @@ $ \kern.5\pmbd@C
 %
 %    \begin{macrocode}
 %<*test1>
-\def\LoadCommand{\RequirePackage{pmboxdraw}[2011/03/24]}
+\def\LoadCommand{\RequirePackage{pmboxdraw}[2016/05/16]}
 %</test1>
 %    \end{macrocode}
 % \subsection{Catcode checks for loading}
@@ -5379,7 +5382,7 @@ $ \kern.5\pmbd@C
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pmboxdraw}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pmboxdraw.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pmboxdraw.pdf}] Documentation.
@@ -5574,7 +5577,7 @@ $ \kern.5\pmbd@C
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     This package declares box drawing characters of
     old code pages, e.g. cp437. It uses rules instead of using a font.
@@ -5596,7 +5599,7 @@ $ \kern.5\pmbd@C
 % \bibitem{inputenx}
 %   Heiko Oberdiek, The \xpackage{inputenx} Package (Enhanced input encoding
 %   handling), 2006/03/05 v1.0,
-%   \url{ftp://ftp.ctan.org/tex-archive/macros/latex/contrib/oberdiek/inputenx.pdf}.
+%   \url{http://ctan.org/pkg/inputenx}.
 %
 % \bibitem{aglfn}
 %   Adobe Systems Incorporated,
@@ -5627,6 +5630,10 @@ $ \kern.5\pmbd@C
 %     Support of more characters.
 %   \item
 %     Catcode section added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

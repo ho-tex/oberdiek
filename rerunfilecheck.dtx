@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: rerunfilecheck.dtx
-% Version: 2011/04/15 v1.7
+% Version: 2016/05/16 v1.8
 % Info: Rerun checks for auxiliary files
 %
 % Copyright (C) 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -79,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)}
+\Msg{* Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +93,7 @@
 This is a generated file.
 
 Project: rerunfilecheck
-Version: 2011/04/15 v1.7
+Version: 2016/05/16 v1.8
 
 Copyright (C) 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -158,7 +160,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{rerunfilecheck.drv}%
-  [2011/04/15 v1.7 Rerun checks for auxiliary files (HO)]%
+  [2016/05/16 v1.8 Rerun checks for auxiliary files (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -167,7 +169,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{604}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -188,8 +189,10 @@ and the derived files
 % \GetFileInfo{rerunfilecheck.drv}
 %
 % \title{The \xpackage{rerunfilecheck} package}
-% \date{2011/04/15 v1.7}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.8}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -266,7 +269,7 @@ and the derived files
 % Example for the configuration file:
 %    \begin{macrocode}
 %<*cfg>
-\ProvidesFile{rerunfilecheck.cfg}[2011/04/15 Default configuration]%
+\ProvidesFile{rerunfilecheck.cfg}[2016/05/16 Default configuration]%
 \RerunFileCheckSetup{aux}
 %</cfg>
 %    \end{macrocode}
@@ -367,7 +370,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{rerunfilecheck}%
-  [2011/04/15 v1.7 Rerun checks for auxiliary files (HO)]
+  [2016/05/16 v1.8 Rerun checks for auxiliary files (HO)]
 %    \end{macrocode}
 %
 % \subsection{Options}
@@ -582,7 +585,7 @@ and the derived files
 % \subsection{Rerun check}
 %
 %    \begin{macrocode}
-\RequirePackage{atveryend}[2011/04/15]
+\RequirePackage{atveryend}[2016/05/16]
 \RequirePackage{uniquecounter}[2009/12/18]
 %    \end{macrocode}
 %
@@ -721,7 +724,7 @@ and the derived files
 %
 %    \begin{macrocode}
 %<*test1>
-\def\LoadCommand{\RequirePackage{rerunfilecheck}[2011/04/15]}
+\def\LoadCommand{\RequirePackage{rerunfilecheck}[2016/05/16]}
 %</test1>
 %    \end{macrocode}
 % \subsection{Catcode checks for loading}
@@ -837,7 +840,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/rerunfilecheck}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/rerunfilecheck.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/rerunfilecheck.pdf}] Documentation.
@@ -1032,7 +1035,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.7'/>
+  <version number='1.8'/>
   <description>
     The package provides additional rerun warnings if some
     auxiliary files have changed. It is based on MD5 checksum,
@@ -1090,6 +1093,10 @@ and the derived files
 %   \item
 %     Using \cs{AtEndAfterFileList} of package \xpackage{atveryend}
 %     2011/04/15 v1.6 instead of \cs{AtVeryEndDocument}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.8}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

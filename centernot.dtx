@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: centernot.dtx
-% Version: 2011/07/11 v1.3
+% Version: 2016/05/16 v1.4
 % Info: Centers the not symbol horizontally
 %
 % Copyright (C) 2006, 2007, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -75,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: centernot 2011/07/11 v1.3 Centers the not symbol horizontally (HO)}
+\Msg{* Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -87,7 +89,7 @@
 This is a generated file.
 
 Project: centernot
-Version: 2011/07/11 v1.3
+Version: 2016/05/16 v1.4
 
 Copyright (C) 2006, 2007, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -148,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{centernot.drv}%
-  [2011/07/11 v1.3 Centers the not symbol horizontally (HO)]%
+  [2016/05/16 v1.4 Centers the not symbol horizontally (HO)]%
 \documentclass{ltxdoc}
 \makeatletter
 %\@namedef{ver@fontspec.sty}{}
@@ -156,7 +158,7 @@ and the derived files
 \def\setmathfont#1{}
 \makeatother
 \usepackage{holtxdoc}[2011/11/22]
-\usepackage{centernot}[2011/07/11]
+\usepackage{centernot}[2016/05/16]
 \usepackage{amssymb}
 \DeclareFontFamily{U}{matha}{\hyphenchar\font45}
 \DeclareFontShape{U}{matha}{m}{n}{%
@@ -172,7 +174,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{26}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -193,8 +194,10 @@ and the derived files
 % \GetFileInfo{centernot.drv}
 %
 % \title{The \xpackage{centernot} package}
-% \date{2011/07/11 v1.3}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.4}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -265,7 +268,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{centernot}
-  [2011/07/11 v1.3 Centers the not symbol horizontally (HO)]%
+  [2016/05/16 v1.4 Centers the not symbol horizontally (HO)]%
 %    \end{macrocode}
 %
 %    \noindent
@@ -327,7 +330,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/centernot}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/centernot.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/centernot.pdf}] Documentation.
@@ -520,7 +523,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006,2007,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.3'/>
+  <version number='1.4'/>
   <description>
     The package provides <tt>\centernot</tt> that prints the symbol
     <tt>\not</tt> on the following argument.  Unlike the default
@@ -555,6 +558,10 @@ and the derived files
 %   \begin{Version}{2011/07/11 v1.3}
 %   \item
 %     Superfluous \cs{makeatother} removed (Martin M\"unch).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.4}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

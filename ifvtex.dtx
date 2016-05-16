@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: ifvtex.dtx
-% Version: 2010/03/01 v1.5
+% Version: 2016/05/16 v1.6
 % Info: Detect VTeX and its facilities
 %
 % Copyright (C) 2001, 2006-2008, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -79,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)}
+\Msg{* Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +93,7 @@
 This is a generated file.
 
 Project: ifvtex
-Version: 2010/03/01 v1.5
+Version: 2016/05/16 v1.6
 
 Copyright (C) 2001, 2006-2008, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -157,7 +159,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{ifvtex.drv}%
-  [2010/03/01 v1.5 Detect VTeX and its facilities (HO)]%
+  [2016/05/16 v1.6 Detect VTeX and its facilities (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -166,7 +168,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{580}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -187,8 +188,10 @@ and the derived files
 % \GetFileInfo{ifvtex.drv}
 %
 % \title{The \xpackage{ifvtex} package}
-% \date{2010/03/01 v1.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -320,7 +323,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@ifvtex.sty\endcsname
 \ProvidesPackage{ifvtex}%
-  [2010/03/01 v1.5 Detect VTeX and its facilities (HO)]%
+  [2016/05/16 v1.6 Detect VTeX and its facilities (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -647,7 +650,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/ifvtex}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/ifvtex.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/ifvtex.pdf}] Documentation.
@@ -841,7 +844,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2001,2006-2008,2010'/>
   <license type='lppl1.3'/>
-  <version number='1.5'/>
+  <version number='1.6'/>
   <description>
     The package looks for VTeX and sets the switch <tt>\ifvtex</tt>.
     In the presence of VTeX, the mode switches <tt>\ifvtexdvi</tt>,
@@ -886,6 +889,10 @@ and the derived files
 %   \begin{Version}{2010/03/01 v1.5}
 %   \item
 %     Compatibility with ini\TeX.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

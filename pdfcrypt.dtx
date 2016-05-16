@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pdfcrypt.dtx
-% Version: 2007/04/26 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Allows the setting of PDF encryption
 %
 % Copyright (C) 2001, 2006, 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -78,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfcrypt 2007/04/26 v1.0 Allows the setting of PDF encryption (HO)}
+\Msg{* Package: pdfcrypt 2016/05/16 v1.1 Allows the setting of PDF encryption (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +92,7 @@
 This is a generated file.
 
 Project: pdfcrypt
-Version: 2007/04/26 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2001, 2006, 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -154,7 +156,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfcrypt.drv}%
-  [2007/04/26 v1.0 Allows the setting of PDF encryption (HO)]%
+  [2016/05/16 v1.1 Allows the setting of PDF encryption (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -163,7 +165,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{679}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -184,8 +185,10 @@ and the derived files
 % \GetFileInfo{pdfcrypt.drv}
 %
 % \title{The \xpackage{pdfcrypt} package}
-% \date{2007/04/26 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -434,7 +437,7 @@ and the derived files
 %
 %    \begin{macrocode}
 \ProvidesPackage{pdfcrypt}%
-  [2007/04/26 v1.0 Allows the setting of PDF encryption (HO)]%
+  [2016/05/16 v1.1 Allows the setting of PDF encryption (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -869,7 +872,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pdfcrypt}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdfcrypt.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pdfcrypt.pdf}] Documentation.
@@ -1062,7 +1065,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2001,2006,2007'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     Allows the setting of pdf encryption options for VTeX and some
     older versions of pdfTeX.  The options can be set as package
@@ -1144,6 +1147,10 @@ and the derived files
 %   \begin{Version}{2007/04/26 v1.0}
 %   \item
 %     Use of package \xpackage{infwarerr}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

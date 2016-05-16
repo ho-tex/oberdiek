@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: transparent.dtx
-% Version: 2007/01/08 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Transparency via pdfTeX's color stack
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -77,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)}
+\Msg{* Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +91,7 @@
 This is a generated file.
 
 Project: transparent
-Version: 2007/01/08 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -153,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{transparent.drv}%
-  [2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)]%
+  [2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -162,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{150}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -183,8 +184,10 @@ and the derived files
 % \GetFileInfo{transparent.drv}
 %
 % \title{The \xpackage{transparent} package}
-% \date{2007/01/08 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -241,7 +244,7 @@ Hello World
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{transparent}%
-  [2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)]%
+  [2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Initial checks}
@@ -396,7 +399,7 @@ Hello World
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/transparent}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/transparent.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/transparent.pdf}] Documentation.
@@ -590,7 +593,7 @@ Hello World
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     Since version 1.40 <xref refid='pdftex'>pdfTeX</xref> supports
     several color stacks. This package shows how a separate colour stack
@@ -613,6 +616,10 @@ Hello World
 %   \begin{Version}{2007/01/08 v1.0}
 %   \item
 %     First version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

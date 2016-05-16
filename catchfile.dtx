@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: catchfile.dtx
-% Version: 2011/03/01 v1.6
+% Version: 2016/05/16 v1.7
 % Info: Catch the contents of a file
 %
 % Copyright (C) 2007, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -83,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)}
+\Msg{* Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -95,7 +97,7 @@
 This is a generated file.
 
 Project: catchfile
-Version: 2011/03/01 v1.6
+Version: 2016/05/16 v1.7
 
 Copyright (C) 2007, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -165,7 +167,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{catchfile.drv}%
-  [2011/03/01 v1.6 Catch the contents of a file (HO)]%
+  [2016/05/16 v1.7 Catch the contents of a file (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -174,7 +176,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{907}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -195,8 +196,10 @@ and the derived files
 % \GetFileInfo{catchfile.drv}
 %
 % \title{The \xpackage{catchfile} package}
-% \date{2011/03/01 v1.6}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.7}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -304,7 +307,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@catchfile.sty\endcsname
 \ProvidesPackage{catchfile}%
-  [2011/03/01 v1.6 Catch the contents of a file (HO)]%
+  [2016/05/16 v1.7 Catch the contents of a file (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -703,7 +706,7 @@ and the derived files
 \listfiles
 \tracingnesting=2 %
 \documentclass{minimal}
-\usepackage{catchfile}[2011/03/01]
+\usepackage{catchfile}[2016/05/16]
 \makeatletter
 \def\mysetup{%
   \let\do\@makeother
@@ -887,7 +890,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/catchfile}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/catchfile.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/catchfile.pdf}] Documentation.
@@ -1083,7 +1086,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.6'/>
+  <version number='1.7'/>
   <description>
     This package catches the contents of a file and puts it in a macro.
     It requires <xref refid='etex'>e-TeX</xref>. Both
@@ -1139,6 +1142,10 @@ and the derived files
 %     \cs{relax} added after the setup argument of
 %     \cs{CatchFileDef} to prevent premature file reading
 %     (Martin Scharrer).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.7}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

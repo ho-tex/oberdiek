@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: attachfile2.dtx
-% Version: 2012/04/18 v2.7
+% Version: 2016/05/16 v2.8
 % Info: Attach files into PDF
 %
 % Copyright (C) 2005-2010, 2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -81,7 +83,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: attachfile2 2012/04/18 v2.7 Attach files into PDF (HO)}
+\Msg{* Package: attachfile2 2016/05/16 v2.8 Attach files into PDF (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +95,7 @@
 This is a generated file.
 
 Project: attachfile2
-Version: 2012/04/18 v2.7
+Version: 2016/05/16 v2.8
 
 Copyright (C) 2005-2010, 2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -167,7 +169,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{attachfile2.drv}%
-  [2012/04/18 v2.7 Attach files into PDF (HO)]%
+  [2016/05/16 v2.8 Attach files into PDF (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -176,7 +178,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1744}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -197,8 +198,10 @@ and the derived files
 % \GetFileInfo{attachfile2.drv}
 %
 % \title{The \xpackage{attachfile2} package}
-% \date{2012/04/18 v2.7}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v2.8}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -424,7 +427,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{attachfile2}%
-  [2012/04/18 v2.7 Attach files into PDF (HO)]%
+  [2016/05/16 v2.8 Attach files into PDF (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Loading of packages}
@@ -1607,7 +1610,7 @@ and the derived files
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-pdftex.def}%
-  [2012/04/18 v2.7 attachfile2 driver for pdfTeX (HO)]%
+  [2016/05/16 v2.8 attachfile2 driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{\LuaTeX}
@@ -1829,7 +1832,7 @@ and the derived files
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-dvips.def}%
-  [2012/04/18 v2.7 attachfile2 driver for dvips (HO)]%
+  [2016/05/16 v2.8 attachfile2 driver for dvips (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Macros for graphics data}
@@ -2404,7 +2407,7 @@ and the derived files
 %<*dvipdfmx>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-dvipdfmx.def}%
-  [2012/04/18 v2.7 attachfile2 driver for dvipdfmx/XeTeX (HO)]%
+  [2016/05/16 v2.8 attachfile2 driver for dvipdfmx/XeTeX (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Macros for graphics data}
@@ -2674,7 +2677,7 @@ my $prj         = 'pdfatfi';
 my $file        = "$prj.pl";
 my $program     = uc($&) if $file =~ /^\w+/;
 my $version     = "2.7";
-my $date        = "2012/04/18";
+my $date        = "2016/05/16";
 my $author      = "Heiko Oberdiek";
 my $copyright   = "Copyright (c) 2005-2010, 2012 by $author.";
 #
@@ -2682,7 +2685,7 @@ my $copyright   = "Copyright (c) 2005-2010, 2012 by $author.";
 #   2005/05/21 v1.0: First release.
 #   2006/08/16 v2.2: Included in DTX file of attachfile2.dtx.
 #   2010/09/27 v2.6: Keys ModDateTZ and CreationDateTZ added.
-#   2012/04/18 v2.7: Option --version added.
+#   2016/05/16 v2.8: Option --version added.
 #
 
 use POSIX qw(strftime); # %z is used (GNU)
@@ -2869,7 +2872,7 @@ __END__
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/attachfile2}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/attachfile2.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/attachfile2.pdf}] Documentation.
@@ -3079,7 +3082,7 @@ __END__
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2005-2010,2012'/>
   <license type='lppl1.3'/>
-  <version number='2.7'/>
+  <version number='2.8'/>
   <description>
     This package can be used to attach files to a PDF document.
     It is a further development of Scott Pakin&#x2019;s package
@@ -3208,6 +3211,10 @@ __END__
 %   \begin{Version}{2012/04/18 v2.7}
 %   \item
 %     Program \xfile{pdfatfi.pl}: Option \xoption{version} added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v2.8}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

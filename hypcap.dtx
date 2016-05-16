@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: hypcap.dtx
-% Version: 2011/02/16 v1.11
+% Version: 2016/05/16 v1.12
 % Info: Adjusting the anchors of captions
 %
 % Copyright (C) 1999-2001, 2006-2008, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -75,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)}
+\Msg{* Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -87,7 +89,7 @@
 This is a generated file.
 
 Project: hypcap
-Version: 2011/02/16 v1.11
+Version: 2016/05/16 v1.12
 
 Copyright (C) 1999-2001, 2006-2008, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -148,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypcap.drv}%
-  [2011/02/16 v1.11 Adjusting the anchors of captions (HO)]%
+  [2016/05/16 v1.12 Adjusting the anchors of captions (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -157,7 +159,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{174}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -178,8 +179,10 @@ and the derived files
 % \GetFileInfo{hypcap.drv}
 %
 % \title{The \xpackage{hypcap} package}
-% \date{2011/02/16 v1.11}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.12}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -312,7 +315,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypcap}%
-  [2011/02/16 v1.11 Adjusting the anchors of captions (HO)]
+  [2016/05/16 v1.12 Adjusting the anchors of captions (HO)]
 %    \end{macrocode}
 %
 %    For unique command names this package uses |hc@| as prefix
@@ -506,7 +509,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/hypcap}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/hypcap.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/hypcap.pdf}] Documentation.
@@ -699,7 +702,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1999-2001,2006-2008,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.11'/>
+  <version number='1.12'/>
   <description>
     The package offers a solution to the problem that when you link to
     a float using <xref refid='hyperref'>hyperref</xref>, the link
@@ -787,6 +790,10 @@ and the derived files
 %   \begin{Version}{2011/02/16 v1.11}
 %   \item
 %     \cs{hc@redef} fixed by using package \xpackage{letltxmacro}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.12}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

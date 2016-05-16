@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: engord.dtx
-% Version: 2010/03/01 v1.8
+% Version: 2016/05/16 v1.9
 % Info: Provides English ordinal numbers
 %
 % Copyright (C) 2000, 2003, 2006-2008, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -79,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: engord 2010/03/01 v1.8 Provides English ordinal numbers (HO)}
+\Msg{* Package: engord 2016/05/16 v1.9 Provides English ordinal numbers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +93,7 @@
 This is a generated file.
 
 Project: engord
-Version: 2010/03/01 v1.8
+Version: 2016/05/16 v1.9
 
 Copyright (C) 2000, 2003, 2006-2008, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -157,7 +159,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{engord.drv}%
-  [2010/03/01 v1.8 Provides English ordinal numbers (HO)]%
+  [2016/05/16 v1.9 Provides English ordinal numbers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -166,7 +168,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{557}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -187,8 +188,10 @@ and the derived files
 % \GetFileInfo{engord.drv}
 %
 % \title{The \xpackage{engord} package}
-% \date{2010/03/01 v1.8}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.9}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -361,7 +364,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@engord.sty\endcsname
 \ProvidesPackage{engord}%
-  [2010/03/01 v1.8 Provides English ordinal numbers (HO)]%
+  [2016/05/16 v1.9 Provides English ordinal numbers (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Help commands for plain compatibility}
@@ -434,7 +437,7 @@ and the derived files
   \input ltxcmds.sty\relax
 \else
   \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{ltxcmds}[2010/03/01]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
 \fi
 %    \end{macrocode}
 %
@@ -763,7 +766,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/engord}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/engord.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/engord.pdf}] Documentation.
@@ -957,7 +960,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2000,2003,2006-2008,2010'/>
   <license type='lppl1.3'/>
-  <version number='1.8'/>
+  <version number='1.9'/>
   <description>
     Defines <tt>\engord</tt> (used like <tt>\arabic</tt>,
     <tt>\roman</tt>, etc.), and <tt>\engordnumber</tt> (which formats
@@ -1027,6 +1030,10 @@ and the derived files
 %   \begin{Version}{2010/03/01 v1.8}
 %   \item
 %     Compatibility with \iniTeX.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.9}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

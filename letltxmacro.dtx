@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: letltxmacro.dtx
-% Version: 2010/09/02 v1.4
+% Version: 2016/05/16 v1.5
 % Info: Let assignment for LaTeX macros
 %
 % Copyright (C) 2008, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -80,7 +82,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)}
+\Msg{* Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +94,7 @@
 This is a generated file.
 
 Project: letltxmacro
-Version: 2010/09/02 v1.4
+Version: 2016/05/16 v1.5
 
 Copyright (C) 2008, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -160,7 +162,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{letltxmacro.drv}%
-  [2010/09/02 v1.4 Let assignment for LaTeX macros (HO)]%
+  [2016/05/16 v1.5 Let assignment for LaTeX macros (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -169,7 +171,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{990}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -190,8 +191,10 @@ and the derived files
 % \GetFileInfo{letltxmacro.drv}
 %
 % \title{The \xpackage{letltxmacro} package}
-% \date{2010/09/02 v1.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -245,7 +248,7 @@ and the derived files
 % \begin{declcs}{GlobalLetLtxMacro} \M{new macro} \M{old macro}
 % \end{declcs}
 % Like \cs{LetLtxMacro}, but the \meta{new macro} is defined globally.
-% Since version 2010/09/02~v1.4.
+% Since version 2016/05/16~v1.4.
 %
 % \subsection{Supported macro definition commands}
 %
@@ -473,7 +476,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{letltxmacro}%
-  [2010/09/02 v1.4 Let assignment for LaTeX macros (HO)]
+  [2016/05/16 v1.5 Let assignment for LaTeX macros (HO)]
 %    \end{macrocode}
 %
 % \subsubsection{Main macros}
@@ -687,7 +690,7 @@ and the derived files
   \catcode`\%=14 %
   \catcode`\ =10 %
   \catcode13=5 %
-  \RequirePackage{letltxmacro}[2010/09/02]\relax
+  \RequirePackage{letltxmacro}[2016/05/16]\relax
   \RestoreCatcodes
 }
 \Test
@@ -708,7 +711,7 @@ and the derived files
 \nofiles
 \documentclass{minimal}
 
-\usepackage{letltxmacro}[2010/09/02]
+\usepackage{letltxmacro}[2016/05/16]
 
 \usepackage{qstest}
 \IncludeTests{*}
@@ -955,7 +958,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/letltxmacro}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/letltxmacro.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/letltxmacro.pdf}] Documentation.
@@ -1151,7 +1154,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2008,2010'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     TeX&#x2019;s <tt>\let</tt> assignment does not work for LaTeX macros
     with optional arguments or for macros that are defined
@@ -1192,6 +1195,10 @@ and the derived files
 %   \begin{Version}{2010/09/02 v1.4}
 %   \item
 %     \cs{GlobalLetLtxMacro} added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: kvsetkeys.dtx
-% Version: 2012/04/25 v1.16
+% Version: 2016/05/16 v1.17
 % Info: Key value parser
 %
 % Copyright (C) 2006, 2007, 2009-2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -86,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)}
+\Msg{* Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -98,7 +100,7 @@
 This is a generated file.
 
 Project: kvsetkeys
-Version: 2012/04/25 v1.16
+Version: 2016/05/16 v1.17
 
 Copyright (C) 2006, 2007, 2009-2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -172,7 +174,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{kvsetkeys.drv}%
-  [2012/04/25 v1.16 Key value parser (HO)]%
+  [2016/05/16 v1.17 Key value parser (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -181,7 +183,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1557}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -202,8 +203,10 @@ and the derived files
 % \GetFileInfo{kvsetkeys.drv}
 %
 % \title{The \xpackage{kvsetkeys} package}
-% \date{2012/04/25 v1.16}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.17}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -381,7 +384,7 @@ and the derived files
 % Since 2011/10/18 v1.15 the family handler can reject the
 % successful handling of a key by calling \cs{kv@handled@false}.
 %
-% Since 2012/04/25 v1.16 \cs{kv@processor@default} also defines
+% Since 2016/05/16 v1.17 \cs{kv@processor@default} also defines
 % macro \cs{kv@fam} with meaning \meta{family} for convenience.
 %
 % \subsubsection{Processing similar to \cs{setkeys*} of package \xpackage{xkeyval}}
@@ -417,7 +420,7 @@ and the derived files
 %   fi
 % \end{quote}
 %
-% Since 2012/04/25 v1.16 \cs{kv@processor@known} also defines
+% Since 2016/05/16 v1.17 \cs{kv@processor@known} also defines
 % macro \cs{kv@fam} with meaning \meta{family} for convenience.
 %
 % \subsection{Default family handler}
@@ -657,7 +660,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@kvsetkeys.sty\endcsname
 \ProvidesPackage{kvsetkeys}%
-  [2012/04/25 v1.16 Key value parser (HO)]%
+  [2016/05/16 v1.17 Key value parser (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1543,7 +1546,7 @@ $ \x
 \makeatletter
 \chardef\KVS@TestMode=1 %
 \makeatother
-\usepackage{kvsetkeys}[2012/04/25]
+\usepackage{kvsetkeys}[2016/05/16]
 %<noetex>\let\unexpanded\SavedUnexpanded
 \usepackage{qstest}
 \IncludeTests{*}
@@ -1856,7 +1859,7 @@ $ \x
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/kvsetkeys}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvsetkeys.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvsetkeys.pdf}] Documentation.
@@ -2054,7 +2057,7 @@ $ \x
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006,2007,2009-2012'/>
   <license type='lppl1.3'/>
-  <version number='1.16'/>
+  <version number='1.17'/>
   <description>
     This package provides \kvsetkeys, a variant of package
     <xref refid='keyval'>keyval</xref>'s <tt>\setkeys</tt>.  It allows
@@ -2185,6 +2188,10 @@ $ \x
 %     macro \cs{kv@fam} for convenience.
 %   \item
 %     Catcode section: Catcode setting for \texttt{+} added for \hologo{eTeX}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.17}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

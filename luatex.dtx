@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: luatex.dtx
-% Version: 2016/05/10 v0.5
+% Version: 2016/05/16 v0.6
 % Info: LuaTeX basic definition package
 %
 % Copyright (C) 2007, 2009, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -87,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: luatex 2016/05/10 v0.5 LuaTeX basic definition package (HO)}
+\Msg{* Package: luatex 2016/05/16 v0.6 LuaTeX basic definition package (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +101,7 @@
 This is a generated file.
 
 Project: luatex
-Version: 2016/05/10 v0.5
+Version: 2016/05/16 v0.6
 
 Copyright (C) 2007, 2009, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -186,7 +188,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{luatex.drv}%
-  [2016/05/10 v0.5 LuaTeX basic definition package (HO)]%
+  [2016/05/16 v0.6 LuaTeX basic definition package (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -216,8 +218,10 @@ and the derived files
 % \GetFileInfo{luatex.drv}
 %
 % \title{The \xpackage{luatex} package}
-% \date{2016/05/10 v0.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v0.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -571,7 +575,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@luatex.sty\endcsname
 \ProvidesPackage{luatex}%
-  [2016/05/10 v0.5 LuaTeX basic definition package (HO)]%
+  [2016/05/16 v0.6 LuaTeX basic definition package (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1275,7 +1279,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@luatex-loader.sty\endcsname
 \ProvidesPackage{luatex-loader}%
-  [2016/05/10 v0.5 Lua module loader (HO)]%
+  [2016/05/16 v0.6 Lua module loader (HO)]%
 %    \end{macrocode}
 %    \begin{macrocode}
 \begingroup\catcode61\catcode48\catcode32=10\relax%
@@ -1698,7 +1702,7 @@ table.insert(package.searchers or package.loaders, kpse_module_loader)
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/luatex}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/luatex.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/luatex.pdf}] Documentation.
@@ -1898,7 +1902,7 @@ table.insert(package.searchers or package.loaders, kpse_module_loader)
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2009,2010'/>
   <license type='lppl1.3'/>
-  <version number='0.5'/>
+  <version number='0.6'/>
   <description>
     LuaTeX is an extended version of pdfTeX using Lua as an embedded
     scripting language.  The LuaTeX project&#x2019;s main objective
@@ -1953,6 +1957,10 @@ table.insert(package.searchers or package.loaders, kpse_module_loader)
 %   \item only conditionally define commands such as
 %   \verb|\newcatcodetable|
 %   that are now defined in the Lua\LaTeX\ format.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v0.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

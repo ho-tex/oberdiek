@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: ltxcmds.dtx
-% Version: 2011/11/09 v1.22
+% Version: 2016/05/16 v1.23
 % Info: LaTeX kernel commands for general use
 %
 % Copyright (C) 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -89,7 +91,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)}
+\Msg{* Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -101,7 +103,7 @@
 This is a generated file.
 
 Project: ltxcmds
-Version: 2011/11/09 v1.22
+Version: 2016/05/16 v1.23
 
 Copyright (C) 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -177,7 +179,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{ltxcmds.drv}%
-  [2011/11/09 v1.22 LaTeX kernel commands for general use (HO)]%
+  [2016/05/16 v1.23 LaTeX kernel commands for general use (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{zref-savepos}
@@ -189,7 +191,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2685}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -210,8 +211,10 @@ and the derived files
 % \GetFileInfo{ltxcmds.drv}
 %
 % \title{The \xpackage{ltxcmds} package}
-% \date{2011/11/09 v1.22}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.23}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -360,7 +363,7 @@ and the derived files
 % \end{declcs}
 %
 % Macros with uppercase letters are expandable in two expansion steps.
-% Changes in version 2011/11/09 v1.22:
+% Changes in version 2016/05/16 v1.23:
 % \begin{itemize}
 % \item
 %   Macros \cs{ltx@carsecond}, \cs{ltx@carthird}, \cs{ltx@carfourth},
@@ -727,7 +730,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@ltxcmds.sty\endcsname
 \ProvidesPackage{ltxcmds}%
-  [2011/11/09 v1.22 LaTeX kernel commands for general use (HO)]%
+  [2016/05/16 v1.23 LaTeX kernel commands for general use (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2175,7 +2178,7 @@ $   \next
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input ltxcmds.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
 \fi
 \catcode`\@=11 %
 \def\msg#{\immediate\write16}%
@@ -2362,7 +2365,7 @@ X=%
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input ltxcmds.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
 \fi
 \def\msg#{\immediate\write16}
 \def\TestY{\Y}
@@ -2482,7 +2485,7 @@ X=%
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input ltxcmds.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
 \fi
 \def\msg#{\immediate\write16}
 \def\space{ }
@@ -2556,7 +2559,7 @@ X=%
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input ltxcmds.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
 \fi
 \def\msg#{\immediate\write16}
  % make box 0 void
@@ -2653,7 +2656,7 @@ X=%
   \input ltxcmds.sty\relax
   \input eolgrab.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
   \RequirePackage{eolgrab}[2011/01/12]%
 \fi
 \def\msg#{\immediate\write16}
@@ -2832,7 +2835,7 @@ X=%
   \input ltxcmds.sty\relax
   \input eolgrab.sty\relax
 \else
-  \RequirePackage{ltxcmds}[2011/11/09]%
+  \RequirePackage{ltxcmds}[2016/05/16]%
   \RequirePackage{eolgrab}[2011/01/12]%
 \fi
 \def\msg#{\immediate\write16}
@@ -2903,7 +2906,7 @@ X=%
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/ltxcmds}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/ltxcmds.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/ltxcmds.pdf}] Documentation.
@@ -3103,7 +3106,7 @@ X=%
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.22'/>
+  <version number='1.23'/>
   <description>
     This package exports some utility macros
     from the LaTeX kernel into a separate namespace and
@@ -3343,6 +3346,10 @@ X=%
 %     \cs{ltx@cdrzero}, \cs{ltx@cdr}, \cs{ltx@cdrtwo}, cs{ltx@cdrthree},
 %     \cs{ltx@cdrfour}, \cs{ltx@CdrNum} modified to retain braces and spaces.
 %     They are expandable in two expansion steps.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.23}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

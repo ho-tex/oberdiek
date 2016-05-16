@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: soulutf8.dtx
-% Version: 2007/09/09 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Permit use of UTF-8 characters in soul
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -85,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: soulutf8 2007/09/09 v1.0 Permit use of UTF-8 characters in soul (HO)}
+\Msg{* Package: soulutf8 2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +99,7 @@
 This is a generated file.
 
 Project: soulutf8
-Version: 2007/09/09 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -169,7 +171,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{soulutf8.drv}%
-  [2007/09/09 v1.0 Permit use of UTF-8 characters in soul (HO)]%
+  [2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -178,7 +180,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2006}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -199,8 +200,10 @@ and the derived files
 % \GetFileInfo{soulutf8.drv}
 %
 % \title{The \xpackage{soulutf8} package}
-% \date{2007/09/09 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -348,7 +351,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@soulutf8.sty\endcsname
 \ProvidesPackage{soulutf8}%
-  [2007/09/09 v1.0 Permit use of UTF-8 characters in soul (HO)]%
+  [2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -491,8 +494,8 @@ and the derived files
   \DeclareOption*{\PassOptionsToPackage{\CurrentOption}{soul}}%
   \ProcessOptions\relax
   \RequirePackage{soul}[2003/11/17]%
-  \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{etexcmds}[2007/09/09]%
+  \RequirePackage{infwarerr}[2016/05/16]%
+  \RequirePackage{etexcmds}[2016/05/16]%
 \fi
 %    \end{macrocode}
 %
@@ -1284,7 +1287,7 @@ and the derived files
 \SaveOrg{addmath}
 \SaveOrg{addprotect}
 \SaveOrg{addtoken}
-\usepackage{soulutf8}[2007/09/09]
+\usepackage{soulutf8}[2016/05/16]
 %    \end{macrocode}
 %    \begin{macrocode}
 %<noetex>\let\unexpanded\SavedUnexpanded
@@ -1671,7 +1674,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/soulutf8}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/soulutf8.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/soulutf8.pdf}] Documentation.
@@ -1869,7 +1872,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     This package extends package <xref refid='soul'>soul</xref> and adds
     some support for UTF-8. Namely the input encodings in
@@ -1915,6 +1918,10 @@ and the derived files
 %   \begin{Version}{2007/09/09 v1.0}
 %   \item
 %     First version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: grfext.dtx
-% Version: 2010/08/19 v1.1
+% Version: 2016/05/16 v1.2
 % Info: Manage graphics extensions
 %
 % Copyright (C) 2007, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -78,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)}
+\Msg{* Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +92,7 @@
 This is a generated file.
 
 Project: grfext
-Version: 2010/08/19 v1.1
+Version: 2016/05/16 v1.2
 
 Copyright (C) 2007, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +157,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{grfext.drv}%
-  [2010/08/19 v1.1 Manage graphics extensions (HO)]%
+  [2016/05/16 v1.2 Manage graphics extensions (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -164,7 +166,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{721}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -185,8 +186,10 @@ and the derived files
 % \GetFileInfo{grfext.drv}
 %
 % \title{The \xpackage{grfext} package}
-% \date{2010/08/19 v1.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -382,7 +385,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@grfext.sty\endcsname
 \ProvidesPackage{grfext}%
-  [2010/08/19 v1.1 Manage graphics extensions (HO)]%
+  [2016/05/16 v1.2 Manage graphics extensions (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -766,7 +769,7 @@ and the derived files
 \nofiles
 \documentclass{article}
 \usepackage[pdftex]{graphics}
-\usepackage{grfext}[2010/08/19]
+\usepackage{grfext}[2016/05/16]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -935,7 +938,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/grfext}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/grfext.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/grfext.pdf}] Documentation.
@@ -1130,7 +1133,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2010'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     This package provides macros for adding to, and reordering the list of
     graphics file extensions recognised by package
@@ -1166,6 +1169,10 @@ and the derived files
 %   \item
 %     User macros are also made available as keyval options for
 %     package \xpackage{graphicx}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

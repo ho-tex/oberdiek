@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: iflang.dtx
-% Version: 2007/11/11 v1.5
+% Version: 2016/05/16 v1.6
 % Info: Checks for the current language
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -85,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: iflang 2007/11/11 v1.5 Checks for the current language (HO)}
+\Msg{* Package: iflang 2016/05/16 v1.6 Checks for the current language (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +99,7 @@
 This is a generated file.
 
 Project: iflang
-Version: 2007/11/11 v1.5
+Version: 2016/05/16 v1.6
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -169,7 +171,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{iflang.drv}%
-  [2007/11/11 v1.5 Checks for the current language (HO)]%
+  [2016/05/16 v1.6 Checks for the current language (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -178,7 +180,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{910}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -199,8 +200,10 @@ and the derived files
 % \GetFileInfo{iflang.drv}
 %
 % \title{The \xpackage{iflang} package}
-% \date{2007/11/11 v1.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -364,7 +367,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@iflang.sty\endcsname
 \ProvidesPackage{iflang}%
-  [2007/11/11 v1.5 Checks for the current language (HO)]%
+  [2016/05/16 v1.6 Checks for the current language (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -479,7 +482,7 @@ and the derived files
   \input pdftexcmds.sty\relax
 \else
   \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{pdftexcmds}[2007/11/11]%
+  \RequirePackage{pdftexcmds}[2016/05/16]%
 \fi
 %    \end{macrocode}
 %
@@ -986,7 +989,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/iflang}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/iflang.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/iflang.pdf}] Documentation.
@@ -1184,7 +1187,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.5'/>
+  <version number='1.6'/>
   <description>
     This package provides expandable checks for the current language
     based on macro <tt>\languagename</tt> or hyphenation patterns.
@@ -1238,6 +1241,10 @@ and the derived files
 %   \begin{Version}{2007/11/11 v1.5}
 %   \item
 %     Use of package \xpackage{pdftexcmds} for \LuaTeX\ support.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

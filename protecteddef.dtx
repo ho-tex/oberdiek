@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: protecteddef.dtx
-% Version: 2011/01/31 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Define protected commands
 %
 % Copyright (C) 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -81,7 +83,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: protecteddef 2011/01/31 v1.0 Define protected commands (HO)}
+\Msg{* Package: protecteddef 2016/05/16 v1.1 Define protected commands (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +95,7 @@
 This is a generated file.
 
 Project: protecteddef
-Version: 2011/01/31 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -161,7 +163,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{protecteddef.drv}%
-  [2011/01/31 v1.0 Define protected commands (HO)]%
+  [2016/05/16 v1.1 Define protected commands (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -170,7 +172,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{811}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -191,8 +192,10 @@ and the derived files
 % \GetFileInfo{protecteddef.drv}
 %
 % \title{The \xpackage{protecteddef} package}
-% \date{2011/01/31 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -354,7 +357,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@protecteddef.sty\endcsname
 \ProvidesPackage{protecteddef}%
-  [2011/01/31 v1.0 Define protected commands (HO)]%
+  [2016/05/16 v1.1 Define protected commands (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -668,7 +671,7 @@ and the derived files
   \catcode`\}=2 %
   \catcode`\#=6 %
 \else
-  \RequirePackage{protecteddef}[2011/01/31]%
+  \RequirePackage{protecteddef}[2016/05/16]%
 \fi
 \begingroup\expandafter\expandafter\expandafter\endgroup
 \expandafter\ifx\csname protected\endcsname\relax
@@ -818,7 +821,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/protecteddef}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/protecteddef.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/protecteddef.pdf}] Documentation.
@@ -1013,7 +1016,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2011'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     The package defines a command <tt>\ProtectedDef</tt> that will
     create LaTeX &#x2018;robust&#x2019; command or an e-TeX
@@ -1036,6 +1039,10 @@ and the derived files
 %   \begin{Version}{2011/01/31 v1.0}
 %   \item
 %     First public version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

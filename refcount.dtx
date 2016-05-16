@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: refcount.dtx
-% Version: 2011/10/16 v3.4
+% Version: 2016/05/16 v3.5
 % Info: Data extraction from label references
 %
 % Copyright (C) 1998, 2000, 2006, 2008, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)}
+\Msg{* Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: refcount
-Version: 2011/10/16 v3.4
+Version: 2016/05/16 v3.5
 
 Copyright (C) 1998, 2000, 2006, 2008, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -163,7 +165,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{refcount.drv}%
-  [2011/10/16 v3.4 Data extraction from label references (HO)]%
+  [2016/05/16 v3.5 Data extraction from label references (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -172,7 +174,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1185}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -193,8 +194,10 @@ and the derived files
 % \GetFileInfo{refcount.drv}
 %
 % \title{The \xpackage{refcount} package}
-% \date{2011/10/16 v3.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v3.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -420,7 +423,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@refcount.sty\endcsname
 \ProvidesPackage{refcount}%
-  [2011/10/16 v3.4 Data extraction from label references (HO)]%
+  [2016/05/16 v3.5 Data extraction from label references (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1013,7 +1016,7 @@ and the derived files
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input refcount.sty\relax
 \else
-  \RequirePackage{refcount}[2011/10/16]%
+  \RequirePackage{refcount}[2016/05/16]%
 \fi
 \catcode`\@=11 %
 \begingroup\expandafter\expandafter\expandafter\endgroup
@@ -1183,7 +1186,7 @@ and the derived files
 %<*test3>
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{article}
-\usepackage{refcount}[2011/10/16]
+\usepackage{refcount}[2016/05/16]
 %<test4>\usepackage{nameref}
 \usepackage{titleref}
 \begin{document}
@@ -1235,7 +1238,7 @@ and the derived files
 %<*test5>
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{book}
-\usepackage{refcount}[2011/10/16]
+\usepackage{refcount}[2016/05/16]
 \usepackage{zref-runs}
 \newcounter{test}
 \begin{document}
@@ -1305,7 +1308,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/refcount}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/refcount.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/refcount.pdf}] Documentation.
@@ -1503,7 +1506,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1998,2000,2006,2008,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='3.4'/>
+  <version number='3.5'/>
   <description>
     Provides commands <tt>\setcounterref</tt> and
     <tt>\addtocounterref</tt> which use the section (or whatever)
@@ -1587,6 +1590,10 @@ and the derived files
 %     (Bug found by Staz.)
 %   \item
 %     Macros \cs{(set|addto)counter(page|)ref} are made robust.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v3.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: stringenc.dtx
-% Version: 2011/12/02 v1.10
+% Version: 2016/05/16 v1.11
 % Info: Convert strings between diff. encodings
 %
 % Copyright (C) 2007-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -133,7 +135,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO)}
+\Msg{* Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -145,7 +147,7 @@
 This is a generated file.
 
 Project: stringenc
-Version: 2011/12/02 v1.10
+Version: 2016/05/16 v1.11
 
 Copyright (C) 2007-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -277,7 +279,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{stringenc.drv}%
-  [2011/12/02 v1.10 Convert strings between diff. encodings (HO)]%
+  [2016/05/16 v1.11 Convert strings between diff. encodings (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{longtable}
@@ -287,7 +289,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{6178}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -308,8 +309,10 @@ and the derived files
 % \GetFileInfo{stringenc.drv}
 %
 % \title{The \xpackage{stringenc} package}
-% \date{2011/12/02 v1.10}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.11}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -525,7 +528,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@stringenc.sty\endcsname
 \ProvidesPackage{stringenc}%
-  [2011/12/02 v1.10 Convert strings between diff. encodings (HO)]%
+  [2016/05/16 v1.11 Convert strings between diff. encodings (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1505,8 +1508,8 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*utf32>
-%<utf32be>\ProvidesFile{se-utf32be.def}[2011/12/02 v1.10 stringenc: UTF-32BE]
-%<utf32le>\ProvidesFile{se-utf32le.def}[2011/12/02 v1.10 stringenc: UTF-32LE]
+%<utf32be>\ProvidesFile{se-utf32be.def}[2016/05/16 v1.11 stringenc: UTF-32BE]
+%<utf32le>\ProvidesFile{se-utf32le.def}[2016/05/16 v1.11 stringenc: UTF-32LE]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1664,7 +1667,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*utf8>
-\ProvidesFile{se-utf8.def}[2011/12/02 v1.10 stringenc: UTF-8]
+\ProvidesFile{se-utf8.def}[2016/05/16 v1.11 stringenc: UTF-8]
 %    \end{macrocode}
 %
 %    \noindent
@@ -2004,7 +2007,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*utf16le>
-\ProvidesFile{se-utf16le.def}[2011/12/02 v1.10 stringenc: UTF-16LE]
+\ProvidesFile{se-utf16le.def}[2016/05/16 v1.11 stringenc: UTF-16LE]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2044,7 +2047,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*pdfdoc>
-\ProvidesFile{se-pdfdoc.def}[2011/12/02 v1.10 stringenc: PDFDocEncoding]
+\ProvidesFile{se-pdfdoc.def}[2016/05/16 v1.11 stringenc: PDFDocEncoding]
 %    \end{macrocode}
 %
 %    Pass ranges 32..126 and 160..255 through and use
@@ -2175,7 +2178,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*iso-8859-1>
-\ProvidesFile{se-iso-8859-1.def}[2011/12/02 v1.10 stringenc: ISO-8859-1]
+\ProvidesFile{se-iso-8859-1.def}[2016/05/16 v1.11 stringenc: ISO-8859-1]
 %    \end{macrocode}
 %
 %    Excluded area: 0x80..0x9F
@@ -2245,7 +2248,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*cp1252>
-\ProvidesFile{se-cp1252.def}[2011/12/02 v1.10 stringenc: cp1252]
+\ProvidesFile{se-cp1252.def}[2016/05/16 v1.11 stringenc: cp1252]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2346,7 +2349,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*ascii>
-\ProvidesFile{se-ascii.def}[2011/12/02 v1.10 stringenc: US-ASCII]
+\ProvidesFile{se-ascii.def}[2016/05/16 v1.11 stringenc: US-ASCII]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2395,7 +2398,7 @@ $ \fi
 %    \begin{macrocode}
 %<*ascii-print>
 \ProvidesFile{se-ascii-print.def}%
-  [2011/12/02 v1.10 stringenc: Printable ASCII characters]%
+  [2016/05/16 v1.11 stringenc: Printable ASCII characters]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2458,7 +2461,7 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*clean7bit>
-\ProvidesFile{se-clean7bit.def}[2011/12/02 v1.10 stringenc: Clean7Bit]
+\ProvidesFile{se-clean7bit.def}[2016/05/16 v1.11 stringenc: Clean7Bit]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2544,123 +2547,123 @@ $ \fi
 %
 %    \begin{macrocode}
 %<*iso-8859-2>
-\ProvidesFile{se-iso-8859-2.def}[2011/12/02 v1.10 stringenc: ISO-8859-2]
+\ProvidesFile{se-iso-8859-2.def}[2016/05/16 v1.11 stringenc: ISO-8859-2]
 \def\SE@this{iso-8859-2}
 %</iso-8859-2>
 %<*iso-8859-3>
-\ProvidesFile{se-iso-8859-3.def}[2011/12/02 v1.10 stringenc: ISO-8859-3]
+\ProvidesFile{se-iso-8859-3.def}[2016/05/16 v1.11 stringenc: ISO-8859-3]
 \def\SE@this{iso-8859-3}
 %</iso-8859-3>
 %<*iso-8859-4>
-\ProvidesFile{se-iso-8859-4.def}[2011/12/02 v1.10 stringenc: ISO-8859-4]
+\ProvidesFile{se-iso-8859-4.def}[2016/05/16 v1.11 stringenc: ISO-8859-4]
 \def\SE@this{iso-8859-4}
 %</iso-8859-4>
 %<*iso-8859-5>
-\ProvidesFile{se-iso-8859-5.def}[2011/12/02 v1.10 stringenc: ISO-8859-5]
+\ProvidesFile{se-iso-8859-5.def}[2016/05/16 v1.11 stringenc: ISO-8859-5]
 \def\SE@this{iso-8859-5}
 %</iso-8859-5>
 %<*iso-8859-6>
-\ProvidesFile{se-iso-8859-6.def}[2011/12/02 v1.10 stringenc: ISO-8859-6]
+\ProvidesFile{se-iso-8859-6.def}[2016/05/16 v1.11 stringenc: ISO-8859-6]
 \def\SE@this{iso-8859-6}
 %</iso-8859-6>
 %<*iso-8859-7>
-\ProvidesFile{se-iso-8859-7.def}[2011/12/02 v1.10 stringenc: ISO-8859-7]
+\ProvidesFile{se-iso-8859-7.def}[2016/05/16 v1.11 stringenc: ISO-8859-7]
 \def\SE@this{iso-8859-7}
 %</iso-8859-7>
 %<*iso-8859-8>
-\ProvidesFile{se-iso-8859-8.def}[2011/12/02 v1.10 stringenc: ISO-8859-8]
+\ProvidesFile{se-iso-8859-8.def}[2016/05/16 v1.11 stringenc: ISO-8859-8]
 \def\SE@this{iso-8859-8}
 %</iso-8859-8>
 %<*iso-8859-9>
-\ProvidesFile{se-iso-8859-9.def}[2011/12/02 v1.10 stringenc: ISO-8859-9]
+\ProvidesFile{se-iso-8859-9.def}[2016/05/16 v1.11 stringenc: ISO-8859-9]
 \def\SE@this{iso-8859-9}
 %</iso-8859-9>
 %<*iso-8859-10>
-\ProvidesFile{se-iso-8859-10.def}[2011/12/02 v1.10 stringenc: ISO-8859-10]
+\ProvidesFile{se-iso-8859-10.def}[2016/05/16 v1.11 stringenc: ISO-8859-10]
 \def\SE@this{iso-8859-10}
 %</iso-8859-10>
 %<*iso-8859-11>
-\ProvidesFile{se-iso-8859-11.def}[2011/12/02 v1.10 stringenc: ISO-8859-11]
+\ProvidesFile{se-iso-8859-11.def}[2016/05/16 v1.11 stringenc: ISO-8859-11]
 \def\SE@this{iso-8859-11}
 %</iso-8859-11>
 %<*iso-8859-13>
-\ProvidesFile{se-iso-8859-13.def}[2011/12/02 v1.10 stringenc: ISO-8859-13]
+\ProvidesFile{se-iso-8859-13.def}[2016/05/16 v1.11 stringenc: ISO-8859-13]
 \def\SE@this{iso-8859-13}
 %</iso-8859-13>
 %<*iso-8859-14>
-\ProvidesFile{se-iso-8859-14.def}[2011/12/02 v1.10 stringenc: ISO-8859-14]
+\ProvidesFile{se-iso-8859-14.def}[2016/05/16 v1.11 stringenc: ISO-8859-14]
 \def\SE@this{iso-8859-14}
 %</iso-8859-14>
 %<*iso-8859-15>
-\ProvidesFile{se-iso-8859-15.def}[2011/12/02 v1.10 stringenc: ISO-8859-15]
+\ProvidesFile{se-iso-8859-15.def}[2016/05/16 v1.11 stringenc: ISO-8859-15]
 \def\SE@this{iso-8859-15}
 %</iso-8859-15>
 %<*iso-8859-16>
-\ProvidesFile{se-iso-8859-16.def}[2011/12/02 v1.10 stringenc: ISO-8859-16]
+\ProvidesFile{se-iso-8859-16.def}[2016/05/16 v1.11 stringenc: ISO-8859-16]
 \def\SE@this{iso-8859-16}
 %</iso-8859-16>
 %<*koi8-r>
-\ProvidesFile{se-koi8-r.def}[2011/12/02 v1.10 stringenc: KOI8-R]
+\ProvidesFile{se-koi8-r.def}[2016/05/16 v1.11 stringenc: KOI8-R]
 \def\SE@this{koi8-r}
 %</koi8-r>
 %<*nextstep>
-\ProvidesFile{se-nextstep.def}[2011/12/02 v1.10 stringenc: NextStep]
+\ProvidesFile{se-nextstep.def}[2016/05/16 v1.11 stringenc: NextStep]
 \def\SE@this{nextstep}
 %</nextstep>
 %<*mac-centeuro>
-\ProvidesFile{se-mac-centeuro.def}[2011/12/02 v1.10 stringenc: Mac OS Central European]
+\ProvidesFile{se-mac-centeuro.def}[2016/05/16 v1.11 stringenc: Mac OS Central European]
 \def\SE@this{mac-centeuro}
 %</mac-centeuro>
 %<*mac-cyrillic>
-\ProvidesFile{se-mac-cyrillic.def}[2011/12/02 v1.10 stringenc: Mac OS Cyrillic]
+\ProvidesFile{se-mac-cyrillic.def}[2016/05/16 v1.11 stringenc: Mac OS Cyrillic]
 \def\SE@this{mac-cyrillic}
 %</mac-cyrillic>
 %<*mac-roman>
-\ProvidesFile{se-mac-roman.def}[2011/12/02 v1.10 stringenc: Mac OS Roman]
+\ProvidesFile{se-mac-roman.def}[2016/05/16 v1.11 stringenc: Mac OS Roman]
 \def\SE@this{mac-roman}
 %</mac-roman>
 %<*dec-mcs>
-\ProvidesFile{se-dec-mcs.def}[2011/12/02 v1.10 stringenc: DEC-MCS]
+\ProvidesFile{se-dec-mcs.def}[2016/05/16 v1.11 stringenc: DEC-MCS]
 \def\SE@this{dec-mcs}
 %</dec-mcs>
 %<*cp437>
-\ProvidesFile{se-cp437.def}[2011/12/02 v1.10 stringenc: cp437]
+\ProvidesFile{se-cp437.def}[2016/05/16 v1.11 stringenc: cp437]
 \def\SE@this{cp437}
 %</cp437>
 %<*cp850>
-\ProvidesFile{se-cp850.def}[2011/12/02 v1.10 stringenc: cp850]
+\ProvidesFile{se-cp850.def}[2016/05/16 v1.11 stringenc: cp850]
 \def\SE@this{cp850}
 %</cp850>
 %<*cp852>
-\ProvidesFile{se-cp852.def}[2011/12/02 v1.10 stringenc: cp852]
+\ProvidesFile{se-cp852.def}[2016/05/16 v1.11 stringenc: cp852]
 \def\SE@this{cp852}
 %</cp852>
 %<*cp855>
-\ProvidesFile{se-cp855.def}[2011/12/02 v1.10 stringenc: cp855]
+\ProvidesFile{se-cp855.def}[2016/05/16 v1.11 stringenc: cp855]
 \def\SE@this{cp855}
 %</cp855>
 %<*cp858>
-\ProvidesFile{se-cp858.def}[2011/12/02 v1.10 stringenc: cp858]
+\ProvidesFile{se-cp858.def}[2016/05/16 v1.11 stringenc: cp858]
 \def\SE@this{cp858}
 %</cp858>
 %<*cp865>
-\ProvidesFile{se-cp865.def}[2011/12/02 v1.10 stringenc: cp865]
+\ProvidesFile{se-cp865.def}[2016/05/16 v1.11 stringenc: cp865]
 \def\SE@this{cp865}
 %</cp865>
 %<*cp866>
-\ProvidesFile{se-cp866.def}[2011/12/02 v1.10 stringenc: cp866]
+\ProvidesFile{se-cp866.def}[2016/05/16 v1.11 stringenc: cp866]
 \def\SE@this{cp866}
 %</cp866>
 %<*cp1250>
-\ProvidesFile{se-cp1250.def}[2011/12/02 v1.10 stringenc: cp1250]
+\ProvidesFile{se-cp1250.def}[2016/05/16 v1.11 stringenc: cp1250]
 \def\SE@this{cp1250}
 %</cp1250>
 %<*cp1251>
-\ProvidesFile{se-cp1251.def}[2011/12/02 v1.10 stringenc: cp1251]
+\ProvidesFile{se-cp1251.def}[2016/05/16 v1.11 stringenc: cp1251]
 \def\SE@this{cp1251}
 %</cp1251>
 %<*cp1257>
-\ProvidesFile{se-cp1257.def}[2011/12/02 v1.10 stringenc: cp1257]
+\ProvidesFile{se-cp1257.def}[2016/05/16 v1.11 stringenc: cp1257]
 \def\SE@this{cp1257}
 %</cp1257>
 %    \end{macrocode}
@@ -6148,7 +6151,7 @@ $ \fi
   \catcode`\%=14 %
   \catcode`\ =10 %
   \catcode13=5 %
-  \usepackage{stringenc}[2011/12/02]%
+  \usepackage{stringenc}[2016/05/16]%
   \RestoreCatcodes
 }
 \Test
@@ -6199,7 +6202,7 @@ $ \fi
   \let\SavedNumexpr\numexpr
   \let\numexpr\relax
 \fi
-\usepackage{stringenc}[2011/12/02]
+\usepackage{stringenc}[2016/05/16]
 \ifx\plainmode Y
   \let\numexpr\SavedNumexpr
 \fi
@@ -6567,7 +6570,7 @@ $ \fi
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/stringenc}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/stringenc.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/stringenc.pdf}] Documentation.
@@ -6802,7 +6805,7 @@ $ \fi
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.10'/>
+  <version number='1.11'/>
   <description>
     This package provides <tt>\StringEncodingConvert</tt> for converting
     a string between different encodings.
@@ -6877,6 +6880,10 @@ $ \fi
 %     Small improvement for \cs{SE@Nibble@NumToBin} and
 %     \cs{SE@Nibble@NumToHex} if \hologo{eTeX} is not available
 %     (thanks Bruno Le Floch).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.11}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

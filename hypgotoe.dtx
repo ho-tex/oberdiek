@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: hypgotoe.dtx
-% Version: 2007/10/30 v0.1
+% Version: 2016/05/16 v0.2
 % Info: Links to embedded files
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -77,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypgotoe 2007/10/30 v0.1 Links to embedded files (HO)}
+\Msg{* Package: hypgotoe 2016/05/16 v0.2 Links to embedded files (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +91,7 @@
 This is a generated file.
 
 Project: hypgotoe
-Version: 2007/10/30 v0.1
+Version: 2016/05/16 v0.2
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -153,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypgotoe.drv}%
-  [2007/10/30 v0.1 Links to embedded files (HO)]%
+  [2016/05/16 v0.2 Links to embedded files (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -162,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{163}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -183,8 +184,10 @@ and the derived files
 % \GetFileInfo{hypgotoe.drv}
 %
 % \title{The \xpackage{hypgotoe} package}
-% \date{2007/10/30 v0.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v0.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -247,7 +250,7 @@ and the derived files
 \begin{filecontents}{hypgotoe-child.tex}
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{article}
-\usepackage{hypgotoe}[2007/10/30]
+\usepackage{hypgotoe}[2016/05/16]
 \begin{document}
 \section{This is the child document.}
 \href{gotoe:%
@@ -270,7 +273,7 @@ Anker foobar is here.
 \end{document}
 \end{filecontents}
 \documentclass{article}
-\usepackage{hypgotoe}[2007/10/30]
+\usepackage{hypgotoe}[2016/05/16]
 \usepackage{embedfile}
 \IfFileExists{hypgotoe-child.pdf}{%
   \embedfile{hypgotoe-child.pdf}%
@@ -316,7 +319,7 @@ Anker foobar is here.
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypgotoe}%
-  [2007/10/30 v0.1 Links to embedded files (HO)]%
+  [2016/05/16 v0.2 Links to embedded files (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Load packages}
@@ -333,7 +336,7 @@ Anker foobar is here.
   \expandafter\endinput
 \fi
 \RequirePackage{pdfescape}[2007/10/27]
-\RequirePackage{hyperref}[2007/10/30]
+\RequirePackage{hyperref}[2016/05/16]
 %    \end{macrocode}
 %
 % \subsection{Color support}
@@ -485,7 +488,7 @@ Anker foobar is here.
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/hypgotoe}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/hypgotoe.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/hypgotoe.pdf}] Documentation.
@@ -679,7 +682,7 @@ Anker foobar is here.
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='0.1'/>
+  <version number='0.2'/>
   <description>
     This experimental package  is a first experiment for links to embedded
     files. It is named after the PDF action name <tt>/GoToE</tt>.
@@ -711,6 +714,10 @@ Anker foobar is here.
 %   \begin{Version}{2007/10/30 v0.1}
 %   \item
 %     First experimental version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v0.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

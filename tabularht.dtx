@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: tabularht.dtx
-% Version: 2007/04/11 v2.5
+% Version: 2016/05/16 v2.6
 % Info: Tabular with height specified
 %
 % Copyright (C) 2005-2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -78,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: tabularht 2007/04/11 v2.5 Tabular with height specified (HO)}
+\Msg{* Package: tabularht 2016/05/16 v2.6 Tabular with height specified (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -90,7 +92,7 @@
 This is a generated file.
 
 Project: tabularht
-Version: 2007/04/11 v2.5
+Version: 2016/05/16 v2.6
 
 Copyright (C) 2005-2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +157,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{tabularht.drv}%
-  [2007/04/11 v2.5 Tabular with height specified (HO)]%
+  [2016/05/16 v2.6 Tabular with height specified (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -164,7 +166,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{654}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -185,8 +186,10 @@ and the derived files
 % \GetFileInfo{tabularht.drv}
 %
 % \title{The \xpackage{tabularht} package}
-% \date{2007/04/11 v2.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v2.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -406,7 +409,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{tabularht}%
-  [2007/04/11 v2.5 Tabular with height specified (HO)]
+  [2016/05/16 v2.6 Tabular with height specified (HO)]
 %    \end{macrocode}
 %
 % \subsection{Environments}
@@ -988,7 +991,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/tabularht}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/tabularht.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/tabularht.pdf}] Documentation.
@@ -1183,7 +1186,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2005-2007'/>
   <license type='lppl1.3'/>
-  <version number='2.5'/>
+  <version number='2.6'/>
   <description>
     The tabularht package defines some environments that add a height
     specification to tabular and array environments.  The default set
@@ -1251,6 +1254,10 @@ and the derived files
 %   \begin{Version}{2007/04/11 v2.5}
 %   \item
 %     Line ends sanitized.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v2.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

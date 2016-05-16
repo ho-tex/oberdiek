@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: etexcmds.dtx
-% Version: 2011/02/16 v1.5
+% Version: 2016/05/16 v1.6
 % Info: Avoid name clashes with e-TeX commands
 %
 % Copyright (C) 2007, 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -84,7 +86,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)}
+\Msg{* Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +98,7 @@
 This is a generated file.
 
 Project: etexcmds
-Version: 2011/02/16 v1.5
+Version: 2016/05/16 v1.6
 
 Copyright (C) 2007, 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -167,7 +169,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{etexcmds.drv}%
-  [2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)]%
+  [2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -176,7 +178,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{658}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -197,8 +198,10 @@ and the derived files
 % \GetFileInfo{etexcmds.drv}
 %
 % \title{The \xpackage{etexcmds} package}
-% \date{2011/02/16 v1.5}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.6}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -322,7 +325,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@etexcmds.sty\endcsname
 \ProvidesPackage{etexcmds}%
-  [2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)]%
+  [2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -678,7 +681,7 @@ and the derived files
 %    \begin{macrocode}
 %<*test3>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{etexcmds-test3.tex}[2011/02/16 v1.5 Test file for LaTeX]
+\ProvidesFile{etexcmds-test3.tex}[2016/05/16 v1.6 Test file for LaTeX]
 \RequirePackage{etexcmds}
 \makeatletter
 \edef\x{\string\unexpanded}
@@ -694,7 +697,7 @@ and the derived files
 %    \begin{macrocode}
 %<*test4>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{etexcmds-test4.tex}[2011/02/16 v1.5 Test file for LaTeX]
+\ProvidesFile{etexcmds-test4.tex}[2016/05/16 v1.6 Test file for LaTeX]
 \documentclass{article}
 \usepackage{m-pictex}
 \def\normalwritestatus#1#2{%
@@ -725,7 +728,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/etexcmds}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/etexcmds.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/etexcmds.pdf}] Documentation.
@@ -922,7 +925,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.5'/>
+  <version number='1.6'/>
   <description>
     New primitive commands are introduced in e-TeX; sometimes the
     names collide with existing macros.  This package solves the
@@ -970,6 +973,10 @@ and the derived files
 %   \begin{Version}{2011/02/16 v1.5}
 %   \item
 %     Using \hologo{LuaTeX}'s \texttt{tex.enableprimitives} if available.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: inputenx.dtx
-% Version: 2011/05/27 v1.10
+% Version: 2016/05/16 v1.11
 % Info: Enhanced input encoding handling
 %
 % Copyright (C) 2006-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -128,7 +130,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: inputenx 2011/05/27 v1.10 Enhanced input encoding handling (HO)}
+\Msg{* Package: inputenx 2016/05/16 v1.11 Enhanced input encoding handling (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -140,7 +142,7 @@
 This is a generated file.
 
 Project: inputenx
-Version: 2011/05/27 v1.10
+Version: 2016/05/16 v1.11
 
 Copyright (C) 2006-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -266,7 +268,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{inputenx.drv}%
-  [2011/05/27 v1.10 Enhanced input encoding handling (HO)]%
+  [2016/05/16 v1.11 Enhanced input encoding handling (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{longtable}
@@ -276,7 +278,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{10478}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -297,8 +298,10 @@ and the derived files
 % \GetFileInfo{inputenx.drv}
 %
 % \title{The \xpackage{inputenx} package}
-% \date{2011/05/27 v1.10}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.11}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -542,7 +545,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inputenx}%
-  [2011/05/27 v1.10 Enhanced input encoding handling (HO)]%
+  [2016/05/16 v1.11 Enhanced input encoding handling (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Encoding names}
@@ -804,7 +807,7 @@ and the derived files
 %
 %    \begin{macrocode}
 %<*alias>
-\ProvidesFile{ix-alias.def}[2011/05/27 v1.10 Alias list (inputenx)]
+\ProvidesFile{ix-alias.def}[2016/05/16 v1.11 Alias list (inputenx)]
 %    \end{macrocode}
 %    The alias mechanism is also used to hide the prefix |x-|:
 %    \begin{macrocode}
@@ -888,7 +891,7 @@ and the derived files
 %    \begin{macrocode}
 %<*ascii>
 \ProvidesFile{x-ascii.def}%
-  [2011/05/27 v1.10 Input encoding ascii (inputenx)]%
+  [2016/05/16 v1.11 Input encoding ascii (inputenx)]%
 \csname @inpenc@test\endcsname
 %</ascii>
 %    \end{macrocode}
@@ -897,7 +900,7 @@ and the derived files
 %    \begin{macrocode}
 %<*verbatim>
 \ProvidesFile{x-verbatim.def}%
-  [2011/05/27 v1.10 Input encoding verbatim (inputenx)]%
+  [2016/05/16 v1.11 Input encoding verbatim (inputenx)]%
 \csname @inpenc@test\endcsname
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
@@ -928,7 +931,7 @@ and the derived files
 %    \begin{macrocode}
 %<*atarist>
 \ProvidesFile{x-atarist.def}%
-  [2011/05/27 v1.10 Input encoding atarist (inputenx)]%
+  [2016/05/16 v1.11 Input encoding atarist (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textGamma}{%
@@ -1192,7 +1195,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-1>
 \ProvidesFile{x-iso-8859-1.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-1 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-1 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -1357,7 +1360,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-2>
 \ProvidesFile{x-iso-8859-2.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-2 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-2 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textacutedbl}{%
@@ -1492,7 +1495,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-3>
 \ProvidesFile{x-iso-8859-3.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-3 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-3 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -1632,7 +1635,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-4>
 \ProvidesFile{x-iso-8859-4.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-4 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-4 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textTstroke}{%
@@ -1773,7 +1776,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-5>
 \ProvidesFile{x-iso-8859-5.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-5 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-5 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textnumero}{%
@@ -1895,7 +1898,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-8>
 \ProvidesFile{x-iso-8859-8.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-8 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-8 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -2034,7 +2037,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-9>
 \ProvidesFile{x-iso-8859-9.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-9 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-9 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -2199,7 +2202,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-10>
 \ProvidesFile{x-iso-8859-10.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-10 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-10 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textTstroke}{%
@@ -2322,7 +2325,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-13>
 \ProvidesFile{x-iso-8859-13.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-13 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-13 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textbrokenbar}{%
@@ -2475,7 +2478,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-14>
 \ProvidesFile{x-iso-8859-14.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-14 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-14 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \DeclareInputText{160}{\nobreakspace}
@@ -2583,7 +2586,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-15>
 \ProvidesFile{x-iso-8859-15.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-15 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-15 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciimacron}{%
@@ -2730,7 +2733,7 @@ and the derived files
 %    \begin{macrocode}
 %<*iso-8859-16>
 \ProvidesFile{x-iso-8859-16.def}%
-  [2011/05/27 v1.10 Input encoding iso-8859-16 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding iso-8859-16 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textcommabelow}[1]{%
@@ -2861,7 +2864,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp437>
 \ProvidesFile{x-cp437.def}%
-  [2011/05/27 v1.10 Input encoding cp437 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp437 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textGamma}{%
@@ -3110,7 +3113,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp850>
 \ProvidesFile{x-cp850.def}%
-  [2011/05/27 v1.10 Input encoding cp850 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp850 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -3325,7 +3328,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp852>
 \ProvidesFile{x-cp852.def}%
-  [2011/05/27 v1.10 Input encoding cp852 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp852 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textacutedbl}{%
@@ -3498,7 +3501,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp855>
 \ProvidesFile{x-cp855.def}%
-  [2011/05/27 v1.10 Input encoding cp855 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp855 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textblacksquare}{%
@@ -3658,7 +3661,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp858>
 \ProvidesFile{x-cp858.def}%
-  [2011/05/27 v1.10 Input encoding cp858 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp858 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -3876,7 +3879,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp865>
 \ProvidesFile{x-cp865.def}%
-  [2011/05/27 v1.10 Input encoding cp865 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp865 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textGamma}{%
@@ -4122,7 +4125,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp866>
 \ProvidesFile{x-cp866.def}%
-  [2011/05/27 v1.10 Input encoding cp866 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp866 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textblacksquare}{%
@@ -4288,7 +4291,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp1250>
 \ProvidesFile{x-cp1250.def}%
-  [2011/05/27 v1.10 Input encoding cp1250 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp1250 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textacutedbl}{%
@@ -4465,7 +4468,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp1251>
 \ProvidesFile{x-cp1251.def}%
-  [2011/05/27 v1.10 Input encoding cp1251 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp1251 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textbrokenbar}{%
@@ -4639,7 +4642,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp1252>
 \ProvidesFile{x-cp1252.def}%
-  [2011/05/27 v1.10 Input encoding cp1252 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp1252 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -4837,7 +4840,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp1255>
 \ProvidesFile{x-cp1255.def}%
-  [2011/05/27 v1.10 Input encoding cp1255 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp1255 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -4987,7 +4990,7 @@ and the derived files
 %    \begin{macrocode}
 %<*cp1257>
 \ProvidesFile{x-cp1257.def}%
-  [2011/05/27 v1.10 Input encoding cp1257 (inputenx)]%
+  [2016/05/16 v1.11 Input encoding cp1257 (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciiacute}{%
@@ -5175,7 +5178,7 @@ and the derived files
 %    \begin{macrocode}
 %<*dec-mcs>
 \ProvidesFile{x-dec-mcs.def}%
-  [2011/05/27 v1.10 Input encoding dec-mcs (inputenx)]%
+  [2016/05/16 v1.11 Input encoding dec-mcs (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textcent}{%
@@ -5301,7 +5304,7 @@ and the derived files
 %    \begin{macrocode}
 %<*koi8-r>
 \ProvidesFile{x-koi8-r.def}%
-  [2011/05/27 v1.10 Input encoding koi8-r (inputenx)]%
+  [2016/05/16 v1.11 Input encoding koi8-r (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textapproxequal}{%
@@ -5463,7 +5466,7 @@ and the derived files
 %    \begin{macrocode}
 %<*mac-centeuro>
 \ProvidesFile{x-mac-centeuro.def}%
-  [2011/05/27 v1.10 Input encoding mac-centeuro (inputenx)]%
+  [2016/05/16 v1.11 Input encoding mac-centeuro (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textasciicaron}{%
@@ -5642,7 +5645,7 @@ and the derived files
 %    \begin{macrocode}
 %<*mac-cyrillic>
 \ProvidesFile{x-mac-cyrillic.def}%
-  [2011/05/27 v1.10 Input encoding mac-cyrillic (inputenx)]%
+  [2016/05/16 v1.11 Input encoding mac-cyrillic (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textapproxequal}{%
@@ -5838,7 +5841,7 @@ and the derived files
 %    \begin{macrocode}
 %<*mac-roman>
 \ProvidesFile{x-mac-roman.def}%
-  [2011/05/27 v1.10 Input encoding mac-roman (inputenx)]%
+  [2016/05/16 v1.11 Input encoding mac-roman (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textOmega}{%
@@ -6067,7 +6070,7 @@ and the derived files
 %    \begin{macrocode}
 %<*nextstep>
 \ProvidesFile{x-nextstep.def}%
-  [2011/05/27 v1.10 Input encoding nextstep (inputenx)]%
+  [2016/05/16 v1.11 Input encoding nextstep (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 \ProvideTextCommandDefault{\textacutedbl}{%
@@ -6288,7 +6291,7 @@ and the derived files
 %    \begin{macrocode}
 %<*dfu>
 \ProvidesFile{ix-utf8enc.dfu}%
-  [2011/05/27 v1.10 Additions of inputenx for utf8enc.dfu]%
+  [2016/05/16 v1.11 Additions of inputenx for utf8enc.dfu]%
 \DeclareUnicodeCharacter{00A0}{\nobreakspace}
 \DeclareUnicodeCharacter{00AD}{\-}
 \DeclareUnicodeCharacter{0100}{\@tabacckludge=A}
@@ -6533,7 +6536,7 @@ and the derived files
 %    \begin{macrocode}
 %<*name>
 \ProvidesFile{ix-name.def}%
-  [2011/05/27 v1.10 Name list (inputenx)]%
+  [2016/05/16 v1.11 Name list (inputenx)]%
 %    \end{macrocode}
 %
 %    \textit{List omitted here, see \xfile{ix-name.def}.}
@@ -7243,7 +7246,7 @@ and the derived files
 %    \begin{macrocode}
 %<*slot>
 \ProvidesFile{ix-slot.def}%
-  [2011/05/27 v1.10 SLOT and UC to Encodings (inputenx)]%
+  [2016/05/16 v1.11 SLOT and UC to Encodings (inputenx)]%
 %    \end{macrocode}
 %
 %    \textit{List omitted here, see \xfile{ix-slot.def}.}
@@ -9396,7 +9399,7 @@ and the derived files
 %    \begin{macrocode}
 %<*uc>
 \ProvidesFile{ix-uc.def}%
-  [2011/05/27 v1.10 UC to LICR (inputenx)]%
+  [2016/05/16 v1.11 UC to LICR (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 %    \end{macrocode}
@@ -10469,7 +10472,7 @@ and the derived files
 %    \begin{macrocode}
 %<*math>
 \ProvidesFile{ix-math.def}%
-  [2011/05/27 v1.10 Math list (inputenx)]%
+  [2016/05/16 v1.11 Math list (inputenx)]%
 \edef\RestoreAtCatcode{\catcode64=\the\catcode64\relax}
 \makeatletter
 %    \end{macrocode}
@@ -10561,7 +10564,7 @@ and the derived files
 % defined by standard \LaTeX\ without extra packages.
 %    \begin{macrocode}
 %<*licrcmds>
- % List of known LICR commdands of inputenx 2011/05/27 v1.10
+ % List of known LICR commdands of inputenx 2016/05/16 v1.11
  %
  % Format: \LICRcmd{<command>}{<type>}
  % Types:
@@ -10670,7 +10673,7 @@ and the derived files
 %
 %    \begin{macrocode}
 %<*dfudoc>
- % inputenx-utf8enc.txt 2011/05/27 v1.10
+ % inputenx-utf8enc.txt 2016/05/16 v1.11
  % Commented additions for utf8enc.dfu
 
 %    \end{macrocode}
@@ -11751,7 +11754,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/inputenx}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/inputenx.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/inputenx.pdf}] Documentation.
@@ -11985,7 +11988,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.10'/>
+  <version number='1.11'/>
   <description>
     This package deals with input encodings. The first stage
     provides input encodings using
@@ -12177,6 +12180,10 @@ and the derived files
 %   \begin{Version}{2011/05/27 v1.10}
 %   \item
 %     Documentation fixed (missing |\end{verbatim}| added).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.11}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

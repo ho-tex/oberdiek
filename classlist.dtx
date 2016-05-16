@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: classlist.dtx
-% Version: 2011/10/17 v1.4
+% Version: 2016/05/16 v1.5
 % Info: Record classes used in a document
 %
 % Copyright (C) 2005, 2006, 2008, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -75,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: classlist 2011/10/17 v1.4 Record classes used in a document (HO)}
+\Msg{* Package: classlist 2016/05/16 v1.5 Record classes used in a document (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -87,7 +89,7 @@
 This is a generated file.
 
 Project: classlist
-Version: 2011/10/17 v1.4
+Version: 2016/05/16 v1.5
 
 Copyright (C) 2005, 2006, 2008, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -148,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{classlist.drv}%
-  [2011/10/17 v1.4 Record classes used in a document (HO)]%
+  [2016/05/16 v1.5 Record classes used in a document (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -157,7 +159,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{168}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -178,8 +179,10 @@ and the derived files
 % \GetFileInfo{classlist.drv}
 %
 % \title{The \xpackage{classlist} package}
-% \date{2011/10/17 v1.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -259,7 +262,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{classlist}%
-  [2011/10/17 v1.4 Record classes used in a document (HO)]
+  [2016/05/16 v1.5 Record classes used in a document (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -411,7 +414,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/classlist}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/classlist.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/classlist.pdf}] Documentation.
@@ -604,7 +607,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2005,2006,2008,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     Load this package before \documentclass:
     <p/>
@@ -658,6 +661,10 @@ and the derived files
 %   \begin{Version}{2011/10/17 v1.4}
 %   \item
 %     Documentation fix: \cs{MainClass} $\rightarrow$ \cs{MainClassName}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

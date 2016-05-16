@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: bitset.dtx
-% Version: 2011/01/30 v1.1
+% Version: 2016/05/16 v1.2
 % Info: Handle bit-vector datatype
 %
 % Copyright (C) 2007, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)}
+\Msg{* Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: bitset
-Version: 2011/01/30 v1.1
+Version: 2016/05/16 v1.2
 
 Copyright (C) 2007, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -163,7 +165,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bitset.drv}%
-  [2011/01/30 v1.1 Handle bit-vector datatype (HO)]%
+  [2016/05/16 v1.2 Handle bit-vector datatype (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{amstext}
@@ -179,7 +181,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{3510}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -200,8 +201,10 @@ and the derived files
 % \GetFileInfo{bitset.drv}
 %
 % \title{The \xpackage{bitset} package}
-% \date{2011/01/30 v1.1}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.2}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -749,7 +752,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@bitset.sty\endcsname
 \ProvidesPackage{bitset}%
-  [2011/01/30 v1.1 Handle bit-vector datatype (HO)]%
+  [2016/05/16 v1.2 Handle bit-vector datatype (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -2926,7 +2929,7 @@ and the derived files
 \makeatletter
 \chardef\BitSet@TestMode=1 %
 \makeatother
-\usepackage{bitset}[2011/01/30]
+\usepackage{bitset}[2016/05/16]
 %<*noetex>
 \def\ETeXEnable{%
   \let\numexpr\SavedNumexpr
@@ -4012,7 +4015,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/bitset}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/bitset.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/bitset.pdf}] Documentation.
@@ -4208,7 +4211,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     This package defines and implements the data type bit set,
     a vector of bits. The size of the vector may grow dynamically.
@@ -4234,6 +4237,10 @@ and the derived files
 %   \begin{Version}{2011/01/30 v1.1}
 %   \item
 %     Already loaded package files are not input in \hologo{plainTeX}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

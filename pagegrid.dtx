@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pagegrid.dtx
-% Version: 2009/12/04 v1.4
+% Version: 2016/05/16 v1.5
 % Info: Print page grid in background
 %
 % Copyright (C) 2009 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -77,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pagegrid 2009/12/04 v1.4 Print page grid in background (HO)}
+\Msg{* Package: pagegrid 2016/05/16 v1.5 Print page grid in background (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +91,7 @@
 This is a generated file.
 
 Project: pagegrid
-Version: 2009/12/04 v1.4
+Version: 2016/05/16 v1.5
 
 Copyright (C) 2009 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -153,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pagegrid.drv}%
-  [2009/12/04 v1.4 Print page grid in background (HO)]%
+  [2016/05/16 v1.5 Print page grid in background (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -162,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{698}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -183,8 +184,10 @@ and the derived files
 % \GetFileInfo{pagegrid.drv}
 %
 % \title{The \xpackage{pagegrid} package}
-% \date{2009/12/04 v1.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -414,7 +417,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pagegrid.sty\endcsname
 \ProvidesPackage{pagegrid}%
-  [2009/12/04 v1.4 Print page grid in background (HO)]%
+  [2016/05/16 v1.5 Print page grid in background (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -880,7 +883,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pagegrid}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pagegrid.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pagegrid.pdf}] Documentation.
@@ -1074,7 +1077,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2009'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     This package puts a grid on the paper. It was written for
     developers of a class or package
@@ -1128,6 +1131,10 @@ and the derived files
 %   \begin{Version}{2009/12/04 v1.4}
 %   \item
 %     Option \xoption{double}: Some unwanted side effects removed.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

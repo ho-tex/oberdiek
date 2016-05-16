@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: setouterhbox.dtx
-% Version: 2007/09/09 v1.7
+% Version: 2016/05/16 v1.8
 % Info: Set hbox in outer horizontal mode
 %
 % Copyright (C) 2005-2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -83,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: setouterhbox 2007/09/09 v1.7 Set hbox in outer horizontal mode (HO)}
+\Msg{* Package: setouterhbox 2016/05/16 v1.8 Set hbox in outer horizontal mode (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -95,7 +97,7 @@
 This is a generated file.
 
 Project: setouterhbox
-Version: 2007/09/09 v1.7
+Version: 2016/05/16 v1.8
 
 Copyright (C) 2005-2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -166,7 +168,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{setouterhbox.drv}%
-  [2007/09/09 v1.7 Set hbox in outer horizontal mode (HO)]%
+  [2016/05/16 v1.8 Set hbox in outer horizontal mode (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -175,7 +177,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{643}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -196,8 +197,10 @@ and the derived files
 % \GetFileInfo{setouterhbox.drv}
 %
 % \title{The \xpackage{setouterhbox} package}
-% \date{2007/09/09 v1.7}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.8}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -448,7 +451,7 @@ by/a/very_long_long_long_path.html}%
   \fi
 \expandafter\x\csname ver@setouterhbox.sty\endcsname
 \ProvidesPackage{setouterhbox}%
-  [2007/09/09 v1.7 Set hbox in outer horizontal mode (HO)]%
+  [2016/05/16 v1.8 Set hbox in outer horizontal mode (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -517,7 +520,7 @@ by/a/very_long_long_long_path.html}%
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input infwarerr.sty\relax
 \else
-  \RequirePackage{infwarerr}[2007/09/09]%
+  \RequirePackage{infwarerr}[2016/05/16]%
 \fi
 \edef\setouterhboxFailure#1#2{%
   \expandafter\noexpand\csname @PackageError\endcsname
@@ -931,7 +934,7 @@ by/a/very_long_long_long_path.html}%
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/setouterhbox}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/setouterhbox.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/setouterhbox.pdf}] Documentation.
@@ -1127,7 +1130,7 @@ by/a/very_long_long_long_path.html}%
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2005-2007'/>
   <license type='lppl1.3'/>
-  <version number='1.7'/>
+  <version number='1.8'/>
   <description>
     If math stuff is set in an <tt>\hbox</tt>, then TeX
     performs some optimization and omits the implicit
@@ -1210,6 +1213,10 @@ by/a/very_long_long_long_path.html}%
 %   \begin{Version}{2007/09/09 v1.7}
 %   \item
 %     Catcode section added.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.8}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

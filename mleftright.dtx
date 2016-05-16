@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: mleftright.dtx
-% Version: 2010/09/25 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Math left/right delim. as open/close
 %
 % Copyright (C) 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -80,7 +82,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: mleftright 2010/09/25 v1.0 Math left/right delim. as open/close (HO)}
+\Msg{* Package: mleftright 2016/05/16 v1.1 Math left/right delim. as open/close (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +94,7 @@
 This is a generated file.
 
 Project: mleftright
-Version: 2010/09/25 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -159,17 +161,16 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{mleftright.drv}%
-  [2010/09/25 v1.0 Math left/right delim. as open/close (HO)]%
+  [2016/05/16 v1.1 Math left/right delim. as open/close (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
-\usepackage{mleftright}[2010/09/25]
+\usepackage{mleftright}[2016/05/16]
 \begin{document}
   \DocInput{mleftright.dtx}%
 \end{document}
 %</driver>
 % \fi
 %
-% \CheckSum{550}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -190,8 +191,10 @@ and the derived files
 % \GetFileInfo{mleftright.drv}
 %
 % \title{The \xpackage{mleftright} package}
-% \date{2010/09/25 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -358,7 +361,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@mleftright.sty\endcsname
 \ProvidesPackage{mleftright}%
-  [2010/09/25 v1.0 Math left/right delim. as open/close (HO)]%
+  [2016/05/16 v1.1 Math left/right delim. as open/close (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -714,7 +717,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/mleftright}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/mleftright.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/mleftright.pdf}] Documentation.
@@ -908,7 +911,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2010'/>
   <license type='lppl1.3'/>
-  <version number='1.0'/>
+  <version number='1.1'/>
   <description>
     The package defines variants <tt>\mleft</tt> and <tt>\mright</tt>
     of <tt>\left</tt> and <tt>\right</tt>, that make the delimiters
@@ -980,6 +983,10 @@ and the derived files
 %   \begin{Version}{2010/09/25 v1.0}
 %   \item
 %     The first version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

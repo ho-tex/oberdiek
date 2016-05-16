@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: gettitlestring.dtx
-% Version: 2010/12/03 v1.4
+% Version: 2016/05/16 v1.5
 % Info: Cleanup title references
 %
 % Copyright (C) 2009, 2010 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)}
+\Msg{* Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: gettitlestring
-Version: 2010/12/03 v1.4
+Version: 2016/05/16 v1.5
 
 Copyright (C) 2009, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -163,7 +165,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{gettitlestring.drv}%
-  [2010/12/03 v1.4 Cleanup title references (HO)]%
+  [2016/05/16 v1.5 Cleanup title references (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -172,7 +174,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{721}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -193,8 +194,10 @@ and the derived files
 % \GetFileInfo{gettitlestring.drv}
 %
 % \title{The \xpackage{gettitlestring} package}
-% \date{2010/12/03 v1.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -348,7 +351,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@gettitlestring.sty\endcsname
 \ProvidesPackage{gettitlestring}%
-  [2010/12/03 v1.4 Cleanup title references (HO)]%
+  [2016/05/16 v1.5 Cleanup title references (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -725,7 +728,7 @@ and the derived files
 %<*test2>
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{minimal}
-\usepackage{gettitlestring}[2010/12/03]
+\usepackage{gettitlestring}[2016/05/16]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -764,7 +767,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/gettitlestring}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/gettitlestring.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/gettitlestring.pdf}] Documentation.
@@ -959,7 +962,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2009,2010'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     Cleans up the title string (removing <tt>\label</tt> commands) for
     packages (such as <xref refid='nameref'>nameref</xref>) that
@@ -1021,6 +1024,10 @@ and the derived files
 %   \item
 %     Support of package \xpackage{enumitem}: removing
 %     \cs{enit@format} from title string (problem report by GL).
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

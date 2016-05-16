@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: hyphsubst.dtx
-% Version: 2008/06/09 v0.2
+% Version: 2016/05/16 v0.3
 % Info: Substitute hyphenation patterns
 %
 % Copyright (C) 2008 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -81,7 +83,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hyphsubst 2008/06/09 v0.2 Substitute hyphenation patterns (HO)}
+\Msg{* Package: hyphsubst 2016/05/16 v0.3 Substitute hyphenation patterns (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +95,7 @@
 This is a generated file.
 
 Project: hyphsubst
-Version: 2008/06/09 v0.2
+Version: 2016/05/16 v0.3
 
 Copyright (C) 2008 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -161,7 +163,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hyphsubst.drv}%
-  [2008/06/09 v0.2 Substitute hyphenation patterns (HO)]%
+  [2016/05/16 v0.3 Substitute hyphenation patterns (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -170,7 +172,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{592}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -191,8 +192,10 @@ and the derived files
 % \GetFileInfo{hyphsubst.drv}
 %
 % \title{The \xpackage{hyphsubst} package}
-% \date{2008/06/09 v0.2}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v0.3}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -411,7 +414,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@hyphsubst.sty\endcsname
 \ProvidesPackage{hyphsubst}%
-  [2008/06/09 v0.2 Substitute hyphenation patterns (HO)]%
+  [2016/05/16 v0.3 Substitute hyphenation patterns (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -726,7 +729,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/hyphsubst}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/hyphsubst.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/hyphsubst.pdf}] Documentation.
@@ -921,7 +924,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2008'/>
   <license type='lppl1.3'/>
-  <version number='0.2'/>
+  <version number='0.3'/>
   <description>
     A TeX format file may include alternative hyphenation patterns
     for a language with a different name. If the naming convention
@@ -953,6 +956,10 @@ and the derived files
 %     Support for \eTeX's \xfile{language.def} added.
 %   \item
 %     Fix for undefined \cs{lmsg}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v0.3}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

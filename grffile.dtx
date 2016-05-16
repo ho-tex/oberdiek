@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: grffile.dtx
-% Version: 2012/04/05 v1.16
+% Version: 2016/05/16 v1.17
 % Info: Extended file name support for graphics
 %
 % Copyright (C) 2006-2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -77,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)}
+\Msg{* Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +91,7 @@
 This is a generated file.
 
 Project: grffile
-Version: 2012/04/05 v1.16
+Version: 2016/05/16 v1.17
 
 Copyright (C) 2006-2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -153,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{grffile.drv}%
-  [2012/04/05 v1.16 Extended file name support for graphics (HO)]%
+  [2016/05/16 v1.17 Extended file name support for graphics (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -162,7 +164,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{868}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -183,8 +184,10 @@ and the derived files
 % \GetFileInfo{grffile.drv}
 %
 % \title{The \xpackage{grffile} package}
-% \date{2012/04/05 v1.16}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.17}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -399,7 +402,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{grffile}%
-  [2012/04/05 v1.16 Extended file name support for graphics (HO)]%
+  [2016/05/16 v1.17 Extended file name support for graphics (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcode stuff}
@@ -1066,7 +1069,7 @@ showpage
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/grffile}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/grffile.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/grffile.pdf}] Documentation.
@@ -1260,7 +1263,7 @@ showpage
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006-2012'/>
   <license type='lppl1.3'/>
-  <version number='1.16'/>
+  <version number='1.17'/>
   <description>
     The package extends the file name processing of package
     <xref refid='graphics'>graphics</xref> to support a larger range
@@ -1384,6 +1387,10 @@ showpage
 %   \begin{Version}{2012/04/05 v1.16}
 %   \item
 %     Some fix for option \xoption{extendedchars}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.17}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

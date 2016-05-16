@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: kvdefinekeys.dtx
-% Version: 2011/04/07 v1.3
+% Version: 2016/05/16 v1.4
 % Info: Define keys
 %
 % Copyright (C) 2010, 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -80,7 +82,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)}
+\Msg{* Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +94,7 @@
 This is a generated file.
 
 Project: kvdefinekeys
-Version: 2011/04/07 v1.3
+Version: 2016/05/16 v1.4
 
 Copyright (C) 2010, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -159,7 +161,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{kvdefinekeys.drv}%
-  [2011/04/07 v1.3 Define keys (HO)]%
+  [2016/05/16 v1.4 Define keys (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -168,7 +170,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{428}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -189,8 +190,10 @@ and the derived files
 % \GetFileInfo{kvdefinekeys.drv}
 %
 % \title{The \xpackage{kvdefinekeys} package}
-% \date{2011/04/07 v1.3}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.4}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -307,7 +310,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@kvdefinekeys.sty\endcsname
 \ProvidesPackage{kvdefinekeys}%
-  [2011/04/07 v1.3 Define keys (HO)]%
+  [2016/05/16 v1.4 Define keys (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -536,7 +539,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/kvdefinekeys}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvdefinekeys.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/kvdefinekeys.pdf}] Documentation.
@@ -730,7 +733,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2010,2011'/>
   <license type='lppl1.3'/>
-  <version number='1.3'/>
+  <version number='1.4'/>
   <description>
     The package provides a macro <tt>\kv@define@key</tt> (analogous to
     <xref refid='keyval'>keyval&#x2019;s</xref> <tt>\define@key</tt>, to
@@ -776,6 +779,10 @@ and the derived files
 %     Support for package \xpackage{babel}'s shorthands added.
 %   \item
 %     \cs{kv@define@key} is made robust if available.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.4}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

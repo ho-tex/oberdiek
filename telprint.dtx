@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: telprint.dtx
-% Version: 2008/08/11 v1.10
+% Version: 2016/05/16 v1.11
 % Info: Format German phone numbers
 %
 % Copyright (C) 1996, 1997, 2004-2008 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -80,7 +82,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: telprint 2008/08/11 v1.10 Format German phone numbers (HO)}
+\Msg{* Package: telprint 2016/05/16 v1.11 Format German phone numbers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +94,7 @@
 This is a generated file.
 
 Project: telprint
-Version: 2008/08/11 v1.10
+Version: 2016/05/16 v1.11
 
 Copyright (C) 1996, 1997, 2004-2008 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -159,7 +161,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{telprint.drv}%
-  [2008/08/11 v1.10 Format German phone numbers (HO)]%
+  [2016/05/16 v1.11 Format German phone numbers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage[ngerman,english]{babel}
@@ -169,7 +171,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{602}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -190,8 +191,10 @@ and the derived files
 % \GetFileInfo{telprint.drv}
 %
 % \title{The \xpackage{telprint} package}
-% \date{2008/08/11 v1.10}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.11}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -409,7 +412,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@telprint.sty\endcsname
 \ProvidesPackage{telprint}%
-  [2008/08/11 v1.10 Format German phone numbers (HO)]%
+  [2016/05/16 v1.11 Format German phone numbers (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -736,7 +739,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/telprint}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/telprint.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/telprint.pdf}] Documentation.
@@ -930,7 +933,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1996,1997,2004-2008'/>
   <license type='lppl1.3'/>
-  <version number='1.10'/>
+  <version number='1.11'/>
   <description>
     The package provides a command <tt>\telprint</tt> for formatting
     German telephone numbers.
@@ -1012,6 +1015,10 @@ and the derived files
 %     Code is not changed.
 %   \item
 %     URLs updated.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.11}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

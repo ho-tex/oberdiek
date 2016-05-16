@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pagesel.dtx
-% Version: 2008/08/11 v1.8
+% Version: 2016/05/16 v1.9
 % Info: Select pages of a document for output
 %
 % Copyright (C) 1999, 2003, 2006-2008 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -75,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pagesel 2008/08/11 v1.8 Select pages of a document for output (HO)}
+\Msg{* Package: pagesel 2016/05/16 v1.9 Select pages of a document for output (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -87,7 +89,7 @@
 This is a generated file.
 
 Project: pagesel
-Version: 2008/08/11 v1.8
+Version: 2016/05/16 v1.9
 
 Copyright (C) 1999, 2003, 2006-2008 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -148,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pagesel.drv}%
-  [2008/08/11 v1.8 Select pages of a document for output (HO)]%
+  [2016/05/16 v1.9 Select pages of a document for output (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -157,7 +159,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{394}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -178,8 +179,10 @@ and the derived files
 % \GetFileInfo{pagesel.drv}
 %
 % \title{The \xpackage{pagesel} package}
-% \date{2008/08/11 v1.8}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.9}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -205,7 +208,7 @@ and the derived files
 %    \end{quote}
 %    (For plain\TeX\ and \LaTeX\,2.09 the similar package
 %    \URL{\Package{selectp}}^^A
-%    {ftp://ftp.ctan.org/tex-archive/macros/latex/contrib/misc/selectp.sty}
+%    {http://ctan.org/pkg/selectp}
 %    from \NameEmail{Donald Arsenau}{asnd@triumf.ca} can be used.)
 %
 %    Depending on the options the package works in two modes:
@@ -300,7 +303,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{pagesel}
-  [2008/08/11 v1.8 Select pages of a document for output (HO)]%
+  [2016/05/16 v1.9 Select pages of a document for output (HO)]%
 %    \end{macrocode}
 %
 %    If the package is loaded twice, the package code does not
@@ -633,7 +636,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/pagesel}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/pagesel.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/pagesel.pdf}] Documentation.
@@ -826,7 +829,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1999,2003,2006-2008'/>
   <license type='lppl1.3'/>
-  <version number='1.8'/>
+  <version number='1.9'/>
   <description>
     Selects single pages, ranges of pages, odd pages or even pages
     for output.
@@ -909,6 +912,10 @@ and the derived files
 %   \item
 %     URL updated from \texttt{www.dejanews.com}
 %     to \texttt{groups.google.com}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.9}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

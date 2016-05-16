@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: bookmark.dtx
-% Version: 2011/12/02 v1.24
+% Version: 2016/05/16 v1.25
 % Info: PDF bookmarks
 %
 % Copyright (C) 2007-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -85,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)}
+\Msg{* Package: bookmark 2016/05/16 v1.25 PDF bookmarks (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +99,7 @@
 This is a generated file.
 
 Project: bookmark
-Version: 2011/12/02 v1.24
+Version: 2016/05/16 v1.25
 
 Copyright (C) 2007-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -171,7 +173,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bookmark.drv}%
-  [2011/12/02 v1.24 PDF bookmarks (HO)]%
+  [2016/05/16 v1.25 PDF bookmarks (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -180,7 +182,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{2326}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -201,8 +202,10 @@ and the derived files
 % \GetFileInfo{bookmark.drv}
 %
 % \title{The \xpackage{bookmark} package}
-% \date{2011/12/02 v1.24}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.25}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -660,7 +663,7 @@ and the derived files
   open,
   openlevel=2,
   atend
-]{bookmark}[2011/12/02]
+]{bookmark}[2016/05/16]
 
 \bookmarksetup{color=blue}
 
@@ -763,7 +766,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{bookmark}%
-  [2011/12/02 v1.24 PDF bookmarks (HO)]%
+  [2016/05/16 v1.25 PDF bookmarks (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Requirements}
@@ -1885,7 +1888,7 @@ and the derived files
 %<*dvipdfm>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvipdfm.def}%
-  [2011/12/02 v1.24 bookmark driver for dvipdfm (HO)]%
+  [2016/05/16 v1.25 bookmark driver for dvipdfm (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\BKM@id}
@@ -2060,7 +2063,7 @@ and the derived files
 %<*vtex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-vtex.def}%
-  [2011/12/02 v1.24 bookmark driver for VTeX (HO)]%
+  [2016/05/16 v1.25 bookmark driver for VTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2391,7 +2394,7 @@ and the derived files
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-pdftex.def}%
-  [2011/12/02 v1.24 bookmark driver for pdfTeX (HO)]%
+  [2016/05/16 v1.25 bookmark driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\BKM@DO@entry}
@@ -2547,7 +2550,7 @@ and the derived files
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvips.def}%
-  [2011/12/02 v1.24 bookmark driver for dvips (HO)]%
+  [2016/05/16 v1.25 bookmark driver for dvips (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -2566,7 +2569,7 @@ and the derived files
 %<*dvipsone>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvipsone.def}%
-  [2011/12/02 v1.24 bookmark driver for dvipsone (HO)]%
+  [2016/05/16 v1.25 bookmark driver for dvipsone (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -2585,7 +2588,7 @@ and the derived files
 %<*textures>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-textures.def}%
-  [2011/12/02 v1.24 bookmark driver for textures (HO)]%
+  [2016/05/16 v1.25 bookmark driver for textures (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -3070,7 +3073,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/bookmark}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/bookmark.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/bookmark.pdf}] Documentation.
@@ -3270,7 +3273,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.24'/>
+  <version number='1.25'/>
   <description>
     This package implements a new bookmark (outline) organization for
     package <xref refid='hyperref'>hyperref</xref>. Bookmark properties such
@@ -3496,6 +3499,10 @@ and the derived files
 %   \begin{Version}{2011/12/02 v1.24}
 %   \item
 %     Small optimization in \cs{BKM@toHexDigit}.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.25}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: magicnum.dtx
-% Version: 2011/04/10 v1.4
+% Version: 2016/05/16 v1.5
 % Info: Magic numbers
 %
 % Copyright (C) 2007, 2009-2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -87,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: magicnum 2011/04/10 v1.4 Magic numbers (HO)}
+\Msg{* Package: magicnum 2016/05/16 v1.5 Magic numbers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +101,7 @@
 This is a generated file.
 
 Project: magicnum
-Version: 2011/04/10 v1.4
+Version: 2016/05/16 v1.5
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -187,7 +189,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{magicnum.drv}%
-  [2011/04/10 v1.4 Magic numbers (HO)]%
+  [2016/05/16 v1.5 Magic numbers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{array}
@@ -197,7 +199,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{755}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -218,8 +219,10 @@ and the derived files
 % \GetFileInfo{magicnum.drv}
 %
 % \title{The \xpackage{magicnum} package}
-% \date{2011/04/10 v1.4}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.5}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -512,7 +515,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@magicnum.sty\endcsname
 \ProvidesPackage{magicnum}%
-  [2011/04/10 v1.4 Magic numbers (HO)]%
+  [2016/05/16 v1.5 Magic numbers (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -648,7 +651,7 @@ and the derived files
     require("oberdiek.magicnum")%
   }%
   \begingroup
-    \def\x{2011/04/10 v1.4}%
+    \def\x{2016/05/16 v1.5}%
     \def\StripPrefix#1>{}%
     \edef\x{\expandafter\StripPrefix\meaning\x}%
     \edef\y{%
@@ -930,7 +933,7 @@ module("oberdiek.magicnum", package.seeall)
 %    \end{macrocode}
 %    \begin{macrocode}
 function getversion()
-  tex.write("2011/04/10 v1.4")
+  tex.write("2016/05/16 v1.5")
 end
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -1270,7 +1273,7 @@ end
 %<*testlatex>
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{minimal}
-\usepackage{magicnum}[2011/04/10]
+\usepackage{magicnum}[2016/05/16]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -1338,7 +1341,7 @@ end
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/magicnum}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/magicnum.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/magicnum.pdf}] Documentation.
@@ -1538,7 +1541,7 @@ end
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     This package allows access to the various parameter values in
     TeX (catcode values), e-TeX (group, if and node types, and
@@ -1581,6 +1584,10 @@ end
 %     Dependency from package \xpackage{luatex} removed.
 %   \item
 %     Version check for lua module.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.5}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

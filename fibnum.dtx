@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: fibnum.dtx
-% Version: 2012/04/08 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Fibonacci numbers
 %
 % Copyright (C) 2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -82,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: fibnum 2012/04/08 v1.0 Fibonacci numbers (HO)}
+\Msg{* Package: fibnum 2016/05/16 v1.1 Fibonacci numbers (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +96,7 @@
 This is a generated file.
 
 Project: fibnum
-Version: 2012/04/08 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -188,13 +190,13 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{fibnum.drv}%
-  [2012/04/08 v1.0 Fibonacci numbers (HO)]%
+  [2016/05/16 v1.1 Fibonacci numbers (HO)]%
 \documentclass{ltxdoc}
 \usepackage{amsmath,amsfonts}
 \usepackage{siunitx}
 \usepackage{array}
 \usepackage{tabularx}
-\usepackage{fibnum}[2012/04/08]
+\usepackage{fibnum}[2016/05/16]
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{csquotes}
 \usepackage[
@@ -209,7 +211,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{786}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -230,8 +231,10 @@ and the derived files
 % \GetFileInfo{fibnum.drv}
 %
 % \title{The \xpackage{fibnum} package}
-% \date{2012/04/08 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -462,7 +465,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@fibnum.sty\endcsname
 \ProvidesPackage{fibnum}%
-  [2012/04/08 v1.0 Fibonacci numbers (HO)]%
+  [2016/05/16 v1.1 Fibonacci numbers (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -852,7 +855,7 @@ and the derived files
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input fibnum.sty\relax
 \else
-  \RequirePackage{fibnum}[2012/04/08]%
+  \RequirePackage{fibnum}[2016/05/16]%
 \fi
 \def\TestSet{%
   \test{0}{0}%
@@ -976,7 +979,7 @@ and the derived files
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/fibnum}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/fibnum.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/fibnum.pdf}] Documentation.
@@ -1163,6 +1166,10 @@ and the derived files
 %   \begin{Version}{2012/04/08 v1.0}
 %   \item
 %     First version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %

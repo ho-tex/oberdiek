@@ -1,11 +1,13 @@
 % \iffalse meta-comment
 %
 % File: thepdfnumber.dtx
-% Version: 2011/11/24 v1.0
+% Version: 2016/05/16 v1.1
 % Info: Print PDF numbers with minimal digits
 %
 % Copyright (C) 2011 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%    2016
+%    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -83,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: thepdfnumber 2011/11/24 v1.0 Print PDF numbers with minimal digits (HO)}
+\Msg{* Package: thepdfnumber 2016/05/16 v1.1 Print PDF numbers with minimal digits (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -95,7 +97,7 @@
 This is a generated file.
 
 Project: thepdfnumber
-Version: 2011/11/24 v1.0
+Version: 2016/05/16 v1.1
 
 Copyright (C) 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -161,7 +163,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{thepdfnumber.drv}%
-  [2011/11/24 v1.0 Print PDF numbers with minimal digits (HO)]%
+  [2016/05/16 v1.1 Print PDF numbers with minimal digits (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{csquotes}
@@ -176,7 +178,6 @@ and the derived files
 %</driver>
 % \fi
 %
-% \CheckSum{1146}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -197,8 +198,10 @@ and the derived files
 % \GetFileInfo{thepdfnumber.drv}
 %
 % \title{The \xpackage{thepdfnumber} package}
-% \date{2011/11/24 v1.0}
-% \author{Heiko Oberdiek\\\xemail{heiko.oberdiek at googlemail.com}}
+% \date{2016/05/16 v1.1}
+% \author{Heiko Oberdiek\thanks
+% {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
+% \xemail{heiko.oberdiek at googlemail.com}}
 %
 % \maketitle
 %
@@ -437,7 +440,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@thepdfnumber.sty\endcsname
 \ProvidesPackage{thepdfnumber}%
-  [2011/11/24 v1.0 Print PDF numbers with minimal digits (HO)]%
+  [2016/05/16 v1.1 Print PDF numbers with minimal digits (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1221,7 +1224,7 @@ $        \else\ifnum`#2=46 % .
 \expandafter\ifx\csname RequirePackage\endcsname\relax
   \input thepdfnumber.sty\relax
 \else
-  \RequirePackage{thepdfnumber}[2011/11/24]%
+  \RequirePackage{thepdfnumber}[2016/05/16]%
 \fi
 %    \end{macrocode}
 %
@@ -1394,7 +1397,7 @@ $        \else\ifnum`#2=46 % .
 % \subsection{Download}
 %
 % \paragraph{Package.} This package is available on
-% CTAN\footnote{\url{ftp://ftp.ctan.org/tex-archive/}}:
+% CTAN\footnote{\url{http://ctan.org/pkg/thepdfnumber}}:
 % \begin{description}
 % \item[\CTAN{macros/latex/contrib/oberdiek/thepdfnumber.dtx}] The source file.
 % \item[\CTAN{macros/latex/contrib/oberdiek/thepdfnumber.pdf}] Documentation.
@@ -1581,6 +1584,10 @@ $        \else\ifnum`#2=46 % .
 %   \begin{Version}{2011/11/24 v1.0}
 %   \item
 %     First version.
+%   \end{Version}
+%   \begin{Version}{2016/05/16 v1.1}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %
