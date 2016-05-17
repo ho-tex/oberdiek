@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfcol.dtx
-% Version: 2016/05/16 v1.3
+% Version: 2016/05/17 v1.4
 % Info: Handle new color stacks for pdfTeX
 %
 % Copyright (C) 2007 by
@@ -85,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfcol 2016/05/16 v1.3 Handle new color stacks for pdfTeX (HO)}
+\Msg{* Package: pdfcol 2016/05/17 v1.4 Handle new color stacks for pdfTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +97,7 @@
 This is a generated file.
 
 Project: pdfcol
-Version: 2016/05/16 v1.3
+Version: 2016/05/17 v1.4
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -167,7 +167,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfcol.drv}%
-  [2016/05/16 v1.3 Handle new color stacks for pdfTeX (HO)]%
+  [2016/05/17 v1.4 Handle new color stacks for pdfTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -196,7 +196,7 @@ and the derived files
 % \GetFileInfo{pdfcol.drv}
 %
 % \title{The \xpackage{pdfcol} package}
-% \date{2016/05/16 v1.3}
+% \date{2016/05/17 v1.4}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -379,7 +379,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdfcol.sty\endcsname
 \ProvidesPackage{pdfcol}%
-  [2016/05/16 v1.3 Handle new color stacks for pdfTeX (HO)]%
+  [2016/05/17 v1.4 Handle new color stacks for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -444,6 +444,13 @@ and the derived files
 \fi
 %    \end{macrocode}
 %    \end{macro}
+%
+% LuaTeX Compatability
+%    \begin{macrocode}
+\ifx\pdfextension\@undefined\else
+  \PDFCOL@RequirePackage{luatex85}[2016/01/01]
+\fi
+%    \end{macrocode}
 %
 %    \begin{macrocode}
 \PDFCOL@RequirePackage{ltxcmds}[2010/03/01]
@@ -871,7 +878,7 @@ and the derived files
 \NeedsTeXFormat{LaTeX2e}
 \nofiles
 \documentclass{article}
-\usepackage{pdfcol}[2016/05/16]
+\usepackage{pdfcol}[2016/05/17]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -1128,7 +1135,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.3'/>
+  <version number='1.4'/>
   <description>
     Since version 1.40 pdfTeX supports color stacks.
     The driver file <tt>pdftex.def</tt> for package
@@ -1167,6 +1174,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.3}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/05/17 v1.4}
+%   \item
+%     Use luatex85 package for new luatex compatibility
 %   \end{Version}
 % \end{History}
 %
