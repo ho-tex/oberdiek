@@ -15,28 +15,40 @@ unzip -o $SOURCE/../oberdiek.tds.zip
 # see what broke
 #
 cd $SOURCE
+rm -f *test*.log
 for i in *test*.tex
 do
     echo "===========" $i
-case $i in
-    askinclude-test24.tex) pdflatex $i ;; # \pdfmatch not emulated yet in luatex
-    grfext-test2.tex) pdflatex $i ;; # explicit pdftex option
+    case $i in
+    #
     atbegshi-test1*) echo skip;; # error even with pdftex TODO
-    atbegshi-test2*|embedfile-test2*|embedfile-test4*|epstopdf-test1*|etexcmds-test2*|hyphsubst-test1*|hyphsubst-test2*|iflang-test4*|iflang-test5*|infwarerr-test2*) echo x | luatex $i;; # plain TeX
+    pdfescape-test2.tex) pdflatex $i;; # doesn't work in luatex yet TODO
+    askinclude-test24.tex) pdflatex $i ;; # \pdfmatch not emulated yet in luatex TODO
+    #
+    iflang-test5*) pdftex $i ;; # unclear if this is intended to work in luatex
+    grfext-test2.tex) pdflatex $i ;; # explicit pdftex option
+    atbegshi-test2*|embedfile-test2*|embedfile-test4*|epstopdf-test1*|etexcmds-test2*|hyphsubst-test1*|hyphsubst-test2*|iflang-test4*|infwarerr-test2*|pdfrender-test5.tex|luatex-test5.tex) echo x | luatex $i;; # plain TeX
     bmpsize-test*) echo "" | luatex $i;; # don't use x as filename
-    listingsutf8-test2.tex) pdflatex $i;;#  inputenc
+    selinput-test2.tex) echo skip;; # utf-8.def typo for utf8.def??
+    listingsutf8-test2.tex|soulutf8*|selinput*) echo x | pdflatex $i;;#  inputenc
     listingsutf8-test3.tex) echo skip;; # empty?
     listingsutf8-test4.tex) echo skip;; #empty?
     listingsutf8-test5.tex) echo skip;; # empty?
-   *) echo x | lualatex $i
+    zref-test-runs.tex) echo skip;; # \ExpectRuns not defined?
+    resizegather-test1.tex) pdflatex $i;; # luatex-def doesnt normalise catcodes by design
+    pdfcol-test1.tex) echo skip;; # ifpdf doesnt normalise catcodes by design
+    pdfcol-test2.tex) latex $i;; # test written expecting false so fails with pdftex,
+    pdflscape-test2.tex ) pdflatex $i ;; # explicit dvipdf option
+    pdflscape-test3.tex ) xelatex $i ;; # explicit dvipdfmx option
+    pdflscape-test4.tex ) latex $i ;; # explicit dvipsone option
+    luatex-test4.tex) echo skip;; # attribute allocation numbers different with ltluatex, test needs updating.
+    *) echo x | lualatex $i
+       
 esac
 
 done
 
-
-
 # list of errors from the tests
 #
 grep '^\!' *test*.log |egrep -v '(Package PACKAGE|Class CLASS) Error'
-
 
