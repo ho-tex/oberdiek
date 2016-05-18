@@ -25,10 +25,10 @@ tex oberdiek.ins
 # make pdf
 for i in *.dtx
 do
-pdflatex ${i}
-pdflatex ${i}
+lualatex ${i}
+lualatex ${i}
 makeindex -s gind.ist ${i/.dtx/.idx}
-pdflatex ${i}
+lualatex ${i}
 done
 
 # keep existing one for now
