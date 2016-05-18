@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: holtxdoc.dtx
-% Version: 2016/05/16 v0.26
+% Version: 2016/05/17 v0.27
 % Info: Private additional ltxdoc support
 %
 % Copyright (C) 1999-2012 by
@@ -77,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: holtxdoc 2016/05/16 v0.26 Private additional ltxdoc support (HO)}
+\Msg{* Package: holtxdoc 2016/05/17 v0.27 Private additional ltxdoc support (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +89,7 @@
 This is a generated file.
 
 Project: holtxdoc
-Version: 2016/05/16 v0.26
+Version: 2016/05/17 v0.27
 
 Copyright (C) 1999-2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -150,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{holtxdoc.drv}%
-  [2016/05/16 v0.26 Private additional ltxdoc support (HO)]%
+  [2016/05/17 v0.27 Private additional ltxdoc support (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{holtxdoc.drv}
 %
 % \title{The \xpackage{holtxdoc} package}
-% \date{2016/05/16 v0.26}
+% \date{2016/05/17 v0.27}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -221,7 +221,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{holtxdoc}%
-  [2016/05/16 v0.26 Private additional ltxdoc support (HO)]
+  [2016/05/17 v0.27 Private additional ltxdoc support (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -252,7 +252,7 @@ and the derived files
 \ifluatex
   \RequirePackage{fontspec}[2011/09/18]%
   \RequirePackage{unicode-math}[2011/09/19]%
-  \setmathfont{lmmath-regular.otf}%
+  \setmathfont{latinmodern-math.otf}%
 \fi
 %    \end{macrocode}
 %
@@ -725,7 +725,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='1999-2012'/>
   <license type='lppl1.3'/>
-  <version number='0.26'/>
+  <version number='0.27'/>
   <description>
     These are personal macros, which are not necessarily useful to
     other authors (they are provided as part off the source of others
@@ -845,6 +845,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v0.26}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/05/17 v0.27}
+%   \item
+%     New name for lm math font
 %   \end{Version}
 % \end{History}
 %
