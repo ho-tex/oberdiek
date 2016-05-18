@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: selinput.dtx
-% Version: 2016/05/16 v1.3
+% Version: 2016/05/17 v1.4
 % Info: Semi-automatic input encoding detection
 %
 % Copyright (C) 2007 by
@@ -84,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: selinput 2016/05/16 v1.3 Semi-automatic input encoding detection (HO)}
+\Msg{* Package: selinput 2016/05/17 v1.4 Semi-automatic input encoding detection (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +96,7 @@
 This is a generated file.
 
 Project: selinput
-Version: 2016/05/16 v1.3
+Version: 2016/05/17 v1.4
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -165,9 +165,11 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{selinput.drv}%
-  [2016/05/16 v1.3 Semi-automatic input encoding detection (HO)]%
+  [2016/05/17 v1.4 Semi-automatic input encoding detection (HO)]%
 \documentclass{ltxdoc}
+\ifx\Umathcode\undefined
 \usepackage[T1]{fontenc}
+\fi
 \usepackage{textcomp}
 \usepackage{lmodern}
 \usepackage{holtxdoc}[2011/11/22]
@@ -198,7 +200,7 @@ and the derived files
 % \GetFileInfo{selinput.drv}
 %
 % \title{The \xpackage{selinput} package}
-% \date{2016/05/16 v1.3}
+% \date{2016/05/17 v1.4}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -377,7 +379,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{selinput}
-  [2016/05/16 v1.3 Semi-automatic input encoding detection (HO)]%
+  [2016/05/17 v1.4 Semi-automatic input encoding detection (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -978,7 +980,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.3'/>
+  <version number='1.4'/>
   <description>
     This package selects the input encoding by specifying pairs
     of input characters and their glyph names.
@@ -1035,6 +1037,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.3}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/05/17 v1.4}
+%   \item
+%      Documentation updates: Avoid T1 encoding with Unicode \TeX.
 %   \end{Version}
 % \end{History}
 %
