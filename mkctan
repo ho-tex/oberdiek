@@ -31,11 +31,10 @@ makeindex -s gind.ist ${i/.dtx/.idx}
 lualatex ${i}
 done
 
-# keep existing one for now
-#pdflatex oberdiek
-#pdflatex oberdiek
-# runs forever on my machine biber oberdiek
-#pdflatex oberdiek
+
+lualatex oberdiek
+lualatex oberdiek
+
 
 # special cases
 cp README readme-ctan.txt
