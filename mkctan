@@ -23,6 +23,7 @@ unzip ../oberdiek.tds.zip
 tex oberdiek.ins
 
 # make pdf
+rm *.bbl
 for i in *.dtx
 do
 lualatex ${i}
