@@ -26,6 +26,9 @@ tex oberdiek.ins
 for i in *.dtx
 do
 lualatex ${i}
+if [ -f ${i/.dtx/.bcf} ]; then
+    biber ${i/.dtx}
+fi
 lualatex ${i}
 makeindex -s gind.ist ${i/.dtx/.idx}
 lualatex ${i}
