@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: hypdestopt.dtx
-% Version: 2016/05/16 v2.4
+% Version: 2016/05/21 v2.5
 % Info: Hyperref destination optimizer
 %
 % Copyright (C) 2006-2008, 2011 by
@@ -77,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypdestopt 2016/05/16 v2.4 Hyperref destination optimizer (HO)}
+\Msg{* Package: hypdestopt 2016/05/21 v2.5 Hyperref destination optimizer (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +89,7 @@
 This is a generated file.
 
 Project: hypdestopt
-Version: 2016/05/16 v2.4
+Version: 2016/05/21 v2.5
 
 Copyright (C) 2006-2008, 2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -150,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypdestopt.drv}%
-  [2016/05/16 v2.4 Hyperref destination optimizer (HO)]%
+  [2016/05/21 v2.5 Hyperref destination optimizer (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{hypdestopt.drv}
 %
 % \title{The \xpackage{hypdestopt} package}
-% \date{2016/05/16 v2.4}
+% \date{2016/05/21 v2.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -303,7 +303,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypdestopt}%
-  [2016/05/16 v2.4 Hyperref destination optimizer (HO)]%
+  [2016/05/21 v2.5 Hyperref destination optimizer (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Options}
@@ -601,6 +601,12 @@ and the derived files
 %
 % \subsubsection{Destination setting}
 %
+% luatex compatibility
+%    \begin{macrocode}
+\ifx\pdfextension\@undefined\else
+  \protected\def\pdfdest{\pdfextension dest }
+\fi
+%    \end{macrocode}
 %    \begin{macrocode}
   \ifHypDest@name
     \let\HypDest@Org@DestName\Hy@DestName
@@ -951,7 +957,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006-2008,2011'/>
   <license type='lppl1.3'/>
-  <version number='2.4'/>
+  <version number='2.5'/>
   <description>
     This package supports <xref refid='hyperref'>hyperref</xref>'s
     pdftex driver. It removes unnecessary destinations
@@ -1021,6 +1027,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v2.4}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/05/21 v2.5}
+%   \item
+%     LuaTeX compatibility
 %   \end{Version}
 % \end{History}
 %
