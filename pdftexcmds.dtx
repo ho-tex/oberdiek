@@ -405,13 +405,14 @@ and the derived files
 %
 % \begin{declcs}{pdf@draftmode}
 % \end{declcs}
-% If the \TeX\ compiler knows \cs{pdfdraftmode} (\hologo{pdfTeX},
+% If the \TeX\ compiler knows \cs{pdfdraftmode} or \cs{draftmode}
+% (\hologo{pdfTeX},
 % \hologo{LuaTeX}), then \cs{pdf@draftmode} returns, whether
-% this mode is enabled. The result is an implicite number:
+% this mode is enabled. The result is an implicit number:
 % one means the draft mode is available and enabled.
 % If the value is zero, then the mode is not active or
 % \cs{pdfdraftmode} is not available.
-% An explicite number is yielded by \cs{number}\cs{pdf@draftmode}.
+% An explicit number is yielded by \cs{number}\cs{pdf@draftmode}.
 % The macro cannot
 % be used to change the mode, see \cs{pdf@setdraftmode}.
 %
@@ -829,7 +830,7 @@ and the derived files
       if tex.enableprimitives then
         tex.enableprimitives(
           'pdf@',
-          {'primitive', 'ifprimitive', 'pdfdraftmode'}
+          {'primitive', 'ifprimitive', 'pdfdraftmode','draftmode'}
         )
         tex.enableprimitives('', {'luaescapestring'})
       end
@@ -868,23 +869,24 @@ and the derived files
 %
 %    \begin{macro}{\pdf@primitive}
 %    \begin{macrocode}
-\pdftexcmds@temp{primitive}{pdfprimitive}{pdfprimitive}% pdfTeX, LuaTeX
-\pdftexcmds@temp{primitive}{primitive}{primitive}% XeTeX
-\pdftexcmds@temp{primitive}{luatexprimitive}{pdfprimitive}% LuaTeX
-\pdftexcmds@temp{primitive}{luatexpdfprimitive}{pdfprimitive}% LuaTeX
+\pdftexcmds@temp{primitive}{pdfprimitive}{pdfprimitive}% pdfTeX, oldLuaTeX
+\pdftexcmds@temp{primitive}{primitive}{primitive}% XeTeX, luatex
+\pdftexcmds@temp{primitive}{luatexprimitive}{pdfprimitive}% oldLuaTeX
+\pdftexcmds@temp{primitive}{luatexpdfprimitive}{pdfprimitive}% oldLuaTeX
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macro}{\pdf@ifprimitive}
 %    \begin{macrocode}
-\pdftexcmds@temp{ifprimitive}{ifpdfprimitive}{ifpdfprimitive}% pdfTeX, LuaTeX
-\pdftexcmds@temp{ifprimitive}{ifprimitive}{ifprimitive}% XeTeX
-\pdftexcmds@temp{ifprimitive}{luatexifprimitive}{ifpdfprimitive}% LuaTeX
-\pdftexcmds@temp{ifprimitive}{luatexifpdfprimitive}{ifpdfprimitive}% LuaTeX
+\pdftexcmds@temp{ifprimitive}{ifpdfprimitive}{ifpdfprimitive}% pdfTeX, oldLuaTeX
+\pdftexcmds@temp{ifprimitive}{ifprimitive}{ifprimitive}% XeTeX, luatex
+\pdftexcmds@temp{ifprimitive}{luatexifprimitive}{ifpdfprimitive}% oldLuaTeX
+\pdftexcmds@temp{ifprimitive}{luatexifpdfprimitive}{ifpdfprimitive}% oldLuaTeX
 %    \end{macrocode}
 %    \end{macro}
 %
 %    Disable broken \cs{pdfprimitive}.
 %    \begin{macrocode}
+\ifluatex\else
 \begingroup
   \expandafter\ifx\csname pdf@primitive\endcsname\relax
   \else
@@ -908,6 +910,7 @@ and the derived files
     \fi
   \fi
 \endgroup
+\fi
 %    \end{macrocode}
 %
 % \subsubsection{Result}
@@ -1005,6 +1008,9 @@ and the derived files
   \fi
 }
 \ifluatex
+\ifx\pdfdraftmode\@undefined
+  \let\pdfdraftmode\draftmode
+\fi
 \else
   \pdf@isprimitive
 \fi
