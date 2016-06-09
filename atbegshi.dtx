@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: atbegshi.dtx
-% Version: 2016/05/16 v1.17
+% Version: 2016/06/09 v1.18
 % Info: At begin shipout hook
 %
 % Copyright (C) 2007-2011 by
@@ -87,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)}
+\Msg{* Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +99,7 @@
 This is a generated file.
 
 Project: atbegshi
-Version: 2016/05/16 v1.17
+Version: 2016/06/09 v1.18
 
 Copyright (C) 2007-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -172,7 +172,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atbegshi.drv}%
-  [2016/05/16 v1.17 At begin shipout hook (HO)]%
+  [2016/06/09 v1.18 At begin shipout hook (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -201,7 +201,7 @@ and the derived files
 % \GetFileInfo{atbegshi.drv}
 %
 % \title{The \xpackage{atbegshi} package}
-% \date{2016/05/16 v1.17}
+% \date{2016/06/09 v1.18}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -922,7 +922,7 @@ The last page.
   \fi
 \expandafter\x\csname ver@atbegshi.sty\endcsname
 \ProvidesPackage{atbegshi}%
-  [2016/05/16 v1.17 At begin shipout hook (HO)]%
+  [2016/06/09 v1.18 At begin shipout hook (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1427,8 +1427,10 @@ X \endgroup
 %
 %    \begin{macrocode}
 \ifpdf
-  \def\AtBegShi@horigin{\pdfhorigin}%
-  \def\AtBegShi@vorigin{\pdfvorigin}%
+  \def\AtBegShi@horigin{%
+    \ifx\pdfhorigin\@undefined\pdfvariable horigin\else\pdfhorigin\fi}%
+  \def\AtBegShi@vorigin{%
+    \ifx\pdfvorigin\@undefined\pdfvariable vorigin\else\pdfvorigin\fi}%
 \else
   \def\AtBegShi@horigin{72.27pt}%
   \def\AtBegShi@vorigin{72.27pt}%
@@ -1974,7 +1976,7 @@ X \endgroup
 %<*test2>
 \input atbegshi.sty\relax
 \def\msg#{\immediate\write16}
-\msg{File: atbegshi-test2.tex 2016/05/16 v1.17 Test file for plain-TeX}
+\msg{File: atbegshi-test2.tex 2016/06/09 v1.18 Test file for plain-TeX}
 \def\testmsg#1#2{%
   \msg{}%
   \msg{*** Test with box (#1), expected page output [#2]}% hash-ok
@@ -2071,7 +2073,7 @@ Hello World
 %    \begin{macrocode}
 %<*test3>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{atbegshi-test3.tex}[2016/05/16 v1.17 Test file for LaTeX]
+\ProvidesFile{atbegshi-test3.tex}[2016/06/09 v1.18 Test file for LaTeX]
 \RequirePackage{color}
 \pagecolor{yellow}
 \documentclass[a5paper,showtrims]{memoir}
@@ -2327,7 +2329,7 @@ Hello World
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.17'/>
+  <version number='1.18'/>
   <description>
     This package is a modern reimplementation of package
     <xref refid='everyshi'>everyshi</xref>, providing various commands
@@ -2443,6 +2445,10 @@ Hello World
 %   \begin{Version}{2016/05/16 v1.17}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/06/09 v1.18}
+%   \item
+%     Update for \cs{pdfhorign} in new LuaTeX.
 %   \end{Version}
 % \end{History}
 %
