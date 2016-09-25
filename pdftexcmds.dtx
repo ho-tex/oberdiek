@@ -1834,6 +1834,7 @@ function filemdfivesum(filename)
     if filehandle then
       local contents = filehandle:read("*a")
       escapehex(md5.sum(contents))
+      filehandle:close()
     end
   end
 end
