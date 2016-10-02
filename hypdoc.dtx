@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: hypdoc.dtx
-% Version: 2016/05/16 v1.12
+% Version: 2016/06/09 v1.13
 % Info: Hyper extensions for doc.sty
 %
 % Copyright (C) 2002, 2006, 2007, 2009-2011 by
@@ -77,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypdoc 2016/05/16 v1.12 Hyper extensions for doc.sty (HO)}
+\Msg{* Package: hypdoc 2016/06/09 v1.13 Hyper extensions for doc.sty (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +89,7 @@
 This is a generated file.
 
 Project: hypdoc
-Version: 2016/05/16 v1.12
+Version: 2016/06/09 v1.13
 
 Copyright (C) 2002, 2006, 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -150,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypdoc.drv}%
-  [2016/05/16 v1.12 Hyper extensions for doc.sty (HO)]%
+  [2016/06/09 v1.13 Hyper extensions for doc.sty (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{hypdoc.drv}
 %
 % \title{The \xpackage{hypdoc} package}
-% \date{2016/05/16 v1.12}
+% \date{2016/06/09 v1.13}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -358,7 +358,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypdoc}%
-  [2016/05/16 v1.12 Hyper extensions for doc.sty (HO)]%
+  [2016/06/09 v1.13 Hyper extensions for doc.sty (HO)]%
 %    \end{macrocode}
 %    The package identification is done at the top of the |.dtx| file
 %    in order to use only one identification string.
@@ -563,7 +563,7 @@ and the derived files
   \else
     \stepcounter{HD@unique}%
     \pdfbookmark[\HD@guesstoclevel{\HDorg@listoffigures}]%
-        {\contentsname}{toc\theHD@unique}%
+        {\listfigurename}{toc\theHD@unique}%
   \fi
   \begingroup
     \HD@sectionpatch
@@ -587,7 +587,7 @@ and the derived files
   \else
     \stepcounter{HD@unique}%
     \pdfbookmark[\HD@guesstoclevel{\HDorg@listoftables}]%
-        {\contentsname}{toc\theHD@unique}%
+        {\listtablename}{toc\theHD@unique}%
   \fi
   \begingroup
     \HD@sectionpatch
@@ -722,7 +722,7 @@ and the derived files
         \let\Hy@writebookmark\HDorg@writebookmark
         \stepcounter{HD@unique}%
         \pdfbookmark[\HD@guesstoclevel{\HDorg@glossary@prologue}]%
-            {\glossaryname}{glossary\theHD@unique}%
+            {\changehistoryname}{glossary\theHD@unique}%
       \endgroup
     \fi
     \HDorg@glossary@prologue
@@ -734,6 +734,12 @@ and the derived files
 %    \begin{macro}{\glossaryname}
 %    \begin{macrocode}
 \providecommand*{\glossaryname}{Change History}
+%    \end{macrocode}
+%    \end{macro}
+%
+%    \begin{macro}{\glossaryname}
+%    \begin{macrocode}
+\providecommand*{\changehistoryname}{\glossaryname}
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -1333,7 +1339,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2002,2006,2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.12'/>
+  <version number='1.13'/>
   <description>
     This package adds hypertext features to the package
     <xref refid='doc'>doc</xref> that is used in the documentation
@@ -1419,6 +1425,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.12}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2016/06/09 v1.13}
+%   \item
+%     Fixes to bookmarknames, also introduce \cs{changehistoryname}
 %   \end{Version}
 % \end{History}
 %
