@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdftexcmds.dtx
-% Version: 2016/10/02 v0.23
+% Version: 2017/01/29 v0.24
 % Info: Utility functions of pdfTeX for LuaTeX
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -88,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdftexcmds 2016/10/02 v0.23 Utility functions of pdfTeX for LuaTeX (HO)}
+\Msg{* Package: pdftexcmds 2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -100,7 +100,7 @@
 This is a generated file.
 
 Project: pdftexcmds
-Version: 2016/10/02 v0.23
+Version: 2017/01/29 v0.24
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -201,12 +201,13 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdftexcmds.drv}%
-  [2016/10/02 v0.23 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
 \usepackage{csquotes}
 \usepackage[
+  backend=bibtex,
   bibencoding=ascii,
   alldates=iso8601,
 ]{biblatex}[2011/11/13]
@@ -238,7 +239,7 @@ and the derived files
 % \GetFileInfo{pdftexcmds.drv}
 %
 % \title{The \xpackage{pdftexcmds} package}
-% \date{2016/10/02 v0.23}
+% \date{2017/01/29 v0.24}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -617,7 +618,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdftexcmds.sty\endcsname
 \ProvidesPackage{pdftexcmds}%
-  [2016/10/02 v0.23 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1129,17 +1130,19 @@ and the derived files
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname RequirePackage\endcsname\relax
-  \def\TMP@RequirePackage#1[#2]{%
-    \begingroup\expandafter\expandafter\expandafter\endgroup
-    \expandafter\ifx\csname ver@#1.sty\endcsname\relax
-      \input #1.sty\relax
-    \fi
-  }%
-  \TMP@RequirePackage{luatex-loader}[2009/04/10]%
-\else
-  \RequirePackage{luatex-loader}[2009/04/10]%
+\ifnum\luatexversion<80
+  \begingroup\expandafter\expandafter\expandafter\endgroup
+  \expandafter\ifx\csname RequirePackage\endcsname\relax
+    \def\TMP@RequirePackage#1[#2]{%
+      \begingroup\expandafter\expandafter\expandafter\endgroup
+      \expandafter\ifx\csname ver@#1.sty\endcsname\relax
+        \input #1.sty\relax
+      \fi
+    }%
+    \TMP@RequirePackage{luatex-loader}[2009/04/10]%
+  \else
+    \RequirePackage{luatex-loader}[2009/04/10]%
+  \fi
 \fi
 \pdftexcmds@directlua{%
   require("oberdiek.pdftexcmds")%
@@ -1160,7 +1163,7 @@ and the derived files
   \fi
 \fi
 \begingroup
-  \def\x{2016/10/02 v0.23}%
+  \def\x{2017/01/29 v0.24}%
   \ltx@onelevel@sanitize\x
   \edef\y{%
     \pdftexcmds@directlua{%
@@ -1567,7 +1570,7 @@ and the derived files
 module("oberdiek.pdftexcmds", package.seeall)
 local systemexitstatus
 function getversion()
-  tex.write("2016/10/02 v0.23")
+  tex.write("2017/01/29 v0.24")
 end
 %    \end{macrocode}
 %
@@ -2679,6 +2682,10 @@ end
 %   \begin{Version}{2016/10/02 v0.23}
 %   \item
 %     add file.close to lua filehandles (github pull request).
+%   \end{Version}
+%   \begin{Version}{2017/01/29 v0.24}
+%   \item
+%     Avoid loading luatex-loader for current luatex.
 %   \end{Version}
 % \end{History}
 %

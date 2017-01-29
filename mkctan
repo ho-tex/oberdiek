@@ -3,6 +3,7 @@
 # build oberdiek ctan distrib
 # perhaps use l3build one day, but not today
 
+INSTALLDIR=$HOME/texmf
 
 # starting from oberdiek.zip and oberdiek.tds.zip from ctan
 
@@ -15,12 +16,30 @@ rm *.pdf
 mv oberdiek.pdf- oberdiek.pdf
 
 # unzip oberdiek.tds.zip to generate initial tds structure
-unzip ../oberdiek.tds.zip
+unzip -q ../oberdiek.tds.zip
 
 
 # unpack
 #
 tex oberdiek.ins
+
+# Lua need to be here for doc generation must fix this one day
+cp \
+    luacolor.lua oberdiek.luacolor.lua \
+    luacolor-pre065.lua  oberdiek.luacolor-pre065.lua \
+    pdftexcmds.lua oberdiek.pdftexcmds.lua \
+    magicnum.lua oberdiek.magicnum.lua \
+    oberdiek.luatex.lua \
+    scripts/oberdiek
+
+cp \
+    luacolor.lua oberdiek.luacolor.lua \
+    luacolor-pre065.lua  oberdiek.luacolor-pre065.lua \
+    pdftexcmds.lua oberdiek.pdftexcmds.lua \
+    magicnum.lua oberdiek.magicnum.lua \
+    oberdiek.luatex.lua \
+    $HOME/texmf/scripts/oberdiek
+
 
 # make pdf
 rm *.bbl
@@ -28,13 +47,13 @@ for i in *.dtx
 do
 lualatex ${i}
 if [ -f ${i/.dtx/.bcf} ]; then
-    biber ${i/.dtx}
+    #    biber ${i/.dtx}
+    bibtex ${i/.dtx}
 fi
 lualatex ${i}
 makeindex -s gind.ist ${i/.dtx/.idx}
 lualatex ${i}
 done
-
 
 lualatex oberdiek
 lualatex oberdiek
