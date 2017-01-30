@@ -1145,7 +1145,7 @@ and the derived files
   \fi
 \fi
 \pdftexcmds@directlua{%
-  require("oberdiek.pdftexcmds")%
+  require("pdftexcmds")%
 }
 \ifnum\luatexversion>37 %
   \ifnum0%
@@ -1157,7 +1157,7 @@ and the derived files
     \everyjob\expandafter{%
       \the\everyjob
       \pdftexcmds@directlua{%
-        require("oberdiek.pdftexcmds")%
+        require("pdftexcmds")%
       }%
     }%
   \fi
@@ -2685,7 +2685,9 @@ end
 %   \end{Version}
 %   \begin{Version}{2017/01/29 v0.24}
 %   \item
-%     Avoid loading luatex-loader for current luatex.
+%     Avoid loading luatex-loader for current luatex. (Use
+%     pdftexcmds.lua not oberdiek.pdftexcmds.lua to simplify file
+%     search with standard require)
 %   \end{Version}
 % \end{History}
 %
