@@ -5,9 +5,34 @@
 %% This file may be distributed under the terms of the LPPL.
 %% See README for details.
 %
+%<*ignore>
+\ifx\ProvidesFile\undefined\let\install y\fi
+\ifx\install y\else
+\long\def\tmp#1\endbatchfile{}
+\expandafter\tmp
+\fi
+%</ignore>
+%<*install>
+\input docstrip
+\keepsilent
+\preamble
+\endpreamble
+
+\askforoverwritefalse
+
+\generate{
+%<*ignore>
+\file{ifpdf.ins}{\from{ifpdf.dtx}{install}}
+%</ignore>
+\file{ifpdf.sty}{\from{ifpdf.dtx}{package}}
+}
+
+\endbatchfile
+%</install>
 %<*dtx>
           \ProvidesFile{ifpdf.dtx}
 %</dtx>
+%<*!install>
 %<package>\ifx\ProvidesPackage\undefined
 %<package>\def\next#1#2[#3]{\wlog{#2 #3}\expandafter\gdef
 %<package>\csname ver@ifpdf.sty\endcsname{#3}}
@@ -17,6 +42,7 @@
 % \fi
 %         \ProvidesFile{ifpdf.dtx}
 [2016/05/14 v3.1 Provides the ifpdf switch]
+%</!install>
 %
 % \iffalse
 %<*driver>
