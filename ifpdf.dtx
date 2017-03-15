@@ -1,6 +1,6 @@
 % \iffalse
 %% Source File: ifpdf.dtx
-%% Copyright 2016 Heiko Oberdiek and LaTeX3 project
+%% Copyright 2016-2017 Heiko Oberdiek and LaTeX3 project
 %%
 %% This file may be distributed under the terms of the LPPL.
 %% See README for details.
@@ -35,16 +35,16 @@
 %<*!install>
 %<package>\ifx\ProvidesPackage\undefined
 %<package>\def\next#1#2[#3]{\wlog{#2 #3}\expandafter\gdef
-%<package>\csname ver@ifpdf.sty\endcsname{#3}}
+%<package>\csname ver\string @ifpdf.sty\endcsname{#3}}
 %<package>\expandafter\next\fi
 %<package>\ProvidesPackage{ifpdf}
 %<driver> \ProvidesFile{ifpdf.drv}
 % \fi
 %         \ProvidesFile{ifpdf.dtx}
-[2016/05/14 v3.1 Provides the ifpdf switch]
+[2017/03/15 v3.2 Provides the ifpdf switch]
+% \iffalse
 %</!install>
 %
-% \iffalse
 %<*driver>
 \documentclass{ltxdoc}
 \usepackage{hyperref}
@@ -137,3 +137,5 @@ end
 % \endinput
 % 2016/04/04 v3.0  rewrite to be self standing and work with new luatex/
 % 2016/05/14 v3.1  define ver@ifpdf.sty in plain tex.
+% 2017/03/15 v3.2  define ver\string@ifpdf.sty in amstex tex.
+%                  https://github.com/ho-tex/oberdiek/issues/23
