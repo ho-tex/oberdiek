@@ -82,6 +82,7 @@ echo making main zip
 rm oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 {README,\
+oberdiek.tex,\
 *.pdf,\
 *.dtx\
 }
