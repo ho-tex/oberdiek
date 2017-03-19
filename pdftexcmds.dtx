@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdftexcmds.dtx
-% Version: 2017/01/29 v0.24
+% Version: 2017/03/19 v0.25
 % Info: Utility functions of pdfTeX for LuaTeX
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -88,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdftexcmds 2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)}
+\Msg{* Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -100,7 +100,7 @@
 This is a generated file.
 
 Project: pdftexcmds
-Version: 2017/01/29 v0.24
+Version: 2017/03/19 v0.25
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -201,7 +201,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdftexcmds.drv}%
-  [2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -239,7 +239,7 @@ and the derived files
 % \GetFileInfo{pdftexcmds.drv}
 %
 % \title{The \xpackage{pdftexcmds} package}
-% \date{2017/01/29 v0.24}
+% \date{2017/03/19 v0.25}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -618,7 +618,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdftexcmds.sty\endcsname
 \ProvidesPackage{pdftexcmds}%
-  [2017/01/29 v0.24 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1163,7 +1163,7 @@ and the derived files
   \fi
 \fi
 \begingroup
-  \def\x{2017/01/29 v0.24}%
+  \def\x{2017/03/19 v0.25}%
   \ltx@onelevel@sanitize\x
   \edef\y{%
     \pdftexcmds@directlua{%
@@ -1486,15 +1486,12 @@ and the derived files
 % \subsubsection{Shell escape}
 %
 %    \begin{macro}{\pdf@shellescape}
-%    Caution: Catcode of digit zero might be `ignore'.
+%
 %    \begin{macrocode}
 \ifnum\luatexversion<68 %
 \else
-  \def\pdf@shellescape{%
-    \directlua0{%
-      oberdiek.pdftexcmds.shellescape()%
-    }%
-  }%
+  \protected\edef\pdf@shellescape{%
+   \numexpr\directlua{tex.sprint(status.shell_escape)}\relax}
 \fi
 %    \end{macrocode}
 %    \end{macro}
@@ -1570,7 +1567,7 @@ and the derived files
 module("oberdiek.pdftexcmds", package.seeall)
 local systemexitstatus
 function getversion()
-  tex.write("2017/01/29 v0.24")
+  tex.write("2017/03/19 v0.25")
 end
 %    \end{macrocode}
 %
@@ -2677,7 +2674,7 @@ end
 %   \end{Version}
 %   \begin{Version}{2016/05/21 v0.22}
 %   \item
-%     adjust textbackslash usage in bib file for biber bug.
+%     adjust \cs{textbackslas}h usage in bib file for biber bug.
 %   \end{Version}
 %   \begin{Version}{2016/10/02 v0.23}
 %   \item
@@ -2688,6 +2685,10 @@ end
 %     Avoid loading luatex-loader for current luatex. (Use
 %     pdftexcmds.lua not oberdiek.pdftexcmds.lua to simplify file
 %     search with standard require)
+%   \end{Version}
+%   \begin{Version}{2017/03/19 v0.25}
+%   \item
+%     New \cs{pdf@shellescape} for Lua\TeX, see github issue 20.
 %   \end{Version}
 % \end{History}
 %
