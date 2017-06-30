@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: grffile.dtx
-% Version: 2016/05/16 v1.17
+% Version: 2017/06/30 v1.18
 % Info: Extended file name support for graphics
 %
 % Copyright (C) 2006-2012 by
@@ -79,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)}
+\Msg{* Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +91,7 @@
 This is a generated file.
 
 Project: grffile
-Version: 2016/05/16 v1.17
+Version: 2017/06/30 v1.18
 
 Copyright (C) 2006-2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{grffile.drv}%
-  [2016/05/16 v1.17 Extended file name support for graphics (HO)]%
+  [2017/06/30 v1.18 Extended file name support for graphics (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -184,7 +184,7 @@ and the derived files
 % \GetFileInfo{grffile.drv}
 %
 % \title{The \xpackage{grffile} package}
-% \date{2016/05/16 v1.17}
+% \date{2017/06/30 v1.18}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -402,7 +402,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{grffile}%
-  [2016/05/16 v1.17 Extended file name support for graphics (HO)]%
+  [2017/06/30 v1.18 Extended file name support for graphics (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcode stuff}
@@ -699,9 +699,13 @@ and the derived files
     \else
       \begingroup\expandafter\expandafter\expandafter\endgroup
       \expandafter\ifx\csname Gread@QTm\endcsname\relax
-        \PackageWarning{grffile}{%
-          \string\Gread@QTm\space of xetex.def not found%
-        }%
+        \@ifpackagelater{graphics}{2017/06/01}
+          {}
+          {%
+            \PackageWarning{grffile}{%
+              \string\Gread@QTm\space of xetex.def not found%
+            }%
+          }%
       \else
 %    \end{macrocode}
 %    \begin{macro}{\grffile@org@Gread@QTm}
@@ -754,9 +758,13 @@ and the derived files
           \string\Gread@eps\space patched%
         }%
       }{%
-        \PackageWarning{grffile}{%
-          Unsupported \string\Gread@eps\space not patched%
-        }%
+        \@ifpackagelater{graphics}{2017/06/01}
+          {}
+          {%
+            \PackageWarning{grffile}{%
+              Unsupported \string\Gread@eps\space not patched%
+            }%
+          }%
         \endgroup
       }%
     }%
@@ -1263,7 +1271,7 @@ showpage
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006-2012'/>
   <license type='lppl1.3'/>
-  <version number='1.17'/>
+  <version number='1.18'/>
   <description>
     The package extends the file name processing of package
     <xref refid='graphics'>graphics</xref> to support a larger range
@@ -1391,6 +1399,10 @@ showpage
 %   \begin{Version}{2016/05/16 v1.17}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2017/06/30 v1.18}
+%   \item
+%     Update to follow \xpackage{graphics} changes.
 %   \end{Version}
 % \end{History}
 %
