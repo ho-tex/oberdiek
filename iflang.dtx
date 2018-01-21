@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: iflang.dtx
-% Version: 2016/05/16 v1.6
+% Version: 2018/01/21 v1.7
 % Info: Checks for the current language
 %
 % Copyright (C) 2007 by
@@ -87,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: iflang 2016/05/16 v1.6 Checks for the current language (HO)}
+\Msg{* Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +99,7 @@
 This is a generated file.
 
 Project: iflang
-Version: 2016/05/16 v1.6
+Version: 2018/01/21 v1.7
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -171,7 +171,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{iflang.drv}%
-  [2016/05/16 v1.6 Checks for the current language (HO)]%
+  [2018/01/21 v1.7 Checks for the current language (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -200,7 +200,7 @@ and the derived files
 % \GetFileInfo{iflang.drv}
 %
 % \title{The \xpackage{iflang} package}
-% \date{2016/05/16 v1.6}
+% \date{2018/01/21 v1.7}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -367,7 +367,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@iflang.sty\endcsname
 \ProvidesPackage{iflang}%
-  [2016/05/16 v1.6 Checks for the current language (HO)]%
+  [2018/01/21 v1.7 Checks for the current language (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -482,7 +482,7 @@ and the derived files
   \input pdftexcmds.sty\relax
 \else
   \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{pdftexcmds}[2016/05/16]%
+  \RequirePackage{pdftexcmds}[2018/01/21]%
 \fi
 %    \end{macrocode}
 %
@@ -491,7 +491,7 @@ and the derived files
 %    \begin{macro}{\IfLang@prefix}
 %    \begin{macrocode}
 \begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname uselanguage\endcsname\relax
+\expandafter\ifx\csname et@xpatterns\endcsname\relax
   \@PackageInfoNoLine{iflang}{%
     Naming convention for patterns: babel%
   }%
@@ -1187,7 +1187,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.6'/>
+  <version number='1.7'/>
   <description>
     This package provides expandable checks for the current language
     based on macro <tt>\languagename</tt> or hyphenation patterns.
@@ -1245,6 +1245,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.6}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2018/01/21 v1.7}
+%   \item
+%     Fix test for \texttt{etex.src}.
 %   \end{Version}
 % \end{History}
 %
