@@ -12,7 +12,7 @@ INSTALLDIR=$HOME/texmf
 # cleanup
 rm -r bibtex doc scripts source tex
 mv oberdiek.pdf oberdiek.pdf-
-rm *.pdf
+rm *.pdf *.aux
 mv oberdiek.pdf- oberdiek.pdf
 
 # unzip oberdiek.tds.zip to generate initial tds structure

@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdftexcmds.dtx
-% Version: 2017/03/19 v0.25
+% Version: 2018/01/21 v0.26
 % Info: Utility functions of pdfTeX for LuaTeX
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -88,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)}
+\Msg{* Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -100,7 +100,7 @@
 This is a generated file.
 
 Project: pdftexcmds
-Version: 2017/03/19 v0.25
+Version: 2018/01/21 v0.26
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -201,7 +201,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdftexcmds.drv}%
-  [2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -239,7 +239,7 @@ and the derived files
 % \GetFileInfo{pdftexcmds.drv}
 %
 % \title{The \xpackage{pdftexcmds} package}
-% \date{2017/03/19 v0.25}
+% \date{2018/01/21 v0.26}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -618,7 +618,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdftexcmds.sty\endcsname
 \ProvidesPackage{pdftexcmds}%
-  [2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1163,7 +1163,7 @@ and the derived files
   \fi
 \fi
 \begingroup
-  \def\x{2017/03/19 v0.25}%
+  \def\x{2018/01/21 v0.26}%
   \ltx@onelevel@sanitize\x
   \edef\y{%
     \pdftexcmds@directlua{%
@@ -1567,7 +1567,7 @@ and the derived files
 module("oberdiek.pdftexcmds", package.seeall)
 local systemexitstatus
 function getversion()
-  tex.write("2017/03/19 v0.25")
+  tex.write("2018/01/21 v0.26")
 end
 %    \end{macrocode}
 %
@@ -1810,7 +1810,7 @@ function filedump(offset, length, filename)
       if not offset then
         offset = 0
       end
-      local filehandle = io.open(foundfile, "r")
+      local filehandle = io.open(foundfile, "rb")
       if filehandle then
         if offset > 0 then
           filehandle:seek("set", offset)
@@ -1831,7 +1831,7 @@ end
 function filemdfivesum(filename)
   local foundfile = kpse.find_file(filename, "tex", true)
   if foundfile then
-    local filehandle = io.open(foundfile, "r")
+    local filehandle = io.open(foundfile, "rb")
     if filehandle then
       local contents = filehandle:read("*a")
       escapehex(md5.sum(contents))
@@ -2689,6 +2689,10 @@ end
 %   \begin{Version}{2017/03/19 v0.25}
 %   \item
 %     New \cs{pdf@shellescape} for Lua\TeX, see github issue 20.
+%   \end{Version}
+%   \begin{Version}{2018/01/21 v0.26}
+%   \item
+%     use rb not r mode for file open github issue 34.
 %   \end{Version}
 % \end{History}
 %
