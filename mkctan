@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # build oberdiek ctan distrib
 # perhaps use l3build one day, but not today
 
@@ -11,10 +12,10 @@ INSTALLDIR=$HOME/texmf
 #
 # cleanup
 rm -r bibtex doc scripts source tex
-mv oberdiek.pdf oberdiek.pdf-
 rm *.pdf *.aux
-mv oberdiek.pdf- oberdiek.pdf
+mkdir $HOME/texmf/scripts/oberdiek
 
+set -e
 # unzip oberdiek.tds.zip to generate initial tds structure
 unzip -q ../oberdiek.tds.zip
 
@@ -51,8 +52,10 @@ if [ -f ${i/.dtx/.bcf} ]; then
     bibtex ${i/.dtx}
 fi
 lualatex ${i}
-makeindex -s gind.ist ${i/.dtx/.idx}
-lualatex ${i}
+if [ -f ${i/.dtx/.idx} ]; then
+    makeindex -s gind.ist ${i/.dtx/.idx}
+    lualatex ${i}
+fi
 done
 
 lualatex oberdiek
