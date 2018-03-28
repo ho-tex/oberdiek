@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: accsupp.dtx
-% Version: 2016/05/16 v0.4
+% Version: 2018/01/30 v0.5
 % Info: Accessibility support by marked content
 %
 % Copyright (C) 2007, 2010 by
@@ -26,7 +26,8 @@
 % This work consists of the main source file accsupp.dtx
 % and the derived files
 %    accsupp.sty, accsupp.pdf, accsupp.ins, accsupp.drv,
-%    accsupp-pdftex.def, accsupp-dvipdfm.def, accsupp-dvips.def,
+%    accsupp-pdftex.def, \ccsupp-luatex.def, accsupp-dvipdfm.def,
+%    accsupp-dvips.def,
 %    accsupp-example1.tex, accsupp-example2.tex,
 %    accsupp-test1.tex.
 %
@@ -63,6 +64,7 @@
 % Installation:
 %    TDS:tex/latex/oberdiek/accsupp.sty
 %    TDS:tex/latex/oberdiek/accsupp-pdftex.def
+%    TDS:tex/latex/oberdiek/accsupp-luatex.def
 %    TDS:tex/latex/oberdiek/accsupp-dvipdfm.def
 %    TDS:tex/latex/oberdiek/accsupp-dvips.def
 %    TDS:doc/latex/oberdiek/accsupp.pdf
@@ -86,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: accsupp 2016/05/16 v0.4 Accessibility support by marked content (HO)}
+\Msg{* Package: accsupp 2018/01/30 v0.5 Accessibility support by marked content (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -98,7 +100,7 @@
 This is a generated file.
 
 Project: accsupp
-Version: 2016/05/16 v0.4
+Version: 2018/01/30 v0.5
 
 Copyright (C) 2007, 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -120,7 +122,8 @@ This Current Maintainer of this work is Heiko Oberdiek.
 This work consists of the main source file accsupp.dtx
 and the derived files
    accsupp.sty, accsupp.pdf, accsupp.ins, accsupp.drv,
-   accsupp-pdftex.def, accsupp-dvipdfm.def, accsupp-dvips.def,
+   accsupp-pdftex.def, accsupp-luatex.def, accsupp-dvipdfm.def,
+   accsupp-dvips.def,
    accsupp-example1.tex, accsupp-example2.tex,
    accsupp-test1.tex.
 
@@ -133,6 +136,7 @@ and the derived files
   \usedir{tex/latex/oberdiek}%
   \file{accsupp.sty}{\from{accsupp.dtx}{package}}%
   \file{accsupp-pdftex.def}{\from{accsupp.dtx}{pdftex}}%
+  \file{accsupp-luatex.def}{\from{accsupp.dtx}{luatex}}%
   \file{accsupp-dvipdfm.def}{\from{accsupp.dtx}{dvipdfm}}%
   \file{accsupp-dvips.def}{\from{accsupp.dtx}{dvips}}%
   \usedir{doc/latex/oberdiek}%
@@ -171,7 +175,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp.drv}%
-  [2016/05/16 v0.4 Accessibility support by marked content (HO)]%
+  [2018/01/30 v0.5 Accessibility support by marked content (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -200,7 +204,7 @@ and the derived files
 % \GetFileInfo{accsupp.drv}
 %
 % \title{The \xpackage{accsupp} package}
-% \date{2016/05/16 v0.4}
+% \date{2018/01/30 v0.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -333,7 +337,7 @@ and the derived files
 % \subsection{Driver options}
 %
 % Driver options are package options only.
-% The special \hologo{TeX} compilers \hologo{pdfTeX} and \hologo{XeTeX}
+% The special \hologo{TeX} compilers \hologo{pdfTeX}, \hologo{LuaTeX} and \hologo{XeTeX}
 % are detected automatically. The default for unrecognized drivers can be
 % set by defining \cs{ActualTextDriverDefault}. This can be done
 % in the configuration file \xfile{accsupp.cfg}.
@@ -345,6 +349,15 @@ and the derived files
 % the modifier keyword for \cs{pdfliteral}:
 % \begin{quote}
 %   |pdfliteral=direct| $\Rightarrow$ |\pdfliteral direct{...}|
+% \end{quote}
+%
+% \subsubsection{Option \xoption{luatex}}\label{sec:luatex}
+% Package option \xoption{luatex} is used for \hologo{LuaTeX} in PDF mode.
+% Additionally \cs{BeginAccSupp} and \cs{EndAccSupp} understand
+% option \xoption{pdfliteral}. It controls
+% the modifier keyword for \cs{pdfextension} literal:
+% \begin{quote}
+%   |pdfliteral=direct| $\Rightarrow$ |\pdfextension literal direct{...}|
 % \end{quote}
 %
 % \subsubsection{Option \xoption{dvipdfm}}
@@ -511,7 +524,7 @@ A\notparallel B
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{accsupp}%
-  [2016/05/16 v0.4 Accessibility support by marked content (HO)]
+  [2018/01/30 v0.5 Accessibility support by marked content (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -553,6 +566,7 @@ A\notparallel B
 }
 \let\ACCSUPP@DisableOptions\@empty
 \ACCSUPP@DefineDriverKey{pdftex}
+\ACCSUPP@DefineDriverKey{luatex}
 \ACCSUPP@DefineDriverKey{dvips}
 \ACCSUPP@DefineDriverKey[dvips]{dvipsone}
 \ACCSUPP@DefineDriverKey{dvipdfm}
@@ -562,7 +576,11 @@ A\notparallel B
 \InputIfFileExists{accsupp.cfg}{}{}
 \providecommand*{\ActualTextDriverDefault}{dvips}
 \ifpdf
-  \def\ACCSUPP@driver{pdftex}%
+  \ifx\pdfextension\@undefined
+    \def\ACCSUPP@driver{pdftex}%
+  \else
+    \def\ACCSUPP@driver{luatex}%
+  \fi
 \else
   \ifxetex
     \def\ACCSUPP@driver{dvipdfm}%
@@ -586,11 +604,15 @@ A\notparallel B
 %    \begin{macrocode}
 \def\ACCSUPP@temp{pdftex}%
 \ifpdf
+  \ifx\pdfextension\@undefined\else
+    \def\ACCSUPP@temp{luatex}%
+  \fi
   \ifx\ACCSUPP@temp\ACCSUPP@driver
   \else
     \PackageWarningNoLine{accsupp}{%
       Wrong driver `\ACCSUPP@driver', using `pdftex' instead%
     }%
+ed as
     \let\ACCSUPP@driver\ACCSUPP@temp
   \fi
 \else
@@ -795,7 +817,7 @@ A\notparallel B
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-pdftex.def}%
-  [2016/05/16 v0.4 accsupp driver for pdfTeX (HO)]%
+  [2018/01/30 v0.5 accsupp driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -810,13 +832,35 @@ A\notparallel B
 %</pdftex>
 %    \end{macrocode}
 %
+% \subsubsection{Driver \xoption{luatex}}
+%
+%    \begin{macrocode}
+%<*luatex>
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesFile{accsupp-luatex.def}%
+  [2018/01/30 v0.5 accsupp driver for pdfTeX (HO)]%
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\protected\def\ACCSUPP@pdf@literal{\pdfextension literal}
+\def\ACCSUPP@bdc{%
+  \ACCSUPP@pdf@literal\ACCSUPP@pdfliteral{\ACCSUPP@span BDC}%
+}
+\def\ACCSUPP@emc{%
+  \ACCSUPP@pdf@literal\ACCSUPP@pdfliteral{EMC}%
+}
+%    \end{macrocode}
+%    \begin{macrocode}
+%</luatex>
+%    \end{macrocode}
+%
 % \subsubsection{Driver \xoption{dvipdfm}}
 %
 %    \begin{macrocode}
 %<*dvipdfm>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvipdfm.def}%
-  [2016/05/16 v0.4 accsupp driver for dvipdfm (HO)]%
+  [2018/01/30 v0.5 accsupp driver for dvipdfm (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -837,7 +881,7 @@ A\notparallel B
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvips.def}%
-  [2016/05/16 v0.4 accsupp driver for dvips (HO)]%
+  [2018/01/30 v0.5 accsupp driver for dvips (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -897,7 +941,7 @@ A\notparallel B
   \catcode`\%=14 %
   \catcode`\ =10 %
   \catcode13=5 %
-  \RequirePackage{accsupp}[2016/05/16]\relax
+  \RequirePackage{accsupp}[2018/01/30]\relax
   \RestoreCatcodes
 }
 \Test
@@ -969,6 +1013,7 @@ A\notparallel B
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   accsupp.sty & tex/latex/oberdiek/accsupp.sty\\
 %   accsupp-pdftex.def & tex/latex/oberdiek/accsupp-pdftex.def\\
+%   accsupp-luatex.def & tex/latex/oberdiek/accsupp-luatex.def\\
 %   accsupp-dvipdfm.def & tex/latex/oberdiek/accsupp-dvipdfm.def\\
 %   accsupp-dvips.def & tex/latex/oberdiek/accsupp-dvips.def\\
 %   accsupp.pdf & doc/latex/oberdiek/accsupp.pdf\\
@@ -1159,6 +1204,10 @@ A\notparallel B
 %   \begin{Version}{2016/05/16 v0.4}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2018/01/30 v0.5}
+%   \item
+%     LuaTeX support added.
 %   \end{Version}
 % \end{History}
 %
