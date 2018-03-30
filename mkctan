@@ -43,7 +43,7 @@ cp \
 
 
 # make pdf
-rm *.bbl
+rm *.bbl || echo no bbl
 for i in *.dtx
 do
 lualatex ${i}
