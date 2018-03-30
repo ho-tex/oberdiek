@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 
 # build oberdiek ctan distrib
 # perhaps use l3build one day, but not today
@@ -11,13 +11,17 @@ INSTALLDIR=$HOME/texmf
 
 #
 # cleanup
-rm -r bibtex doc scripts source tex
-rm *.pdf *.aux
-mkdir $HOME/texmf/scripts/oberdiek
+rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
+rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+mkdir -p $HOME/texmf/scripts/oberdiek
 
-set -e
-# unzip oberdiek.tds.zip to generate initial tds structure
-unzip -q ../oberdiek.tds.zip
+
+#  make target tds structure
+mkdir -p scripts/oberdiek
+mkdir -p doc/latex/oberdiek
+mkdir -p source/latex/oberdiek
+mkdir -p tex/generic/oberdiek
+mkdir -p tex/latex/oberdiek
 
 
 # unpack
