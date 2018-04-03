@@ -73,7 +73,7 @@ rm -f ./doc/latex/oberdiek/test/ifpdf-test1.tex
 rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
 
 # fill tds tree
-for i in `find bibtex doc scripts source tex -type f `
+for i in `cat manifest.txt`
 do
     cp `basename $i` $i
 done
