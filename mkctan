@@ -17,9 +17,13 @@ mkdir -p $HOME/texmf/scripts/oberdiek
 
 
 #  make target tds structure
+mkdir -p bibtex/bib/oberdiek
 mkdir -p scripts/oberdiek
 mkdir -p doc/latex/oberdiek
+mkdir -p doc/latex/oberdiek/example
+mkdir -p doc/latex/oberdiek/test
 mkdir -p source/latex/oberdiek
+mkdir -p source/latex/oberdiek/catalogue
 mkdir -p tex/generic/oberdiek
 mkdir -p tex/latex/oberdiek
 
@@ -94,4 +98,5 @@ oberdiek.tex,\
 *.dtx\
 }
 
+mv oberdiek*.zip oberdiek
 
