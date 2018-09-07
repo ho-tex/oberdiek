@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: hypdoc.dtx
-% Version: 2016/10/02 v1.13
+% Version: 2018/09/07 v1.14
 % Info: Hyper extensions for doc.sty
 %
 % Copyright (C) 2002, 2006, 2007, 2009-2011 by
@@ -77,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypdoc 2016/10/02 v1.13 Hyper extensions for doc.sty (HO)}
+\Msg{* Package: hypdoc 2018/09/07 v1.14 Hyper extensions for doc.sty (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +89,7 @@
 This is a generated file.
 
 Project: hypdoc
-Version: 2016/10/02 v1.13
+Version: 2018/09/07 v1.14
 
 Copyright (C) 2002, 2006, 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -150,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypdoc.drv}%
-  [2016/10/02 v1.13 Hyper extensions for doc.sty (HO)]%
+  [2018/09/07 v1.14 Hyper extensions for doc.sty (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{hypdoc.drv}
 %
 % \title{The \xpackage{hypdoc} package}
-% \date{2016/10/02 v1.13}
+% \date{2018/09/07 v1.14}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -236,7 +236,7 @@ and the derived files
 %   The main part of this package deals with index links in order
 %   to support the kind of index that package \verb|doc| provides.
 % \item[Thumbnails:]
-%   Package \verb|thumbpdf| is loaded for the case that the
+%   Package \verb|thumbpdf| may additionally be loaded for the case that the
 %   PDF file also should contain thumbnails, see the documentation
 %   of this package. But thumbnail embedding is not really
 %   necessary, because nowadays AcrobatReader is able to
@@ -358,7 +358,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypdoc}%
-  [2016/10/02 v1.13 Hyper extensions for doc.sty (HO)]%
+  [2018/09/07 v1.14 Hyper extensions for doc.sty (HO)]%
 %    \end{macrocode}
 %    The package identification is done at the top of the |.dtx| file
 %    in order to use only one identification string.
@@ -404,7 +404,6 @@ and the derived files
     \paperheight-\topmargin-1in-\headheight-\headsep
   }},%
 }
-\RequirePackage{thumbpdf}
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1339,7 +1338,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2002,2006,2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.13'/>
+  <version number='1.14'/>
   <description>
     This package adds hypertext features to the package
     <xref refid='doc'>doc</xref> that is used in the documentation
@@ -1429,6 +1428,10 @@ and the derived files
 %   \begin{Version}{2016/10/02 v1.13}
 %   \item
 %     Fixes to bookmarknames, also introduce \cs{changehistoryname}
+%   \end{Version}
+%   \begin{Version}{2018/09/07 v1.14}
+%   \item
+%     Do not load \xpackage{thumpdf}.
 %   \end{Version}
 % \end{History}
 %
