@@ -1,6 +1,6 @@
 % \iffalse
 %% Source File: ifpdf.dtx
-%% Copyright 2016-2017 Heiko Oberdiek and LaTeX3 project
+%% Copyright 2016-2018 Heiko Oberdiek and LaTeX3 project
 %%
 %% This file may be distributed under the terms of the LPPL.
 %% https://www.latex-project.org/lppl/
@@ -33,15 +33,15 @@
           \ProvidesFile{ifpdf.dtx}
 %</dtx>
 %<*!install>
-%<package>\ifx\ProvidesPackage\undefined
+%<package>\ifnum1=0\ifx\ProvidesPackage\undefined1\else\ifx\ProvidesPackage\relax1\fi\fi
 %<package>\def\next#1#2[#3]{\wlog{#2 #3}\expandafter\gdef
 %<package>\csname ver\string @ifpdf.sty\endcsname{#3}}
 %<package>\expandafter\next\fi
-%<package>\ProvidesPackage{ifpdf}
+%<package>\ProvidesPackage{ifpdf}%
 %<driver> \ProvidesFile{ifpdf.drv}
 % \fi
 %         \ProvidesFile{ifpdf.dtx}
-[2017/03/15 v3.2 Provides the ifpdf switch]
+[2018/09/07 v3.3 Provides the ifpdf switch]
 % \iffalse
 %</!install>
 %
@@ -139,3 +139,5 @@ end
 % 2016/05/14 v3.1  define ver@ifpdf.sty in plain tex.
 % 2017/03/15 v3.2  define ver\string@ifpdf.sty in amstex tex.
 %                  https://github.com/ho-tex/oberdiek/issues/23
+% 2018/09/07 v3.3  guard against \ProvidesPackage being \relax
+%                  https://github.com/ho-tex/oberdiek/issues/38
