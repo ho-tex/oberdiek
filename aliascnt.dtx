@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: aliascnt.dtx
-% Version: 2016/05/16 v1.4
+% Version: 2018/09/07 v1.5
 % Info: Alias counters
 %
 % Copyright (C) 2006, 2009 by
@@ -77,7 +77,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: aliascnt 2016/05/16 v1.4 Alias counters (HO)}
+\Msg{* Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -89,7 +89,7 @@
 This is a generated file.
 
 Project: aliascnt
-Version: 2016/05/16 v1.4
+Version: 2018/09/07 v1.5
 
 Copyright (C) 2006, 2009 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -150,7 +150,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{aliascnt.drv}%
-  [2016/05/16 v1.4 Alias counters (HO)]%
+  [2018/09/07 v1.5 Alias counters (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{aliascnt.drv}
 %
 % \title{The \xpackage{aliascnt} package}
-% \date{2016/05/16 v1.4}
+% \date{2018/09/07 v1.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -261,7 +261,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{aliascnt}%
-  [2016/05/16 v1.4 Alias counters (HO)]%
+  [2018/09/07 v1.5 Alias counters (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Create new alias counter}
@@ -337,7 +337,7 @@ and the derived files
 %
 %    Clear lists are manipulated by \cs{@addtoreset} and
 %    \cs{@removefromreset}. The latter one is provided by
-%    the \xpackage{remreset} package (\cite{remreset}).
+%    the \xpackage{remreset} package (\cite{remreset} for old latex formats).
 %
 %    \begin{macro}{\AC@patch}
 %    The same patch principle is applicable to both
@@ -353,11 +353,13 @@ and the derived files
 %    \end{macrocode}
 %    \end{macro}
 %    If \xpackage{remreset} is not loaded we cannot delay
-%    the patch to \cs{AtBeginDocumen}, because \cs{@removefromreset}
+%    the patch to \cs{AtBeginDocument}, because \cs{@removefromreset}
 %    can be called in between. Therefore we force the loading of
 %    the package.
 %    \begin{macrocode}
-\RequirePackage{remreset}
+\ifx\@removefromreset\@undefined
+  \RequirePackage{remreset}  
+\fi
 \AC@patch{addto}
 \AC@patch{removefrom}
 %    \end{macrocode}
@@ -564,7 +566,7 @@ and the derived files
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006,2009'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     This package introduces aliases for counters, that
     share the same counter register and clear list.
@@ -629,6 +631,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.4}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2018/09/07 v1.5}
+%   \item
+%     Avoid loading obsolete remreset package..
 %   \end{Version}
 % \end{History}
 %
