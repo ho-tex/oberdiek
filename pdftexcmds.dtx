@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdftexcmds.dtx
-% Version: 2018/09/07 v0.28
+% Version: 2018/09/10 v0.29
 % Info: Utility functions of pdfTeX for LuaTeX
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -88,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdftexcmds 2018/09/07 v0.28 Utility functions of pdfTeX for LuaTeX (HO)}
+\Msg{* Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -100,7 +100,7 @@
 This is a generated file.
 
 Project: pdftexcmds
-Version: 2018/09/07 v0.28
+Version: 2018/09/10 v0.29
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -201,7 +201,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdftexcmds.drv}%
-  [2018/09/07 v0.28 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -239,7 +239,7 @@ and the derived files
 % \GetFileInfo{pdftexcmds.drv}
 %
 % \title{The \xpackage{pdftexcmds} package}
-% \date{2018/09/07 v0.28}
+% \date{2018/09/10 v0.29}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -618,7 +618,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdftexcmds.sty\endcsname
 \ProvidesPackage{pdftexcmds}%
-  [2018/09/07 v0.28 Utility functions of pdfTeX for LuaTeX (HO)]%
+  [2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -1174,7 +1174,7 @@ and the derived files
   \fi
 \fi
 \begingroup
-  \def\x{2018/09/07 v0.28}%
+  \def\x{2018/09/10 v0.29}%
   \ltx@onelevel@sanitize\x
   \edef\y{%
     \pdftexcmds@directlua{%
@@ -1502,7 +1502,8 @@ and the derived files
 \ifnum\luatexversion<68 %
 \else
   \protected\edef\pdf@shellescape{%
-   \numexpr\directlua{tex.sprint(status.shell_escape)}\relax}
+   \numexpr\directlua{tex.sprint(%
+         \number\catcodetable@string,status.shell_escape)}\relax}
 \fi
 %    \end{macrocode}
 %    \end{macro}
@@ -1578,7 +1579,7 @@ and the derived files
 module("oberdiek.pdftexcmds", package.seeall)
 local systemexitstatus
 function getversion()
-  tex.write("2018/09/07 v0.28")
+  tex.write("2018/09/10 v0.29")
 end
 %    \end{macrocode}
 %
@@ -2712,6 +2713,10 @@ end
 %   \begin{Version}{2018/09/07 v0.28}
 %   \item
 %     Fix catcode regime in luatex sprint for \cs{pdf@shellescape} GH issue 45
+%   \end{Version}
+%   \begin{Version}{2018/09/10 v0.29}
+%   \item
+%     Actually do the fix described above in the code, not just document it.
 %   \end{Version}
 % \end{History}
 %
