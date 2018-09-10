@@ -90,7 +90,7 @@ zip -r ../oberdiek.tds.zip \
 
 cd ..
 echo making main zip
-rm oberdiek.zip
+rm -f oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 {README,\
 oberdiek.tex,\
