@@ -1,12 +1,12 @@
 % \iffalse meta-comment
 %
 % File: transparent.dtx
-% Version: 2016/05/16 v1.1
+% Version: 2018/09/10 v1.2
 % Info: Transparency via pdfTeX's color stack
 %
 % Copyright (C) 2007 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
-%    2016
+%    2016 2018
 %    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
@@ -79,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)}
+\Msg{* Package: transparent 2018/09/10 v1.2 Transparency via pdfTeX's color stack (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +91,7 @@
 This is a generated file.
 
 Project: transparent
-Version: 2016/05/16 v1.1
+Version: 2018/09/10 v1.2
 
 Copyright (C) 2007 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -155,7 +155,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{transparent.drv}%
-  [2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)]%
+  [2018/09/10 v1.2 Transparency via pdfTeX's color stack (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -184,7 +184,7 @@ and the derived files
 % \GetFileInfo{transparent.drv}
 %
 % \title{The \xpackage{transparent} package}
-% \date{2016/05/16 v1.1}
+% \date{2018/09/10 v1.2}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -244,7 +244,7 @@ Hello World
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{transparent}%
-  [2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)]%
+  [2018/09/10 v1.2 Transparency via pdfTeX's color stack (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Initial checks}
@@ -261,10 +261,22 @@ Hello World
 \fi
 %    \end{macrocode}
 %
-% \subsubsection{Check \pdfTeX\ version}
+% \subsubsection{Check \pdfTeX\ or Lua\TeX\ version}
+%    \begin{macrocode}
+\ifx\pdfextension\@undefined
+  \let\TRP@pdfcolorstackinit\pdfcolorstackinit
+  \let\TRP@pdfpageresources\pdfpageresources
+  \let\TRP@pdfcolorstack\pdfcolorstack
+\else
+  \def\TRP@pdfcolorstackinit           {\pdffeedback colorstackinit}
+  \protected\edef\TRP@pdfpageresources {\pdfvariable pageresources}
+  \protected\def\TRP@pdfcolorstack     {\pdfextension colorstack}
+\fi
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 \begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname pdfcolorstackinit\endcsname\relax
+\expandafter\ifx\csname TRP@pdfcolorstackinit\endcsname\relax
   \PackageWarningNoLine{transparent}{%
     Your pdfTeX version does not support color stacks%
   }%
@@ -309,8 +321,8 @@ Hello World
 \def\TRP@addresource{%
   \begingroup
     \edef\x{\endgroup
-      \pdfpageresources{%
-        \the\pdfpageresources
+      \TRP@pdfpageresources{%
+        \the\TRP@pdfpageresources
         /ExtGState<<\TRP@list>>%
       }%
     }%
@@ -318,7 +330,7 @@ Hello World
 }
 \newif\ifTRP@rerun
 \xdef\TRP@colorstack{%
-  \pdfcolorstackinit page direct{/TRP1 gs}%
+  \TRP@pdfcolorstackinit page direct{/TRP1 gs}%
 }
 %    \end{macrocode}
 %    \begin{macro}{\transparent}
@@ -368,14 +380,14 @@ Hello World
   \@ifundefined{TRP\transparent@current}{%
     \global\TRP@reruntrue
   }{%
-    \pdfcolorstack\TRP@colorstack push{%
+    \TRP@pdfcolorstack\TRP@colorstack push{%
       \csname TRP\transparent@current\endcsname
     }%
     \aftergroup\transparent@reset
   }%
 }
 \def\transparent@reset{%
-  \pdfcolorstack\TRP@colorstack pop\relax
+  \TRP@pdfcolorstack\TRP@colorstack pop\relax
 }
 %    \end{macrocode}
 %    \begin{macro}{\texttransparent}
@@ -593,7 +605,7 @@ Hello World
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007'/>
   <license type='lppl1.3'/>
-  <version number='1.1'/>
+  <version number='1.2'/>
   <description>
     Since version 1.40 <xref refid='pdftex'>pdfTeX</xref> supports
     several color stacks. This package shows how a separate colour stack
@@ -620,6 +632,10 @@ Hello World
 %   \begin{Version}{2016/05/16 v1.1}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2018/09/10 v1.2}
+%   \item
+%     Update for LuaTeX, remove dependency on Pdf\TeX\ command names.
 %   \end{Version}
 % \end{History}
 %
