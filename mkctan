@@ -23,7 +23,7 @@ mkdir -p doc/latex/oberdiek
 mkdir -p doc/latex/oberdiek/example
 # mkdir -p doc/latex/oberdiek/test
 mkdir -p source/latex/oberdiek
-mkdir -p source/latex/oberdiek/catalogue
+# mkdir -p source/latex/oberdiek/catalogue
 mkdir -p tex/generic/oberdiek
 mkdir -p tex/latex/oberdiek
 
@@ -74,7 +74,7 @@ lualatex oberdiek
 cp README readme-ctan.txt
 rm -f ./tex/latex/oberdiek/foo.sty
 # rm -f ./doc/latex/oberdiek/test/ifpdf-test1.tex
-rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
+# rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
 
 # fill tds tree
 for i in `cat manifest.txt`
