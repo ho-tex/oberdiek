@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: askinclude.dtx
-% Version: 2016/05/14 v2.3
+% Version: 2018/11/01 v2.3
 % Info: Interactive asking of included files
 %
 % Copyright (C) 1991-1994 by Pablo A. Straub
@@ -120,7 +120,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: askinclude 2016/05/14 v2.3 Interactive asking of included files}
+\Msg{* Package: askinclude 2018/11/01 v2.3 Interactive asking of included files}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -132,7 +132,7 @@
 This is a generated file.
 
 Project: askinclude
-Version: 2016/05/14 v2.3
+Version: 2018/11/01 v2.3
 
 Copyright (C) 1991-1994 by Pablo A. Straub
 Copyright (C) 2007, 2008, 2011 by
@@ -274,7 +274,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{askinclude.drv}%
-  [2016/05/14 v2.3 Interactive asking of included files]%
+  [2018/11/01 v2.3 Interactive asking of included files]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{ifluatex}
@@ -317,7 +317,7 @@ and the derived files
 % \GetFileInfo{askinclude.drv}
 %
 % \title{The \xpackage{askinclude} package}
-% \date{2016/05/14 v2.3}
+% \date{2018/11/01 v2.3}
 % \author{
 %   Pablo A. Straub\\[1ex]
 %    Heiko Oberdiek\thanks
@@ -705,13 +705,16 @@ and the derived files
 \TMP@EnsureCode{96}{12}% `
 \edef\AskInc@AtEnd{\AskInc@AtEnd\noexpand\endinput}
 \ProvidesPackage{askinclude}%
-  [2016/05/14 v2.3 Interactive asking of included files]%
+  [2018/11/01 v2.3 Interactive asking of included files]%
 %    \end{macrocode}
 %
 % Luatex compat
 %    \begin{macrocode}
 \ifx\pdfextension\@undefined\else
-  \RequirePackage{luatex85}
+    \protected\def\pdflastobj {\numexpr\pdffeedback lastobj\relax}
+    \protected\def\pdfnames   {\pdfextension names }
+    \protected\def\pdfobj     {\pdfextension obj }
+    \let\pdfoutput            \outputmode
 \fi
 %    \end{macrocode}
 %
@@ -1757,11 +1760,11 @@ and the derived files
 %<*!test1>
   \ifx\AtBeginDocumentMode Y%
     \AtBeginDocument{%
-      \usepackage{askinclude}[2016/05/14]%
+      \usepackage{askinclude}[2018/11/01]%
     }%
   \else
 %</!test1>
-    \usepackage{askinclude}[2016/05/14]%
+    \usepackage{askinclude}[2018/11/01]%
 %<*!test1>
   \fi
 %</!test1>
