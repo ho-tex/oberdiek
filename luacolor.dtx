@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: luacolor.dtx
-% Version: 2016/05/16 v1.10
+% Version: 2018/11/01 v1.10
 % Info: Color support via LuaTeX's attributes
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -87,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: luacolor 2016/05/16 v1.10 Color support via LuaTeX's attributes (HO)}
+\Msg{* Package: luacolor 2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +99,7 @@
 This is a generated file.
 
 Project: luacolor
-Version: 2016/05/16 v1.10
+Version: 2018/11/01 v1.10
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -185,7 +185,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{luacolor.drv}%
-  [2016/05/16 v1.10 Color support via LuaTeX's attributes (HO)]%
+  [2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -220,7 +220,7 @@ and the derived files
 % \GetFileInfo{luacolor.drv}
 %
 % \title{The \xpackage{luacolor} package}
-% \date{2016/05/16 v1.10}
+% \date{2018/11/01 v1.10}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -364,7 +364,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{luacolor}%
-  [2016/05/16 v1.10 Color support via LuaTeX's attributes (HO)]
+  [2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)]
 %    \end{macrocode}
 %
 % \subsection{Check for \LuaTeX}
@@ -377,13 +377,11 @@ and the derived files
 \RequirePackage{ltxcmds}[2011/04/18]%
 \RequirePackage{color}
 %    \end{macrocode}
+% require ltluatex rather than luatex package support for \LuaTeX\ allocations.
 %    \begin{macrocode}
 \ifluatex
   \ifx\newattribute\@undefined
-  \ltx@ifpackageloaded{luatexbase-attr}{%
-  }{%
-    \RequirePackage{luatex}[2010/03/09]%
-  }%
+    \RequirePackage{ltluatex}%
  \fi
 \else
   \@PackageError{luacolor}{%
@@ -428,7 +426,7 @@ and the derived files
 %    \end{macrocode}
 %    \begin{macrocode}
 \begingroup
-  \edef\x{\LuaCol@directlua{tex.write("2016/05/16 v1.10")}}%
+  \edef\x{\LuaCol@directlua{tex.write("2018/11/01 v1.10")}}%
   \edef\y{%
     \LuaCol@directlua{%
       if oberdiek.luacolor.getversion then %
@@ -606,7 +604,7 @@ module("oberdiek.luacolor", package.seeall)
 %    \begin{macro}{getversion()}
 %    \begin{macrocode}
 function getversion()
-  tex.write("2016/05/16 v1.10")
+  tex.write("2018/11/01 v1.10")
 end
 %    \end{macrocode}
 %    \end{macro}
@@ -986,7 +984,7 @@ end
   \pdfoutput=0 %
 \fi
 \documentclass{minimal}
-\usepackage{luacolor}[2016/05/16]
+\usepackage{luacolor}[2018/11/01]
 \csname @@end\endcsname
 \end
 %</test2>
@@ -998,7 +996,7 @@ end
 %    \end{macrocode}
 %    \begin{macrocode}
 \documentclass{minimal}
-\usepackage{luacolor}[2016/05/16]
+\usepackage{luacolor}[2018/11/01]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
