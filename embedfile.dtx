@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: embedfile.dtx
-% Version: 2016/05/15 v2.7
+% Version: 2018/11/01 v2.8
 % Info: Embed files into PDF
 %
 % Copyright (C) 2006-2011 by
@@ -91,7 +91,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: embedfile 2016/05/15 v2.7 Embed files into PDF (HO)}
+\Msg{* Package: embedfile 2018/11/01 v2.8 Embed files into PDF (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -103,7 +103,7 @@
 This is a generated file.
 
 Project: embedfile
-Version: 2016/05/15 v2.7
+Version: 2018/11/01 v2.8
 
 Copyright (C) 2006-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -181,7 +181,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{embedfile.drv}%
-  [2016/05/15 v2.7 Embed files into PDF (HO)]%
+  [2018/11/01 v2.8 Embed files into PDF (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -210,7 +210,7 @@ and the derived files
 % \GetFileInfo{embedfile.drv}
 %
 % \title{The \xpackage{embedfile} package}
-% \date{2016/05/15 v2.7}
+% \date{2018/11/01 v2.8}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -570,7 +570,7 @@ This example document contains three embedded files.
 \usepackage[bookmarks=false]{hyperref}
 % provides \pdfstringdef that is then used by `title' and
 % other keys.
-\usepackage{embedfile}[2016/05/15]
+\usepackage{embedfile}[2018/11/01]
 \embedfilesetup{
   view=details,
   initialfile=embedfile.pdf
@@ -638,8 +638,8 @@ You need Acrobat Reader 8 or higher.
 %<*dtxattach>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{dtx-attach}
-  [2016/05/15 v2.7 Embed \string\jobname.dtx (HO)]%
-\RequirePackage{embedfile}[2016/05/15]
+  [2018/11/01 v2.8 Embed \string\jobname.dtx (HO)]%
+\RequirePackage{embedfile}[2018/11/01]
 \embedfile[%
   stringmethod=escape,%
   mimetype=plain/text,%
@@ -729,7 +729,7 @@ You need Acrobat Reader 8 or higher.
   \fi
 \expandafter\x\csname ver@embedfile.sty\endcsname
 \ProvidesPackage{embedfile}%
-  [2016/05/15 v2.7 Embed files into PDF (HO)]%
+  [2018/11/01 v2.8 Embed files into PDF (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -809,7 +809,10 @@ You need Acrobat Reader 8 or higher.
 % Luatex compat
 %    \begin{macrocode}
 \ifx\pdfextension\@undefined\else
-  \EmFi@RequirePackage{luatex85}[2016/01/01]
+    \protected\def\pdflastobj {\numexpr\pdffeedback lastobj\relax}
+    \protected\def\pdfnames   {\pdfextension names }
+    \protected\def\pdfobj     {\pdfextension obj }
+    \let\pdfoutput            \outputmode
 \fi
 %    \end{macrocode}
 %
@@ -1817,7 +1820,7 @@ Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
 \NeedsTeXFormat{LaTeX2e}
 \let\SavedJobname\jobname
 \def\jobname{embedfile}
-\RequirePackage{dtx-attach}[2016/05/15]
+\RequirePackage{dtx-attach}[2018/11/01]
 \let\jobname\SavedJobname
 \documentclass{minimal}
 \begin{document}
@@ -2067,7 +2070,7 @@ Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2006-2011'/>
   <license type='lppl1.3'/>
-  <version number='2.7'/>
+  <version number='2.8'/>
   <description>
     This package embeds files in a PDF document, using the PDF
     format's embedding operation (note the contrast with the attach
@@ -2182,6 +2185,10 @@ Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
 %   \begin{Version}{2016/05/15 v2.7}
 %   \item
 %     LuaTeX compatibility
+%   \end{Version}
+%   \begin{Version}{2018/11/01 v2.8}
+%   \item
+%     Remove luatex85 package depenency.
 %   \end{Version}
 % \end{History}
 %
