@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfrender.dtx
-% Version: 2016/05/17 v1.4
+% Version: 2018/11/01 v1.5
 % Info: Access to some PDF graphics parameters
 %
 % Copyright (C) 2010 by
@@ -88,7 +88,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfrender 2016/05/17 v1.4 Access to some PDF graphics parameters (HO)}
+\Msg{* Package: pdfrender 2018/11/01 v1.5 Access to some PDF graphics parameters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -100,7 +100,7 @@
 This is a generated file.
 
 Project: pdfrender
-Version: 2016/05/17 v1.4
+Version: 2018/11/01 v1.5
 
 Copyright (C) 2010 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -173,7 +173,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfrender.drv}%
-  [2016/05/17 v1.4 Access to some PDF graphics parameters (HO)]%
+  [2018/11/01 v1.5 Access to some PDF graphics parameters (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{longtable}
@@ -204,7 +204,7 @@ and the derived files
 % \GetFileInfo{pdfrender.drv}
 %
 % \title{The \xpackage{pdfrender} package}
-% \date{2016/05/17 v1.4}
+% \date{2018/11/01 v1.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -460,7 +460,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdfrender.sty\endcsname
 \ProvidesPackage{pdfrender}%
-  [2016/05/17 v1.4 Access to some PDF graphics parameters (HO)]%
+  [2018/11/01 v1.5 Access to some PDF graphics parameters (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -586,7 +586,9 @@ and the derived files
 % Luatex compatibility
 %    \begin{macrocode}
 \ifx\pdfextension\@undefined\else
-  \PdfRender@RequirePackage{luatex85}[2016/01/01]
+  \def\pdfcolorstackinit {\pdffeedback colorstackinit}
+  \protected\def\pdfcolorstack     {\pdfextension colorstack}
+  \protected\def\pdfliteral        {\pdfextension literal}
 \fi
 %    \end{macrocode}
 %
@@ -1492,10 +1494,10 @@ and the derived files
 %    \begin{macrocode}
 %<*test2>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{pdfrender-test2.tex}[2016/05/17]
+\ProvidesFile{pdfrender-test2.tex}[2018/11/01]
 \documentclass{article}
 \usepackage{color}
-\usepackage{pdfrender}[2016/05/17]
+\usepackage{pdfrender}[2018/11/01]
 \begin{document}
 Hello World
 \newpage
@@ -1533,9 +1535,9 @@ Stop
 %    \begin{macrocode}
 %<*test3>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{pdfrender-test3.tex}[2016/05/17]
+\ProvidesFile{pdfrender-test3.tex}[2018/11/01]
 \documentclass{article}
-\usepackage{pdfrender}[2016/05/17]
+\usepackage{pdfrender}[2018/11/01]
 \usepackage{hyperref}
 \usepackage{bookmark}
 \begin{document}
@@ -1558,9 +1560,9 @@ Stop
 %    \begin{macrocode}
 %<*test4>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{pdfrender-test4.tex}[2016/05/17]
+\ProvidesFile{pdfrender-test4.tex}[2018/11/01]
 \documentclass[12pt]{article}
-\usepackage{pdfrender}[2016/05/17]
+\usepackage{pdfrender}[2018/11/01]
 \usepackage{color}
 \usepackage{qstest}
 \IncludeTests{*}
@@ -1858,7 +1860,7 @@ After %
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2010'/>
   <license type='lppl1.3'/>
-  <version number='1.4'/>
+  <version number='1.5'/>
   <description>
     The package provides interfaces for the user to control PDF
     parameters, such as line width or text rendering mode.  The
@@ -1945,6 +1947,10 @@ After %
 %   \item
 %     Documentation updates.
 %   \item adjust luatex85 reference so that it works in plain TeX.
+%   \end{Version}
+%   \begin{Version}{2018/11/01 v1.5}
+%   \item
+%     Remove luatex85 dependency
 %   \end{Version}
 % \end{History}
 %
