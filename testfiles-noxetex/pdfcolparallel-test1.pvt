@@ -1,0 +1,89 @@
+%%
+%% This is file `pdfcolparallel-test1.pvt',
+%% The original source files were:
+%%
+%% pdfcolparallel.dtx  (with options: `test1')
+
+\input{regression-test}
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{pdfcolparallel}[2016/05/16]
+
+\begin{document}
+  \color{green}%
+  Green%
+  \begin{Parallel}{0.47\textwidth}{0.47\textwidth}%
+    \ParallelLText{%
+      \textcolor{red}{%
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
+      }%
+    }%
+    \ParallelRText{%
+      \textcolor{blue}{%
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
+      }%
+    }%
+    \ParallelPar
+    \ParallelLText{%
+      Default %
+      \color{red}%
+      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
+    }%
+    \ParallelRText{%
+      Default %
+      \color{blue}%
+      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
+    }%
+    \ParallelPar
+    \ParallelLText{%
+      \begin{enumerate}%
+      \item left text, left text, left text, left text, %
+            left text, left text, left text, left text,%
+      \item left text, left text, left text, left text, %
+            left text, left text, left text, left text.%
+      \end{enumerate}%
+    }%
+    \ParallelRText{%
+      \begin{enumerate}%
+      \item right text, right text, right text, right text, %
+            right text, right text, right text, right text.%
+      \item right text, right text, right text, right text, %
+            right text, right text, right text, right text.%
+      \end{enumerate}%
+    }%
+  \end{Parallel}%
+  \begin{Parallel}[p]{\textwidth}{\textwidth}%
+    \ParallelLText{%
+      \textcolor{red}{%
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Foo bar bla bla bla.%
+      }%
+      \par
+      Und noch ein Absatz.%
+    }%
+    \ParallelRText{%
+      \textcolor{blue}{%
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
+        Foo bar bla bla bla.%
+      }%
+    }%
+  \end{Parallel}%
+  \begin{Parallel}[p]{\textwidth}{\textwidth}%
+    \ParallelLText{%
+      \rule{1pt}{.98\textheight}\Huge g%
+    }%
+    \ParallelRText{%
+      \rule{1pt}{.98\textheight}y%
+    }%
+  \end{Parallel}%
+  Green%
+\end{document}
+\endinput
+%%
+%% End of file `pdfcolparallel-test1.tex'.

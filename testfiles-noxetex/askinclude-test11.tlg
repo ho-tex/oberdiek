@@ -1,0 +1,66 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Warning: Overwriting file `./askinclude-test11.aux'.
+LaTeX Warning: Overwriting file `./askinclude-test11-aux.aux'.
+(askinclude-test11.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+***********************************
+*** Package askinclude Question ***
+***********************************
+Previous answer (noregexp):
+     [*]
+Regular expressions:
+ --> [noregexp]  disabled
+     [makematch] enabled, using package `makematch'
+     [pdfmatch]  enabled, using pdfTeX's \pdfmatch
+Which files do you want to include?
+     [foo,bar]   comma separated file or pattern list
+     [*]         all files
+     [-]         no files
+     [?]         ask for each file
+\answer=?
+***********************************
+*** Package askinclude Question ***
+***********************************
+\answer=x
+Package askinclude Warning: Invalid answer [x].
+(askinclude)                Answer must be one letter out of [ynAND].
+\answer=x
+Package askinclude Warning: Invalid answer [x].
+(askinclude)                Answer must be one letter out of [ynAND].
+\answer=y
+(askinclude-a11.tex
+Chapter 1.
+) [1
+]
+Package qstest Info: Passed: CheckInclude-a11 on input line ....
+***********************************
+*** Package askinclude Question ***
+***********************************
+\answer=x
+Package askinclude Warning: Invalid answer [x].
+(askinclude)                Answer must be one letter out of [ynAND].
+\answer=x
+Package askinclude Warning: Invalid answer [x].
+(askinclude)                Answer must be one letter out of [ynAND].
+\answer=N
+Package qstest Info: Passed: CheckInclude-b11 on input line ....
+Package qstest Info: Passed: CheckInclude-c11 on input line ....
+Package qstest Info: Passed: StackUsed on input line ....
+(askinclude-test11.aux (askinclude-a11.aux)
+No file askinclude-b11.aux.
+No file askinclude-c11.aux.
+Package qstest Info: Passed: CheckAux on input line ....
+Package qstest Info: Passed: CheckAnswer on input line ....
+)

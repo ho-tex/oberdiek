@@ -1,0 +1,28 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../uniquecounter.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `uniquecounter'.
+Package: uniquecounter ....-..-.. v... Provide unlimited unique counter (HO)
+(../bigintcalc.sty
+Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
+(../pdftexcmds.sty
+Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks...
+)))

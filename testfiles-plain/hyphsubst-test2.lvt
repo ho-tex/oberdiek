@@ -1,0 +1,36 @@
+%% This is file `hyphsubst-test2.lvt',
+%% The original source files were:
+%%
+%% hyphsubst.dtx  (with options: `test2')
+\input regression-test
+\input hyphsubst.sty\relax
+
+\catcode`\@=11\relax
+\ifx\et@xlang\@undefined
+  \def\l#1{\csname l@#1\endcsname}%
+\else
+  \def\l#1{\csname lang@#1\endcsname}%
+\fi
+\def\Check#1#2{%
+  \ifnum#1=#2\relax
+  \else
+    \@PackageError{test}{Wrong number: #1 <> #2}\@ehc
+  \fi
+}
+\START
+\language=0\relax
+\HyphSubstLet{ZeroSaved}{ngerman}
+\Check{\l{USenglish}}{0}%
+\HyphSubstLet{USenglish}{ngerman}
+\Check{\l{USenglish}}{\l{ngerman}}
+\ifnum\l{USenglish}>0 %
+\else
+  \@PackageError{test}{\string\language\space is not updated}\@ehc
+\fi
+\HyphSubstLet{german}{ngerman}
+\Check{\l{german}}{\l{ngerman}}
+\Check{\l{USenglish}}{\l{ngerman}}
+\csname @@end\endcsname\end
+\endinput
+%%
+%% End of file `hyphsubst-test2.tex'.

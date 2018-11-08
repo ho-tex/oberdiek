@@ -1,0 +1,41 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../embedfile.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `embedfile'.
+Package: embedfile ....-..-.. v... Embed files into PDF (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+)
+(../pdftexcmds.sty
+Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+(../kvdefinekeys.sty
+Package: kvdefinekeys ....-..-.. v... Define keys (HO)
+)
+(../pdfescape.sty
+Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
+))

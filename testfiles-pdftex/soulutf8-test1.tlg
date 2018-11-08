@@ -1,0 +1,32 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../soulutf8.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `soulutf8'.
+Package: soulutf8 ....-..-.. v... Permit use of UTF-8 characters in soul (HO)
+(../soul.sty
+Package: soul ....-..-.. v... letterspacing/underlining (mf)
+\SOUL@word=\toks...
+\SOUL@lasttoken=\toks...
+\SOUL@cmds=\toks...
+\SOUL@buffer=\toks...
+\SOUL@token=\toks...
+\SOUL@spaceskip=\skip...
+\SOUL@ttwidth=\dimen...
+\SOUL@uldp=\dimen...
+\SOUL@ulht=\dimen...
+)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))

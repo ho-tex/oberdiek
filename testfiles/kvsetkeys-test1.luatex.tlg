@@ -1,0 +1,15 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../kvsetkeys.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `kvsetkeys'.
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)))

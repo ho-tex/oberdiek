@@ -1,0 +1,18 @@
+%%
+%% This is file `luacolor-test3.lvt',
+%% The original source files were:
+%%
+%% luacolor.dtx  (with options: `test3')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{minimal}
+\usepackage{luacolor}[2016/05/16]
+\usepackage{qstest}
+\IncludeTests{*}
+\LogTests{log}{*}{*}
+\START
+\makeatletter
+\@@end
+\endinput
+%%
+%% End of file `luacolor-test3.tex'.

@@ -1,0 +1,20 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(askinclude-a5.tex
+Chapter 1.
+) [1
+]
+Package qstest Info: Passed: CheckInclude-a5 on input line ....
+Package qstest Info: Passed: CheckInclude-b5 on input line ....
+(askinclude-c5.tex [2
+]
+Chapter 2.
+) [3]
+Package qstest Info: Passed: CheckInclude-c5 on input line ....
+Package qstest Info: Passed: StackUsed on input line ....
+(askinclude-test5.aux (askinclude-a5.aux)
+No file askinclude-b5.aux.
+(askinclude-c5.aux)
+Package qstest Info: Passed: CheckAux on input line ....
+Package qstest Info: Passed: CheckAnswer on input line ....
+)

@@ -1,0 +1,36 @@
+%% This is file `pdfcol-test2.lvt',
+%% The original source files were:
+%%
+%% pdfcol.dtx  (with options: `test2')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\nofiles
+\RequirePackage{ifluatex}
+\ifluatex 
+ \outputmode =0
+\else
+ \pdfoutput 0
+\fi 
+  
+\documentclass{article}
+\usepackage{pdfcol}[2016/05/17]
+\usepackage{qstest}
+\IncludeTests{*}
+\LogTests{log}{*}{*}
+\begin{document}\START
+  \begin{qstest}{pdfcol}{}%
+    \makeatletter
+    \Expect*{\ifpdfcolAvailable true\else false\fi}{false}%
+    \setbox0=\hbox{%
+      \pdfcolInitStack{test}%
+      \pdfcolSwitchStack{test}%
+      \pdfcolSetCurrent{test}%
+      \pdfcolSetCurrent{}%
+    }%
+    \Expect*{\the\wd0}{0.0pt}%
+    \Expect*{\pdfcolIfStackExists{dummy}{true}{false}}{false}%
+  \end{qstest}%
+\end{document}
+\endinput
+%%
+%% End of file `pdfcol-test2.tex'.

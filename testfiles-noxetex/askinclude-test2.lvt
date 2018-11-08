@@ -1,0 +1,169 @@
+%% This is file `askinclude-test2.lvt',
+%% The original source files were:
+%%
+%% askinclude.dtx  (with options: `test0,test2')
+\input{regression-test}
+\ifx\CompatibilityMode Y%
+  \documentstyle[filecontents,qstest,askinclude,pdftexcmds]{book}%
+\else
+  \documentclass{book}%
+  \usepackage{filecontents}%
+  \usepackage{qstest}%
+  \usepackage{pdftexcmds}%
+  \ifx\AtBeginDocumentMode Y%
+    \AtBeginDocument{%
+      \usepackage{askinclude}[2016/05/14]%
+    }%
+  \else
+    \usepackage{askinclude}[2016/05/14]%
+  \fi
+\fi
+\START
+\IncludeTests{*}
+\LogTests{log}{*}{*}
+\makeatletter
+\let\org@typein\typein
+\def\typein[#1]#2{%
+  \ifx\@Stack\@StackEmpty
+    \begin{qstest}{StackNonEmpty}{StackNonEmpty}%
+      \Expect{Error: empty stack}{}%
+    \end{qstest}%
+    \org@typein[{#1}]{#2}%
+  \else
+    \edef#1{%
+      \unexpanded\expandafter\expandafter\expandafter{%
+        \expandafter\@car\@Stack\@nil
+      }%
+    }%
+    \xdef\@Stack{%
+      \unexpanded\expandafter\expandafter\expandafter{%
+        \expandafter\@cdr\@Stack\@nil
+      }%
+    }%
+    \typeout{}%
+    \typeout{\string#1=#1}%
+  \fi
+}
+\def\@StackEmpty{\BOTTOM}
+\let\@Stack\@StackEmpty
+\newcommand*{\Stack}[1]{%
+  \def\@Stack{#1\BOTTOM}%
+}
+\AtEndDocument{%
+  \begin{qstest}{StackUsed}{StackUsed}%
+    \Expect*{%
+      \ifx\@Stack\@StackEmpty
+      \else
+        Error: Unused stack entries%
+      \fi
+    }{}%
+  \end{qstest}%
+}
+\newcommand*{\CheckInclude}[2]{%
+  \include{askinclude-#1}%
+  \begin{qstest}{CheckInclude-#1}{CheckInclude-#1}%
+    \Expect*{%
+      \expandafter\ifx\csname file#1\endcsname Ytrue\else false\fi
+    }{#2}%
+  \end{qstest}%
+}
+\def\@EndChecks{}
+\AtBeginDocument{%
+  \AtEndDocument{%
+    \if@filesw
+      \immediate\write\@mainaux{\string\@EndChecks}%
+    \fi
+  }%
+}
+\newcommand*{\CheckAnswer}[1]{%
+  \gdef\AnswerText{#1}%
+  \g@addto@macro\@EndChecks{\@CheckAnswer}%
+}
+\def\@CheckAnswer{%
+  \begin{qstest}{CheckAnswer}{CheckAnswer}%
+    \Expect*{\unexpanded\expandafter{\AskInc@Answer}}%
+           *{\unexpanded\expandafter{\AnswerText}}%
+  \end{qstest}%
+}
+\newcommand*{\CheckMatchMethod}[1]{%
+  \gdef\MatchMethodText{#1}%
+  \g@addto@macro\@EndChecks{\@CheckMatchMethod}%
+}
+\def\@CheckMatchMethod{%
+  \begin{qstest}{CheckMatchMethod}{CheckMatchMethod}%
+    \Expect*{\unexpanded\expandafter{\AskInc@MatchMethod}}%
+           *{\unexpanded\expandafter{\MatchMethodText}}%
+  \end{qstest}%
+}
+\def\@CheckAux{%
+  \begin{qstest}{CheckAux}{CheckAux}%
+    \def\GetFileContents##1{%
+      \pdf@unescapehex{%
+        \pdf@filedump{0}{\pdf@filesize{##1}}{##1}%
+      }%
+    }%
+    \Expect*{\GetFileContents{\jobname.aux}}%
+           *{\GetFileContents{\jobname-aux.aux}}%
+  \end{qstest}%
+}
+\g@addto@macro\@EndChecks{\@CheckAux}
+\let\org@filec@ntents\filec@ntents
+\def\filec@ntents{%
+  \catcode`\|=0 %
+  \org@filec@ntents
+}
+\begingroup
+  \endlinechar=-1 %
+  \catcode`\|=0 %
+  \@makeother\#%
+  \@makeother\\%
+  |gdef|AddList{%
+    \providecommand*\AskInc@AddList[2]{%
+      \ifcase\ifx#1\@undefined
+             \else\ifx#1\relax
+             \else\ifx#1\@empty
+             \else1\fi\fi\fi0 %
+        \gdef#1{#2}%
+      \else
+        \g@addto@macro#1{,#2}%
+      \fi
+    }%
+  }%
+  |gdef|AddFile{%
+    \providecommand\AskInc@AddFile{%
+      \AskInc@AddList\AskInc@Files
+    }%
+  }%
+  |gdef|AddMatch{%
+    \providecommand\AskInc@AddMatch{%
+      \AskInc@AddList\AskInc@MatchFiles
+    }%
+  }%
+|endgroup
+\Stack{*}
+\CheckAnswer{*}
+\begin{filecontents*}{\jobname.aux}
+\relax
+\end{filecontents*}
+\begin{filecontents*}{\jobname-aux.aux}
+\relax|space
+\gdef\AskInc@Answer{*}
+\gdef\AskInc@MatchMethod{}
+|AddList
+|AddFile
+\AskInc@AddFile{askinclude-a}
+\@input{askinclude-a.aux}
+\AskInc@AddFile{askinclude-b}
+\@input{askinclude-b.aux}
+\AskInc@AddFile{askinclude-c}
+\@input{askinclude-c.aux}
+\@EndChecks
+\end{filecontents*}
+\begin{document}
+\CheckInclude{a}{true}
+\CheckInclude{b}{true}
+\CheckInclude{c}{true}
+\end{document}
+\endinput
+%%
+%% End of file `askinclude-test2.tex'.

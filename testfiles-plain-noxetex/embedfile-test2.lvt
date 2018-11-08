@@ -1,0 +1,32 @@
+%% This is file `embedfile-test2.lvt',
+%% The original source files were:
+%%
+%% embedfile.dtx  (with options: `test2')
+\input regression-test
+\input embedfile.sty\relax
+\embedfile[%
+  stringmethod=escape,%
+  mimetype=plain/text,%
+  desc={LaTeX docstrip source archive for package `embedfile'},%
+  id={embedfile.dtx}%
+]{embedfile.dtx}
+\nopagenumbers
+Test (plain-\TeX): {\tt embedfile.dtx} should be embedded.%
+
+\def\Test#1{%
+  \par
+  \embedfileifobjectexists{embedfile.dtx}{#1}{%
+    Object #1 (embedfile.dtx): %
+    \embedfilegetobject{embedfile.dtx}{#1}%
+  }{%
+    \errmessage{Missing object #1 (embedfile.dtx)}%
+  }%
+}
+\START
+\Test{EmbeddedFile}
+\Test{Filespec}
+\embedfilefinish
+\bye
+\endinput
+%%
+%% End of file `embedfile-test2.tex'.

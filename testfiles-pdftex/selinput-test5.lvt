@@ -1,0 +1,29 @@
+%% This is file `selinput-test5.lvt',
+%% The original source files were:
+%%
+%% selinput.dtx  (with options: `test,test5')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{minimal}
+\usepackage{textcomp}
+\usepackage{qstest}
+\usepackage[warning,ucs]{selinput}
+\SelectInputMappings{%
+    adieresis={\"a},%
+    germandbls={{\ss}},%
+    Euro=\texteuro{},%
+}
+\START
+\begin{qstest}{encoding}{}
+  \Expect*{\inputencodingname}{ascii}%
+\end{qstest}
+\begin{document}
+  adieresis={\"a}, %
+  germandbls={{\ss}}, %
+  Euro=\texteuro{}%
+
+\clearpage
+\end{document}
+\endinput
+%%
+%% End of file `selinput-test5.lvt'.

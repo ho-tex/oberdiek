@@ -1,0 +1,75 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Warning: Overwriting file `./askinclude-test23.aux'.
+LaTeX Warning: Overwriting file `./askinclude-test23-aux.aux'.
+(askinclude-test23.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+***********************************
+*** Package askinclude Question ***
+***********************************
+Previous answer (noregexp):
+     [*]
+Regular expressions:
+ --> [noregexp]  disabled
+     [makematch] enabled, using package `makematch'
+     [pdfmatch]  enabled, using pdfTeX's \pdfmatch
+Which files do you want to include?
+     [foo,bar]   comma separated file or pattern list
+     [*]         all files
+     [-]         no files
+     [?]         ask for each file
+\answer=makematch
+***********************************
+*** Package askinclude Question ***
+***********************************
+Previous answer (noregexp):
+     [*]
+Regular expressions:
+     [noregexp]  disabled
+ --> [makematch] enabled, using package `makematch'
+     [pdfmatch]  enabled, using pdfTeX's \pdfmatch
+Which files do you want to include?
+     [foo,bar]   comma separated file or pattern list
+     [*]         all files
+     [-]         no files
+     [?]         ask for each file
+\answer=*,!askinclude-b23
+(../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+(askinclude-a23.tex
+Chapter 1.
+) [1
+]
+Package qstest Info: Passed: CheckInclude-a23 on input line ....
+Package qstest Info: Passed: CheckInclude-b23 on input line ....
+(askinclude-c23.tex [2
+]
+Chapter 2.
+) [3]
+Package qstest Info: Passed: CheckInclude-c23 on input line ....
+Package qstest Info: Passed: StackUsed on input line ....
+(askinclude-test23.aux (askinclude-a23.aux)
+No file askinclude-b23.aux.
+(askinclude-c23.aux)
+Package qstest Info: Passed: CheckAux on input line ....
+Package qstest Info: Passed: CheckAnswer on input line ....
+Package qstest Info: Passed: CheckMatchMethod on input line ....
+)

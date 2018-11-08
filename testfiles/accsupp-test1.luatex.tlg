@@ -1,0 +1,43 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../accsupp.sty
+Package: accsupp ....-..-.. v... Accessibility support by marked content (HO)
+(../pdfescape.sty
+Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+(../pdftexcmds.sty
+Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks...
+))
+(../ifxetex.sty
+Package: ifxetex ....-..-.. v... Provides ifxetex conditional
+)
+(../kvoptions.sty
+Package: kvoptions ....-..-.. v... Key value format for package options (HO)
+(../keyval.sty
+Package: keyval ....-..-.. v... key=value parser (DPC)
+\KV@toks@=\toks...
+)
+(../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+)))
+(../accsupp-luatex.def
+File: accsupp-luatex.def ....-..-.. v... accsupp driver for pdfTeX (HO)
+))

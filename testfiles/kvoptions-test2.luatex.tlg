@@ -1,0 +1,25 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../kvoptions-patch.sty
+Package: kvoptions-patch ....-..-.. v... LaTeX patch for keyval options (HO)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)))
+(../kvoptions.sty
+Package: kvoptions ....-..-.. v... Key value format for package options (HO)
+(../keyval.sty
+Package: keyval ....-..-.. v... key=value parser (DPC)
+\KV@toks@=\toks...
+)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+(../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+))

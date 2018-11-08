@@ -1,0 +1,102 @@
+%% This is file `atbegshi-test2.lvt',
+%% The original source files were:
+%%
+%% atbegshi.dtx  (with options: `test2')
+\input regression-test
+\input atbegshi.sty\relax
+\def\msg#{\immediate\write16}
+\START
+\msg{File: atbegshi-test2.tex 2016/06/09 v1.18 Test file for plain-TeX}
+\def\testmsg#1#2{%
+  \msg{}%
+  \msg{*** Test with box (#1), expected page output [#2]}% hash-ok
+}
+
+\newbox\voidbox
+\def\void{\box\voidbox}
+\begingroup
+  \setbox\voidbox=\void
+\endgroup
+
+\count0=0\relax
+\AtBeginShipout{%
+  \global\advance\count0 by 1\relax
+  \msg{* Inside \string\AtBeginShipout: [\the\count0]}%
+}
+
+\AtBeginShipoutFirst{%
+  \msg{* Inside \string\AtBeginShipoutFirst}%
+  Hello World%
+}
+
+\testmsg{\string\null}{1}
+\shipout\null
+
+\AtBeginShipoutFirst{%
+  This is too late%
+}
+
+\testmsg{void}{}
+\shipout\void
+
+\testmsg{\string\copy255 (not void)}{2}
+\setbox255\hbox{\vrule height 10bp width 10bp}
+\shipout\copy255 %
+
+\testmsg{\string\copy255 (again)}{3}
+\shipout\copy255 %
+
+\testmsg{\string\box255}{4}
+\shipout\box255 %
+
+\testmsg{\string\box255 (again)}{}
+\shipout\box255 %
+
+\testmsg{\string\hbox}{5}
+\shipout\hbox{\vrule height 5bp width 20bp}
+
+\testmsg{\string\vbox}{6}
+\shipout\vbox{\hrule height 20bp width 5bp}
+
+\testmsg{\string\null, voided by hook}{}
+\def\VoidBox{%
+  \begingroup
+    \setbox\AtBeginShipoutBox=\box\AtBeginShipoutBox
+  \endgroup
+}
+\AtBeginShipout{\VoidBox}
+\shipout\null
+\def\VoidBox{}
+
+\msg{*** \string\begingroup}
+\begingroup
+  \testmsg{void}{}%
+  \shipout\void
+\msg{*** \string\endgroup}
+\endgroup
+
+\msg{*** \string\begingroup}
+\begingroup
+  \testmsg{void}{}%
+  \shipout\void
+  \testmsg{\string\null}{8}%
+  \shipout\null
+\msg{*** \string\endgroup}
+\endgroup
+
+\testmsg{output routine}{9}
+Hello World
+\vfill
+\eject
+
+\testmsg{\string\null\space(discarded)}{}
+\AtBeginShipout{%
+  \msg{* Inside \string\AtBeginShipout: DISCARD}%
+  \AtBeginShipoutDiscard
+}
+\shipout\null
+
+\end
+\endinput
+%%
+%% End of file `atbegshi-test2.tex'.

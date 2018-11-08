@@ -1,0 +1,13 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../etexcmds.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `etexcmds'.
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+))

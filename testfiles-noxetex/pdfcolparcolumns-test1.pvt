@@ -1,0 +1,49 @@
+%% This is file `pdfcolparcolumns-test1.pvt',
+%% The original source files were:
+%%
+%% pdfcolparcolumns.dtx  (with options: `test1')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\AtEndDocument{%
+  \typeout{}%
+  \typeout{**************************************}%
+  \typeout{*** \space Check the PDF file manually! \space ***}%
+  \typeout{**************************************}%
+  \typeout{}%
+}
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{pdfcolparcolumns}
+
+\newcommand{\instruct}[1]{%
+  \noindent
+  \footnotesize
+  \textcolor{red}{#1}%
+}
+
+\begin{document}
+  \begin{parcolumns}[colwidths={1=2.3in,2=2.3in},sloppy]{2}%
+    \colchunk[1]{%
+      \instruct{Et non dicitur versus} %
+      Fidelium anim\ae\ %
+      \instruct{%
+        sed immediate subiungitur antiphona finalis %
+        beat\ae\ Mari\ae\ Virginis%
+      } %
+      100.%
+    }%
+    \colchunk[2]{%
+      \instruct{%
+        And the verse %
+        \textcolor{black}{May the souls of the faithful} %
+        is not said, but the final antiphon of the %
+        Blessed Virgin Mary, %
+        \textcolor{black}{100,} %
+        is immediately joined.%
+      }%
+    }%
+  \end{parcolumns}%
+\end{document}
+\endinput
+%%
+%% End of file `pdfcolparcolumns-test1.tex'.

@@ -1,0 +1,39 @@
+%% This is file `embedfile-test4.lvt',
+%% The original source files were:
+%%
+%% embedfile.dtx  (with options: `test4')
+\input regression-test
+\catcode`\{=1 %
+\catcode`\}=2 %
+\input ifluatex.sty %
+\ifluatex
+  \directlua{%
+    tex.enableprimitives('', {%
+      'pdflastobj',%
+      'pdfnames',%
+      'pdfobj',%
+      'pdfoutput'%
+    })%
+  }%
+  \ifx\pdfextension\undefined\else
+    \protected\def\pdflastobj {\numexpr\pdffeedback lastobj\relax}
+    \protected\def\pdfnames   {\pdfextension names }
+    \protected\def\pdfobj     {\pdfextension obj }
+    \let\pdfoutput            \outputmode
+  \fi
+  \input ltluatex
+\fi
+\pdfoutput=1 %
+\input embedfile.sty %
+\START
+\shipout\hbox{}
+\embedfile[%
+  stringmethod=escape,%
+  mimetype=plain/text,%
+  desc={iniTeX source},%
+]{\jobname.lvt}
+\embedfilefinish
+\end
+\endinput
+%%
+%% End of file `embedfile-test4.tex'.

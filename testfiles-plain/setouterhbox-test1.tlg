@@ -1,0 +1,8 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../setouterhbox.sty
+Package: setouterhbox ....-..-.. v... Set hbox in outer horizontal mode (HO)
+\setouterhboxBox=\box...
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+))

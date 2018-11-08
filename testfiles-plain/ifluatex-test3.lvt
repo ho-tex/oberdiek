@@ -1,0 +1,13 @@
+%% This is file `ifluatex-test3.lvt',
+%% The original source files were:
+%%
+%% ifluatex.dtx  (with options: `test-reload2')
+\input regression-test
+\START
+\input miniltx.tex\relax
+\input ifluatex.sty\relax
+\input ifluatex.sty\relax
+\csname @@end\endcsname\end
+\endinput
+%%
+%% End of file `ifluatex-test3.tex'.

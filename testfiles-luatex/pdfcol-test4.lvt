@@ -1,0 +1,18 @@
+%% This is file `pdfcol-test4.lvt',
+%% The original source files were:
+%%
+%% pdfcol.dtx  (with options: `test4')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{article}
+\usepackage{luacolor}
+\usepackage{pdfcol}
+\makeatletter
+\START
+\ifpdfcolAvailable
+  \@latex@error{Detection of package luacolor failed}%
+\fi
+\csname @@end\endcsname
+\endinput
+%%
+%% End of file `pdfcol-test4.tex'.

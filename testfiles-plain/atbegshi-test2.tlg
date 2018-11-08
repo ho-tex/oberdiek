@@ -1,0 +1,52 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+File: atbegshi-test2.tex ....-..-.. v... Test file for plain-TeX
+\voidbox=\box...
+*** Test with box (\null), expected page output [1]
+* Inside \AtBeginShipout: [1]
+* Inside \AtBeginShipoutFirst
+[1]
+Package atbegshi Warning: First page is already shipped out, ignoring
+(atbegshi)                \AtBeginShipoutFirst on input line ....
+*** Test with box (void), expected page output []
+Package atbegshi Warning: Ignoring void shipout box on input line ....
+*** Test with box (\copy255 (not void)), expected page output [2]
+* Inside \AtBeginShipout: [2]
+[2]
+*** Test with box (\copy255 (again)), expected page output [3]
+* Inside \AtBeginShipout: [3]
+[3]
+*** Test with box (\box255), expected page output [4]
+* Inside \AtBeginShipout: [4]
+[4]
+*** Test with box (\box255 (again)), expected page output []
+Package atbegshi Warning: Ignoring void shipout box on input line ....
+*** Test with box (\hbox), expected page output [5]
+* Inside \AtBeginShipout: [5]
+[5]
+*** Test with box (\vbox), expected page output [6]
+* Inside \AtBeginShipout: [6]
+[6]
+*** Test with box (\null, voided by hook), expected page output []
+* Inside \AtBeginShipout: [7]
+Package atbegshi Warning: Shipout box was voided by hook,
+(atbegshi)                ignoring shipout box on input line ....
+Package atbegshi Info: Shipout page discarded.
+*** \begingroup
+*** Test with box (void), expected page output []
+Package atbegshi Warning: Ignoring void shipout box on input line ....
+*** \endgroup
+*** \begingroup
+*** Test with box (void), expected page output []
+Package atbegshi Warning: Ignoring void shipout box on input line ....
+*** Test with box (\null), expected page output [8]
+* Inside \AtBeginShipout: [8]
+[8]
+*** \endgroup
+*** Test with box (output routine), expected page output [9]
+* Inside \AtBeginShipout: [9]
+[9]
+*** Test with box (\null (discarded)), expected page output []
+* Inside \AtBeginShipout: [11]
+* Inside \AtBeginShipout: DISCARD
+Package atbegshi Info: Shipout page discarded.

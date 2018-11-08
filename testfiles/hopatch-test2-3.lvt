@@ -1,0 +1,56 @@
+%% This is file `hopatch-test2-3.lvt',
+%% The original source files were:
+%%
+%% hopatch.dtx  (with options: `test2')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\providecommand\variant{3}
+\RequirePackage{filecontents}
+\begin{filecontents}{foo.sty}
+\ProvidesPackage{foo}
+\def\msg#{\immediate\write16}
+\def\foo#1{%
+  \msg{\fooformat{#1}}%
+}
+\def\fooformat#1{[#1]}% hash-ok
+\foo{* Executing foo at package loading}
+\end{filecontents}
+
+\ifnum\variant=1 %
+  \documentclass{memoir}%
+\else
+  \documentclass{article}%
+\fi
+
+\ifcase\variant\relax
+\or % 1
+\or % 2
+  \usepackage{etoolbox}%
+\or % 3
+  \usepackage{scrlfile}%
+\or % 4
+  \usepackage{filehook}%
+\fi
+
+\AtBeginDocument{\foo{* AtBeginDocument before hopatch}}
+\usepackage{hopatch}
+\AtBeginDocument{\foo{* AtBeginDocument after hopatch}}
+
+\makeatletter
+\hopatch@AfterPackage{foo}{%
+  \def\fooformat#1{<<#1>>}%
+}
+\makeatother
+\START
+\AtBeginDocument{\foo{* AtBeginDocument before foo}}
+\usepackage{foo}
+\AtBeginDocument{\foo{* AtBeginDocument after foo}}
+
+\foo{* Executing in preamble}
+
+\begin{document}
+\foo{* Executing in document}
+\end{document}
+\endinput
+%%
+%% End of file `hopatch-test2.tex'.

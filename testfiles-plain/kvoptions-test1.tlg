@@ -1,0 +1,30 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../kvoptions.sty
+kvoptions: ....-..-.. v... Key value format for package options (HO)
+(../keyval.sty
+keyval: ....-..-.. v... key=value parser (DPC)
+\KV@toks@=\toks...
+)
+(../ltxcmds.sty
+ltxcmds: ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+(../kvsetkeys.sty
+kvsetkeys: ....-..-.. v... Key value parser (HO)
+(../infwarerr.sty
+infwarerr: ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../etexcmds.sty
+etexcmds: ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../infwarerr.sty
+infwarerr: The package is already loaded, stopped
+)
+(../ifluatex.sty
+ifluatex: ....-..-.. v... Provides the ifluatex switch (HO)
+ifluatex: LuaTeX not detected
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))

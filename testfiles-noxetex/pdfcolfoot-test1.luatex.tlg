@@ -1,0 +1,183 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+Completed box being shipped out [1]
+\vbox(432.5+0.0)x276.0, direction TLT
+.\glue 20.0
+.\vbox(412.5+0.0)x276.0, direction TLT
+..\vbox(12.0+0.0)x276.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x276.0, direction TLT
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x276.0, direction TLT
+....\pdfcolorstack 0 pop
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(345.5+0.0)x276.0, glue set 314.26645fil, direction TLT
+...\write-{}
+...\glue(\topskip) 2.32529
+...\hbox(9.67471+0.252)x276.0, glue set 200.38fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x18.0, direction TLT
+....\TU/lmr/m/n/12 B
+....\TU/lmr/m/n/12 l
+....\TU/lmr/m/n/12 a
+....\TU/lmr/m/n/12 c
+....\kern-0.324 (font)
+....\TU/lmr/m/n/12 k
+....\penalty 10000
+....\hbox(9.67471+0.0)x4.748, direction TLT
+.....\mathon
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(5.32+0.0)x4.748, shifted -4.3547, direction TLT
+......\TU/lmr/m/n/8 1
+.....\mathoff
+....\glue(\spaceskip) 3.912 plus 1.956 minus 1.304
+....\pdfcolorstack 0 push {1 0 0 rg 1 0 0 RG}
+....\TU/lmr/m/n/12 R
+....\TU/lmr/m/n/12 e
+....\TU/lmr/m/n/12 d
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.252
+...\glue 0.0 plus 1.0fil
+...\glue 10.8 plus 4.0 minus 2.0
+...\pdfcolorstack 0 push {0 g 0 G}
+...\kern-3.0
+...\rule(0.4+0.0)x110.39832
+...\kern2.6
+...\pdfcolorstack 1 current
+...\hbox(8.4+0.11)x276.0, glue set 210.50996fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(8.27692+0.0)x18.00003, glue set 13.51703fil, direction TLT
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(8.27692+0.0)x4.483, direction TLT
+......\mathon
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(4.648+0.0)x4.483, shifted -3.62892, direction TLT
+.......\TU/lmr/m/n/7 1
+......\mathoff
+....\hbox(8.4+0.0)x0.0, direction TLT
+.....\rule(8.4+0.0)x0.0
+....\TU/lmr/m/n/10 B
+....\TU/lmr/m/n/10 l
+....\TU/lmr/m/n/10 a
+....\TU/lmr/m/n/10 c
+....\kern-0.28 (font)
+....\TU/lmr/m/n/10 k
+....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+....\pdfcolorstack 1 push {0 0 1 rg 0 0 1 RG}
+....\TU/lmr/m/n/10 B
+....\TU/lmr/m/n/10 l
+....\TU/lmr/m/n/10 u
+....\TU/lmr/m/n/10 e
+....\penalty 10000
+....\glue 0.0 plus 1.0fil
+....\penalty -10000
+....\glue(\rightskip) 0.0
+...\pdfcolorstack 0 pop
+...\glue -0.11
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 22.02
+..\hbox(7.98+0.0)x276.0, direction TLT
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(7.98+0.0)x276.0, glue set 135.06fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/12 1
+....\glue 0.0 plus 1.0fil
+...\pdfcolorstack 0 pop
+**************************************
+***  Check the PDF file manually!  ***
+**************************************
+Completed box being shipped out [2]
+\vbox(432.5+0.0)x276.0, direction TLT
+.\glue 20.0
+.\vbox(412.5+0.0)x276.0, direction TLT
+..\vbox(12.0+0.0)x276.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x276.0, direction TLT
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x276.0, direction TLT
+....\pdfcolorstack 0 pop
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(345.5+0.0)x276.0, glue set 314.26645fil, direction TLT
+...\glue(\topskip) 3.672
+...\hbox(8.328+0.252)x276.0, glue set 205.128fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x18.0, direction TLT
+....\TU/lmr/m/n/12 R
+....\TU/lmr/m/n/12 e
+....\TU/lmr/m/n/12 d
+....\pdfcolorstack 0 pop
+....\glue(\spaceskip) 3.912 plus 1.956 minus 1.304
+....\TU/lmr/m/n/12 B
+....\TU/lmr/m/n/12 l
+....\TU/lmr/m/n/12 a
+....\TU/lmr/m/n/12 c
+....\kern-0.324 (font)
+....\TU/lmr/m/n/12 k
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.252
+...\glue 0.0 plus 1.0fil
+...\glue 10.8 plus 4.0 minus 2.0
+...\pdfcolorstack 0 push {0 g 0 G}
+...\kern-3.0
+...\rule(0.4+0.0)x110.39832
+...\kern2.6
+...\pdfcolorstack 1 current
+...\glue(\splittopskip) 1.45999
+...\hbox(6.94+3.60004)x276.0, glue set 228.51fil, direction TLT
+....\TU/lmr/m/n/10 B
+....\TU/lmr/m/n/10 l
+....\TU/lmr/m/n/10 u
+....\TU/lmr/m/n/10 e
+....\pdfcolorstack 1 pop
+....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 B
+....\TU/lmr/m/n/10 l
+....\TU/lmr/m/n/10 a
+....\TU/lmr/m/n/10 c
+....\kern-0.28 (font)
+....\TU/lmr/m/n/10 k
+....\penalty 10000
+....\rule(0.0+3.60004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\pdfcolorstack 0 pop
+...\glue -3.60004
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 22.02
+..\hbox(7.98+0.0)x276.0, direction TLT
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(7.98+0.0)x276.0, glue set 135.06fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/12 2
+....\glue 0.0 plus 1.0fil
+...\pdfcolorstack 0 pop
+(pdfcolfoot-test1.aux)

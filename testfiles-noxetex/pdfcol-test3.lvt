@@ -1,0 +1,37 @@
+%%
+%% This is file `pdfcol-test3.lvt',
+%% The original source files were:
+%%
+%% pdfcol.dtx  (with options: `test3')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\nofiles
+\documentclass{article}
+\usepackage{pdfcol}[2016/05/17]
+\usepackage{qstest}
+\IncludeTests{*}
+\LogTests{log}{*}{*}
+\begin{document}\START
+  \begin{qstest}{pdfcol}{}%
+    \makeatletter
+    \Expect*{\ifpdfcolAvailable true\else false\fi}{true}%
+    \Expect*{\number\@pdfcolorstack}{0}%
+    \setbox0=\hbox{%
+      \pdfcolInitStack{test}%
+      \Expect*{\number\pdfcol@Stack@test}{1}%
+      \Expect*{\number\@pdfcolorstack}{0}%
+      \pdfcolSwitchStack{test}%
+      \Expect*{\number\@pdfcolorstack}{1}%
+      \pdfcolSetCurrent{test}%
+      \pdfcolSetCurrent{}%
+    }%
+    \Expect*{\the\wd0}{0.0pt}%
+    \Expect*{\number\@pdfcolorstack}{0}%
+    \Expect*{\number\pdfcol@Stack@test}{1}%
+    \Expect*{\pdfcolIfStackExists{test}{true}{false}}{true}%
+    \Expect*{\pdfcolIfStackExists{dummy}{true}{false}}{false}%
+  \end{qstest}%
+\end{document}
+\endinput
+%%
+%% End of file `pdfcol-test3.tex'.

@@ -1,0 +1,108 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+* CMD: ROT13
+ Input: [0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]
+Expect: [0123456789NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm]
+Result: [0123456789NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm]
+==> Ok
+ Input: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+==> Ok
+ Input: [
+Expect: [
+Result: [
+==> Ok
+ Input: []
+Expect: []
+Result: []
+==> Ok
+ Input: [A]
+Expect: [N]
+Result: [N]
+==> Ok
+ Input: [N]
+Expect: [A]
+Result: [A]
+==> Ok
+ Input: [ ]
+Expect: [ ]
+Result: [ ]
+==> Ok
+ Input: [0a]
+Expect: [0n]
+Result: [0n]
+==> Ok
+ Input: [    ]
+Expect: [    ]
+Result: [    ]
+==> Ok
+ Input: [{}]
+Expect: [{}]
+Result: [{}]
+==> Ok
+ Input: [\par ]
+Expect: [\cne ]
+Result: [\cne ]
+==> Ok
+* CMD: ROT5
+ Input: [0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]
+Expect: [5678901234ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]
+Result: [5678901234ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]
+==> Ok
+ Input: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+==> Ok
+ Input: [
+Expect: [
+Result: [
+==> Ok
+* CMD: ROT18
+ Input: [ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz]
+Expect: [STUVWXYZ0123456789ABCDEFGHIJKLMNOPQRnopqrstuvwxyzabcdefghijklm]
+Result: [STUVWXYZ0123456789ABCDEFGHIJKLMNOPQRnopqrstuvwxyzabcdefghijklm]
+==> Ok
+ Input: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
+==> Ok
+ Input: [
+Expect: [
+Result: [
+==> Ok
+* CMD: ROT47
+ Input: [!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~]
+Expect: [PQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO]
+Result: [PQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO]
+==> Ok
+ Input: [
+Expect: [
+Result: [
+==> Ok
+ Input: [
+Expect: [
+Result: [
+==> Ok
+* Big chars
+* CMD: ROT5
+ Input: []
+Expect: []
+Result: []
+==> Ok
+ Input: [ ]
+Expect: [ ]
+Result: [ ]
+==> Ok
+ Input: [ 0 1 ]
+Expect: [ 5 6 ]
+Result: [ 5 6 ]
+==> Ok
+ Input: [ĬϨ✐]
+Expect: [ĬϨ✐]
+Result: [ĬϨ✐]
+==> Ok
+ Input: [x Ĭ Ϩy z✐ xĬy ĬxϨ]
+Expect: [x Ĭ Ϩy z✐ xĬy ĬxϨ]
+Result: [x Ĭ Ϩy z✐ xĬy ĬxϨ]
+==> Ok

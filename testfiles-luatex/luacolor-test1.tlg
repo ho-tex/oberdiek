@@ -1,0 +1,23 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../luacolor.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `luacolor'.
+Package: luacolor ....-..-.. v... Color support via LuaTeX's attributes (HO)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+\LuaCol@Attribute=\attribute...
+(../atbegshi.sty
+Package: atbegshi ....-..-.. v... At begin shipout hook (HO)
+))

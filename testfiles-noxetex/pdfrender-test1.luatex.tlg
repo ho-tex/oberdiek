@@ -1,0 +1,31 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../pdfrender.sty
+LaTeX Warning: You have requested package `',
+               but the package provides `pdfrender'.
+Package: pdfrender ....-..-.. v... Access to some PDF graphics parameters (HO)
+(../luatex85.sty
+Package: luatex85 ....-..-.. v... pdftex aliases for luatex
+)
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+)
+(../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+)
+Package pdfrender Info: \pdfmatch not found. Therefore the values
+(pdfrender)             of some parameters are not validated.
+(../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+(../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)))
+LaTeX Info: Redefining \pdfrender on input line ....
+LaTeX Info: Redefining \textpdfrender on input line ....
+)
