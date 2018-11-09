@@ -122,8 +122,7 @@ This work consists of the main source file luacolor.dtx
 and the derived files
    luacolor.sty, luacolor.pdf, luacolor.ins, luacolor.drv,
    luacolor-test1.tex, luacolor-test2.tex, luacolor-test3.tex,
-   oberdiek.luacolor.lua, luacolor.lua,
-   oberdiek.luacolor-pre065.lua, luacolor-pre065.lua.
+   luacolor.lua,
 
 \endpreamble
 \let\MetaPrefix\DoubleperCent
@@ -150,10 +149,10 @@ and the derived files
 \def\currentpostamble{\defaultpostamble}%
 \generate{%
   \usedir{scripts/oberdiek}%
-  \file{oberdiek.luacolor.lua}{\from{luacolor.dtx}{lua}}%
+%  \file{oberdiek.luacolor.lua}{\from{luacolor.dtx}{lua}}%
   \file{luacolor.lua}{\from{luacolor.dtx}{lua}}%
-  \file{oberdiek.luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
-  \file{luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
+%  \file{oberdiek.luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
+%  \file{luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
 }
 
 \catcode32=13\relax% active space
@@ -421,7 +420,7 @@ and the derived files
 %
 %    \begin{macrocode}
 \LuaCol@directlua{%
-  require("oberdiek.luacolor\ifnum\luatexversion<65 -pre065\fi")%
+  require("luacolor")%
 }
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -1067,14 +1066,8 @@ end
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   luacolor.sty & tex/latex/oberdiek/luacolor.sty\\
-%   oberdiek.luacolor.lua & scripts/oberdiek/oberdiek.luacolor.lua\\
 %   luacolor.lua & scripts/oberdiek/luacolor.lua\\
-%   oberdiek.luacolor-pre065.lua & scripts/oberdiek/oberdiek.luacolor-pre065.lua\\
-%   luacolor-pre065.lua & scripts/oberdiek/luacolor-pre065.lua\\
 %   luacolor.pdf & doc/latex/oberdiek/luacolor.pdf\\
-%   test/luacolor-test1.tex & doc/latex/oberdiek/test/luacolor-test1.tex\\
-%   test/luacolor-test2.tex & doc/latex/oberdiek/test/luacolor-test2.tex\\
-%   test/luacolor-test3.tex & doc/latex/oberdiek/test/luacolor-test3.tex\\
 %   luacolor.dtx & source/latex/oberdiek/luacolor.dtx\\
 % \end{tabular}^^A
 % }^^A

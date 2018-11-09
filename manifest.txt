@@ -130,11 +130,8 @@ doc/latex/oberdiek/zref-example-lastpage.tex
 doc/latex/oberdiek/zref-example-nextpage.tex
 doc/latex/oberdiek/zref-example.tex
 doc/latex/oberdiek/zref.pdf
-scripts/oberdiek/luacolor-pre065.lua
 scripts/oberdiek/luacolor.lua
 scripts/oberdiek/magicnum.lua
-scripts/oberdiek/oberdiek.luacolor-pre065.lua
-scripts/oberdiek/oberdiek.luacolor.lua
 scripts/oberdiek/oberdiek.luatex.lua
 scripts/oberdiek/oberdiek.magicnum.lua
 scripts/oberdiek/oberdiek.pdftexcmds.lua

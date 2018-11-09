@@ -34,16 +34,14 @@ tex oberdiek.ins
 
 # Lua need to be here for doc generation must fix this one day
 cp \
-    luacolor.lua oberdiek.luacolor.lua \
-    luacolor-pre065.lua  oberdiek.luacolor-pre065.lua \
+    luacolor.lua \
     pdftexcmds.lua oberdiek.pdftexcmds.lua \
     magicnum.lua oberdiek.magicnum.lua \
     oberdiek.luatex.lua \
     scripts/oberdiek
 
 cp \
-    luacolor.lua oberdiek.luacolor.lua \
-    luacolor-pre065.lua  oberdiek.luacolor-pre065.lua \
+    luacolor.lua \
     pdftexcmds.lua oberdiek.pdftexcmds.lua \
     magicnum.lua oberdiek.magicnum.lua \
     oberdiek.luatex.lua \
