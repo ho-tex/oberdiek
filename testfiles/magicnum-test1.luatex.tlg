@@ -1,13 +1,12 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../magicnum.sty
+(magicnum.sty
 LaTeX Warning: You have requested package `',
                but the package provides `magicnum'.
 Package: magicnum ....-..-.. v... Magic numbers (HO)
-(../ifluatex.sty
+(ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-)
-(../infwarerr.sty
+) (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ))

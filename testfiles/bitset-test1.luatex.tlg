@@ -1,27 +1,23 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../bitset.sty
+(bitset.sty
 LaTeX Warning: You have requested package `',
                but the package provides `bitset'.
 Package: bitset ....-..-.. v... Handle bit-vector datatype (HO)
-(../infwarerr.sty
+(infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-)
-(../intcalc.sty
+) (intcalc.sty
 Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)
-)
-(../bigintcalc.sty
+) (bigintcalc.sty
 Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
-(../pdftexcmds.sty
+(pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(../ifluatex.sty
+(ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-)
-(../ltxcmds.sty
+) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-)
-(../ifpdf.sty
+) (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch
 )
 Package pdftexcmds Info: \pdf@primitive is available.

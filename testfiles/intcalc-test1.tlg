@@ -1,6 +1,6 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../intcalc.sty
+(intcalc.sty
 LaTeX Warning: You have requested package `',
                but the package provides `intcalc'.
 Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)

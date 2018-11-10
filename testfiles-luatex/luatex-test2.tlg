@@ -1,11 +1,10 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../luatex.sty
+(luatex.sty
 Package: luatex ....-..-.. v... LuaTeX basic definition package (HO)
-(../infwarerr.sty
+(infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-)
-(../ifluatex.sty
+) (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
 )
@@ -20,6 +19,6 @@ Package: etex ....-..-.. v... eTeX basic definition package (PEB,DPC)
 \CatcodeTableString=\catcodetable...
 \CatcodeTableOther=\catcodetable...
 \CatcodeTableLaTeX=\catcodetable...
-(../luatex-loader.sty
+(luatex-loader.sty
 Package: luatex-loader ....-..-.. v... Lua module loader (HO)
-(../oberdiek.luatex.lua)))
+(oberdiek.luatex.lua)))

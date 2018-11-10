@@ -1,25 +1,21 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../ix-name.def
+(ix-name.def
 File: ix-name.def ....-..-.. v... Name list (inputenx)
-)
-(../se-utf8.def
+) (se-utf8.def
 File: se-utf8.def ....-..-.. v... stringenc: UTF-8
-)
-(../se-iso-8859-1.def
+) (se-iso-8859-1.def
 File: se-iso-8859-1.def ....-..-.. v... stringenc: ISO-8859-1
-)
-(../se-iso-8859-15.def
+) (se-iso-8859-15.def
 File: se-iso-8859-15.def ....-..-.. v... stringenc: ISO-8859-15
 )
-(../x-iso-8859-15.def
+(x-iso-8859-15.def
 File: x-iso-8859-15.def ....-..-.. v... Input encoding iso-8859-15 (inputenx)
 )
 Package selinput Warning: Encoding `x-iso-8859-15' selected on input line ....
-(../se-cp1252.def
+(se-cp1252.def
 File: se-cp1252.def ....-..-.. v... stringenc: cp1252
-)
-(../x-cp1252.def
+) (x-cp1252.def
 File: x-cp1252.def ....-..-.. v... Input encoding cp1252 (inputenx)
 )
 Package selinput Warning: Encoding `x-cp1252' selected on input line ....
@@ -47,11 +43,11 @@ LaTeX Font Info:    ... okay on input line ....
 (../ucsencs.def
 File: ucsencs.def ....-..-.. Fixes to fontencodings LGR, T3
 )
-(../x-iso-8859-15.def
+(x-iso-8859-15.def
 File: x-iso-8859-15.def ....-..-.. v... Input encoding iso-8859-15 (inputenx)
 )
 Package selinput Warning: Encoding `x-iso-8859-15' selected on input line ....
-(../x-cp1252.def
+(x-cp1252.def
 File: x-cp1252.def ....-..-.. v... Input encoding cp1252 (inputenx)
 )
 Package selinput Warning: Encoding `x-cp1252' selected on input line ....

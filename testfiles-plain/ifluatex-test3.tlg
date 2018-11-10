@@ -26,10 +26,9 @@ Defining generic filename parser.
 \fboxsep=\dimen...
 \fboxrule=\dimen...
 )
-(../ifluatex.sty
+(ifluatex.sty
 ifluatex: ....-..-.. v... Provides the ifluatex switch (HO)
 ifluatex: LuaTeX not detected
-)
-(../ifluatex.sty
+) (ifluatex.sty
 ifluatex: The package is already loaded, stopped
 )

@@ -1,40 +1,33 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../embedfile.sty
+(embedfile.sty
 LaTeX Warning: You have requested package `',
                but the package provides `embedfile'.
 Package: embedfile ....-..-.. v... Embed files into PDF (HO)
-(../infwarerr.sty
+(infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-)
-(../luatex85.sty
-Package: luatex85 ....-..-.. v... pdftex aliases for luatex
-)
-(../ifpdf.sty
+) (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch
-)
-(../pdftexcmds.sty
+) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(../ifluatex.sty
+(ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
 )
-(../ltxcmds.sty
+(ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks...
-)
-(../kvsetkeys.sty
+) (kvsetkeys.sty
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
-(../etexcmds.sty
+(etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-))
-(../kvdefinekeys.sty
+)) (kvdefinekeys.sty
 Package: kvdefinekeys ....-..-.. v... Define keys (HO)
 )
-(../pdfescape.sty
+(pdfescape.sty
 Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
 ))

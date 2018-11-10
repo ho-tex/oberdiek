@@ -31,6 +31,9 @@
     \Expect*{\pdfcolIfStackExists{test}{true}{false}}{true}%
     \Expect*{\pdfcolIfStackExists{dummy}{true}{false}}{false}%
   \end{qstest}%
+  \OMIT
+  \clearpage
+  \TIMO
 \end{document}
 \endinput
 %%

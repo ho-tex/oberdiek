@@ -1,6 +1,6 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../soulutf8.sty
+(soulutf8.sty
 LaTeX Warning: You have requested package `',
                but the package provides `soulutf8'.
 Package: soulutf8 ....-..-.. v... Permit use of UTF-8 characters in soul (HO)
@@ -15,13 +15,12 @@ Package: soul ....-..-.. v... letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen...
 \SOUL@uldp=\dimen...
 \SOUL@ulht=\dimen...
-)
-(../infwarerr.sty
+) (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 )
-(../etexcmds.sty
+(etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-(../ifluatex.sty
+(ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )

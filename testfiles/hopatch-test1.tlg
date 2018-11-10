@@ -1,7 +1,7 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(../hopatch.sty
+(hopatch.sty
 Package: hopatch ....-..-.. v... Wrapper for package hooks (HO)
-(../ltxcmds.sty
+(ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ))
