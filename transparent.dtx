@@ -275,8 +275,7 @@ Hello World
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname TRP@pdfcolorstackinit\endcsname\relax
+\ifcsname TRP@pdfcolorstackinit\endcsname\else
   \PackageWarningNoLine{transparent}{%
     Your pdfTeX version does not support color stacks%
   }%
