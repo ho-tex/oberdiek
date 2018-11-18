@@ -284,6 +284,17 @@ Hello World
 \fi
 %    \end{macrocode}
 %
+% \subsection{Compability with pgf}
+%  https://github.com/ho-tex/oberdiek/issues/19
+%    \begin{macrocode}
+\AtBeginDocument
+ {%
+   \ifcsname pgfutil@addpdfresource@extgs\endcsname
+    \let\TRP@addresource\relax
+    \pgfutil@addpdfresource@extgs{\TRP@list}%
+   \fi
+ }
+%    \end{macrocode}
 % \subsection{Transparency}
 %
 %    The setting for the different transparency values must
