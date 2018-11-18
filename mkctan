@@ -32,7 +32,7 @@ mkdir -p tex/latex/oberdiek
 #
 tex oberdiek.ins
 
-# Lua need to be here for doc generation must fix this one day
+## Lua need to be here for doc generation must fix this one day
 cp \
     luacolor.lua \
     pdftexcmds.lua oberdiek.pdftexcmds.lua \
@@ -40,12 +40,12 @@ cp \
     oberdiek.luatex.lua \
     scripts/oberdiek
 
-cp \
-    luacolor.lua \
-    pdftexcmds.lua oberdiek.pdftexcmds.lua \
-    magicnum.lua oberdiek.magicnum.lua \
-    oberdiek.luatex.lua \
-    $HOME/texmf/scripts/oberdiek
+# cp \
+#     luacolor.lua \
+#     pdftexcmds.lua oberdiek.pdftexcmds.lua \
+#     magicnum.lua oberdiek.magicnum.lua \
+#     oberdiek.luatex.lua \
+#     $HOME/texmf/scripts/oberdiek
 
 
 # make pdf
