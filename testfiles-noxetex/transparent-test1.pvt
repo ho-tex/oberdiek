@@ -1,0 +1,8 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{transparent}
+\begin{document}
+\START
+abc\texttransparent{0.3}{hello world}
+
+\end{document}
