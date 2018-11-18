@@ -1,0 +1,130 @@
+%PDF-1.5
+%ÐÔÅØ
+6 0 obj
+<<
+/Length 178       
+>>
+stream
+/TRP1 gs
+0 g 0 G
+0 g 0 G
+0 g 0 G
+BT
+/F8 9.9626 Tf 148.712 657.235 Td [(ab)-28(c)]TJ
+/TRP.3 gs
+ [(hello)-333(w)28(orld)]TJ
+/TRP1 gs
+0 g 0 G
+ 154.421 -567.87 Td [(1)]TJ
+0 g 0 G
+ET
+endstream
+endobj
+5 0 obj
+<<
+/Type /Page
+/Contents 6 0 R
+/Resources 4 0 R
+/MediaBox [0 0 612 792]
+/Parent 8 0 R
+>>
+endobj
+4 0 obj
+<<
+ /ColorSpace 3 0 R /Pattern 2 0 R /ExtGState 1 0 R 
+/Font << /F8 7 0 R >>
+/ProcSet [ /PDF /Text ]
+>>
+endobj
+1 0 obj
+<< /TRP1<</ca 1/CA 1>>/TRP.3<</ca .3/CA .3>>>>
+endobj
+2 0 obj
+<<>>
+endobj
+3 0 obj
+<<  /pgfprgb [/Pattern /DeviceRGB] >>
+endobj
+9 0 obj
+[500 500 500 500 500 500 500 500 500 277.8 277.8 277.8 777.8 472.2 472.2 777.8 750 708.3 722.2 763.9 680.6 652.8 784.7 750 361.1 513.9 777.8 625 916.7 750 777.8 680.6 777.8 736.1 555.6 722.2 750 750 1027.8 750 750 611.1 277.8 500 277.8 500 277.8 277.8 500 555.6 444.4 555.6 444.4 305.6 500 555.6 277.8 305.6 527.8 277.8 833.3 555.6 500 555.6 527.8 391.7 394.4 388.9 555.6 527.8 722.2]
+endobj
+10 0 obj
+<<
+/Length1 1512
+/Length2 9533
+/Length3 0
+/Length 11045     
+>>
+[BINARY STREAM]
+endobj
+11 0 obj
+<<
+/Type /FontDescriptor
+/FontName /DDUQJY+CMR10
+/Flags 4
+/FontBBox [-40 -250 1009 750]
+/Ascent 694
+/CapHeight 683
+/Descent -194
+/ItalicAngle 0
+/StemV 69
+/XHeight 431
+/CharSet (/a/b/c/d/e/h/l/o/one/r/w)
+/FontFile 10 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /DDUQJY+CMR10
+/FontDescriptor 11 0 R
+/FirstChar 49
+/LastChar 119
+/Widths 9 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [5 0 R]
+>>
+endobj
+12 0 obj
+<<
+/Type /Catalog
+/Pages 8 0 R
+>>
+endobj
+13 0 obj
+<<
+/Producer (pdfTeX)
+/Creator (TeX)
+/Trapped /False
+>>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000474 00000 n 
+0000000536 00000 n 
+0000000556 00000 n 
+0000000355 00000 n 
+0000000251 00000 n 
+0000000015 00000 n 
+0000012391 00000 n 
+0000012529 00000 n 
+0000000609 00000 n 
+0000001009 00000 n 
+0000012152 00000 n 
+0000012586 00000 n 
+0000012636 00000 n 
+trailer
+<< /Size 14
+/Root 12 0 R
+/Info 13 0 R
+ >>
+startxref
+12708
+%%EOF
