@@ -1,0 +1,170 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 392.14478fil
+...\write-{}
+...\write-{}
+...\glue(\topskip) 10.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 50.0
+...\glue 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 12.73328
+...\hbox(17.26672+0.14926)x345.0, glue set 96.08107fil
+....\hbox(0.0+0.0)x0.0
+....\TU/lmr/bx/n/24.88 unnumbered
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 40.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 3.57382
+...\hbox(8.27692+0.21999)x345.0, glue set 246.027fil
+....\TU/lmr/m/n/10 Wombat
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 unnumbered
+....\write1{\zref@newlabel{zref@1}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagev\ETC.}
+....\penalty 10000
+....\hbox(8.27692+0.0)x4.483
+.....\mathon
+.....\hbox(4.648+0.0)x4.483, shifted -3.62892
+......\TU/lmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.21999
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern -3.0
+...\rule(0.4+0.0)x137.9979
+...\kern 2.6
+...\hbox(6.81334+2.85002)x345.0, glue set 245.86397fil
+....\hbox(6.81334+0.0)x14.40002, glue set 10.23402fil
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.81334+0.0)x4.166
+......\mathon
+......\hbox(3.99+0.0)x4.166, shifted -2.82333
+.......\TU/lmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0
+.....\rule(6.65+0.0)x0.0
+....\TU/lmr/m/n/8 Capybara
+....\glue 2.832 plus 1.416 minus 0.944
+....\TU/lmr/m/n/8 unnumbered
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+Chapter 1.
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 347.14958fil
+...\write-{}
+...\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline \ETC.}
+...\write1{\@writefile{lof}{\protect \addvspace {10\p@ }}}
+...\write1{\@writefile{lot}{\protect \addvspace {10\p@ }}}
+...\glue(\topskip) 10.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 50.0
+...\glue 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 10.52348
+...\hbox(14.47652+4.02354)x345.0, glue set 121.07516fil
+....\hbox(0.0+0.0)x0.0
+....\TU/lmr/bx/n/20.74 Chapter
+....\glue 7.7775 plus 3.88875 minus 2.5925
+....\TU/lmr/bx/n/20.74 1
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 20.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 8.70973
+...\hbox(17.26672+0.14926)x345.0, glue set 95.44662fil
+....\hbox(0.0+0.0)x0.0
+....\TU/lmr/bx/n/24.88 Introduction
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 40.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 3.57382
+...\hbox(8.27692+0.21999)x345.0, glue set 303.567fil
+....\TU/lmr/m/n/10 Wombat
+....\write1{\zref@newlabel{zref@2}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagev\ETC.}
+....\penalty 10000
+....\hbox(8.27692+0.0)x4.483
+.....\mathon
+.....\hbox(4.648+0.0)x4.483, shifted -3.62892
+......\TU/lmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.21999
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern -3.0
+...\rule(0.4+0.0)x137.9979
+...\kern 2.6
+...\hbox(6.81334+2.85002)x345.0, glue set 294.71997fil
+....\hbox(6.81334+0.0)x14.40002, glue set 10.23402fil
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.81334+0.0)x4.166
+......\mathon
+......\hbox(3.99+0.0)x4.166, shifted -2.82333
+.......\TU/lmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0
+.....\rule(6.65+0.0)x0.0
+....\TU/lmr/m/n/8 Capybara
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 2
+...\glue 0.0 plus 1.0fil
+(zref-test-perpage.aux)

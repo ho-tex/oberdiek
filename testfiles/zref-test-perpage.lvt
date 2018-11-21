@@ -1,0 +1,19 @@
+%% This is file `zref-test-base.lvt',
+%% The original source files were:
+%%
+%% zref.dtx  (with options: `test-base')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{report}
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+
+\begin{document}
+\START \showoutput
+\chapter*{unnumbered}
+Wombat unnumbered\footnote{Capybara unnumbered}
+\chapter{Introduction}
+Wombat\footnote{Capybara}
+\end{document}
+%%
+%% End of file `zref-test-perpage.tex'.
