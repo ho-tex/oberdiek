@@ -28,7 +28,6 @@
 %    luacolor.sty, luacolor.pdf, luacolor.ins, luacolor.drv,
 %    luacolor-test1.tex, luacolor-test2.tex, luacolor-test3.tex,
 %    oberdiek.luacolor.lua, luacolor.lua,
-%    oberdiek.luacolor-pre065.lua, luacolor-pre065.lua.
 %
 % Distribution:
 %    CTAN:macros/latex/contrib/oberdiek/luacolor.dtx
@@ -64,8 +63,6 @@
 %    TDS:tex/latex/oberdiek/luacolor.sty
 %    TDS:scripts/oberdiek/oberdiek.luacolor.lua
 %    TDS:scripts/oberdiek/luacolor.lua
-%    TDS:scripts/oberdiek/oberdiek.luacolor-pre065.lua
-%    TDS:scripts/oberdiek/luacolor-pre065.lua
 %    TDS:doc/latex/oberdiek/luacolor.pdf
 %    TDS:doc/latex/oberdiek/test/luacolor-test1.tex
 %    TDS:doc/latex/oberdiek/test/luacolor-test2.tex
@@ -151,8 +148,6 @@ and the derived files
   \usedir{scripts/oberdiek}%
 %  \file{oberdiek.luacolor.lua}{\from{luacolor.dtx}{lua}}%
   \file{luacolor.lua}{\from{luacolor.dtx}{lua}}%
-%  \file{oberdiek.luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
-%  \file{luacolor-pre065.lua}{\from{luacolor.dtx}{lua,pre065}}%
 }
 
 \catcode32=13\relax% active space
@@ -167,7 +162,6 @@ and the derived files
 \Msg{* And install the following script files:}
 \Msg{*}
 \Msg{*     oberdiek.luacolor.lua, luacolor.lua,}
-\Msg{*     oberdiek.luacolor-pre065.lua, luacolor-pre065.lua}
 \Msg{*}
 \Msg{* To produce the documentation run the file `luacolor.drv'}
 \Msg{* through LaTeX.}
@@ -392,11 +386,7 @@ and the derived files
 %
 %    \begin{macro}{\LuaCol@directlua}
 %    \begin{macrocode}
-\ifnum\luatexversion<36 %
-  \def\LuaCol@directlua{\directlua0 }%
-\else
   \let\LuaCol@directlua\directlua
-\fi
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -547,18 +537,14 @@ and the derived files
     \let\pdfxform\saveboxresource
   \fi
   \ltx@IfUndefined{pdfxform}{%
-    \ifnum\luatexversion>36 %
       \directlua{%
         tex.enableprimitives('',{%
           'pdfxform','pdflastxform','pdfrefxform'%
         })%
       }%
-    \fi
   }{}%
   \ltx@IfUndefined{protected}{%
-    \ifnum\luatexversion>36 %
       \directlua{tex.enableprimitives('',{'protected'})}%
-    \fi
   }{}%
   \ltx@IfUndefined{pdfxform}{%
     \@PackageWarning{luacolor}{\string\pdfxform\space not found}%
@@ -653,8 +639,7 @@ end
 function dvidetect()
   local v = tex.box[0]
   assert(v.id == node.id("hlist"))
-%<!pre065>  for v in node.traverse_id(node.id("whatsit"), v.head) do
-%<pre065>  for v in node.traverse_id(node.id("whatsit"), v.list) do
+  for v in node.traverse_id(node.id("whatsit"), v.head) do
     if v and v.subtype == node.subtype("special") then
       local data = v.data
       for pattern, driver in pairs(patterns) do
@@ -786,12 +771,11 @@ local function traverse(list, color, dry)
     return color
   end
 %<debug>texio.write_nl("traverse: " .. node.type(list.id))
-%<!pre065>  local head = list.head
-%<pre065>  local head = list.list
+  local head = list.head
   for n in node.traverse(head) do
 %<debug>texio.write_nl("  node: " .. node.type(n.id))
     local t = get_type(n)
-%<debug>texio.write_nl("TYPE "..tostring(t).. " "..tostring(node.type(node.getid(n))).." ".. tostring(node.getsubtype(n)))    
+%<debug>texio.write_nl("TYPE "..tostring(t).. " "..tostring(node.type(node.getid(n))).." ".. tostring(node.getsubtype(n)))
     if t == LIST then
       color = traverse(n, color, dry)
     elseif t == LIST_LEADERS then
@@ -820,27 +804,13 @@ local function traverse(list, color, dry)
               newNode = node.new(WHATSIT, SPECIAL)
               newNode.data = prefix .. color
             end
-%<*!pre065>
             head = node.insert_before(head, n, newNode)
-%</!pre065>
-%<*pre065>
-            if head == n then
-              newNode.next = head
-              local old_prev = head.prev
-              head.prev = newNode
-              head = newNode
-              head.prev = old_prev
-            else
-              head = node.insert_before(head, n, newNode)
-            end
-%</pre065>
           end
         end
       end
     end
   end
-%<!pre065>  list.head = head
-%<pre065>  list.list = head
+  list.head = head
   return color
 end
 %    \end{macrocode}
@@ -1302,6 +1272,8 @@ end
 %   \begin{Version}{2018/11/22 v1.11}
 %   \item
 %     handle issue 43.
+%   \item
+%     removed pre-0.65 stuff
 %   \end{Version}
 % \end{History}
 %
