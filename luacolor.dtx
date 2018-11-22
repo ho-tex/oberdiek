@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: luacolor.dtx
-% Version: 2018/11/01 v1.10
+% Version: 2018/11/22 v1.11
 % Info: Color support via LuaTeX's attributes
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -87,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: luacolor 2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)}
+\Msg{* Package: luacolor 2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +99,7 @@
 This is a generated file.
 
 Project: luacolor
-Version: 2018/11/01 v1.10
+Version: 2018/11/22 v1.11
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -184,7 +184,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{luacolor.drv}%
-  [2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)]%
+  [2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -219,7 +219,7 @@ and the derived files
 % \GetFileInfo{luacolor.drv}
 %
 % \title{The \xpackage{luacolor} package}
-% \date{2018/11/01 v1.10}
+% \date{2018/11/22 v1.11}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -363,7 +363,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{luacolor}%
-  [2018/11/01 v1.10 Color support via LuaTeX's attributes (HO)]
+  [2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)]
 %    \end{macrocode}
 %
 % \subsection{Check for \LuaTeX}
@@ -425,7 +425,7 @@ and the derived files
 %    \end{macrocode}
 %    \begin{macrocode}
 \begingroup
-  \edef\x{\LuaCol@directlua{tex.write("2018/11/01 v1.10")}}%
+  \edef\x{\LuaCol@directlua{tex.write("2018/11/22 v1.11")}}%
   \edef\y{%
     \LuaCol@directlua{%
       if oberdiek.luacolor.getversion then %
@@ -603,7 +603,7 @@ module("oberdiek.luacolor", package.seeall)
 %    \begin{macro}{getversion()}
 %    \begin{macrocode}
 function getversion()
-  tex.write("2018/11/01 v1.10")
+  tex.write("2018/11/22 v1.11")
 end
 %    \end{macrocode}
 %    \end{macro}
@@ -737,6 +737,8 @@ local node_types = {
   [node.id("whatsit")] = {
     [node.subtype("special")] = COLOR,
     [node.subtype("pdf_literal")] = COLOR,
+    [node.subtype("pdf_save")] = COLOR,
+    [node.subtype("pdf_restore")] = COLOR, -- probably not needed
 -- TODO (DPC)    [node.subtype("pdf_refximage")] = COLOR,
   },
   [node.id("glue")] =
@@ -789,6 +791,7 @@ local function traverse(list, color, dry)
   for n in node.traverse(head) do
 %<debug>texio.write_nl("  node: " .. node.type(n.id))
     local t = get_type(n)
+%<debug>texio.write_nl("TYPE "..tostring(t).. " "..tostring(node.type(node.getid(n))).." ".. tostring(node.getsubtype(n)))    
     if t == LIST then
       color = traverse(n, color, dry)
     elseif t == LIST_LEADERS then
@@ -1205,7 +1208,7 @@ end
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2007,2009-2011'/>
   <license type='lppl1.3'/>
-  <version number='1.10'/>
+  <version number='1.11'/>
   <description>
       This package implements color support based on LuaTeX's node
       attributes.
@@ -1295,6 +1298,10 @@ end
 %   \begin{Version}{2016/05/16 v1.10}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2018/11/22 v1.11}
+%   \item
+%     handle issue 43.
 %   \end{Version}
 % \end{History}
 %
