@@ -1,0 +1,127 @@
+%PDF-1.5
+%ÐÔÅØ
+3 0 obj
+<</Length 478       >>
+stream
+0 g 0 G
+BT
+/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<001C0023>-28<002B>]TJ
+1 0 0 rg 1 0 0 RG
+1 0 0 1 167.253 657.235 Tm [<0073007300730073>]TJ
+0 g 0 G
+ET
+1 0 0 1 148.712 630.376 cm
+q
+3.72482 0 0 3.72482 0 0 cm
+1 0 0 1 -148.712 -630.376 cm
+BT
+/F15 9.96264 Tf 1 0 0 1 148.712 630.376 Tm [<001C0023>-28<002B>]TJ
+ET
+1 0 0 1 148.712 630.376 cm
+Q
+1 0 0 1 -148.712 -630.376 cm
+BT
+/F15 9.96264 Tf 1 0 0 1 148.712 618.421 Tm [<007500750075>]TJ
+1 0 0 1 303.133 89.365 Tm [<0052>]TJ
+ET
+endstream
+endobj
+2 0 obj
+<</Type/Page/Contents 3 0 R/Resources 1 0 R/MediaBox[0 0 612 792]/Parent 5 0 R>>
+endobj
+1 0 obj
+<</Font<</F15 4 0 R>>/ProcSet[/PDF/Text]>>
+endobj
+6 0 obj
+[28[500]35[556]43[444]82[500]115[750]117[750]]
+endobj
+7 0 obj
+<</Length 15        >>
+[BINARY STREAM]
+endobj
+8 0 obj
+<</Subtype/CIDFontType0C/Length 1275      >>
+[BINARY STREAM]
+endobj
+9 0 obj
+<</Type/FontDescriptor/FontName/OTGNQS+LMRoman10-Regular/Flags 4/FontBBox[-430 -290 1417 1127]/Ascent 1127/CapHeight 683/Descent -290/ItalicAngle 0/StemV 93/XHeight 431/FontFile3 8 0 R/CIDSet 7 0 R>>
+endobj
+10 0 obj
+<</Length 762       >>
+stream
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-OTGNQS-LMRoman10-Regular-0)
+%%Title: (TeX-OTGNQS-LMRoman10-Regular-0 TeX OTGNQS-LMRoman10-Regular 0)
+%%Version: 1.000
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (OTGNQS-LMRoman10-Regular)
+/Supplement 0
+>> def
+/CMapName /TeX-Identity-OTGNQS-LMRoman10-Regular def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+0 beginbfrange
+endbfrange
+6 beginbfchar
+<001C> <0061>
+<0023> <0062>
+<002B> <0063>
+<0052> <0031>
+<0073> <0058>
+<0075> <0059>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF
+endstream
+endobj
+4 0 obj
+<</Type/Font/Subtype/Type0/Encoding/Identity-H/BaseFont/OTGNQS+LMRoman10-Regular/DescendantFonts[11 0 R]/ToUnicode 10 0 R>>
+endobj
+11 0 obj
+<</Type/Font/Subtype/CIDFontType0/BaseFont/OTGNQS+LMRoman10-Regular/FontDescriptor 9 0 R/W 6 0 R/CIDSystemInfo<</Registry (Adobe)/Ordering (Identity)/Supplement 0>>>>
+endobj
+5 0 obj
+<</Type/Pages /Count 1/Kids[2 0 R]>>
+endobj
+12 0 obj
+<</Type/Catalog/Pages 5 0 R>>
+endobj
+13 0 obj
+<<
+/Producer (LuaTeX)
+/Creator (TeX)/Trapped/False>>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000645 00000 n 
+0000000549 00000 n 
+0000000015 00000 n 
+0000003223 00000 n 
+0000003545 00000 n 
+0000000703 00000 n 
+0000000765 00000 n 
+0000000836 00000 n 
+0000002189 00000 n 
+0000002404 00000 n 
+0000003362 00000 n 
+0000003597 00000 n 
+0000003643 00000 n 
+trailer
+<</Size 14/Root 12 0 R/Info 13 0 R>>
+startxref
+3712
+%%EOF
