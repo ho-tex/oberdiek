@@ -24,7 +24,7 @@ Package: kvdefinekeys ....-..-.. v... Define keys (HO)
 )
 Now handling font encoding pmboxdraw ...
 ... processing UTF-8 mapping file for font encoding pmboxdraw
-(../pmboxdrawenc.dfu
+(pmboxdrawenc.dfu
 File: pmboxdrawenc.dfu ....-..-.. v... UTF-8 support for box drawing characters
    defining Unicode char U+2500 (decimal 9472)
    defining Unicode char U+2501 (decimal 9473)
