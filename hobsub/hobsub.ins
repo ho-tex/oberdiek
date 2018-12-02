@@ -1,35 +1,235 @@
-% oberdiek.ins
-% 2012/04/26
-%
-% Copyright (C) 1999, 2001, 2006 by
-%    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License, either
-% version 1.3 of this license or (at your option) any later
-% version. The latest version of this license is in
-%    http://www.latex-project.org/lppl.txt
-% and version 1.3 or later is part of all distributions of
-% LaTeX version 2003/12/01 or later.
-%
-% This work has the LPPL maintenance status "maintained".
-%
-% This Current Maintainer of this work is Heiko Oberdiek.
-%
-% This work consists of the overview "oberdiek.pdf", its source
-% "oberdiek.tex", and the installation script "oberdiek.ins"
-% for the projects in CTAN:macros/latex/contrib/oberdiek/.
-%
-\input docstrip
+%%
+%% This is file `hobsub.ins',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% hobsub.dtx  (with options: `install')
+%% 
+%% This is a generated file.
+%% 
+%% Project: hobsub
+%% Version: 2016/05/16 v1.14
+%% 
+%% Copyright (C) 2011, 2012 by
+%%    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 1.3c of this license or (at your option) any later
+%% version. This version of this license is in
+%%    http://www.latex-project.org/lppl/lppl-1-3c.txt
+%% and the latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of
+%% LaTeX version 2005/12/01 or later.
+%% 
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% This Current Maintainer of this work is Heiko Oberdiek.
+%% 
+%% The Base Interpreter refers to any `TeX-Format',
+%% because some files are installed in TDS:tex/generic//.
+%% 
+%% This work consists of the main source file hobsub.dtx
+%% and the derived files
+%%    hobsub.sty, hobsub.pdf, hobsub.ins, hobsub.drv, hobsub-generic.sty,
+%%    hobsub-hyperref.sty, hobsub-test1.tex.
+%% 
+\input docstrip.tex
+\Msg{************************************************************************}
+\Msg{* Installation}
+\Msg{* Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)}
+\Msg{************************************************************************}
 
-\batchinput{hobsub.dtx}
+\keepsilent
+\askforoverwritefalse
 
-\Msg{}
-\Msg{********************************************************}
+\let\MetaPrefix\relax
+\preamble
+
+This is a generated file.
+
+Project: hobsub
+Version: 2016/05/16 v1.14
+
+Copyright (C) 2011, 2012 by
+   Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either
+version 1.3c of this license or (at your option) any later
+version. This version of this license is in
+   http://www.latex-project.org/lppl/lppl-1-3c.txt
+and the latest version of this license is in
+   http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of
+LaTeX version 2005/12/01 or later.
+
+This work has the LPPL maintenance status "maintained".
+
+This Current Maintainer of this work is Heiko Oberdiek.
+
+The Base Interpreter refers to any `TeX-Format',
+because some files are installed in TDS:tex/generic//.
+
+This work consists of the main source file hobsub.dtx
+and the derived files
+   hobsub.sty, hobsub.pdf, hobsub.ins, hobsub.drv, hobsub-generic.sty,
+   hobsub-hyperref.sty, hobsub-test1.tex.
+
+\endpreamble
+\let\MetaPrefix\DoubleperCent
+
+\generate{%
+  \file{hobsub.drv}{\from{hobsub.dtx}{driver}}%
+  \usedir{tex/generic/oberdiek}%
+  \file{hobsub.sty}{\from{hobsub.dtx}{package}}%
+  \nopreamble
+  \nopostamble
+}
+\let\hobsubSavedNormalLine\normalLine
+\def\hobsubGobble#1{}
+\begingroup
+  \lccode`\0=32 % space
+  \lccode`\1=35 % hash
+  \lccode`\2=37 % percent
+  \lccode`\3=92 % backslash
+  \lccode`\4=123 % {
+  \lccode`\5=125 % }
+\lowercase{\endgroup
+  \let\hobsubTokenSpaceOther= 0%
+  \let\hobsubTokenHash= 1%
+  \let\hobsubTokenPercent= 2%
+  \let\hobsubTokenBackslash= 3%
+  \let\hobsubTokenBraceLeft= 4%
+  \let\hobsubTokenBraceRight= 5%
+  \def\hobsubNormalLineWithSpace{%
+    \hobsubSavedNormalLine0%
+  }%
+}
+\def\normalLine{%
+  \futurelet\hobsubToken\hobsubFirst
+}
+\def\hobsubFirst{%
+  \ifx\hobsubToken\hobsubTokenSpaceOther
+    \expandafter\expandafter\expandafter\futurelet
+    \expandafter\expandafter\expandafter\hobsubToken
+    \expandafter\expandafter\expandafter\hobsubNext
+    \expandafter\hobsubGobble
+  \else
+    \expandafter\hobsubSavedNormalLine
+  \fi
+}
+\def\hobsubNext{%
+  \ifx\hobsubToken\hobsubTokenSpaceOther
+    \expandafter\expandafter\expandafter\futurelet
+    \expandafter\expandafter\expandafter\hobsubToken
+    \expandafter\expandafter\expandafter\hobsubNext
+    \expandafter\hobsubGobble
+  \else
+    \let\hobsubWithSpace=Y%
+    \ifx\hobsubToken\hobsubTokenBackslash
+      \let\hobsubWithSpace=N%
+    \else
+      \ifx\hobsubToken\hobsubTokenBraceRight
+        \let\hobsubWithSpace=N%
+      \else
+        \ifx\hobsubToken\hobsubTokenBraceLeft
+          \let\hobsubWithSpace=N%
+        \else
+          \ifx\hobsubToken\hobsubTokenPercent
+            \let\hobsubWithSpace=N%
+          \else
+            \ifx\hobsubToken\hobsubTokenHash
+              \let\hobsubWithSpace=N%
+            \fi
+          \fi
+        \fi
+      \fi
+    \fi
+    \ifx\hobsubWithSpace Y%
+      \expandafter\expandafter\expandafter\hobsubNormalLineWithSpace
+    \else
+      \expandafter\expandafter\expandafter\hobsubSavedNormalLine
+    \fi
+  \fi
+}
+\generate{%
+  \usedir{tex/generic/oberdiek}%
+  \file{hobsub-generic.sty}{%
+    \from{hobsub.dtx}{generic,preamble,infwarerr}%
+    \from{../oberdiek/infwarerr.dtx}{package}%
+    \from{hobsub.dtx}{post,ltxcmds}%
+    \from{../oberdiek/ltxcmds.dtx}{package}%
+    \from{hobsub.dtx}{post,ifluatex}%
+    \from{../ho-if/ifluatex.dtx}{package}%
+    \from{hobsub.dtx}{post,ifvtex}%
+    \from{../ho-if/ifvtex.dtx}{package}%
+    \from{hobsub.dtx}{post,intcalc}%
+    \from{../oberdiek/intcalc.dtx}{package}%
+    \from{hobsub.dtx}{post,ifpdf}%
+    \from{../ho-if/ifpdf.dtx}{package}%
+    \from{hobsub.dtx}{post,etexcmds}%
+    \from{../oberdiek/etexcmds.dtx}{package}%
+    \from{hobsub.dtx}{post,kvsetkeys}%
+    \from{../ho-kv/kvsetkeys.dtx}{package}%
+    \from{hobsub.dtx}{post,kvdefinekeys}%
+    \from{../ho-kv/kvdefinekeys.dtx}{package}%
+    \from{hobsub.dtx}{post,luatex-loader}%
+    \from{../luatex/luatex.dtx}{loader}%
+    \from{hobsub.dtx}{post,pdftexcmds}%
+    \from{../oberdiek/pdftexcmds.dtx}{package}%
+    \from{hobsub.dtx}{post,pdfescape}%
+    \from{../oberdiek/pdfescape.dtx}{package}%
+    \from{hobsub.dtx}{post,bigintcalc}%
+    \from{../oberdiek/bigintcalc.dtx}{package}%
+    \from{hobsub.dtx}{post,bitset}%
+    \from{../oberdiek/bitset.dtx}{package}%
+    \from{hobsub.dtx}{post,uniquecounter}%
+    \from{../oberdiek/uniquecounter.dtx}{package}%
+    \from{hobsub.dtx}{post,atend}%
+  }%
+}
+\generate{%
+  \usedir{tex/generic/oberdiek}%
+  \file{hobsub-hyperref.sty}{%
+    \from{hobsub.dtx}{hyperref,preamble,,letltxmacro}%
+    \from{../oberdiek/letltxmacro.dtx}{package}%
+    \from{hobsub.dtx}{post,hopatch}%
+    \from{../oberdiek/hopatch.dtx}{package}%
+    \from{hobsub.dtx}{post,xcolor-patch}%
+    \from{../ho-hyper/hycolor.dtx}{xcolor}%
+    \from{hobsub.dtx}{post,atveryend}%
+    \from{../oberdiek/atveryend.dtx}{package}%
+    \from{hobsub.dtx}{post,atbegshi}%
+    \from{../oberdiek/atbegshi.dtx}{package}%
+    \from{hobsub.dtx}{post,refcount}%
+    \from{../oberdiek/refcount.dtx}{package}%
+    \from{hobsub.dtx}{post,hycolor}%
+    \from{../ho-hyper/hycolor.dtx}{package}%
+    \from{hobsub.dtx}{post}%
+  }%
+}
+\let\normalLine\hobsubSavedNormalLine
+
+\catcode32=13\relax% active space
+\let =\space%
+\Msg{************************************************************************}
 \Msg{*}
-\Msg{*  Unpacking completed, now finish the installation.}
+\Msg{* To finish the installation you have to move the following}
+\Msg{* files into a directory searched by TeX:}
 \Msg{*}
-\Msg{********************************************************}
-\Msg{}
+\Msg{*     hobsub.sty, hobsub-generic.sty, hobsub-hyperref.sty}
+\Msg{*}
+\Msg{* To produce the documentation run the file `hobsub.drv'}
+\Msg{* through LaTeX.}
+\Msg{*}
+\Msg{* Happy TeXing!}
+\Msg{*}
+\Msg{************************************************************************}
 
 \endbatchfile
+\endinput
+%%
+%% End of file `hobsub.ins'.
