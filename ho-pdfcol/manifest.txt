@@ -1,0 +1,15 @@
+doc/latex/ho-pdfcol/pdfcol.pdf
+doc/latex/ho-pdfcol/pdfcolfoot.pdf
+doc/latex/ho-pdfcol/pdfcolmk.pdf
+doc/latex/ho-pdfcol/pdfcolparallel.pdf
+doc/latex/ho-pdfcol/pdfcolparcolumns.pdf
+source/latex/ho-pdfcol/pdfcol.dtx
+source/latex/ho-pdfcol/pdfcolfoot.dtx
+source/latex/ho-pdfcol/pdfcolmk.dtx
+source/latex/ho-pdfcol/pdfcolparallel.dtx
+source/latex/ho-pdfcol/pdfcolparcolumns.dtx
+tex/generic/ho-pdfcol/pdfcol.sty
+tex/latex/ho-pdfcol/pdfcolfoot.sty
+tex/latex/ho-pdfcol/pdfcolmk.sty
+tex/latex/ho-pdfcol/pdfcolparallel.sty
+tex/latex/ho-pdfcol/pdfcolparcolumns.sty

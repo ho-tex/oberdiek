@@ -1,0 +1,77 @@
+#!/bin/bash
+set -e
+
+# build ho-pdfcol ctan distrib
+# perhaps use l3build one day, but not today
+
+INSTALLDIR=$HOME/texmf
+
+# starting from ho-pdfcol.zip and ho-pdfcol.tds.zip from ctan
+
+
+#
+# cleanup
+rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
+rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+mkdir -p $HOME/texmf/scripts/ho-pdfcol
+
+
+#  make target tds structure
+mkdir -p doc/latex/ho-pdfcol
+mkdir -p source/latex/ho-pdfcol
+mkdir -p tex/latex/ho-pdfcol
+mkdir -p tex/generic/ho-pdfcol
+
+
+# unpack
+#
+tex ho-pdfcol.ins
+
+
+
+# make pdf
+rm *.bbl || echo no bbl
+for i in *.dtx
+do
+lualatex ${i}
+if [ -f ${i/.dtx/.bcf} ]; then
+    #    biber ${i/.dtx}
+    bibtex ${i/.dtx}
+fi
+lualatex ${i}
+if [ -f ${i/.dtx/.idx} ]; then
+    makeindex -s gind.ist ${i/.dtx/.idx}
+    lualatex ${i}
+fi
+done
+
+lualatex ho-pdfcol
+lualatex ho-pdfcol
+
+
+# special cases
+
+# fill tds tree
+for i in `cat manifest.txt`
+do
+    cp `basename $i` $i
+done
+
+echo making tds zip
+
+rm -f ../ho-pdfcol.tds.zip
+zip -r ../ho-pdfcol.tds.zip \
+    bibtex doc scripts source tex
+
+cd ..
+echo making main zip
+rm -f ho-pdfcol.zip
+zip ho-pdfcol.zip ho-pdfcol.tds.zip ho-pdfcol/\
+{README.txt,\
+ho-pdfcol.tex,\
+*.pdf,\
+*.dtx\
+}
+
+mv ho-pdfcol*.zip ho-pdfcol
+
