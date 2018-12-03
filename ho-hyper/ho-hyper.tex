@@ -1,0 +1,254 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\newcommand*{\Title}{Overview}
+\newcommand*{\CTANdir}{macros/latex/contrib/ho-hyper/}
+\newcommand*{\CTANroot}{ftp://ftp.ctan.org/tex-archive/}
+\newcommand*{\Subject}{CTAN:\CTANdir}
+\newcommand*{\Author}{Heiko Oberdiek}
+\newcommand*{\Email}{ho-tex at tug.org}
+\newcommand*{\Date}{2018/11/30}
+
+% Copyright (C) 2006-2018 by
+%    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either
+% version 1.3 of this license or (at your option) any later
+% version. The latest version of this license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of
+% LaTeX version 2003/12/01 or later.
+%
+% This work has the LPPL maintenance status "maintained".
+%
+% This Current Maintainer of this work is Heiko Oberdiek.
+%
+% This work consists of the overview "oberdiek.pdf", its source
+% "oberdiek.tex", and the installation script "oberdiek.ins"
+% for the projects in CTAN:macros/latex/contrib/oberdiek/.
+%
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{fontspec}[2011/09/18]%
+  \usepackage{unicode-math}[2011/09/19]%
+  \setmathfont{latinmodern-math.otf}%
+\fi
+
+\usepackage[
+  ignorehead,
+  top=1in,
+]{geometry}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage[ngerman,english]{babel}
+\usepackage{hologo}
+\usepackage{biblatex}% for internals in .toc files
+
+\definecolor{link}{rgb}{1,0,0}% red
+\definecolor{file}{rgb}{0,0,1}% blue
+\definecolor{url}{cmyk}{0.1,1,0,0.1}
+
+\definecolor{file}{rgb}{1,0,0}% red
+\definecolor{url}{rgb}{0,0,1}% blue
+\definecolor{link}{rgb}{0,0.75,0}%
+
+\usepackage[
+  colorlinks,
+]{hyperref}[2006/02/12]
+\hypersetup{
+  pdftitle={CTAN:\CTANdir},
+  pdfsubject={Package Overview},
+  pdfauthor={\Author\ <\Email>},
+  bookmarksnumbered,
+  bookmarksopen,
+  bookmarksopenlevel=2,
+  bookmarksdepth=2,
+  filecolor=file,
+  urlcolor=url,
+  linkcolor=link,
+}
+\usepackage{bookmark}
+\usepackage{hypdestopt}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
+
+\title{%
+  \href{\CTANroot\CTANdir}{CTAN:\CTANdir}%
+}
+\author{%
+  \Author\\
+  \textless
+  \href{mailto:\Email}{\texttt{\Email}}%
+  \textgreater
+}
+\date{\Date}
+
+\providecommand*{\pdfTeX}{pdf\TeX}
+\providecommand*{\plainTeX}{\mbox{plain-\TeX}}
+\providecommand*{\iniTeX}{\mbox{ini-\TeX}}
+\providecommand*{\VTeX}{V\TeX}
+\providecommand*{\eTeX}{$\csname m@th\endcsname\varepsilon$-\TeX}
+\providecommand*{\LuaTeX}{%
+  L\textsc{ua}\TeX
+}
+\newcommand*{\xpackage}[1]{\textsf{#1}}
+\newcommand*{\xmodule}[1]{\textsf{#1}}
+\newcommand*{\xfile}[1]{\texttt{#1}}
+\newcommand*{\xext}[1]{\texttt{.#1}}
+\newcommand*{\xoption}[1]{\textsf{#1}}
+\newcommand*{\cs}[1]{\texttt{\textbackslash#1}}
+\newcommand*{\meta}[1]{%
+  \ensuremath\langle
+  \textit{#1}%
+  \ensuremath\rangle
+}
+
+\makeatletter
+\g@addto@macro\abstract{\noindent\ignorespaces}
+
+\newcommand*{\tocinclude}[1]{%
+  \setcounter{tocdepth}{3}%
+  \begingroup
+    \makeatletter
+    \def\@prj{#1}%
+    \let\contentsline\foreign@contentsline
+    \input{\@prj.toc}%
+  \endgroup
+}
+\def\foreign@contentsline#1#2#3#4{%
+  \ifx\\#4\\%
+    \csname l@#1\endcsname{#2}{#3}%
+  \else
+    \ifHy@linktocpage
+      \csname l@#1\endcsname{{#2}}{%
+        \hyper@linkfile{#3}{\@prj.pdf}{#4}%
+      }%
+    \else
+      \csname l@#1\endcsname{%
+        \hyper@linkfile{#2}{\@prj.pdf}{#4}%
+      }{#3}%
+    \fi
+  \fi
+}%
+
+\newenvironment{overview}{%
+  \setlength{\tabcolsep}{0.8\tabcolsep}%
+  \setlength{\LTleft}{0pt}%
+  \longtable{@{}llll@{}}
+}{%
+  \endlongtable
+}
+\newcommand*{\entry}[4]{%
+  \href{file:#1.pdf}{%
+    \bfseries\xpackage{#1}%
+  }%
+  & #2%
+  & v#3%
+  & \href{\CTANroot\CTANdir #1.pdf}{[pdf]} %
+    \href{\CTANroot\CTANdir #1.dtx}{[dtx]}
+  \\*%
+  \hyperref[{#1}]{\small (contents)}%
+  &
+  \multicolumn{2}{l}{%
+    #4%
+  }%
+  \\%
+}
+\newcommand*{\entrysep}{1.5ex}
+
+\newcommand*{\pkgsectformat}[1]{%
+  \texorpdfstring{%
+    \textcolor{link}{The} %
+    \xpackage{#1} %
+    \textcolor{link}{package}%
+  }{#1}%
+}
+
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Overview}
+\begin{overview}
+\entry{hycolor}{2011/01/30}{1.7}{Color options for hyperref/bookmark}%
+[\entrysep]
+\entry{hypbmsec}{2007/04/11}{2.4}{Bookmarks in sectioning commands}%
+[\entrysep]
+\entry{hypcap}{2011/02/16}{1.11}{Adjusting the anchors of captions}%
+[\entrysep]
+\entry{hypdestopt}{2011/05/13}{2.3}{Hyperref destination optimizer}%
+[\entrysep]
+\entry{hypdoc}{2011/08/19}{1.11}{Hyper extensions for doc.sty}%
+[\entrysep]
+\entry{hypgotoe}{2007/10/30}{0.1}{Links to embedded files}%
+\end{overview}
+
+\section{Packages}
+\hypersetup{bookmarksnumbered=false}
+\subsection{\pkgsectformat{hycolor}}
+\label{hycolor}
+\begin{abstract}
+Package \xpackage{hycolor} implements the color option stuff that
+is used by packages \xpackage{hyperref} and \xpackage{bookmark}.
+It is not intended as package for the user.
+\end{abstract}
+\tocinclude{hycolor}
+
+\newpage
+\subsection{\pkgsectformat{hypbmsec}}
+\label{hypbmsec}
+\begin{abstract}
+This package expands the syntax of the sectioning commands. If the
+argument of the sectioning commands isn't usable as outline entry,
+a replacement for the bookmarks can be given.
+\end{abstract}
+\tocinclude{hypbmsec}
+
+\newpage
+\subsection{\pkgsectformat{hypcap}}
+\label{hypcap}
+\begin{abstract}
+This package tries a solution of the problem with
+hyperref, that links to floats points below the
+caption and not at the beginning of the float.
+Therefore this package divides the task into two
+part, the link setting with \cs{capstart} or
+automatically at the beginning of a float and
+the rest in the \cs{caption} command.
+\end{abstract}
+\tocinclude{hypcap}
+
+\newpage
+\subsection{\pkgsectformat{hypdestopt}}
+\label{hypdestopt}
+\begin{abstract}
+Package \xpackage{hypdestopt} supports \xpackage{hyperref}'s
+\xoption{pdftex} driver. It removes unnecessary destinations
+and shortens the destination names or uses numbered destinations
+to get smaller PDF files.
+\end{abstract}
+\tocinclude{hypdestopt}
+
+\newpage
+\subsection{\pkgsectformat{hypdoc}}
+\label{hypdoc}
+\begin{abstract}
+This package adds hyper features to the package
+\xpackage{doc} that is used in the documentation
+system of \LaTeXe. Bookmarks are added and references
+are linked as far as possible.
+\end{abstract}
+\tocinclude{hypdoc}
+
+\newpage
+\subsection{\pkgsectformat{hypgotoe}}
+\label{hypgotoe}
+\begin{abstract}
+Experimental package for links to embedded files.
+\end{abstract}
+\tocinclude{hypgotoe}
+
+\end{document}
