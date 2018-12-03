@@ -1,0 +1,76 @@
+#!/bin/bash
+set -e
+
+# build ho-luatex ctan distrib
+# perhaps use l3build one day, but not today
+
+INSTALLDIR=$HOME/texmf
+
+# starting from ho-luatex.zip and ho-luatex.tds.zip from ctan
+
+
+#
+# cleanup
+rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
+rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+mkdir -p $HOME/texmf/scripts/ho-luatex
+
+
+#  make target tds structure
+mkdir -p bibtex/bib/ho-luatex
+mkdir -p scripts/ho-luatex
+mkdir -p doc/latex/ho-luatex
+mkdir -p doc/latex/ho-luatex/example
+# mkdir -p doc/latex/ho-luatex/test
+mkdir -p source/latex/ho-luatex
+# mkdir -p source/latex/ho-luatex/catalogue
+mkdir -p tex/generic/ho-luatex
+mkdir -p tex/latex/ho-luatex
+
+
+# unpack
+#
+tex ho-luatex.ins
+
+
+# make pdf
+rm *.bbl || echo no bbl
+for i in *.dtx
+do
+lualatex ${i}
+if [ -f ${i/.dtx/.bcf} ]; then
+    #    biber ${i/.dtx}
+    bibtex ${i/.dtx}
+fi
+lualatex ${i}
+if [ -f ${i/.dtx/.idx} ]; then
+    makeindex -s gind.ist ${i/.dtx/.idx}
+    lualatex ${i}
+fi
+done
+
+
+
+# fill tds tree
+for i in `cat manifest.txt`
+do
+    cp `basename $i` $i
+done
+
+echo making tds zip
+
+rm -f ../ho-luatex.tds.zip
+zip -r ../ho-luatex.tds.zip \
+    bibtex doc scripts source tex
+
+cd ..
+echo making main zip
+rm -f ho-luatex.zip
+zip ho-luatex.zip ho-luatex.tds.zip ho-luatex/\
+{README.txt,\
+*.pdf,\
+*.dtx\
+}
+
+mv ho-luatex*.zip ho-luatex
+

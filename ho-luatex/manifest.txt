@@ -1,0 +1,4 @@
+doc/latex/ho-luatex/luatex.pdf
+source/latex/ho-luatex/luatex.dtx
+tex/generic/ho-luatex/luatex-loader.sty
+tex/generic/ho-luatex/luatex.sty
