@@ -1,0 +1,72 @@
+#!/bin/bash
+set -e
+
+# build ho-zref ctan distrib
+# perhaps use l3build one day, but not today
+
+INSTALLDIR=$HOME/texmf
+
+# starting from ho-zref.zip and ho-zref.tds.zip from ctan
+
+
+#
+# cleanup
+rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
+rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+mkdir -p $HOME/texmf/scripts/ho-zref
+
+
+#  make target tds structure
+mkdir -p doc/latex/ho-zref
+mkdir -p source/latex/ho-zref
+mkdir -p tex/latex/ho-zref
+
+
+# unpack
+#
+tex ho-zref.ins
+
+
+
+# make pdf
+rm *.bbl || echo no bbl
+for i in *.dtx
+do
+lualatex ${i}
+if [ -f ${i/.dtx/.bcf} ]; then
+    #    biber ${i/.dtx}
+    bibtex ${i/.dtx}
+fi
+lualatex ${i}
+if [ -f ${i/.dtx/.idx} ]; then
+    makeindex -s gind.ist ${i/.dtx/.idx}
+    lualatex ${i}
+fi
+done
+
+
+# special cases
+
+# fill tds tree
+for i in `cat manifest.txt`
+do
+    cp `basename $i` $i
+done
+
+echo making tds zip
+
+rm -f ../ho-zref.tds.zip
+zip -r ../ho-zref.tds.zip \
+    bibtex doc scripts source tex
+
+cd ..
+echo making main zip
+rm -f ho-zref.zip
+zip ho-zref.zip ho-zref.tds.zip ho-zref/\
+{README.txt,\
+*.pdf,\
+*.dtx\
+}
+
+mv ho-zref*.zip ho-zref
+
