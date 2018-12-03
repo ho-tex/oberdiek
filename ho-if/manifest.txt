@@ -1,0 +1,15 @@
+doc/latex/ho-if/ifdraft.pdf
+doc/latex/ho-if/iflang.pdf
+doc/latex/ho-if/ifluatex.pdf
+doc/latex/ho-if/ifpdf.pdf
+doc/latex/ho-if/ifvtex.pdf
+source/latex/ho-if/ifdraft.dtx
+source/latex/ho-if/iflang.dtx
+source/latex/ho-if/ifluatex.dtx
+source/latex/ho-if/ifpdf.dtx
+source/latex/ho-if/ifvtex.dtx
+tex/generic/ho-if/iflang.sty
+tex/generic/ho-if/ifluatex.sty
+tex/generic/ho-if/ifpdf.sty
+tex/generic/ho-if/ifvtex.sty
+tex/latex/ho-if/ifdraft.sty

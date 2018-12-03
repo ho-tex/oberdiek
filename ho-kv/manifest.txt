@@ -1,0 +1,11 @@
+doc/latex/ho-kv/kvdefinekeys.pdf
+doc/latex/ho-kv/kvoptions.pdf
+doc/latex/ho-kv/kvsetkeys-example.tex
+doc/latex/ho-kv/kvsetkeys.pdf
+source/latex/ho-kv/kvdefinekeys.dtx
+source/latex/ho-kv/kvoptions.dtx
+source/latex/ho-kv/kvsetkeys.dtx
+tex/generic/ho-kv/kvdefinekeys.sty
+tex/generic/ho-kv/kvsetkeys.sty
+tex/latex/ho-kv/kvoptions-patch.sty
+tex/latex/ho-kv/kvoptions.sty
