@@ -32,22 +32,6 @@ mkdir -p tex/latex/oberdiek
 #
 tex oberdiek.ins
 
-## Lua need to be here for doc generation must fix this one day
-cp \
-    luacolor.lua \
-    pdftexcmds.lua oberdiek.pdftexcmds.lua \
-    magicnum.lua oberdiek.magicnum.lua \
-    oberdiek.luatex.lua \
-    scripts/oberdiek
-
-# cp \
-#     luacolor.lua \
-#     pdftexcmds.lua oberdiek.pdftexcmds.lua \
-#     magicnum.lua oberdiek.magicnum.lua \
-#     oberdiek.luatex.lua \
-#     $HOME/texmf/scripts/oberdiek
-
-
 # make pdf
 rm *.bbl || echo no bbl
 for i in *.dtx
@@ -69,7 +53,6 @@ lualatex oberdiek
 
 
 # special cases
-cp README readme-ctan.txt
 rm -f ./tex/latex/oberdiek/foo.sty
 # rm -f ./doc/latex/oberdiek/test/ifpdf-test1.tex
 # rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
@@ -90,7 +73,7 @@ cd ..
 echo making main zip
 rm -f oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
-{README,\
+{README.txt,\
 oberdiek.tex,\
 *.pdf,\
 *.dtx\

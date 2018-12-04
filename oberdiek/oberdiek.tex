@@ -233,37 +233,15 @@
 [\entrysep]
 \entry{grffile}{2012/04/05}{1.16}{Extended file name support for graphics}%
 [\entrysep]
-\entry{hobsub}{2012/04/25}{1.12}{Construct package bundles}%
-[\entrysep]
 \entry{hologo}{2012/04/26}{1.10}{A logo collection with bookmark support}%
 [\entrysep]
 \entry{holtxdoc}{2012/03/21}{0.24}{Private additional ltxdoc support}%
 [\entrysep]
 \entry{hopatch}{2011/06/24}{1.1}{Wrapper for package hooks}%
 [\entrysep]
-\entry{hycolor}{2011/01/30}{1.7}{Color options for hyperref/bookmark}%
-[\entrysep]
-\entry{hypbmsec}{2007/04/11}{2.4}{Bookmarks in sectioning commands}%
-[\entrysep]
-\entry{hypcap}{2011/02/16}{1.11}{Adjusting the anchors of captions}%
-[\entrysep]
-\entry{hypdestopt}{2011/05/13}{2.3}{Hyperref destination optimizer}%
-[\entrysep]
-\entry{hypdoc}{2011/08/19}{1.11}{Hyper extensions for doc.sty}%
-[\entrysep]
-\entry{hypgotoe}{2007/10/30}{0.1}{Links to embedded files}%
-[\entrysep]
 \entry{hyphsubst}{2008/06/09}{0.2}{Substitute hyphenation patterns}%
 [\entrysep]
 \entry{ifdraft}{2008/08/11}{1.3}{Detect class options draft and final}%
-[\entrysep]
-\entry{iflang}{2007/11/11}{1.5}{Checks for the current language}%
-[\entrysep]
-\entry{ifluatex}{2010/03/01}{1.3}{Provides the ifluatex switch}%
-[\entrysep]
-\entry{ifpdf}{2011/01/30}{2.3}{Provides the ifpdf switch}%
-[\entrysep]
-\entry{ifvtex}{2010/03/01}{1.5}{Detect \hologo{VTeX} and its facilities}%
 [\entrysep]
 \entry{infwarerr}{2010/04/08}{1.3}{Providing info/warning/error messages}%
 [\entrysep]
@@ -285,8 +263,6 @@
 [\entrysep]
 \entry{luacolor}{2011/11/01}{1.8}{Color support via \hologo{LuaTeX}'s attributes}%
 [\entrysep]
-\entry{luatex}{2010/03/09}{0.4}{\hologo{LuaTeX} basic definition package}%
-[\entrysep]
 \entry{magicnum}{2011/04/10}{1.4}{Magic numbers}%
 [\entrysep]
 \entry{makerobust}{2006/03/18}{1.0}{Make existing macro robust}%
@@ -296,16 +272,6 @@
 \entry{pagegrid}{2009/12/04}{1.4}{Print page grid in background}%
 [\entrysep]
 \entry{pagesel}{2008/08/11}{1.8}{Select pages of a document for output}%
-[\entrysep]
-\entry{pdfcol}{2007/12/12}{1.2}{Handle new color stacks for \hologo{pdfTeX}}%
-[\entrysep]
-\entry{pdfcolfoot}{2012/01/02}{1.2}{Color stack for footnotes with \hologo{pdfTeX}}%
-[\entrysep]
-\entry{pdfcolmk}{2008/08/11}{1.2}{Color support for \hologo{pdfTeX} via marks}%
-[\entrysep]
-\entry{pdfcolparallel}{2010/01/11}{1.3}{Color stacks support for parallel}%
-[\entrysep]
-\entry{pdfcolparcolumns}{2010/01/11}{1.3}{Color stacks for parcolumns}%
 [\entrysep]
 \entry{pdfcrypt}{2007/04/26}{1.0}{Allows the setting of PDF encryption}%
 [\entrysep]
@@ -360,8 +326,6 @@
 \entry{twoopt}{2008/08/11}{1.5}{Definitions with two optional arguments}%
 [\entrysep]
 \entry{uniquecounter}{2011/01/30}{1.2}{Provide unlimited unique counter}%
-[\entrysep]
-\entry{zref}{2012/04/04}{2.24}{A new reference scheme for \hologo{LaTeX}}%
 \end{overview}
 
 \section{Packages}
@@ -678,15 +642,6 @@ contain spaces.
 \tocinclude{grffile}
 
 \newpage
-\subsection{\pkgsectformat{hobsub}}
-\label{hobsub}
-\begin{abstract}
-Package \xpackage{hobsub} implements the idea of loading
-several packages in one big collection package.
-\end{abstract}
-\tocinclude{hobsub}
-
-\newpage
 \subsection{\pkgsectformat{hologo}}
 \label{hologo}
 \begin{abstract}
@@ -716,69 +671,6 @@ own hooks.
 \end{abstract}
 \tocinclude{hopatch}
 
-\newpage
-\subsection{\pkgsectformat{hycolor}}
-\label{hycolor}
-\begin{abstract}
-Package \xpackage{hycolor} implements the color option stuff that
-is used by packages \xpackage{hyperref} and \xpackage{bookmark}.
-It is not intended as package for the user.
-\end{abstract}
-\tocinclude{hycolor}
-
-\newpage
-\subsection{\pkgsectformat{hypbmsec}}
-\label{hypbmsec}
-\begin{abstract}
-This package expands the syntax of the sectioning commands. If the
-argument of the sectioning commands isn't usable as outline entry,
-a replacement for the bookmarks can be given.
-\end{abstract}
-\tocinclude{hypbmsec}
-
-\newpage
-\subsection{\pkgsectformat{hypcap}}
-\label{hypcap}
-\begin{abstract}
-This package tries a solution of the problem with
-hyperref, that links to floats points below the
-caption and not at the beginning of the float.
-Therefore this package divides the task into two
-part, the link setting with \cs{capstart} or
-automatically at the beginning of a float and
-the rest in the \cs{caption} command.
-\end{abstract}
-\tocinclude{hypcap}
-
-\newpage
-\subsection{\pkgsectformat{hypdestopt}}
-\label{hypdestopt}
-\begin{abstract}
-Package \xpackage{hypdestopt} supports \xpackage{hyperref}'s
-\xoption{pdftex} driver. It removes unnecessary destinations
-and shortens the destination names or uses numbered destinations
-to get smaller PDF files.
-\end{abstract}
-\tocinclude{hypdestopt}
-
-\newpage
-\subsection{\pkgsectformat{hypdoc}}
-\label{hypdoc}
-\begin{abstract}
-This package adds hyper features to the package
-\xpackage{doc} that is used in the documentation
-system of \LaTeXe. Bookmarks are added and references
-are linked as far as possible.
-\end{abstract}
-\tocinclude{hypdoc}
-
-\newpage
-\subsection{\pkgsectformat{hypgotoe}}
-\label{hypgotoe}
-\begin{abstract}
-Experimental package for links to embedded files.
-\end{abstract}
-\tocinclude{hypgotoe}
 
 \newpage
 \subsection{\pkgsectformat{hyphsubst}}
@@ -800,48 +692,6 @@ The package provides an interface for selecting code depending
 on the options \xoption{draft} and \xoption{final}.
 \end{abstract}
 \tocinclude{ifdraft}
-
-\newpage
-\subsection{\pkgsectformat{iflang}}
-\label{iflang}
-\begin{abstract}
-This package provides expandible checks for the current language
-based on macro \cs{languagename} or hyphenation patterns.
-\end{abstract}
-\tocinclude{iflang}
-
-\newpage
-\subsection{\pkgsectformat{ifluatex}}
-\label{ifluatex}
-\begin{abstract}
-This package looks for \LuaTeX\ regardless of its mode
-and provides the switch \cs{ifluatex}. Also it makes
-\cs{luatexversion} available if it is not present.
-It works with \plainTeX\ or \LaTeX.
-\end{abstract}
-\tocinclude{ifluatex}
-
-\newpage
-\subsection{\pkgsectformat{ifpdf}}
-\label{ifpdf}
-\begin{abstract}
-This package looks for \pdfTeX\ in pdf mode and
-implements and sets the switch \cs{ifpdf}.
-The detection is based on \cs{pdfoutput} and
-the package will not change this value.
-It works with plain or \LaTeX\ formats.
-\end{abstract}
-\tocinclude{ifpdf}
-
-\newpage
-\subsection{\pkgsectformat{ifvtex}}
-\label{ifvtex}
-\begin{abstract}
-This package looks for \VTeX, implements
-and sets the switches \cs{ifvtex}, \cs{ifvtex}\texttt{\meta{mode}},
-\cs{ifvtexgex}. It works with plain or \LaTeX\ formats.
-\end{abstract}
-\tocinclude{ifvtex}
 
 \newpage
 \subsection{\pkgsectformat{infwarerr}}
@@ -870,37 +720,6 @@ This package provides expandable arithmetic operations
 with integers.
 \end{abstract}
 \tocinclude{intcalc}
-
-\newpage
-\subsection{\pkgsectformat{kvdefinekeys}}
-\label{kvdefinekeys}
-\begin{abstract}
-Package \xpackage{kvdefinekeys} provides \cs{kv@define@key} to define
-keys the same way as \xpackage{keyval}'s \cs{define@key}. However, it
-works also using \iniTeX.
-\end{abstract}
-\tocinclude{kvdefinekeys}
-
-\newpage
-\subsection{\pkgsectformat{kvoptions}}
-\label{kvoptions}
-\begin{abstract}
-This package is intended for package authors who want to
-use options in key value format for their package options.
-\end{abstract}
-\tocinclude{kvoptions}
-
-\newpage
-\subsection{\pkgsectformat{kvsetkeys}}
-\label{kvsetkeys}
-\begin{abstract}
-Package \xpackage{kvsetkeys} provides \cs{kvsetkeys}, a variant
-of package \xpackage{keyval}'s \cs{setkeys}. It allows to specify
-a handler that deals with unknown options. Active commas and equal
-signs may be used (e.g. see \xpackage{babel}'s shorthands) and
-only one level of curly braces is removed from the values.
-\end{abstract}
-\tocinclude{kvsetkeys}
 
 \newpage
 \subsection{\pkgsectformat{letltxmacro}}
@@ -945,15 +764,6 @@ on \LuaTeX's node attributes.
 \end{abstract}
 \tocinclude{luacolor}
 
-\newpage
-\subsection{\pkgsectformat{luatex}}
-\label{luatex}
-\begin{abstract}
-This package manages the new and extended features and resources
-that \LuaTeX\ provides. Examples are attributes and catcode
-tables.
-\end{abstract}
-\tocinclude{luatex}
 
 \newpage
 \subsection{\pkgsectformat{magicnum}}
@@ -1001,56 +811,6 @@ Single pages or page areas can be selected for output.
 \end{abstract}
 \tocinclude{pagesel}
 
-\newpage
-\subsection{\pkgsectformat{pdfcol}}
-\label{pdfcol}
-\begin{abstract}
-Since version 1.40 \pdfTeX\ supports color stacks.
-The driver file \xfile{pdftex.def} for package \xpackage{color}
-defines and uses a main color stack since version v0.04b.
-Package \xpackage{pdfcol} is intended for package writers.
-It defines macros for setting and maintaining new color stacks.
-\end{abstract}
-\tocinclude{pdfcol}
-
-\newpage
-\subsection{\pkgsectformat{pdfcolfoot}}
-\label{pdfcolfoot}
-\begin{abstract}
-Since version 1.40 \pdfTeX\ supports several color stacks. This
-package uses a separate color stack for footnotes that can break
-across pages.
-\end{abstract}
-\tocinclude{pdfcolfoot}
-
-\newpage
-\subsection{\pkgsectformat{pdfcolmk}}
-\label{pdfcolmk}
-\begin{abstract}
-This package tries a solution for the missing color
-stack of \pdfTeX.
-\end{abstract}
-\tocinclude{pdfcolmk}
-
-\newpage
-\subsection{\pkgsectformat{pdfcolparallel}}
-\label{pdfcolparallel}
-\begin{abstract}
-This packages fixes bugs in \xpackage{parallel} and
-improves color support by using several color stacks
-that are provided by \pdfTeX\ since version 1.40.
-\end{abstract}
-\tocinclude{pdfcolparallel}
-
-\newpage
-\subsection{\pkgsectformat{pdfcolparcolumns}}
-\label{pdfcolparcolumns}
-\begin{abstract}
-Since version 1.40 \pdfTeX\ supports several color stacks.
-This package uses them to fix color problems in
-package \xpackage{parcolumns}.
-\end{abstract}
-\tocinclude{pdfcolparcolumns}
 
 \newpage
 \subsection{\pkgsectformat{pdfcrypt}}
@@ -1329,17 +1089,4 @@ The numeric values are not limited.
 \end{abstract}
 \tocinclude{uniquecounter}
 
-\newpage
-\subsection{\pkgsectformat{zref}}
-\label{zref}
-\begin{abstract}
-Package \xpackage{zref} tries to get rid of the restriction
-in \hologo{LaTeX}'s reference system that only two properties are
-supported. The package implements an extensible referencing
-system, where properties are handled in a more flexible way.
-It offers an interface for macro programmers for the access
-to the system and some applications that uses the new
-reference scheme.
-\end{abstract}
-\tocinclude{zref}
 \end{document}
