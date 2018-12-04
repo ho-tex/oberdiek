@@ -1,0 +1,79 @@
+#!/bin/bash
+set -e
+
+# build ho-generic ctan distrib
+# perhaps use l3build one day, but not today
+
+INSTALLDIR=$HOME/texmf
+
+# starting from ho-generic.zip and ho-generic.tds.zip from ctan
+
+
+#
+# cleanup
+rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
+rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+mkdir -p $HOME/texmf/scripts/ho-generic
+
+
+#  make target tds structure
+mkdir -p bibtex/bib/ho-generic
+mkdir -p scripts/ho-generic
+mkdir -p doc/latex/ho-generic
+mkdir -p doc/latex/ho-generic/example
+mkdir -p tex/generic/ho-generic
+
+
+# unpack
+#
+tex ho-generic.ins
+
+# make pdf
+rm *.bbl || echo no bbl
+for i in *.dtx
+do
+lualatex ${i}
+if [ -f ${i/.dtx/.bcf} ]; then
+    #    biber ${i/.dtx}
+    bibtex ${i/.dtx}
+fi
+lualatex ${i}
+if [ -f ${i/.dtx/.idx} ]; then
+    makeindex -s gind.ist ${i/.dtx/.idx}
+    lualatex ${i}
+fi
+done
+
+lualatex ho-generic
+lualatex ho-generic
+
+
+# special cases
+rm -f ./tex/latex/ho-generic/foo.sty
+# rm -f ./doc/latex/ho-generic/test/ifpdf-test1.tex
+# rm -f ./source/latex/ho-generic/catalogue/ifpdf.xml
+
+# fill tds tree
+for i in `cat manifest.txt`
+do
+    cp `basename $i` $i
+done
+
+echo making tds zip
+
+rm -f ../ho-generic.tds.zip
+zip -r ../ho-generic.tds.zip \
+    bibtex doc scripts source tex
+
+cd ..
+echo making main zip
+rm -f ho-generic.zip
+zip ho-generic.zip ho-generic.tds.zip ho-generic/\
+{README.txt,\
+ho-generic.tex,\
+*.pdf,\
+*.dtx\
+}
+
+mv ho-generic*.zip ho-generic
+
