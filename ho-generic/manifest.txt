@@ -39,6 +39,7 @@ scripts/ho-generic/ho-generic.magicnum.lua
 scripts/ho-generic/ho-generic.pdftexcmds.lua
 scripts/ho-generic/pdfatfi.pl
 scripts/ho-generic/pdftexcmds.lua
+source/latex/ho-generic/oberdiek-source.bib
 source/latex/ho-generic/accsupp.dtx
 source/latex/ho-generic/aliascnt.dtx
 source/latex/ho-generic/alphalph.dtx

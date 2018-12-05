@@ -1,36 +1,36 @@
 #!/bin/bash
 set -e
 
-# build oberdiek ctan distrib
+# build ho-latex ctan distrib
 # perhaps use l3build one day, but not today
 
 INSTALLDIR=$HOME/texmf
 
-# starting from oberdiek.zip and oberdiek.tds.zip from ctan
+# starting from ho-latex.zip and ho-latex.tds.zip from ctan
 
 
 #
 # cleanup
 rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
 rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
-mkdir -p $HOME/texmf/scripts/oberdiek
+mkdir -p $HOME/texmf/scripts/ho-latex
 
 
 #  make target tds structure
-mkdir -p bibtex/bib/oberdiek
-mkdir -p scripts/oberdiek
-mkdir -p doc/latex/oberdiek
-mkdir -p doc/latex/oberdiek/example
-# mkdir -p doc/latex/oberdiek/test
-mkdir -p source/latex/oberdiek
-# mkdir -p source/latex/oberdiek/catalogue
-#mkdir -p tex/generic/oberdiek
-mkdir -p tex/latex/oberdiek
+mkdir -p bibtex/bib/ho-latex
+mkdir -p scripts/ho-latex
+mkdir -p doc/latex/ho-latex
+mkdir -p doc/latex/ho-latex/example
+# mkdir -p doc/latex/ho-latex/test
+mkdir -p source/latex/ho-latex
+# mkdir -p source/latex/ho-latex/catalogue
+#mkdir -p tex/generic/ho-latex
+mkdir -p tex/latex/ho-latex
 
 
 # unpack
 #
-tex oberdiek.ins
+tex ho-latex.ins
 
 # make pdf
 rm *.bbl || echo no bbl
@@ -48,14 +48,14 @@ echo     lualatex ${i}
 fi
 done
 
-echo lualatex oberdiek
-lualatex oberdiek
+echo lualatex ho-latex
+lualatex ho-latex
 
 
 # special cases
-rm -f ./tex/latex/oberdiek/foo.sty
-# rm -f ./doc/latex/oberdiek/test/ifpdf-test1.tex
-# rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
+rm -f ./tex/latex/ho-latex/foo.sty
+# rm -f ./doc/latex/ho-latex/test/ifpdf-test1.tex
+# rm -f ./source/latex/ho-latex/catalogue/ifpdf.xml
 
 # fill tds tree
 for i in `cat manifest.txt`
@@ -65,19 +65,19 @@ done
 
 echo making tds zip
 
-rm -f ../oberdiek.tds.zip
-zip -r ../oberdiek.tds.zip \
+rm -f ../ho-latex.tds.zip
+zip -r ../ho-latex.tds.zip \
     bibtex doc scripts source tex
 
 cd ..
 echo making main zip
-rm -f oberdiek.zip
-zip oberdiek.zip oberdiek.tds.zip oberdiek/\
+rm -f ho-latex.zip
+zip ho-latex.zip ho-latex.tds.zip ho-latex/\
 {README.txt,\
-oberdiek.tex,\
+ho-latex.tex,\
 *.pdf,\
 *.dtx\
 }
 
-mv oberdiek*.zip oberdiek
+mv ho-latex*.zip ho-latex
 
