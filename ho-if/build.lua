@@ -1,13 +1,12 @@
--- Build script for test-oberdiek
+-- Build script for test-ho-if
 
--- Build script for oberdiek bundle (check only)
-module = "oberdiek"
+-- Build script for ho-if bundle (check only)
+module = "ho-if"
 --sourcefiles = {'*.dtx'}
-installfiles = {'*.def','*.sty','*.dfu','oberdiek.luatex.lua', 'luacolor.lua','magicnum.lua','pdftexcmds.lua','bmpsize-test.tex'}
 -- unpackfile = {'oberdiek.ins'}
 
 
-checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config-pdftex"}
+checkconfigs = {"build","config-plain"}
 checkruns = 2
 
 
