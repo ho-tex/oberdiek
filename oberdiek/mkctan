@@ -24,7 +24,7 @@ mkdir -p doc/latex/oberdiek/example
 # mkdir -p doc/latex/oberdiek/test
 mkdir -p source/latex/oberdiek
 # mkdir -p source/latex/oberdiek/catalogue
-mkdir -p tex/generic/oberdiek
+#mkdir -p tex/generic/oberdiek
 mkdir -p tex/latex/oberdiek
 
 
@@ -41,14 +41,14 @@ if [ -f ${i/.dtx/.bcf} ]; then
     #    biber ${i/.dtx}
     bibtex ${i/.dtx}
 fi
-lualatex ${i}
+echo lualatex ${i}
 if [ -f ${i/.dtx/.idx} ]; then
     makeindex -s gind.ist ${i/.dtx/.idx}
-    lualatex ${i}
+echo     lualatex ${i}
 fi
 done
 
-lualatex oberdiek
+echo lualatex oberdiek
 lualatex oberdiek
 
 
