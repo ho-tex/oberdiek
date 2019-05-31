@@ -711,14 +711,15 @@ end
 %    \begin{macrocode}
 local LIST = 1
 local LIST_LEADERS = 2
-local COLOR = 3
+local LIST_DISC = 3
+local COLOR = 4
 local RULE = node.id("rule")
 local node_types = {
   [node.id("hlist")] = LIST,
   [node.id("vlist")] = LIST,
   [node.id("rule")]  = COLOR,
   [node.id("glyph")] = COLOR,
-  [node.id("disc")]  = COLOR,
+  [node.id("disc")]  = LIST_DISC,
   [node.id("whatsit")] = {
     [node.subtype("special")] = COLOR,
     [node.subtype("pdf_literal")] = COLOR,
@@ -766,17 +767,21 @@ local function traverse(list, color, dry)
   if not list then
     return color
   end
-  if get_type(list) ~= LIST then
+  local head
+  if get_type(list) == LIST then
+    head = list.head
+  elseif get_type(list) == LIST_DISC then
+    head = list.replace
+  else
     texio.write_nl("!!! Error: Wrong list type: " .. node.type(list.id))
     return color
   end
 %<debug>texio.write_nl("traverse: " .. node.type(list.id))
-  local head = list.head
   for n in node.traverse(head) do
 %<debug>texio.write_nl("  node: " .. node.type(n.id))
     local t = get_type(n)
 %<debug>texio.write_nl("TYPE "..tostring(t).. " "..tostring(node.type(node.getid(n))).." ".. tostring(node.getsubtype(n)))
-    if t == LIST then
+    if t == LIST or t == LIST_DISC then
       color = traverse(n, color, dry)
     elseif t == LIST_LEADERS then
       local color_after = traverse(n.leader, color, DRY_TRUE)
@@ -810,7 +815,11 @@ local function traverse(list, color, dry)
       end
     end
   end
-  list.head = head
+  if get_type(list) == LIST then
+    list.head = head
+  else
+    list.replace = head
+  end
   return color
 end
 %    \end{macrocode}
