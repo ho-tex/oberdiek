@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: bookmark.dtx
-% Version: 2016/05/17 v1.26
+% Version: 2019/06/04 v1.27
 % Info: PDF bookmarks
 %
 % Copyright (C) 2007-2011 by
@@ -87,7 +87,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)}
+\Msg{* Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -99,7 +99,7 @@
 This is a generated file.
 
 Project: bookmark
-Version: 2016/05/17 v1.26
+Version: 2019/06/04 v1.27
 
 Copyright (C) 2007-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -173,7 +173,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bookmark.drv}%
-  [2016/05/17 v1.26 PDF bookmarks (HO)]%
+  [2019/06/04 v1.27 PDF bookmarks (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -202,7 +202,7 @@ and the derived files
 % \GetFileInfo{bookmark.drv}
 %
 % \title{The \xpackage{bookmark} package}
-% \date{2016/05/17 v1.26}
+% \date{2019/06/04 v1.27}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -663,7 +663,7 @@ and the derived files
   open,
   openlevel=2,
   atend
-]{bookmark}[2016/05/17]
+]{bookmark}[2019/06/04]
 
 \bookmarksetup{color=blue}
 
@@ -766,7 +766,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{bookmark}%
-  [2016/05/17 v1.26 PDF bookmarks (HO)]%
+  [2019/06/04 v1.27 PDF bookmarks (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Requirements}
@@ -1524,9 +1524,9 @@ and the derived files
 %    \begin{macrocode}
 \def\BKM@StyleCall#1{%
   \@ifundefined{BKM@style@#1}{%
-    \PackageError{bookmark}{%
-      Undefined style `#1'%
-    }\@ehc
+    \PackageWarning{bookmark}{%
+      Ignoring unknown style `#1'%
+    }%
   }{%
 %    \end{macrocode}
 %    Check style stack.
@@ -1894,7 +1894,7 @@ and the derived files
 %<*dvipdfm>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvipdfm.def}%
-  [2016/05/17 v1.26 bookmark driver for dvipdfm (HO)]%
+  [2019/06/04 v1.27 bookmark driver for dvipdfm (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\BKM@id}
@@ -2069,7 +2069,7 @@ and the derived files
 %<*vtex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-vtex.def}%
-  [2016/05/17 v1.26 bookmark driver for VTeX (HO)]%
+  [2019/06/04 v1.27 bookmark driver for VTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -2400,7 +2400,7 @@ and the derived files
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-pdftex.def}%
-  [2016/05/17 v1.26 bookmark driver for pdfTeX (HO)]%
+  [2019/06/04 v1.27 bookmark driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\BKM@DO@entry}
@@ -2556,7 +2556,7 @@ and the derived files
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvips.def}%
-  [2016/05/17 v1.26 bookmark driver for dvips (HO)]%
+  [2019/06/04 v1.27 bookmark driver for dvips (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -2575,7 +2575,7 @@ and the derived files
 %<*dvipsone>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-dvipsone.def}%
-  [2016/05/17 v1.26 bookmark driver for dvipsone (HO)]%
+  [2019/06/04 v1.27 bookmark driver for dvipsone (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -2594,7 +2594,7 @@ and the derived files
 %<*textures>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bkm-textures.def}%
-  [2016/05/17 v1.26 bookmark driver for textures (HO)]%
+  [2019/06/04 v1.27 bookmark driver for textures (HO)]%
 %    \end{macrocode}
 %    \begin{macro}{\BKM@PSHeaderFile}
 %    \begin{macrocode}
@@ -3514,6 +3514,11 @@ and the derived files
 %   \item
 %     define \cs{pdfbookmark} to allow pdftex driver to be used with Lua\TeX.
 %   \end{Version}
+%   \begin{Version}{2019/06/04 v1.27}
+%   \item
+%     unknown style options are ignored (issue 67)
+%   \end{Version}
+
 % \end{History}
 %
 % \PrintIndex
