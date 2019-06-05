@@ -1,0 +1,91 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Overfull \hbox (36.0pt too wide) detected at line 20
+[]
+\hbox(10.0+2.0)x0.0, direction TLT
+.\hbox(10.0+2.0)x36.0, direction TLT
+..\rule(10.0+2.0)x36.0
+Overfull \hbox (36.0pt too wide) detected at line 22
+[]
+\hbox(10.0+2.0)x0.0, direction TLT
+.\hbox(10.0+2.0)x36.0, direction TLT
+..\rule(10.0+2.0)x36.0
+Completed box being shipped out [1]
+\vbox(632.5+0.0)x429.0, direction TLT
+.\glue 17.0
+.\vbox(615.5+0.0)x390.0, shifted 39.0, direction TLT
+..\vbox(12.0+0.0)x390.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x390.0, direction TLT
+....\hbox(0.0+0.0)x390.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(548.5+0.0)x390.0, glue set 521.94427fil, direction TLT
+...\write-{}
+...\pdfcolorstack 0 push {0 g 0 G}
+...\glue(\topskip) 2.0
+...\hbox(10.0+2.0)x390.0, glue set 371.00397fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(10.0+2.0)x0.0, direction TLT
+.....\hbox(10.0+2.0)x36.0, direction TLT
+......\pdfliteral direct <lua data reference 770>
+......\rule(10.0+2.0)x36.0
+....\pdfliteral direct <lua data reference 772>
+....\TU/lmr/m/n/12 t
+....\TU/lmr/m/n/12 e
+....\TU/lmr/m/n/12 s
+....\TU/lmr/m/n/12 t
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 2.5
+...\hbox(10.0+2.0)x390.0, glue set 371.00397fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\discretionary (penalty 50)
+.....= \hbox(10.0+2.0)x0.0, direction TLT
+.....= .\hbox(10.0+2.0)x36.0, direction TLT
+.....= ..\pdfliteral direct <lua data reference 773>
+.....= ..\rule(10.0+2.0)x36.0
+.....= \pdfliteral direct <lua data reference 774>
+.....= \TU/lmr/m/n/12 t
+.....= \TU/lmr/m/n/12 e
+.....= \TU/lmr/m/n/12 s
+.....= \TU/lmr/m/n/12 t
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 22.02
+..\hbox(7.98+0.0)x390.0, direction TLT
+...\hbox(7.98+0.0)x390.0, glue set 192.06fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/12 1
+....\glue 0.0 plus 1.0fil
+(luacolor-test-pr66.aux)
+ *File List*
+regression-test.tex
+ article.cls    ....-..-.. v... Standard LaTeX document class
+  size12.clo    ....-..-.. v... Standard LaTeX file (size option)
+  xcolor.sty    ....-..-.. v... LaTeX color extensions (UK)
+   color.cfg    ....-..-.. v... sample color configuration
+  luatex.def    ....-..-.. v... Graphics/color driver for luatex
+luacolor.sty    ....-..-.. v... Color support via LuaTeX's attributes (HO)
+infwarerr.sty    ....-..-.. v... Providing info/warning/error messages (HO)
+ifluatex.sty    ....-..-.. v... Provides the ifluatex switch (HO)
+   ifpdf.sty    ....-..-.. v... Provides the ifpdf switch
+ ltxcmds.sty    ....-..-.. v... LaTeX kernel commands for general use (HO)
+atbegshi.sty    ....-..-.. v... At begin shipout hook (HO)
+supp-pdf.mkii
+ ***********
