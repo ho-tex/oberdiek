@@ -1,14 +1,15 @@
 %PDF-1.5
-%–‘≈ÿ
+%Ã’¡‘≈ÿ–ƒ∆
 6 0 obj
-<</Length 262       >>
+<< /Length 262 >>        
 stream
 /TRP1 gs
 0 g 0 G
 0 g 0 G
 0 g 0 G
 BT
-/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<001C0023>-28<002B>]TJ
+/F15 9.96264 Tf
+1 0 0 1 148.712 657.235 Tm [<001C0023>-28<002B>]TJ
 /TRP.3 gs
 1 0 0 1 163.935 657.235 Tm [<003F0032004800480051>-333<0072>28<005100600048002F>]TJ
 /TRP1 gs
@@ -19,10 +20,10 @@ ET
 endstream
 endobj
 5 0 obj
-<</Type/Page/Contents 6 0 R/Resources 4 0 R/MediaBox[0 0 612 792]/Parent 8 0 R>>
+<< /Type /Page /Contents 6 0 R /Resources 4 0 R /MediaBox [ 0 0 612 792 ] /Parent 8 0 R >>
 endobj
 4 0 obj
-<< /ColorSpace 3 0 R /Pattern 2 0 R /ExtGState 1 0 R /Font<</F15 7 0 R>>/ProcSet[/PDF/Text]>>
+<<  /ColorSpace 3 0 R /Pattern 2 0 R /ExtGState 1 0 R  /Font << /F15 7 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 1 0 obj
 << /TRP1<</ca 1/CA 1>>/TRP.3<</ca .3/CA .3>>>>
@@ -34,21 +35,21 @@ endobj
 <<  /pgfprgb [/Pattern /DeviceRGB] >>
 endobj
 9 0 obj
-[28[500]35[556]43[444]47[556]50[444]63[556]72[278]81[500 500]96[392]114[722]]
-endobj
-10 0 obj
-<</Length 15        >>
-[BINARY STREAM]
+[ 28 [ 500 ] 35 [ 556 ] 43 [ 444 ] 47 [ 556 ] 50 [ 444 ] 63 [ 556 ] 72 [ 278 ] 81 [ 500 500 ] 96 [ 392 ] 114 [ 722 ] ]
 endobj
 11 0 obj
-<</Subtype/CIDFontType0C/Length 1771      >>
+<< /Length 15 >>         
 [BINARY STREAM]
 endobj
 12 0 obj
-<</Type/FontDescriptor/FontName/GCFJQZ+LMRoman10-Regular/Flags 4/FontBBox[-430 -290 1417 1127]/Ascent 1127/CapHeight 683/Descent -290/ItalicAngle 0/StemV 93/XHeight 431/FontFile3 11 0 R/CIDSet 10 0 R>>
+<< /Subtype /CIDFontType0C /Length 1771 >>       
+[BINARY STREAM]
+endobj
+10 0 obj
+<< /Type /FontDescriptor /FontName /GCFJQZ+LMRoman10-Regular /Flags 4 /FontBBox [ -430 -290 1417 1127 ] /Ascent 1127 /CapHeight 683 /Descent -290 /ItalicAngle 0 /StemV 93 /XHeight 431 /FontFile3 12 0 R /CIDSet 11 0 R >>
 endobj
 13 0 obj
-<</Length 833       >>
+<< /Length 833 >>        
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -94,43 +95,41 @@ end
 endstream
 endobj
 7 0 obj
-<</Type/Font/Subtype/Type0/Encoding/Identity-H/BaseFont/GCFJQZ+LMRoman10-Regular/DescendantFonts[14 0 R]/ToUnicode 13 0 R>>
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /GCFJQZ+LMRoman10-Regular /DescendantFonts [ 14 0 R ] /ToUnicode 13 0 R >>
 endobj
 14 0 obj
-<</Type/Font/Subtype/CIDFontType0/BaseFont/GCFJQZ+LMRoman10-Regular/FontDescriptor 12 0 R/W 9 0 R/CIDSystemInfo<</Registry (Adobe)/Ordering (Identity)/Supplement 0>>>>
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /GCFJQZ+LMRoman10-Regular /FontDescriptor 10 0 R /W 9 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
 endobj
 8 0 obj
-<</Type/Pages /Count 1/Kids[5 0 R]>>
+<< /Type /Pages  /Count 1 /Kids [ 5 0 R ] >>
 endobj
 15 0 obj
-<</Type/Catalog/Pages 8 0 R>>
+<< /Type /Catalog /Pages 8 0 R >>
 endobj
 16 0 obj
-<<
-/Producer (LuaTeX)
-/Creator (TeX)/Trapped/False>>
+<< /Producer (LuaTeX) /Creator (TeX) /Trapped /False >>
 endobj
 xref
 0 17
 0000000000 65535 f 
-0000000538 00000 n 
-0000000600 00000 n 
-0000000620 00000 n 
-0000000429 00000 n 
-0000000333 00000 n 
-0000000015 00000 n 
-0000003796 00000 n 
-0000004119 00000 n 
-0000000673 00000 n 
-0000000766 00000 n 
-0000000838 00000 n 
-0000002688 00000 n 
-0000002906 00000 n 
-0000003935 00000 n 
-0000004171 00000 n 
-0000004217 00000 n 
+0000000567 00000 n 
+0000000629 00000 n 
+0000000649 00000 n 
+0000000447 00000 n 
+0000000341 00000 n 
+0000000020 00000 n 
+0000003895 00000 n 
+0000004247 00000 n 
+0000000702 00000 n 
+0000002766 00000 n 
+0000000836 00000 n 
+0000000911 00000 n 
+0000003002 00000 n 
+0000004048 00000 n 
+0000004307 00000 n 
+0000004357 00000 n 
 trailer
-<</Size 17/Root 15 0 R/Info 16 0 R>>
+<< /Size 17 /Root 15 0 R /Info 16 0 R >>
 startxref
-4286
+4429
 %%EOF

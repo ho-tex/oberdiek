@@ -25,10 +25,6 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
 (etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 )) (kvdefinekeys.sty
 Package: kvdefinekeys ....-..-.. v... Define keys (HO)
 )

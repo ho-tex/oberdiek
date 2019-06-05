@@ -1,12 +1,13 @@
 %PDF-1.5
-%–‘≈ÿ
+%Ã’¡‘≈ÿ–ƒ∆
 3 0 obj
-<</Length 175       >>
+<< /Length 175 >>        
 stream
 0 g 0 G
 0 g 0 G
 BT
-/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<003E0032004800480051>-333<0071>83<005100600048002F>]TJ
+/F15 9.96264 Tf
+1 0 0 1 148.712 657.235 Tm [<003E0032004800480051>-333<0071>83<005100600048002F>]TJ
 0 g 0 G
 1 0 0 1 303.133 89.365 Tm [<0052>]TJ
 0 g 0 G
@@ -14,13 +15,13 @@ ET
 endstream
 endobj
 2 0 obj
-<</Type/Page/Contents 3 0 R/Resources 1 0 R/MediaBox[0 0 612 792]/Parent 5 0 R>>
+<< /Type /Page /Contents 3 0 R /Resources 1 0 R /MediaBox [ 0 0 612 792 ] /Parent 5 0 R >>
 endobj
 1 0 obj
-<</Font<</F15 4 0 R>>/ProcSet[/PDF/Text]>>
+<< /Font << /F15 4 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 8 0 obj
-<</Length 507       >>
+<< /Length 507 >>        
 stream
 0 Tr
 1 w
@@ -46,7 +47,8 @@ stream
 []0 d
 /RelativeColorimetric ri
 BT
-/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<00610069001C00600069>]TJ
+/F15 9.96264 Tf
+1 0 0 1 148.712 657.235 Tm [<00610069001C00600069>]TJ
 1 Tr
 .1 w
 2 J
@@ -76,13 +78,13 @@ ET
 endstream
 endobj
 7 0 obj
-<</Type/Page/Contents 8 0 R/Resources 6 0 R/MediaBox[0 0 612 792]/Parent 5 0 R>>
+<< /Type /Page /Contents 8 0 R /Resources 6 0 R /MediaBox [ 0 0 612 792 ] /Parent 5 0 R >>
 endobj
 6 0 obj
-<</Font<</F15 4 0 R>>/ProcSet[/PDF/Text]>>
+<< /Font << /F15 4 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 11 0 obj
-<</Length 671       >>
+<< /Length 671 >>        
 stream
 1 Tr
 .1 w
@@ -108,7 +110,8 @@ stream
 [2 2]0 d
 /Saturation ri
 BT
-/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<0071>83<005100600048002F>]TJ
+/F15 9.96264 Tf
+1 0 0 1 148.712 657.235 Tm [<0071>83<005100600048002F>]TJ
 0 Tr
 1 w
 0 J
@@ -145,13 +148,13 @@ ET
 endstream
 endobj
 10 0 obj
-<</Type/Page/Contents 11 0 R/Resources 9 0 R/MediaBox[0 0 612 792]/Parent 5 0 R>>
+<< /Type /Page /Contents 11 0 R /Resources 9 0 R /MediaBox [ 0 0 612 792 ] /Parent 5 0 R >>
 endobj
 9 0 obj
-<</Font<</F15 4 0 R>>/ProcSet[/PDF/Text]>>
+<< /Font << /F15 4 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 14 0 obj
-<</Length 527       >>
+<< /Length 527 >>        
 stream
 0 0 1 0 k 1 .5 0 0 K
 2 Tr
@@ -178,7 +181,8 @@ stream
 []0 d
 /RelativeColorimetric ri
 BT
-/F15 9.96264 Tf 1 0 0 1 148.712 657.235 Tm [<00480042004D0032>]TJ
+/F15 9.96264 Tf
+1 0 0 1 148.712 657.235 Tm [<00480042004D0032>]TJ
 0 Tr
 1 w
 0 J
@@ -206,27 +210,27 @@ ET
 endstream
 endobj
 13 0 obj
-<</Type/Page/Contents 14 0 R/Resources 12 0 R/MediaBox[0 0 612 792]/Parent 5 0 R>>
+<< /Type /Page /Contents 14 0 R /Resources 12 0 R /MediaBox [ 0 0 612 792 ] /Parent 5 0 R >>
 endobj
 12 0 obj
-<</Font<</F15 4 0 R>>/ProcSet[/PDF/Text]>>
+<< /Font << /F15 4 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 15 0 obj
-[28[500]47[556]50[444]57[500]62[750]64[333]66[278]72[278]77[556]80[778 500 500]84[556]96[392 556]105[389 500 500]109[556]113[1028]]
-endobj
-16 0 obj
-<</Length 15        >>
-[BINARY STREAM]
+[ 28 [ 500 ] 47 [ 556 ] 50 [ 444 ] 57 [ 500 ] 62 [ 750 ] 64 [ 333 ] 66 [ 278 ] 72 [ 278 ] 77 [ 556 ] 80 [ 778 500 500 ] 84 [ 556 ] 96 [ 392 556 ] 105 [ 389 500 500 ] 109 [ 556 ] 113 [ 1028 ] ]
 endobj
 17 0 obj
-<</Subtype/CIDFontType0C/Length 2786      >>
+<< /Length 15 >>         
 [BINARY STREAM]
 endobj
 18 0 obj
-<</Type/FontDescriptor/FontName/QIXDRQ+LMRoman10-Regular/Flags 4/FontBBox[-430 -290 1417 1127]/Ascent 1127/CapHeight 683/Descent -290/ItalicAngle 0/StemV 93/XHeight 431/FontFile3 17 0 R/CIDSet 16 0 R>>
+<< /Subtype /CIDFontType0C /Length 2786 >>       
+[BINARY STREAM]
+endobj
+16 0 obj
+<< /Type /FontDescriptor /FontName /QIXDRQ+LMRoman10-Regular /Flags 4 /FontBBox [ -430 -290 1417 1127 ] /Ascent 1127 /CapHeight 683 /Descent -290 /ItalicAngle 0 /StemV 93 /XHeight 431 /FontFile3 18 0 R /CIDSet 17 0 R >>
 endobj
 19 0 obj
-<</Length 959       >>
+<< /Length 959 >>        
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -281,49 +285,47 @@ end
 endstream
 endobj
 4 0 obj
-<</Type/Font/Subtype/Type0/Encoding/Identity-H/BaseFont/QIXDRQ+LMRoman10-Regular/DescendantFonts[20 0 R]/ToUnicode 19 0 R>>
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /QIXDRQ+LMRoman10-Regular /DescendantFonts [ 20 0 R ] /ToUnicode 19 0 R >>
 endobj
 20 0 obj
-<</Type/Font/Subtype/CIDFontType0/BaseFont/QIXDRQ+LMRoman10-Regular/FontDescriptor 18 0 R/W 15 0 R/CIDSystemInfo<</Registry (Adobe)/Ordering (Identity)/Supplement 0>>>>
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /QIXDRQ+LMRoman10-Regular /FontDescriptor 16 0 R /W 15 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
 endobj
 5 0 obj
-<</Type/Pages /Count 4/Kids[2 0 R 7 0 R 10 0 R 13 0 R]>>
+<< /Type /Pages  /Count 4 /Kids [ 2 0 R 7 0 R 10 0 R 13 0 R ] >>
 endobj
 21 0 obj
-<</Type/Catalog/Pages 5 0 R>>
+<< /Type /Catalog /Pages 5 0 R >>
 endobj
 22 0 obj
-<<
-/Producer (LuaTeX)
-/Creator (TeX)/Trapped/False>>
+<< /Producer (LuaTeX) /Creator (TeX) /Trapped /False >>
 endobj
 xref
 0 23
 0000000000 65535 f 
-0000000342 00000 n 
-0000000246 00000 n 
-0000000015 00000 n 
-0000007062 00000 n 
-0000007386 00000 n 
-0000001059 00000 n 
-0000000963 00000 n 
-0000000400 00000 n 
-0000001943 00000 n 
-0000001845 00000 n 
-0000001117 00000 n 
-0000002684 00000 n 
-0000002585 00000 n 
-0000002001 00000 n 
-0000002743 00000 n 
-0000002891 00000 n 
-0000002963 00000 n 
-0000005828 00000 n 
-0000006046 00000 n 
-0000007201 00000 n 
-0000007458 00000 n 
-0000007504 00000 n 
+0000000360 00000 n 
+0000000254 00000 n 
+0000000020 00000 n 
+0000007249 00000 n 
+0000007602 00000 n 
+0000001100 00000 n 
+0000000994 00000 n 
+0000000428 00000 n 
+0000002007 00000 n 
+0000001899 00000 n 
+0000001168 00000 n 
+0000002771 00000 n 
+0000002662 00000 n 
+0000002075 00000 n 
+0000002840 00000 n 
+0000005994 00000 n 
+0000003049 00000 n 
+0000003124 00000 n 
+0000006230 00000 n 
+0000007402 00000 n 
+0000007682 00000 n 
+0000007732 00000 n 
 trailer
-<</Size 23/Root 21 0 R/Info 22 0 R>>
+<< /Size 23 /Root 21 0 R /Info 22 0 R >>
 startxref
-7573
+7804
 %%EOF
