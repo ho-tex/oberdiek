@@ -20,10 +20,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(../ifxetex.sty
+)) (../ifxetex.sty
 Package: ifxetex ....-..-.. v... Provides ifxetex conditional
-) (kvoptions.sty
+)
+(kvoptions.sty
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)

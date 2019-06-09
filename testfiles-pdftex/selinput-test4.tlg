@@ -22,8 +22,6 @@ File: ucsencs.def ....-..-.. Fixes to fontencodings LGR, T3
 )
 (../uni-0.def
 File: uni-0.def ....-..-.. UCS: Unicode data U+0000..U+00FF
-)
-(../uni-32.def
+) (../uni-32.def
 File: uni-32.def ....-..-.. UCS: Unicode data U+2000..U+20FF
-) [1]
-(selinput-test4.aux)
+) [1] (selinput-test4.aux)

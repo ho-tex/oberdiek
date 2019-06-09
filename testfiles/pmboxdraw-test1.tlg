@@ -8,8 +8,7 @@ Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
 (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-)
-(etexcmds.sty
+) (etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
 (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
@@ -155,8 +154,7 @@ File: pmboxdrawenc.dfu ....-..-.. v... UTF-8 support for box drawing characters
    defining Unicode char U+259D (decimal 9629)
    defining Unicode char U+259E (decimal 9630)
    defining Unicode char U+259F (decimal 9631)
-)
-(kvoptions.sty
+) (kvoptions.sty
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)

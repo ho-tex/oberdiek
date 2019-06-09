@@ -5,8 +5,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line ....
 Overfull \hbox (144.0pt too wide) in paragraph at lines 26--27
-[]$\TU/lmtt/m/n/10 http://this.is.a.very.long.host.name/followed/by/a/very_long
-_long_long_path.html$  
+[]$\TU/lmtt/m/n/10 http://this.is.a.very.long.host.name/followed/by/a/very_long_long_long_path.html$  
 \hbox(6.94+2.29)x276.0, direction TLT
 .\localpar
 ..\localinterlinepenalty=0

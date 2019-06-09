@@ -33,8 +33,7 @@ Package: ifxetex ....-..-.. v... Provides ifxetex conditional
 ) (ifvtex.sty
 Package: ifvtex ....-..-.. v... Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(kvoptions.sty
+) (kvoptions.sty
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)

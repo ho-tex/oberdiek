@@ -17,8 +17,7 @@ Package: soul ....-..-.. v... letterspacing/underlining (mf)
 \SOUL@ulht=\dimen...
 ) (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-)
-(etexcmds.sty
+) (etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
 (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)

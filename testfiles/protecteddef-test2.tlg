@@ -20,7 +20,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -63,7 +64,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -100,7 +102,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -143,7 +146,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -180,7 +184,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -223,7 +228,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -260,7 +266,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -302,7 +309,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
@@ -339,7 +347,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -379,7 +388,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -414,7 +424,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -454,7 +465,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -489,7 +501,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -529,7 +542,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -564,7 +578,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
@@ -603,7 +618,8 @@ Don't change this file in any respect.
 \ProtectedDef ->\ltx@ifnextchar *{\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble }{\let \ProDef@long \long \ProDef@ProtectedDef }
 \ltx@ifnextchar #1#2#3->\begingroup \let \LTXcmds@CharToken = #1\relax \ltx@LocToksA {\endgroup #2}\ltx@LocToksB {\endgroup #3}\futurelet \LTXcmds@LetToken \LTXcmds@ifnextchar 
 #1<-*
-#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
+#2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
+#3<-\let \ProDef@long \long \ProDef@ProtectedDef 
 \LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
