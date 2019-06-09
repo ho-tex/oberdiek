@@ -31,8 +31,7 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-30
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-0
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -137,8 +136,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-30
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-0
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -238,8 +236,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-30
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-0
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -275,8 +272,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-30
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-0
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -381,8 +377,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-30
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-0
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -664,8 +659,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-31
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -766,8 +760,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-31
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -863,8 +856,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-31
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -896,8 +888,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-31
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -998,8 +989,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-31
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1277,8 +1267,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-32
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-2
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1379,8 +1368,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-32
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-2
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1476,8 +1464,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-32
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-2
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1509,8 +1496,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-32
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-2
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1611,8 +1597,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-32
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-2
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1890,8 +1875,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-33
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-3
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -1992,8 +1976,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-33
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-3
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2089,8 +2072,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-33
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-3
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2122,8 +2104,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-33
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-3
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2224,8 +2205,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-33
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-3
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2503,8 +2483,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3134
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2608,8 +2587,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3134
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2708,8 +2686,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3134
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2744,8 +2721,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3134
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -2849,8 +2825,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3134
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3140,8 +3115,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3135
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3245,8 +3219,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3135
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3345,8 +3318,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3135
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3381,8 +3353,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3135
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3486,8 +3457,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3135
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3777,8 +3747,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383936
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -3936,8 +3905,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383936
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -4090,8 +4058,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383936
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -4180,8 +4147,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383936
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -4339,8 +4305,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383936
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -4846,8 +4811,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383937
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -5005,8 +4969,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383937
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -5159,8 +5122,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383937
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -5249,8 +5211,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383937
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -5408,8 +5369,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 #1<-3132333435363738393031323334353637383937
 #2<-
 \pdftexcmds@Patch ->0
-\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\
-BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
+\BIC@Normalize #1#2->\ifx #2-\ifx \\#1\\\BIC@AfterFiFi {\BIC@Normalize -}\else \BIC@AfterFiFi {\BIC@Normalize {}}\fi \else \ifx #2+\BIC@AfterFiFi {\BIC@Normalize {#1}}\else \ifx #20\BIC@AfterFiFiFi {\BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi \BIC@Fi 
 #1<-
 #2<-1
 \BIC@AfterFiFiFi #1#2\BIC@Fi ->\fi \fi \fi #1
@@ -5902,8 +5862,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 \qst:+log:log #1->\qst@setup #1\qst@checkname {##2}\@firstoftwo \qst@finish 
 #1<-\qst@options 
 \qst@setup ->\let \MatchedTarget \@undefined \let \qst@finish \@secondoftwo \futurelet \qst@matchlist \qst@setupii 
-\qst@setupii ->\ifcase \ifcat \noexpand \qst@matchlist \bgroup \@ne \fi \ifx \qst@matchlist [\tw@ \fi \m@ne \or \expandafter \MakeMatchTarget \expandafter \qst@matchlist \or \expandafter \qst@setupiii
- \else \expandafter \@gobble \fi 
+\qst@setupii ->\ifcase \ifcat \noexpand \qst@matchlist \bgroup \@ne \fi \ifx \qst@matchlist [\tw@ \fi \m@ne \or \expandafter \MakeMatchTarget \expandafter \qst@matchlist \or \expandafter \qst@setupiii \else \expandafter \@gobble \fi 
 \@gobble #1->
 #1<-\qst@options 
 \qst@checkname #1->\def \qst@mmtmp ##1\,#1\,{#1\,\@nil }\expandafter \expandafter \expandafter \qst@checknameii \expandafter \qst@mmtmp \expandafter \,\qst@matchlist \,#1\,\@nil 
@@ -5912,8 +5871,7 @@ BIC@NormalizeZero {#1}}\else \BIC@AfterFiFiFi {\BIC@NormalizeDigits #1#2}\fi \fi
 \qst@mmtmp #1\,#2\,->#2\,\@nil 
 #1<-
 #2<-odd
-\qst@checknameii #1\,#2\@nil #3->\ifcase \ifx \@nil #3\@ne \fi \ifx \@nil #2\@nil \tw@ \fi \m@ne \or \expandafter \qst@checknamenomatch \or \expandafter \qst@checknamematch \fi \expandafter \qst@check
-nameii \qst@mmtmp #1\,#2#3
+\qst@checknameii #1\,#2\@nil #3->\ifcase \ifx \@nil #3\@ne \fi \ifx \@nil #2\@nil \tw@ \fi \m@ne \or \expandafter \qst@checknamenomatch \or \expandafter \qst@checknamematch \fi \expandafter \qst@checknameii \qst@mmtmp #1\,#2#3
 #1<-odd
 #2<-
 #3<-##

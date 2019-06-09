@@ -26,8 +26,7 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(../ifxetex.sty
+) (../ifxetex.sty
 Package: ifxetex ....-..-.. v... Provides ifxetex conditional
 ) (ifvtex.sty
 Package: ifvtex ....-..-.. v... Detect VTeX and its facilities (HO)

@@ -18,8 +18,7 @@ Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
 (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-))))
-(pdftexcmds.sty
+)))) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch

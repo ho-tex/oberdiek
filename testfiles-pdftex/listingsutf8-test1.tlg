@@ -36,8 +36,7 @@ Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(ltxcmds.sty
+) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch

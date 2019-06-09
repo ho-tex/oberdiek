@@ -11,10 +11,7 @@ Don't change this file in any respect.
 \STARTMESSAGE ->This is a generated file for the l3build validation system.
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\pdef \cmp {}
 #2<-*\foo {}
 \msg {->\immediate \write 16{
@@ -25,18 +22,15 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -45,8 +39,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -55,10 +48,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@p
-aram\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo 
@@ -74,18 +65,15 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -97,18 +85,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@p
-aram\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param\endcsname }
 #2<-
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\pdef \cmp {}
 #2<-*\foo [0]{}
 \msg {->\immediate \write 16{
@@ -119,18 +102,15 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[0]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -139,8 +119,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -149,10 +128,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[0]\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[0]\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param[0]
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo [0]
@@ -168,18 +145,15 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[0]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -191,18 +165,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[0]\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[0]\endcsname }
 #2<-
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\pdef \cmp ##1{<##1>}
 #2<-*\foo [1]{<##1>}
 \msg {->\immediate \write 16{
@@ -213,18 +182,15 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[1]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -233,8 +199,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -243,10 +208,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[1]\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[1]\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param[1]
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo [1]
@@ -262,18 +225,15 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[1]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -285,18 +245,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[1]\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[1]\endcsname }
 #2<-<##1>
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\pdef \cmp (##1){<##1>}
 #2<-*\foo (##1){<##1>}
 \msg {->\immediate \write 16{
@@ -307,18 +262,15 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-(##1)
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -327,8 +279,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -337,10 +288,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csnam
-e ProDef@param(##1)\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param(##1)\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param(##1)
 \ltx@firstoftwo #1#2->#1
 #1<-\protected \ProDef@long \def \foo (##1)
@@ -355,18 +304,15 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
 \ltx@gobble #1->
 #1<-*
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-(##1)
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -378,18 +324,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csnam
-e ProDef@param(##1)\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param(##1)\endcsname }
 #2<-<##1>
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\long \pdef \cmp {}
 #2<-\foo {}
 \msg {->\immediate \write 16{
@@ -400,16 +341,13 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -418,8 +356,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -428,10 +365,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@p
-aram\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo 
@@ -446,16 +381,13 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -467,18 +399,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@p
-aram\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param}{\protected \ProDef@long \def \foo }{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param\endcsname }
 #2<-
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\long \pdef \cmp {}
 #2<-\foo [0]{}
 \msg {->\immediate \write 16{
@@ -489,16 +416,13 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[0]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -507,8 +431,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -517,10 +440,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[0]\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[0]\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param[0]
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo [0]
@@ -535,16 +456,13 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[0]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -556,18 +474,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[0]\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param[0]}{\protected \ProDef@long \def \foo [0]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[0]\endcsname }
 #2<-
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\long \pdef \cmp ##1{<##1>}
 #2<-\foo [1]{<##1>}
 \msg {->\immediate \write 16{
@@ -578,16 +491,13 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[1]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -596,8 +506,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -606,10 +515,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[1]\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[1]\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param[1]
 \ltx@secondoftwo #1#2->#2
 #1<-\protected \ProDef@long \def \foo [1]
@@ -624,16 +531,13 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-[1]
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -645,18 +549,13 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname Pr
-oDef@param[1]\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param[1]}{\protected \ProDef@long \def \foo [1]}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param[1]\endcsname }
 #2<-<##1>
-\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessag
-e {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\ex
-pandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \
-else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
+\BeginCheck #1\ProtectedDef #2\EndCheck ->\begingroup \toks 0={\ProtectedDef #2}\msg {<<\the \toks 0>>}\endgroup \setbox 0=\hbox {#1\ProtectedDef #2\check \foo }\ifdim \wd 0=0pt\relax \else \errmessage {[Definition] Unwanted spaces?!}\fi \setbox 0=\hbox {\def \fooinitial {XYZ}\let \foo \fooinitial \errcount =0 \expandafter \def \csname @PackageError\endcsname ##1##2##3{\advance \errcount by 1 }\expandafter \def \csname @notdefinable\endcsname {\advance \errcount by 1 }\ProtectedDef #2\ifnum \errcount =1 \else \errmessage {1 error expected, but found: \the \errcount }\fi \ifx \foo \fooinitial \else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim \wd 0=0pt\relax \else \errmessage {[Error] Unwanted spaces?!}\fi 
 #1<-\long \pdef \cmp (##1){<##1>}
 #2<-\foo (##1){<##1>}
 \msg {->\immediate \write 16{
@@ -667,16 +566,13 @@ else \def \space { }\errmessage {\string \foo \space is overwritten}\fi }\ifdim 
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-(##1)
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -685,8 +581,7 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\reserved@a 
 \reserved@a ->foo
 \@firstoftwo #1#2->#1
-#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#1<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #2<-\@notdefinable 
 \reserved@a ->foo
 \@carcube #1#2#3#4\@nil ->#1#2#3
@@ -695,10 +590,8 @@ i
 #3<-o
 #4<-xxx
 \ProDef@next #1->#1
-#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csnam
-e ProDef@param(##1)\endcsname }
-\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secon
-doftwo \fi \else \expandafter \ltx@firstoftwo \fi 
+#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param(##1)\endcsname }
+\ltx@IfUndefined #1->\ifcsname #1\endcsname \expandafter \ifx \csname #1\endcsname \relax \expandafter \expandafter \expandafter \ltx@firstoftwo \else \expandafter \expandafter \expandafter \ltx@secondoftwo \fi \else \expandafter \ltx@firstoftwo \fi 
 #1<-ProDef@param(##1)
 \ltx@firstoftwo #1#2->#1
 #1<-\protected \ProDef@long \def \foo (##1)
@@ -712,16 +605,13 @@ doftwo \fi \else \expandafter \ltx@firstoftwo \fi
 #1<-*
 #2<-\let \ProDef@long \ltx@empty \expandafter \ProDef@ProtectedDef \ltx@gobble 
 #3<-\let \ProDef@long \long \ProDef@ProtectedDef 
-\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter
- \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
-\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandaft
-er \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
+\LTXcmds@ifnextchar ->\ifx \LTXcmds@LetToken \LTXcmds@CharToken \the \expandafter \ltx@LocToksA \else \expandafter \ifx \csname LTXcmds@LetToken\endcsname \LTXcmds@SpaceToken \expandafter \expandafter \expandafter \LTXcmds@@ifnextchar \else \the \expandafter \expandafter \expandafter \ltx@LocToksB \fi \fi 
+\ProDef@ProtectedDef #1#2{->\ProDef@IfDefinable {#1}{\ltx@IfUndefined {ProDef@param#2}{\protected \ProDef@long \def #1#2}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter #1\csname ProDef@param#2\endcsname }}{
 #1<-\foo 
 #2<-(##1)
 \ProDef@IfDefinable #1->\let \ProDef@next \ltx@gobbletwo \@ifdefinable {#1}{\let \ProDef@next \ltx@firstofone }\ProDef@next 
 #1<-\foo 
-\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinabl
-e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
+\@ifdefinable #1#2->\edef \reserved@a {\expandafter \@gobble \string #1}\@ifundefined \reserved@a {\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable 
 #1<-\foo 
 #2<-\let \ProDef@next \ltx@firstofone 
 \@gobble #1->
@@ -733,13 +623,10 @@ e \else \ifx \reserved@a \@qrelax \@notdefinable \else #2\fi \fi }\@notdefinable
 #1<-\fi 
 #2<-\fi 
 #3<-\@firstoftwo 
-#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \f
-i 
+#4<-\edef \reserved@b {\expandafter \@carcube \reserved@a xxx\@nil }\ifx \reserved@b \@qend \@notdefinable \else \ifx \reserved@a \@qrelax \@notdefinable \else \let \ProDef@next \ltx@firstofone \fi \fi 
 #5<-\@notdefinable 
 \@notdefinable ->\advance \errcount by 1 
 \ProDef@next #1#2->
-#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csnam
-e ProDef@param(##1)\endcsname }
+#1<-\ltx@IfUndefined {ProDef@param(##1)}{\protected \ProDef@long \def \foo (##1)}{\protected \ProDef@long \expandafter \expandafter \expandafter \def \expandafter \expandafter \expandafter \foo \csname ProDef@param(##1)\endcsname }
 #2<-<##1>
-\@@end ->\ifnum \currentgrouplevel >0 \LONGTYPEOUT {Bad grouping: \the \currentgrouplevel !}\fi \ifnum \currentiflevel >2 \LONGTYPEOUT {Bad conditionals: \the \numexpr \currentiflevel -2!}\fi \LONGTYP
-EOUT {
+\@@end ->\ifnum \currentgrouplevel >0 \LONGTYPEOUT {Bad grouping: \the \currentgrouplevel !}\fi \ifnum \currentiflevel >2 \LONGTYPEOUT {Bad conditionals: \the \numexpr \currentiflevel -2!}\fi \LONGTYPEOUT {

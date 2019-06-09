@@ -19,8 +19,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line ....
 LaTeX Font Info:    ... okay on input line ....
 (../ucsencs.def
 File: ucsencs.def ....-..-.. Fixes to fontencodings LGR, T3
-)
-(../uni-0.def
+) (../uni-0.def
 File: uni-0.def ....-..-.. UCS: Unicode data U+0000..U+00FF
 ) (../uni-32.def
 File: uni-32.def ....-..-.. UCS: Unicode data U+2000..U+20FF
