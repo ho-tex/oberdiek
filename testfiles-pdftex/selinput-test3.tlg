@@ -8,8 +8,7 @@ File: se-utf8.def ....-..-.. v... stringenc: UTF-8
 File: se-iso-8859-1.def ....-..-.. v... stringenc: ISO-8859-1
 ) (se-iso-8859-15.def
 File: se-iso-8859-15.def ....-..-.. v... stringenc: ISO-8859-15
-)
-(x-iso-8859-15.def
+) (x-iso-8859-15.def
 File: x-iso-8859-15.def ....-..-.. v... Input encoding iso-8859-15 (inputenx)
 )
 Package selinput Warning: Encoding `x-iso-8859-15' selected on input line ....
@@ -42,8 +41,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line ....
 LaTeX Font Info:    ... okay on input line ....
 (../ucsencs.def
 File: ucsencs.def ....-..-.. Fixes to fontencodings LGR, T3
-)
-(x-iso-8859-15.def
+) (x-iso-8859-15.def
 File: x-iso-8859-15.def ....-..-.. v... Input encoding iso-8859-15 (inputenx)
 )
 Package selinput Warning: Encoding `x-iso-8859-15' selected on input line ....
@@ -57,10 +55,8 @@ File: utf8x.def ....-..-.. UCS: Input encoding UTF-8
 Package selinput Warning: Encoding `utf8x' selected on input line ....
 (../uni-0.def
 File: uni-0.def ....-..-.. UCS: Unicode data U+0000..U+00FF
-)
-(../uni-32.def
+) (../uni-32.def
 File: uni-32.def ....-..-.. UCS: Unicode data U+2000..U+20FF
 )
 Package qstest Info: Passed: document on input line ....
-[1]
-(selinput-test3.aux)
+[1] (selinput-test3.aux)

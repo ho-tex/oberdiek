@@ -2,8 +2,7 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 (listingsutf8.sty
 Package: listingsutf8 ....-..-.. v... Allow UTF-8 in listings input (HO)
-(../listings.sty
-(../keyval.sty
+(../listings.sty (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)
 \KV@toks@=\toks...
 )
@@ -22,15 +21,14 @@ Package: keyval ....-..-.. v... key=value parser (DPC)
 \belowcaptionskip=\skip...
 \lst@maxwidth=\dimen...
 (../lstmisc.sty
-File: lstmisc.sty ....-..-.. 1.7 (Carsten Heinz)
+File: lstmisc.sty ....-..-.. 1.8b (Carsten Heinz)
 \c@lstnumber=\count...
 \lst@skipnumbers=\count...
 \lst@framebox=\box...
-)
-(../listings.cfg
-File: listings.cfg ....-..-.. 1.7 listings configuration
+) (../listings.cfg
+File: listings.cfg ....-..-.. 1.8b listings configuration
 ))
-Package: listings ....-..-.. 1.7 (Carsten Heinz)
+Package: listings ....-..-.. 1.8b (Carsten Heinz)
 (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (infwarerr.sty
@@ -38,10 +36,10 @@ Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-) (ltxcmds.sty
-Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 )
-(ifpdf.sty
+(ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+) (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.

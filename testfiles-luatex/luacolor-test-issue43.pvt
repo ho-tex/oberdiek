@@ -1,0 +1,16 @@
+\input{regression-test}
+\documentclass{article}
+
+\usepackage{luacolor}
+\usepackage{graphics}
+
+\begin{document}
+
+abc
+\textcolor{red}{XXXX}
+
+\resizebox{2cm}{!}{abc}
+
+YYY
+
+\end{document}

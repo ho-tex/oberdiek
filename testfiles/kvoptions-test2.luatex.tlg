@@ -9,14 +9,12 @@ Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-)))
-(kvoptions.sty
+))) (kvoptions.sty
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)
 \KV@toks@=\toks...
-)
-(ltxcmds.sty
+) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (kvsetkeys.sty
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)

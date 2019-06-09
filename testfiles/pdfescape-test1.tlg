@@ -13,8 +13,7 @@ Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ifluatex.sty
 Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(ifpdf.sty
+) (ifpdf.sty
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.

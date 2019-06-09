@@ -29,8 +29,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (../ifxetex.sty
 Package: ifxetex ....-..-.. v... Provides ifxetex conditional
-)
-(ifvtex.sty
+) (ifvtex.sty
 Package: ifvtex ....-..-.. v... Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 ) (kvoptions.sty

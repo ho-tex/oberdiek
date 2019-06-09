@@ -9,8 +9,7 @@ Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../keyval.sty
 Package: keyval ....-..-.. v... key=value parser (DPC)
 \KV@toks@=\toks...
-)
-(ltxcmds.sty
+) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (kvsetkeys.sty
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
