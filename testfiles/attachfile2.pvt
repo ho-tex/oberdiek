@@ -1,0 +1,10 @@
+\input{regression-test}
+\begin{filecontents*}{testattachfile.txt}
+  A test file
+\end{filecontents*}
+\documentclass{article}
+\usepackage{attachfile2}
+\begin{document}
+\START
+Attach \textattachfile[color=0 0 1]{testattachfile.txt}{TEST}.
+\end{document}

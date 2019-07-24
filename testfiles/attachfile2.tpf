@@ -1,0 +1,195 @@
+%PDF-1.5
+%ÐÔÅØ
+1 0 obj
+<< /S /GoTo /D [2 0 R /Fit] >>
+endobj
+3 0 obj
+<<
+/Type/EmbeddedFile/Params<</Size 14/ModDate(D:20190724105532Z)/CheckSum<A51E27F382557A90935524A9DD15FD90>>>
+/Length 14        
+>>
+stream
+  A test file
+endstream
+endobj
+4 0 obj
+<<
+/Type /XObject
+/Subtype /Form
+/BBox [0 0 26.705 11.955]
+/FormType 1
+/Matrix [1 0 0 1 0 0]
+/Resources 5 0 R
+/Length 105       
+>>
+stream
+0 g 0 G
+0 0 1 rg 0 0 1 RG
+1 0 0 1 0 11.955 cm
+BT
+/F8 9.9626 Tf 0 -8.368 Td [(TEST)]TJ
+0 g 0 G
+0 g 0 G
+ET
+endstream
+endobj
+5 0 obj
+<<
+/Font << /F8 6 0 R >>
+/ProcSet [ /PDF /Text ]
+>>
+endobj
+7 0 obj
+<</Type/Filespec/F(testattachfile.txt)/EF<</F 3 0 R>>>>
+endobj
+10 0 obj
+<<
+/Length 128       
+>>
+stream
+0 g 0 G
+0 g 0 G
+BT
+/F8 9.9626 Tf 148.712 657.235 Td [(A)28(ttac)27(h)-3013(.)]TJ
+0 g 0 G
+ 154.421 -567.87 Td [(1)]TJ
+0 g 0 G
+ET
+endstream
+endobj
+2 0 obj
+<<
+/Type /Page
+/Contents 10 0 R
+/Resources 9 0 R
+/MediaBox [0 0 612 792]
+/Parent 13 0 R
+/Annots [ 8 0 R ]
+>>
+endobj
+8 0 obj
+<<
+/Type /Annot
+/Subtype/FileAttachment/Name/PushPin/C[0 0 1]/M(D:20160520086000)/AP<</N 4 0 R/R 4 0 R/D 4 0 R>>/F 4/FS 7 0 R
+/Rect [181.644 653.649 208.35 665.604]
+>>
+endobj
+11 0 obj
+<<
+/D [2 0 R /XYZ 132.768 705.06 null]
+>>
+endobj
+12 0 obj
+<<
+/D [2 0 R /XYZ 133.768 667.198 null]
+>>
+endobj
+9 0 obj
+<<
+/Font << /F8 6 0 R >>
+/ProcSet [ /PDF /Text ]
+>>
+endobj
+14 0 obj
+[277.8 500 500 500 500 500 500 500 500 500 500 500 277.8 277.8 277.8 777.8 472.2 472.2 777.8 750 708.3 722.2 763.9 680.6 652.8 784.7 750 361.1 513.9 777.8 625 916.7 750 777.8 680.6 777.8 736.1 555.6 722.2 750 750 1027.8 750 750 611.1 277.8 500 277.8 500 277.8 277.8 500 555.6 444.4 555.6 444.4 305.6 500 555.6 277.8 305.6 527.8 277.8 833.3 555.6 500 555.6 527.8 391.7 394.4 388.9]
+endobj
+15 0 obj
+<<
+/Length1 1498
+/Length2 9428
+/Length3 0
+/Length 10926     
+>>
+[BINARY STREAM]
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/FontName /TUXGWE+CMR10
+/Flags 4
+/FontBBox [-40 -250 1009 750]
+/Ascent 694
+/CapHeight 683
+/Descent -194
+/ItalicAngle 0
+/StemV 69
+/XHeight 431
+/CharSet (/A/E/S/T/a/c/h/one/period/t)
+/FontFile 15 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /TUXGWE+CMR10
+/FontDescriptor 16 0 R
+/FirstChar 46
+/LastChar 116
+/Widths 14 0 R
+>>
+endobj
+13 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [2 0 R]
+>>
+endobj
+17 0 obj
+<<
+/Names [(Doc-Start) 12 0 R (page.1) 11 0 R]
+/Limits [(Doc-Start) (page.1)]
+>>
+endobj
+18 0 obj
+<<
+/Dests 17 0 R
+>>
+endobj
+19 0 obj
+<<
+/Type /Catalog
+/Pages 13 0 R
+/Names 18 0 R
+/PageMode/UseOutlines
+/OpenAction 1 0 R
+>>
+endobj
+20 0 obj
+<<
+/Producer (pdfTeX)/Author()/Title()/Subject()/Creator(LaTeX with hyperref)/Keywords()
+/Trapped /False
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000015 00000 n 
+0000000836 00000 n 
+0000000061 00000 n 
+0000000241 00000 n 
+0000000511 00000 n 
+0000012990 00000 n 
+0000000578 00000 n 
+0000000960 00000 n 
+0000001260 00000 n 
+0000000649 00000 n 
+0000001143 00000 n 
+0000001201 00000 n 
+0000013129 00000 n 
+0000001327 00000 n 
+0000001724 00000 n 
+0000012748 00000 n 
+0000013187 00000 n 
+0000013284 00000 n 
+0000013320 00000 n 
+0000013425 00000 n 
+trailer
+<< /Size 21
+/Root 19 0 R
+/Info 20 0 R
+ >>
+startxref
+13549
+%%EOF
