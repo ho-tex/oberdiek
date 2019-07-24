@@ -1,12 +1,12 @@
 % \iffalse meta-comment
 %
 % File: attachfile2.dtx
-% Version: 2016/05/16 v2.8
+% Version: 2019/07/24 v2.9
 % Info: Attach files into PDF
 %
 % Copyright (C) 2005-2010, 2012 by
 %    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
-%    2016
+%    2019
 %    https://github.com/ho-tex/oberdiek/issues
 %
 % This work may be distributed and/or modified under the
@@ -26,7 +26,7 @@
 % This work consists of the main source file attachfile2.dtx
 % and the derived files
 %    attachfile2.sty, attachfile2.pdf, attachfile2.ins, attachfile2.drv,
-%    atfi-dvips.def, atfi-pdftex.def, atfi-dvipdfmx.def,
+%    atfi-dvips.def, atfi-pdftex.def, atfi-dvipdfmx.def,atfi-luatex.def
 %    pdfatfi.pl.
 %
 % Distribution:
@@ -64,6 +64,7 @@
 %    TDS:tex/latex/oberdiek/atfi-dvips.def
 %    TDS:tex/latex/oberdiek/atfi-pdftex.def
 %    TDS:tex/latex/oberdiek/atfi-dvipdfmx.def
+%    TDS:tex/latex/oberdiek/atfi-luatex.def
 %    TDS:scripts/oberdiek/pdfatfi.pl (exec flag)
 %    TDS:doc/latex/oberdiek/attachfile2.pdf
 %    TDS:source/latex/oberdiek/attachfile2.dtx
@@ -83,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: attachfile2 2016/05/16 v2.8 Attach files into PDF (HO)}
+\Msg{* Package: attachfile2 2019/07/24 v2.9 Attach files into PDF (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -95,7 +96,7 @@
 This is a generated file.
 
 Project: attachfile2
-Version: 2016/05/16 v2.8
+Version: 2019/07/24 v2.9
 
 Copyright (C) 2005-2010, 2012 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -130,6 +131,7 @@ and the derived files
   \file{attachfile2.sty}{\from{attachfile2.dtx}{package}}%
   \file{atfi-dvips.def}{\from{attachfile2.dtx}{dvips}}%
   \file{atfi-pdftex.def}{\from{attachfile2.dtx}{pdftex}}%
+  \file{atfi-luatex.def}{\from{attachfile2.dtx}{luatex}}%
   \file{atfi-dvipdfmx.def}{\from{attachfile2.dtx}{dvipdfmx}}%
   \nopreamble
   \nopostamble
@@ -169,7 +171,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{attachfile2.drv}%
-  [2016/05/16 v2.8 Attach files into PDF (HO)]%
+  [2019/07/24 v2.9 Attach files into PDF (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -198,7 +200,7 @@ and the derived files
 % \GetFileInfo{attachfile2.drv}
 %
 % \title{The \xpackage{attachfile2} package}
-% \date{2016/05/16 v2.8}
+% \date{2019/07/24 v2.9}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -427,7 +429,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{attachfile2}%
-  [2016/05/16 v2.8 Attach files into PDF (HO)]%
+  [2019/07/24 v2.9 Attach files into PDF (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Loading of packages}
@@ -820,12 +822,24 @@ and the derived files
 %    \begin{macrocode}
 \let\atfi@driver\ltx@empty
 \def\atfi@driver@pdftex{pdftex}
+\def\atfi@driver@luatex{luatex}
 \def\atfi@driver@dvips{dvips}
 \def\atfi@driver@dvipdfmx{dvipdfmx}
 %    \end{macrocode}
 %    \begin{macrocode}
 \DeclareVoidOption{pdftex}{%
+ \ifpdf
   \let\atfi@driver\atfi@driver@pdftex
+ \else
+   \let\atfi@driver\ltx@empty
+    \PackageError{attachfile2}{%
+      Wrong driver option `pdftex',\MessageBreak
+      because pdfTeX in PDF mode is not detected%
+    }\@ehc
+ \fi
+}
+\DeclareVoidOption{luatex}{%
+  \let\atfi@driver\atfi@driver@luatex
 }
 \DeclareVoidOption{dvips}{%
   \let\atfi@driver\atfi@driver@dvips
@@ -889,17 +903,13 @@ and the derived files
 %
 %    \begin{macrocode}
 \ifpdf
-  % ignoring other driver options
+ \ifluatex
+  \let\atfi@driver\atfi@driver@luatex
+ \else
   \let\atfi@driver\atfi@driver@pdftex
+ \fi
 \else
-  \ifx\atfi@driver\atfi@driver@pdftex
-    \let\atfi@driver\ltx@empty
-    \PackageError{attachfile2}{%
-      Wrong driver option `pdftex',\MessageBreak
-      because pdfTeX in PDF mode is not detected%
-    }\@ehc
-  \fi
-  \ifxetex
+ \ifxetex
     \let\atfi@driver\atfi@driver@dvipdfmx
   \else
     \ifx\atfi@driver\ltx@empty
@@ -1610,44 +1620,7 @@ and the derived files
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-pdftex.def}%
-  [2016/05/16 v2.8 attachfile2 driver for pdfTeX (HO)]%
-%    \end{macrocode}
-%
-% \paragraph{\LuaTeX}
-%
-%    \begin{macrocode}
-\ifluatex
-  \ifnum\luatexversion<39 %
-  \else
-    \begingroup
-      \escapechar=-1 %
-      \def\atfi@temp#1{%
-        \ltx@IfUndefined{\string#1}{%
-          \let#1\ltx@undefined
-          \directlua{%
-            if tex.enableprimitives then %
-              tex.enableprimitives('', {'\string#1'})%
-            end%
-          }%
-          \ltx@ifundefined{\string#1}{%
-          }{%
-            \global#1=#1%
-            \@PackageInfoNoLine{attachfile2}{%
-              \string#1 enabled%
-            }%
-          }%
-        }{}%
-      }%
-      \atfi@temp\pdfliteral
-      \atfi@temp\pdfobj
-      \atfi@temp\pdflastobj
-      \atfi@temp\pdfxform
-      \atfi@temp\pdflastxform
-      \atfi@temp\pdfrefxform
-      \atfi@temp\pdfannot
-    \endgroup
-  \fi
-\fi
+  [2019/07/24 v2.9 attachfile2 driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Macros for graphics data}
@@ -1826,13 +1799,146 @@ and the derived files
 %</pdftex>
 %    \end{macrocode}
 %
+% \subsection{luatex}
+%    \begin{macrocode}
+%<*luatex>
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesFile{atfi-luatex.def}%
+  [2019/07/24 v2.9 attachfile2 driver for luaTeX (HO)]%
+\protected\def\atfi@literal        {\pdfextension literal}
+\def\atfi@GSAVE{q }
+\def\atfi@GRESTORE{Q }
+\def\atfi@SETLINEWIDTH{w }
+\def\atfi@LINETO{l }
+\def\atfi@MOVETO{m }
+\def\atfi@STROKE{S }
+\def\atfi@FILL{f }
+\def\atfi@FILLSTROKE#1#2{#1#2B }
+\def\atfi@SETRGBCOLORSTROKE{RG }
+\def\atfi@SETRGBCOLORFILL{rg }
+\def\atfi@SETGRAYSTROKE{G }
+\def\atfi@SETGRAYFILL{g }
+\def\atfi@SETCMYKCOLORSTROKE{K }
+\def\atfi@SETCMYKCOLORFILL{k }
+\def\atfi@RECTFILL{re f }
+\def\atfi@RECTSTROKEFILL#1#2#3{#1#2#3re B }
+\def\atfi@SETMITERLIMIT{M }
+\def\atfi@SETFLAT{i }
+\def\atfi@SETLINECAP{J }
+\def\atfi@CURVETO{c }
+\def\atfi@CURVETOV{v }
+\def\atfi@CURVETOY{y }
+\def\atfi@CLOSEPATH{h }
+\def\atfi@SETLINEJOIN{j }
+\define@key{AtFi@file}{Size}{%
+  \edef\atfi@params{\atfi@params/Size #1}%
+}
+\def\atfi@embedfile#1{%
+  \ltx@IfUndefined{atfi@fileobj@#1}{%
+    \begingroup
+      \let\atfi@params\ltx@empty
+      \expandafter\let\expandafter\atfi@temp
+          \csname atfi@file@#1\endcsname
+      \ifx\atfi@temp\ltx@empty
+        \let\atfi@temp\relax
+      \fi
+      \ifx\atfi@temp\relax
+        \atfi@pdftexdata{#1}%
+      \else
+        \edef\x{%
+          \noexpand\setkeys{AtFi@file}{\@nameuse{atfi@file@#1}}%
+        }%
+        \x
+      \fi
+      \ifx\atfi@params\ltx@empty
+      \else
+        \edef\atfi@params{/Params<<\atfi@params>>}%
+      \fi
+      \immediate\pdfextension obj stream attr {%
+        /Type/EmbeddedFile%
+        \atfi@mimetype
+        \atfi@params
+      } file {#1}%
+      \expandafter
+      \xdef\csname atfi@fileobj@#1\endcsname{\the\numexpr\pdffeedback lastobj\relax}%
+    \endgroup
+  }{%
+    % file already embedded
+  }%
+}
+\def\atfi@xform{%
+  \immediate\saveboxresource\atfi@appearancebox
+  \edef\atfi@appearanceobj{\the\lastsavedboxresourceindex}%
+}
+\let\atfi@xform@icon\atfi@xform
+\def\atfi@refxform#1{%
+  \useboxresource#1\relax
+}
+\def\atfi@insert@file@annot#1{%
+  \rule{0pt}{0pt}%
+  \ifatfi@appearance
+    \def\atfi@appearance@dict{%
+      /AP<<%
+        /N \atfi@appearanceobj\space 0 R%
+        /R \atfi@appearanceobj\space 0 R%
+        /D \atfi@appearanceobj\space 0 R%
+      >>%
+    }%
+  \else
+    \let\atfi@appearance@dict\ltx@empty
+  \fi
+  \ltx@IfUndefined{atfi@fsobj@#1}{%
+    \begingroup
+      \hypersetup{unicode=false}%
+      \atfi@pdfstringdef\atfi@file{#1}%
+      \immediate\pdfextension obj{%
+        <<%
+          /Type/Filespec%
+          /F(\atfi@file)%
+          \ifx\atfi@ucfilespec\ltx@empty
+          \else
+            /UF(\atfi@ucfilespec)%
+          \fi
+          /EF<<%
+            /F \@nameuse{atfi@fileobj@#1} 0 R%
+          >>%
+        >>%
+      }%
+      \expandafter\xdef\csname atfi@fsobj@#1\endcsname{%
+        \the\numexpr\pdffeedback lastobj\relax
+      }%
+    \endgroup
+  }{%
+  }%
+  \pdfextension annot width \atfi@scale\atfi@appearancewidth
+                      height \atfi@scale\atfi@appearanceheight
+                      depth \atfi@scale\atfi@appearancedepth {%
+    /Subtype/FileAttachment%
+    \atfi@icon
+    \atfi@color@annot
+    \atfi@author
+    \atfi@date
+    \atfi@annotname
+    \atfi@description
+    \atfi@subject
+    \atfi@appearance@dict
+    /F \theatfi@flags
+    /FS \@nameuse{atfi@fsobj@#1} 0 R%
+  }%
+  \rule{0pt}{\atfi@appearanceheight}%
+  \rule[-\atfi@appearancedepth]{0pt}{\atfi@appearancedepth}%
+  \rule{\atfi@appearancewidth}{0pt}%
+}
+%</luatex>
+%    \end{macrocode}
+%
 % \subsubsection{dvips}
 %
 %    \begin{macrocode}
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-dvips.def}%
-  [2016/05/16 v2.8 attachfile2 driver for dvips (HO)]%
+  [2019/07/24 v2.9 attachfile2 driver for dvips (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Macros for graphics data}
@@ -2407,7 +2513,7 @@ and the derived files
 %<*dvipdfmx>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{atfi-dvipdfmx.def}%
-  [2016/05/16 v2.8 attachfile2 driver for dvipdfmx/XeTeX (HO)]%
+  [2019/07/24 v2.9 attachfile2 driver for dvipdfmx/XeTeX (HO)]%
 %    \end{macrocode}
 %
 % \paragraph{Macros for graphics data}
@@ -2676,8 +2782,8 @@ $^W=1; # turn warning on
 my $prj         = 'pdfatfi';
 my $file        = "$prj.pl";
 my $program     = uc($&) if $file =~ /^\w+/;
-my $version     = "2.7";
-my $date        = "2016/05/16";
+my $version     = "2.9";
+my $date        = "2019/07/24";
 my $author      = "Heiko Oberdiek";
 my $copyright   = "Copyright (c) 2005-2010, 2012 by $author.";
 #
@@ -2686,6 +2792,7 @@ my $copyright   = "Copyright (c) 2005-2010, 2012 by $author.";
 #   2006/08/16 v2.2: Included in DTX file of attachfile2.dtx.
 #   2010/09/27 v2.6: Keys ModDateTZ and CreationDateTZ added.
 #   2016/05/16 v2.8: Option --version added.
+#   2019/07/24 v2.9: adapted version to attachfile2 version.
 #
 
 use POSIX qw(strftime); # %z is used (GNU)
@@ -3082,7 +3189,7 @@ __END__
   <authorref id='auth:oberdiek'/>
   <copyright owner='Heiko Oberdiek' year='2005-2010,2012'/>
   <license type='lppl1.3'/>
-  <version number='2.8'/>
+  <version number='2.9'/>
   <description>
     This package can be used to attach files to a PDF document.
     It is a further development of Scott Pakin&#x2019;s package
@@ -3215,6 +3322,10 @@ __END__
 %   \begin{Version}{2016/05/16 v2.8}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/07/24 v2.9}
+%   \item
+%     Added luatex driver (UF, issue 69)
 %   \end{Version}
 % \end{History}
 %
