@@ -1,0 +1,135 @@
+%PDF-1.5
+%дрнш
+7 0 obj
+<</Font<</F1 5 0 R>>/ProcSet[/PDF/Text/ImageC/ImageB/ImageI]>>
+endobj
+6 0 obj
+<</Type/XObject/Subtype/Form/FormType 1/BBox[109.639 -66.351 136.349 -54.396]/Matrix[1
+0 0 1 -109.639 62.765]/Resources 7 0 R/Length 95>>
+stream
+ 0 G 0 g 0 0 1 RG 0 0 1 rg BT /F1 9.9626 Tf 109.639 -62.765 Td[<0068003100610068>]TJ ET 0 G 0 g
+endstream
+endobj
+10 0 obj
+<</Subtype/FileAttachment/Name/PushPin/C[0 0 1]/M(D:20160520086000)/AP<</N 6 0 R/R
+6 0 R/D 6 0 R>>/F 4/FS 9 0 R/Rect[181.639 653.649 208.349 665.604]>>
+endobj
+11 0 obj
+<</Length 198>>
+stream
+ q 1 0 0 1 72 720 cm BT /F1 9.9626 Tf 76.712 -62.765 Td[<001b>27<00690069001c002b>28<003f>]TJ ET BT /F1 9.9626 Tf 136.349 -62.765 Td[<0058>]TJ ET BT /F1 9.9626 Tf 231.133 -630.635 Td[<0052>]TJ ET Q
+endstream
+endobj
+12 0 obj
+<</Font<</F1 5 0 R>>/ProcSet[/PDF/Text/ImageC/ImageB/ImageI]>>
+endobj
+8 0 obj
+<</Type/EmbeddedFile/Length 14>>
+stream
+  A test file
+endstream
+endobj
+9 0 obj
+<</Type/Filespec/F(testattachfile.txt)/EF<</F 8 0 R>>>>
+endobj
+14 0 obj
+[10 0 R]
+endobj
+3 0 obj
+<</Resources 12 0 R/Type/Page/Parent 13 0 R/Contents[11 0 R]/Annots 14 0 R>>
+endobj
+13 0 obj
+<</Type/Pages/Count 1/Kids[3 0 R]/MediaBox[0 0 612 792]>>
+endobj
+2 0 obj
+<</Creator(TeX)/Producer(xdvipdfmx)/CreationDate(D:20160520090000-00'00')>>
+endobj
+1 0 obj
+<</OpenAction[3 0 R/Fit]/PageMode/UseOutlines/Pages 13 0 R/Type/Catalog>>
+endobj
+15 0 obj
+<</Length 483>>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CMapName /APWWDF+LMRoman10-Regular-UTF16 def
+/CMapType 2 def
+/CIDSystemInfo <<
+  /Registry (Adobe)
+  /Ordering (UCS)
+  /Supplement 0
+>> def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+10 beginbfchar
+<001B> <0041>
+<001C> <0061>
+<002B> <0063>
+<0031> <0045>
+<003F> <0068>
+<0052> <0031>
+<0058> <002E>
+<0061> <0053>
+<0068> <0054>
+<0069> <0074>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+17 0 obj
+<</Subtype/CIDFontType0C/Length 1582>>
+[BINARY STREAM]
+endobj
+18 0 obj
+[27[750 500]43[444]49[681]63[556]82[500]88[278]97[556]104[722 389]]
+endobj
+19 0 obj
+<</Length 14>>
+[BINARY STREAM]
+endobj
+4 0 obj
+<</Type/Font/Subtype/CIDFontType0/BaseFont/APWWDF+LMRoman10-Regular/CIDSystemInfo<</Registry(Adobe)/Ordering(Identity)/Supplement
+0>>/FontDescriptor 16 0 R/DW 280/W 18 0 R>>
+endobj
+16 0 obj
+<</Type/FontDescriptor/Ascent 806/Descent -194/StemV 69/CapHeight 806/AvgWidth 549/FontBBox[-430
+-290 1417 1127]/ItalicAngle 0/Flags 6/Style<</Panose<000000000500000000000000>>>/FontName/APWWDF+LMRoman10-Regular/FontFile3
+17 0 R/CIDSet 19 0 R>>
+endobj
+5 0 obj
+<</Type/Font/Subtype/Type0/BaseFont/APWWDF+LMRoman10-Regular-Identity-H/Encoding/Identity-H/DescendantFonts[4 0 R]/ToUnicode
+15 0 R>>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000001287 00000 n 
+0000001196 00000 n 
+0000001030 00000 n 
+0000003711 00000 n 
+0000004161 00000 n 
+0000000093 00000 n 
+0000000015 00000 n 
+0000000854 00000 n 
+0000000934 00000 n 
+0000000359 00000 n 
+0000000527 00000 n 
+0000000775 00000 n 
+0000001122 00000 n 
+0000001005 00000 n 
+0000001376 00000 n 
+0000003900 00000 n 
+0000001909 00000 n 
+0000003564 00000 n 
+0000003648 00000 n 
+trailer
+<</Root 1 0 R/Info 2 0 R/ID[(\217#nK%\307iM\2204nuF,c\346)(\217#nK%\307iM\2204nuF,c\346)]/Size
+20>>
+startxref
+4310
+%%EOF
