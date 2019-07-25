@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: luacolor.dtx
-% Version: 2018/11/22 v1.11
+% Version: 2019/07/25 v1.12
 % Info: Color support via LuaTeX's attributes
 %
 % Copyright (C) 2007, 2009-2011 by
@@ -84,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: luacolor 2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)}
+\Msg{* Package: luacolor 2019/07/25 v1.12 Color support via LuaTeX's attributes (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +96,7 @@
 This is a generated file.
 
 Project: luacolor
-Version: 2018/11/22 v1.11
+Version: 2019/07/25 v1.12
 
 Copyright (C) 2007, 2009-2011 by
    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
@@ -178,7 +178,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{luacolor.drv}%
-  [2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)]%
+  [2019/07/25 v1.12 Color support via LuaTeX's attributes (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{paralist}
@@ -213,7 +213,7 @@ and the derived files
 % \GetFileInfo{luacolor.drv}
 %
 % \title{The \xpackage{luacolor} package}
-% \date{2018/11/22 v1.11}
+% \date{2019/07/25 v1.12}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at https://github.com/ho-tex/oberdiek/issues}\\
 % \xemail{heiko.oberdiek at googlemail.com}}
@@ -357,7 +357,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{luacolor}%
-  [2018/11/22 v1.11 Color support via LuaTeX's attributes (HO)]
+  [2019/07/25 v1.12 Color support via LuaTeX's attributes (HO)]
 %    \end{macrocode}
 %
 % \subsection{Check for \LuaTeX}
@@ -415,7 +415,7 @@ and the derived files
 %    \end{macrocode}
 %    \begin{macrocode}
 \begingroup
-  \edef\x{\LuaCol@directlua{tex.write("2018/11/22 v1.11")}}%
+  \edef\x{\LuaCol@directlua{tex.write("2019/07/25 v1.12")}}%
   \edef\y{%
     \LuaCol@directlua{%
       if oberdiek.luacolor.getversion then %
@@ -591,7 +591,7 @@ oberdiek.luacolor = luacolor
 %    \begin{macro}{getversion()}
 %    \begin{macrocode}
 function luacolor.getversion()
-  tex.write("2018/11/22 v1.11")
+  tex.write("2019/07/25 v1.12")
 end
 %    \end{macrocode}
 %    \end{macro}
@@ -1280,6 +1280,10 @@ end
 %     handle issue 43.
 %   \item
 %     removed pre-0.65 stuff
+%   \end{Version}
+%   \begin{Version}{2019/07/25 v1.12}
+%   \item
+%     removed uses of module function, see PR70
 %   \end{Version}
 % \end{History}
 %
