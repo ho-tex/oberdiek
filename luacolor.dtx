@@ -584,11 +584,13 @@ and the derived files
 %    That is analyzed to get the prefix for the color setting
 %    \cs{special}.
 %    \begin{macrocode}
-module("oberdiek.luacolor", package.seeall)
+oberdiek = oberdiek or {}
+local luacolor = oberdiek.luacolor or {}
+oberdiek.luacolor = luacolor
 %    \end{macrocode}
 %    \begin{macro}{getversion()}
 %    \begin{macrocode}
-function getversion()
+function luacolor.getversion()
   tex.write("2018/11/22 v1.11")
 end
 %    \end{macrocode}
@@ -597,12 +599,7 @@ end
 % \subsubsection{Driver detection}
 %
 %    \begin{macrocode}
-local ifpdf
-if tonumber(tex.outputmode or tex.pdfoutput) > 0 then
-  ifpdf = true
-else
-  ifpdf = false
-end
+local ifpdf = tonumber(tex.outputmode or tex.pdfoutput) > 0
 local prefix
 local prefixes = {
   dvips   = "color ",
@@ -636,7 +633,7 @@ end
 %    \end{macro}
 %    \begin{macro}{dvidetect()}
 %    \begin{macrocode}
-function dvidetect()
+function luacolor.dvidetect()
   local v = tex.box[0]
   assert(v.id == node.id("hlist"))
   for v in node.traverse_id(node.id("whatsit"), v.head) do
@@ -667,14 +664,14 @@ local map = {
 %    \end{macrocode}
 %    \begin{macro}{get()}
 %    \begin{macrocode}
-function get(color)
-  tex.write("" .. getvalue(color))
+function luacolor.get(color)
+  tex.write("" .. luacolor.getvalue(color))
 end
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macro}{getvalue()}
 %    \begin{macrocode}
-function getvalue(color)
+function luacolor.getvalue(color)
   local n = map[color]
   if not n then
     n = map.n + 1
@@ -692,7 +689,7 @@ end
 %    \begin{macro}{setattribute()}
 %    \begin{macrocode}
 local attribute
-function setattribute(attr)
+function luacolor.setattribute(attr)
   attribute = attr
 end
 %    \end{macrocode}
@@ -700,7 +697,7 @@ end
 %
 %    \begin{macro}{getattribute()}
 %    \begin{macrocode}
-function getattribute()
+function luacolor.getattribute()
   return attribute
 end
 %    \end{macrocode}
@@ -827,7 +824,7 @@ end
 %
 %    \begin{macro}{process()}
 %    \begin{macrocode}
-function process(box)
+function luacolor.process(box)
   local color = ""
   local list = tex.getbox(box)
   traverse(list, color, DRY_FALSE)

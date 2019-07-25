@@ -929,10 +929,12 @@ luatex.pdfliteral.mode
 %<*lua>
 %    \end{macrocode}
 %    \begin{macrocode}
-module("oberdiek.magicnum", package.seeall)
+oberdiek = oberdiek or {}
+local magicnum = oberdiek.magicnum or {}
+oberdiek.magicnum = magicnum
 %    \end{macrocode}
 %    \begin{macrocode}
-function getversion()
+function magicnum.getversion()
   tex.write("2016/05/16 v1.5")
 end
 %    \end{macrocode}
@@ -1107,7 +1109,7 @@ local data = {
 }
 %    \end{macrocode}
 %    \begin{macrocode}
-function get(name)
+function magicnum.get(name)
   local startpos, endpos, category, entry =
       string.find(name, "^(%a[%a%d%.]*)%.(-?[%a%d]+)$")
   if not entry then

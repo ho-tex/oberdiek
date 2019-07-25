@@ -1576,9 +1576,11 @@ and the derived files
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-module("oberdiek.pdftexcmds", package.seeall)
+oberdiek = oberdiek or {}
+local pdftexcmds = oberdiek.pdftexcmds or {}
+oberdiek.pdftexcmds = pdftexcmds
 local systemexitstatus
-function getversion()
+function pdftexcmds.getversion()
   tex.write("2018/09/10 v0.29")
 end
 %    \end{macrocode}
@@ -1586,7 +1588,7 @@ end
 % \subsubsection[Strings]{Strings \cite[``7.15 Strings'']{pdftex-manual}}
 %
 %    \begin{macrocode}
-function strcmp(A, B)
+function pdftexcmds.strcmp(A, B)
   if A == B then
     tex.write("0")
   elseif A < B then
@@ -1620,7 +1622,7 @@ local function utf8_to_byte(str)
   end
   return table.concat(t)
 end
-function escapehex(str, mode)
+function pdftexcmds.escapehex(str, mode)
   if mode == "byte" then
     str = utf8_to_byte(str)
   end
@@ -1634,7 +1636,7 @@ end
 %    See procedure |unescapehex| in file \xfile{utils.c} of \hologo{pdfTeX}.
 %    Caution: |tex.write| ignores leading spaces.
 %    \begin{macrocode}
-function unescapehex(str, mode, patch)
+function pdftexcmds.unescapehex(str, mode, patch)
   local a = 0
   local first = true
   local result = {}
@@ -1702,12 +1704,12 @@ function unescapehex(str, mode, patch)
 %    change in the file.  eroux, 28apr13. (v 0.21)
 %    \begin{macrocode}
   local unpack = _G["unpack"] or table.unpack
-  tex.settoks(toks, string.char(unpack(result)))
+  tex.settoks(pdftexcmds.toks, string.char(unpack(result)))
 end
 %    \end{macrocode}
 %    See procedure |escapestring| in file \xfile{utils.c} of \hologo{pdfTeX}.
 %    \begin{macrocode}
-function escapestring(str, mode)
+function pdftexcmds.escapestring(str, mode)
   if mode == "byte" then
     str = utf8_to_byte(str)
   end
@@ -1730,7 +1732,7 @@ end
 %    \end{macrocode}
 %    See procedure |escapename| in file \xfile{utils.c} of \hologo{pdfTeX}.
 %    \begin{macrocode}
-function escapename(str, mode)
+function pdftexcmds.escapename(str, mode)
   if mode == "byte" then
     str = utf8_to_byte(str)
   end
@@ -1764,7 +1766,7 @@ end
 % \subsubsection[Files]{Files \cite[``7.18 Files'']{pdftex-manual}}
 %
 %    \begin{macrocode}
-function filesize(filename)
+function pdftexcmds.filesize(filename)
   local foundfile = kpse.find_file(filename, "tex", true)
   if foundfile then
     local size = lfs.attributes(foundfile, "size")
@@ -1776,7 +1778,7 @@ end
 %    \end{macrocode}
 %    See procedure |makepdftime| in file \xfile{utils.c} of \hologo{pdfTeX}.
 %    \begin{macrocode}
-function filemoddate(filename)
+function pdftexcmds.filemoddate(filename)
   local foundfile = kpse.find_file(filename, "tex", true)
   if foundfile then
     local date = lfs.attributes(foundfile, "modification")
@@ -1813,7 +1815,7 @@ function filemoddate(filename)
     end
   end
 end
-function filedump(offset, length, filename)
+function pdftexcmds.filedump(offset, length, filename)
   length = tonumber(length)
   if length and length > 0 then
     local foundfile = kpse.find_file(filename, "tex", true)
@@ -1828,25 +1830,25 @@ function filedump(offset, length, filename)
           filehandle:seek("set", offset)
         end
         local dump = filehandle:read(length)
-        escapehex(dump)
+        pdftexcmds.escapehex(dump)
         filehandle:close()
       end
     end
   end
 end
-function mdfivesum(str, mode)
+function pdftexcmds.mdfivesum(str, mode)
   if mode == "byte" then
     str = utf8_to_byte(str)
   end
-  escapehex(md5.sum(str))
+  pdftexcmds.escapehex(md5.sum(str))
 end
-function filemdfivesum(filename)
+function pdftexcmds.filemdfivesum(filename)
   local foundfile = kpse.find_file(filename, "tex", true)
   if foundfile then
     local filehandle = io.open(foundfile, "rb")
     if filehandle then
       local contents = filehandle:read("*a")
-      escapehex(md5.sum(contents))
+      pdftexcmds.escapehex(md5.sum(contents))
       filehandle:close()
     end
   end
@@ -1867,10 +1869,10 @@ end
 %    \end{itemize}
 %    \begin{macrocode}
 local basetime = 0
-function resettimer()
+function pdftexcmds.resettimer()
   basetime = os.clock()
 end
-function elapsedtime()
+function pdftexcmds.elapsedtime()
   local val = (os.clock() - basetime) * 65536 + .5
   if val > 2147483647 then
     val = 2147483647
@@ -1882,7 +1884,7 @@ end
 % \subsubsection[Miscellaneous]{Miscellaneous \cite[``7.21 Miscellaneous'']{pdftex-manual}}
 %
 %    \begin{macrocode}
-function shellescape()
+function pdftexcmds.shellescape()
   if os.execute then
     if status
         and status.luatex_version
@@ -1904,7 +1906,7 @@ function shellescape()
     tex.write("0")
   end
 end
-function system(cmdline)
+function pdftexcmds.system(cmdline)
   systemexitstatus = nil
   texio.write_nl("log", "system(" .. cmdline .. ") ")
   if os.execute then
@@ -1914,20 +1916,20 @@ function system(cmdline)
     texio.write("log", "disabled.")
   end
 end
-function lastsystemstatus()
+function pdftexcmds.lastsystemstatus()
   local result = tonumber(systemexitstatus)
   if result then
     local x = math.floor(result / 256)
     tex.write(result - 256 * math.floor(result / 256))
   end
 end
-function lastsystemexit()
+function pdftexcmds.lastsystemexit()
   local result = tonumber(systemexitstatus)
   if result then
     tex.write(math.floor(result / 256))
   end
 end
-function pipe(cmdline, patch)
+function pdftexcmds.pipe(cmdline, patch)
   local result
   systemexitstatus = nil
   texio.write_nl("log", "pipe(" .. cmdline ..") ")
@@ -1959,9 +1961,9 @@ function pipe(cmdline, patch)
       end
       result = temp
     end
-    tex.settoks(toks, result)
+    tex.settoks(pdftexcmds.toks, result)
   else
-    tex.settoks(toks, "")
+    tex.settoks(pdftexcmds.toks, "")
   end
 end
 %    \end{macrocode}

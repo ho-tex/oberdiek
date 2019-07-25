@@ -1335,10 +1335,7 @@ and the derived files
 %<*lua>
 %    \end{macrocode}
 %    \begin{macrocode}
-module("oberdiek.luatex", package.seeall)
-%    \end{macrocode}
-%    \begin{macrocode}
-function kpse_module_loader(module)
+local function kpse_module_loader(module)
   local script = module .. ".lua"
   local file = kpse.find_file(script, "texmfscripts")
   if file then
