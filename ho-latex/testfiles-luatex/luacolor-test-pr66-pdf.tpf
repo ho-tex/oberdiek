@@ -1,0 +1,124 @@
+%PDF-1.5
+%Ã’¡‘≈ÿ–ƒ∆
+3 0 obj
+<< /Length 375 >>        
+stream
+0 g 0 G
+1 0.78432 0 rg 1 0.78432 0 RG
+q
+1 0 0 1 110.854 652.254 cm
+0 0 35.866 11.955 re f
+Q
+0 g 0 G
+BT
+/F15 11.95517 Tf
+1 0 0 1 110.854 654.247 Tm [<0069003200620069>]TJ
+1 0.78432 0 rg 1 0.78432 0 RG
+ET
+q
+1 0 0 1 110.854 637.808 cm
+0 0 35.866 11.955 re f
+Q
+0 g 0 G
+BT
+/F15 11.95517 Tf
+1 0 0 1 110.854 639.801 Tm [<0069003200620069>]TJ
+1 0 0 1 302.197 89.863 Tm [<0052>]TJ
+ET
+endstream
+endobj
+2 0 obj
+<< /Type /Page /Contents 3 0 R /Resources 1 0 R /MediaBox [ 0 0 612 792 ] /Parent 5 0 R >>
+endobj
+1 0 obj
+<< /Font << /F15 4 0 R >> /ProcSet [ /PDF /Text ] >>
+endobj
+6 0 obj
+[ 50 [ 435 ] 82 [ 490 ] 98 [ 386 ] 105 [ 381 ] ]
+endobj
+8 0 obj
+<< /Length 14 >>         
+[BINARY STREAM]
+endobj
+9 0 obj
+<< /Subtype /CIDFontType0C /Length 944 >>        
+[BINARY STREAM]
+endobj
+7 0 obj
+<< /Type /FontDescriptor /FontName /WGBVOX+LMRoman12-Regular /Flags 4 /FontBBox [ -422 -280 1394 1127 ] /Ascent 1127 /CapHeight 683 /Descent -280 /ItalicAngle 0 /StemV 91 /XHeight 431 /FontFile3 9 0 R /CIDSet 8 0 R >>
+endobj
+10 0 obj
+<< /Length 734 >>        
+stream
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-WGBVOX-LMRoman12-Regular-0)
+%%Title: (TeX-WGBVOX-LMRoman12-Regular-0 TeX WGBVOX-LMRoman12-Regular 0)
+%%Version: 1.000
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (WGBVOX-LMRoman12-Regular)
+/Supplement 0
+>> def
+/CMapName /TeX-Identity-WGBVOX-LMRoman12-Regular def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+0 beginbfrange
+endbfrange
+4 beginbfchar
+<0032> <0065>
+<0052> <0031>
+<0062> <0073>
+<0069> <0074>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF
+endstream
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /WGBVOX+LMRoman12-Regular /DescendantFonts [ 11 0 R ] /ToUnicode 10 0 R >>
+endobj
+11 0 obj
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /WGBVOX+LMRoman12-Regular /FontDescriptor 7 0 R /W 6 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
+endobj
+5 0 obj
+<< /Type /Pages  /Count 1 /Kids [ 2 0 R ] >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+13 0 obj
+<< /Producer (LuaTeX) /Creator (TeX) /Trapped /False >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000560 00000 n 
+0000000454 00000 n 
+0000000020 00000 n 
+0000002819 00000 n 
+0000003170 00000 n 
+0000000628 00000 n 
+0000001792 00000 n 
+0000000692 00000 n 
+0000000765 00000 n 
+0000002025 00000 n 
+0000002972 00000 n 
+0000003230 00000 n 
+0000003280 00000 n 
+trailer
+<< /Size 14 /Root 12 0 R /Info 13 0 R >>
+startxref
+3352
+%%EOF

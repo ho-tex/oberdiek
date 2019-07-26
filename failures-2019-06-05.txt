@@ -1,0 +1,77 @@
+ Check failed with difference files
+  - ./build/test-config-pdftex/grfext-test2.pdftex.fc
+  - ./build/test-config-pdftex/listingsutf8-test1.pdftex.fc
+  - ./build/test-config-pdftex/selinput-test3.pdftex.fc
+  - ./build/test-config-pdftex/selinput-test5.pdftex.fc
+  - ./build/test-config-pdftex/soulutf8-test1.pdftex.fc
+
+Failed tests for configuration build:
+
+  Check failed with difference files
+  - ./build/test/accsupp-test1.luatex.fc
+  - ./build/test/accsupp-test1.pdftex.fc OK
+  - ./build/test/accsupp-test1.xetex.fc  OK
+  - ./build/test/catchfile-test1.pdftex.fc
+  - ./build/test/catchfile-test1.xetex.fc
+  - ./build/test/catchfile-test3.pdftex.fc
+  - ./build/test/catchfile-test3.xetex.fc
+  - ./build/test/etexcmds-test1.pdftex.fc
+  - ./build/test/etexcmds-test1.xetex.fc
+  - ./build/test/gettitlestring-test1.luatex.fc
+  - ./build/test/gettitlestring-test1.pdftex.fc
+  - ./build/test/gettitlestring-test1.xetex.fc
+  - ./build/test/hologo-test1.luatex.fc
+  - ./build/test/hologo-test1.pdftex.fc
+  - ./build/test/hologo-test1.xetex.fc
+  - ./build/test/kvoptions-test2.luatex.fc
+  - ./build/test/kvoptions-test2.pdftex.fc
+  - ./build/test/kvoptions-test2.xetex.fc
+  - ./build/test/kvsetkeys-test1.pdftex.fc
+  - ./build/test/kvsetkeys-test1.xetex.fc
+  - ./build/test/pagegrid-test1.pdftex.fc
+  - ./build/test/pagegrid-test1.xetex.fc
+  - ./build/test/pmboxdraw-test1.luatex.fc
+  - ./build/test/pmboxdraw-test1.pdftex.fc
+  - ./build/test/pmboxdraw-test1.xetex.fc
+  - ./build/test/rerunfilecheck-test1.luatex.fc
+  - ./build/test/rerunfilecheck-test1.pdftex.fc
+  - ./build/test/rerunfilecheck-test1.xetex.fc
+
+Failed tests for configuration config-plain:
+
+  Check failed with difference files
+
+Failed tests for configuration config-noxetex:
+
+  Check failed with difference files
+  - ./build/test-config-noxetex/askinclude-test23.pdftex.fc ok
+  - ./build/test-config-noxetex/embedfile-test1.pdftex.fc
+  - ./build/test-config-noxetex/embedfile-test3.luatex.pdf.fc ok
+  - ./build/test-config-noxetex/embedfile-test3.pdftex.pdf.fc ok
+  - ./build/test-config-noxetex/pdfcolparallel-test1.luatex.pdf.fc
+  ok
+  -
+  ./build/test-config-noxetex/pdfcolparcolumns-test1.luatex.pdf.fc
+  ok
+  - ./build/test-config-noxetex/pdfrender-test1.pdftex.fc ok
+  - ./build/test-config-noxetex/pdfrender-test2.luatex.pdf.fc ok
+  - ./build/test-config-noxetex/pdfrender-test3.luatex.pdf.fc ok
+  - ./build/test-config-noxetex/pdfrender-test3.pdftex.pdf.fc ok
+  - ./build/test-config-noxetex/transparent-test1.luatex.pdf.fc
+  - ./build/test-config-noxetex/transparent-test2.luatex.pdf.fc
+
+Failed tests for configuration config-luatex:
+
+  Check failed with difference files
+  - ./build/test-config-luatex/luacolor-test-issue43.luatex.pdf.fc
+  - ./build/test-config-luatex/luatex-test2.luatex.fc NOK
+  - ./build/test-config-luatex/luatex-test3.luatex.fc NOK
+
+Failed tests for configuration config-pdftex:
+
+  Check failed with difference files
+  - ./build/test-config-pdftex/grfext-test2.pdftex.fc
+  - ./build/test-config-pdftex/listingsutf8-test1.pdftex.fc
+  - ./build/test-config-pdftex/selinput-test3.pdftex.fc
+  - ./build/test-config-pdftex/selinput-test5.pdftex.fc
+  - ./build/test-config-pdftex/soulutf8-test1.pdftex.fc

@@ -26,11 +26,9 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks...
-)
-(../ifxetex.sty
+) (../ifxetex.sty
 Package: ifxetex ....-..-.. v... Provides ifxetex conditional
-)
-(ifvtex.sty
+) (ifvtex.sty
 Package: ifvtex ....-..-.. v... Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 ) (kvoptions.sty

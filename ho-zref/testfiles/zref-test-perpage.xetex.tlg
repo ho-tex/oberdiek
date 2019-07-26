@@ -41,7 +41,7 @@ Completed box being shipped out [1]
 ....\TU/lmr/m/n/10 Wombat
 ....\glue 3.33 plus 1.665 minus 1.11
 ....\TU/lmr/m/n/10 unnumbered
-....\write1{\zref@newlabel{zref@1}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagev\ETC.}
+....\write1{\zref@newlabel{zref@1}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
 ....\penalty 10000
 ....\hbox(8.27692+0.0)x4.483
 .....\mathon
@@ -94,7 +94,7 @@ Completed box being shipped out [2]
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 347.14958fil
 ...\write-{}
-...\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline \ETC.}
+...\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {1}Introduction}{\thepage }\protected@file@percent }}
 ...\write1{\@writefile{lof}{\protect \addvspace {10\p@ }}}
 ...\write1{\@writefile{lot}{\protect \addvspace {10\p@ }}}
 ...\glue(\topskip) 10.0
@@ -128,7 +128,7 @@ Completed box being shipped out [2]
 ...\glue(\baselineskip) 3.57382
 ...\hbox(8.27692+0.21999)x345.0, glue set 303.567fil
 ....\TU/lmr/m/n/10 Wombat
-....\write1{\zref@newlabel{zref@2}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagev\ETC.}
+....\write1{\zref@newlabel{zref@2}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
 ....\penalty 10000
 ....\hbox(8.27692+0.0)x4.483
 .....\mathon

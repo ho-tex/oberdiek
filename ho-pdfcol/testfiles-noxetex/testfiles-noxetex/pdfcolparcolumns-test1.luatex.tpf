@@ -1,7 +1,7 @@
 %PDF-1.5
-%–‘≈ÿ
+%Ã’¡‘≈ÿ–ƒ∆
 3 0 obj
-<</Length 1774      >>
+<< /Length 1774 >>       
 stream
 0 g 0 G
 0 g 0 G
@@ -9,7 +9,8 @@ stream
 0 g 0 G
 1 0 0 rg 1 0 0 RG
 BT
-/F16 7.97011 Tf 1 0 0 1 148.712 657.235 Tm [<00310069>-591<004D0051004D>-592<002F0042002B00420069006D0060>-592<0070>29<003200600062006D0062>]TJ
+/F16 7.97011 Tf
+1 0 0 1 148.712 657.235 Tm [<00310069>-591<004D0051004D>-592<002F0042002B00420069006D0060>-592<0070>29<003200600062006D0062>]TJ
 0 g 0 G
 1 0 0 1 237.403 657.235 Tm [<00360042002F003200480042006D004B>-591<001C004D0042004B00A4>]TJ
 0 g 0 G
@@ -38,33 +39,34 @@ BT
 1 0 0 1 311.879 621.37 Tm [<004400510042004D0032002F0058>]TJ
 0 g 0 G
 0 g 0 G
-/F15 9.96264 Tf 1 0 0 1 303.133 89.365 Tm [<0052>]TJ
+/F15 9.96264 Tf
+1 0 0 1 303.133 89.365 Tm [<0052>]TJ
 0 g 0 G
 ET
 endstream
 endobj
 2 0 obj
-<</Type/Page/Contents 3 0 R/Resources 1 0 R/MediaBox[0 0 612 792]/Parent 6 0 R>>
+<< /Type /Page /Contents 3 0 R /Resources 1 0 R /MediaBox [ 0 0 612 792 ] /Parent 6 0 R >>
 endobj
 1 0 obj
-<</Font<</F16 4 0 R/F15 5 0 R>>/ProcSet[/PDF/Text]>>
+<< /Font << /F16 4 0 R /F15 5 0 R >> /ProcSet [ /PDF /Text ] >>
 endobj
 7 0 obj
-[82[500]]
-endobj
-8 0 obj
-<</Length 11        >>
-[BINARY STREAM]
+[ 82 [ 500 ] ]
 endobj
 9 0 obj
-<</Subtype/CIDFontType0C/Length 574       >>
+<< /Length 11 >>         
 [BINARY STREAM]
 endobj
 10 0 obj
-<</Type/FontDescriptor/FontName/JFRMQG+LMRoman10-Regular/Flags 4/FontBBox[-430 -290 1417 1127]/Ascent 1127/CapHeight 683/Descent -290/ItalicAngle 0/StemV 93/XHeight 431/FontFile3 9 0 R/CIDSet 8 0 R>>
+<< /Subtype /CIDFontType0C /Length 574 >>        
+[BINARY STREAM]
+endobj
+8 0 obj
+<< /Type /FontDescriptor /FontName /JFRMQG+LMRoman10-Regular /Flags 4 /FontBBox [ -430 -290 1417 1127 ] /Ascent 1127 /CapHeight 683 /Descent -290 /ItalicAngle 0 /StemV 93 /XHeight 431 /FontFile3 10 0 R /CIDSet 9 0 R >>
 endobj
 11 0 obj
-<</Length 692       >>
+<< /Length 692 >>        
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -100,27 +102,27 @@ end
 endstream
 endobj
 5 0 obj
-<</Type/Font/Subtype/Type0/Encoding/Identity-H/BaseFont/JFRMQG+LMRoman10-Regular/DescendantFonts[12 0 R]/ToUnicode 11 0 R>>
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /JFRMQG+LMRoman10-Regular /DescendantFonts [ 12 0 R ] /ToUnicode 11 0 R >>
 endobj
 12 0 obj
-<</Type/Font/Subtype/CIDFontType0/BaseFont/JFRMQG+LMRoman10-Regular/FontDescriptor 10 0 R/W 7 0 R/CIDSystemInfo<</Registry (Adobe)/Ordering (Identity)/Supplement 0>>>>
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /JFRMQG+LMRoman10-Regular /FontDescriptor 8 0 R /W 7 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
 endobj
 13 0 obj
-[27[796 531]34[752 590]43[472]45[295]47[590]49[723 472]54[693 325]59[531]63[590 354]66[295]68[325]72[295]74[973 885]77[590]81[531 531]84[590]88[295]96[414]98[419]105[413]109[590]111[796 561]118[561]121[531]125[590]164[767]]
-endobj
-14 0 obj
-<</Length 21        >>
-[BINARY STREAM]
+[ 27 [ 796 531 ] 34 [ 752 590 ] 43 [ 472 ] 45 [ 295 ] 47 [ 590 ] 49 [ 723 472 ] 54 [ 693 325 ] 59 [ 531 ] 63 [ 590 354 ] 66 [ 295 ] 68 [ 325 ] 72 [ 295 ] 74 [ 973 885 ] 77 [ 590 ] 81 [ 531 531 ] 84 [ 590 ] 88 [ 295 ] 96 [ 414 ] 98 [ 419 ] 105 [ 413 ] 109 [ 590 ] 111 [ 796 561 ] 118 [ 561 ] 121 [ 531 ] 125 [ 590 ] 164 [ 767 ] ]
 endobj
 15 0 obj
-<</Subtype/CIDFontType0C/Length 4641      >>
+<< /Length 21 >>         
 [BINARY STREAM]
 endobj
 16 0 obj
-<</Type/FontDescriptor/FontName/NNCMRD+LMRoman8-Regular/Flags 4/FontBBox[-456 -292 1497 1125]/Ascent 1125/CapHeight 683/Descent -292/ItalicAngle 0/StemV 98/XHeight 431/FontFile3 15 0 R/CIDSet 14 0 R>>
+<< /Subtype /CIDFontType0C /Length 4641 >>       
+[BINARY STREAM]
+endobj
+14 0 obj
+<< /Type /FontDescriptor /FontName /NNCMRD+LMRoman8-Regular /Flags 4 /FontBBox [ -456 -292 1497 1125 ] /Ascent 1125 /CapHeight 683 /Descent -292 /ItalicAngle 0 /StemV 98 /XHeight 431 /FontFile3 16 0 R /CIDSet 15 0 R >>
 endobj
 17 0 obj
-<</Length 1154      >>
+<< /Length 1154 >>       
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -189,47 +191,45 @@ end
 endstream
 endobj
 4 0 obj
-<</Type/Font/Subtype/Type0/Encoding/Identity-H/BaseFont/NNCMRD+LMRoman8-Regular/DescendantFonts[18 0 R]/ToUnicode 17 0 R>>
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /NNCMRD+LMRoman8-Regular /DescendantFonts [ 18 0 R ] /ToUnicode 17 0 R >>
 endobj
 18 0 obj
-<</Type/Font/Subtype/CIDFontType0/BaseFont/NNCMRD+LMRoman8-Regular/FontDescriptor 16 0 R/W 13 0 R/CIDSystemInfo<</Registry (Adobe)/Ordering (Identity)/Supplement 0>>>>
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /NNCMRD+LMRoman8-Regular /FontDescriptor 14 0 R /W 13 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
 endobj
 6 0 obj
-<</Type/Pages /Count 1/Kids[2 0 R]>>
+<< /Type /Pages  /Count 1 /Kids [ 2 0 R ] >>
 endobj
 19 0 obj
-<</Type/Catalog/Pages 6 0 R>>
+<< /Type /Catalog /Pages 6 0 R >>
 endobj
 20 0 obj
-<<
-/Producer (LuaTeX)
-/Creator (TeX)/Trapped/False>>
+<< /Producer (LuaTeX) /Creator (TeX) /Trapped /False >>
 endobj
 xref
 0 21
 0000000000 65535 f 
-0000001941 00000 n 
-0000001845 00000 n 
-0000000015 00000 n 
-0000010507 00000 n 
-0000003718 00000 n 
-0000010829 00000 n 
-0000002009 00000 n 
-0000002034 00000 n 
-0000002101 00000 n 
-0000002753 00000 n 
-0000002969 00000 n 
-0000003857 00000 n 
-0000004041 00000 n 
-0000004281 00000 n 
-0000004359 00000 n 
-0000009079 00000 n 
-0000009296 00000 n 
-0000010645 00000 n 
-0000010881 00000 n 
-0000010927 00000 n 
+0000001959 00000 n 
+0000001853 00000 n 
+0000000020 00000 n 
+0000010733 00000 n 
+0000003782 00000 n 
+0000011084 00000 n 
+0000002038 00000 n 
+0000002796 00000 n 
+0000002068 00000 n 
+0000002138 00000 n 
+0000003030 00000 n 
+0000003935 00000 n 
+0000004133 00000 n 
+0000009284 00000 n 
+0000004478 00000 n 
+0000004559 00000 n 
+0000009519 00000 n 
+0000010885 00000 n 
+0000011144 00000 n 
+0000011194 00000 n 
 trailer
-<</Size 21/Root 19 0 R/Info 20 0 R>>
+<< /Size 21 /Root 19 0 R /Info 20 0 R >>
 startxref
-10996
+11266
 %%EOF
