@@ -69,7 +69,6 @@ lualatex oberdiek
 
 
 # special cases
-cp README readme-ctan.txt
 rm -f ./tex/latex/oberdiek/foo.sty
 # rm -f ./doc/latex/oberdiek/test/ifpdf-test1.tex
 # rm -f ./source/latex/oberdiek/catalogue/ifpdf.xml
