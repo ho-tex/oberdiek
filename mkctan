@@ -89,7 +89,7 @@ cd ..
 echo making main zip
 rm -f oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
-{README,\
+{README.txt,\
 oberdiek.tex,\
 *.pdf,\
 *.dtx\
