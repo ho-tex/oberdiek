@@ -214,7 +214,7 @@ source/latex/oberdiek/pdftexcmds.dtx
 source/latex/oberdiek/picture.dtx
 source/latex/oberdiek/pmboxdraw.dtx
 source/latex/oberdiek/protecteddef.dtx
-source/latex/oberdiek/readme-ctan.txt
+source/latex/oberdiek/README.txt
 source/latex/oberdiek/refcount.dtx
 source/latex/oberdiek/rerunfilecheck.dtx
 source/latex/oberdiek/resizegather.dtx
