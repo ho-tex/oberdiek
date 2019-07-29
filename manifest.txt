@@ -328,6 +328,7 @@ tex/latex/oberdiek/atenddvi.sty
 tex/latex/oberdiek/atfi-dvipdfmx.def
 tex/latex/oberdiek/atfi-dvips.def
 tex/latex/oberdiek/atfi-pdftex.def
+tex/latex/oberdiek/atfi-luatex.def
 tex/latex/oberdiek/attachfile2.sty
 tex/latex/oberdiek/atveryend.sty
 tex/latex/oberdiek/auxhook.sty
