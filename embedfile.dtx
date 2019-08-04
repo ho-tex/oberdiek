@@ -909,6 +909,11 @@ You need Acrobat Reader 8 or higher.
 \EmFi@temp{desc}
 %    \end{macrocode}
 %    \end{macro}
+%    \begin{macro}{\EmFi@S@afrelationship}
+%    \begin{macrocode}
+\EmFi@temp{afrelationship}
+%    \end{macrocode}
+%    \end{macro}
 %    \begin{macro}{\EmFi@S@moddate}
 %    \begin{macrocode}
 \EmFi@temp{moddate}
@@ -1033,6 +1038,10 @@ You need Acrobat Reader 8 or higher.
 %    Description (optional).
 %    \begin{macrocode}
 \EmFi@DefineKey{desc}{}
+%    \end{macrocode}
+%    AFRelationship (mandatory for PDF/A-3 compliance).
+%    \begin{macrocode}
+\EmFi@DefineKey{afrelationship}{}
 %    \end{macrocode}
 %    Method for converting text to PDF strings.
 %    \begin{macrocode}
@@ -1195,6 +1204,7 @@ You need Acrobat Reader 8 or higher.
             \else\ifx\EmFi@type\EmFi@S@number N%
             \else\ifx\EmFi@type\EmFi@S@file F%
             \else\ifx\EmFi@type\EmFi@S@desc Desc%
+            \else\ifx\EmFi@type\EmFi@S@afrelationship AFRelationship%
             \else\ifx\EmFi@type\EmFi@S@moddate ModDate%
             \else\ifx\EmFi@type\EmFi@S@creationdate CreationDate%
             \else\ifx\EmFi@type\EmFi@S@size Size%
@@ -1307,6 +1317,8 @@ You need Acrobat Reader 8 or higher.
     \let\EmFi@type\EmFi@temp
   \else\ifx\EmFi@temp\EmFi@S@desc
     \let\EmFi@type\EmFi@temp
+  \else\ifx\EmFi@temp\EmFi@S@afrelationship
+    \let\EmFi@type\EmFi@temp
   \else\ifx\EmFi@temp\EmFi@S@moddate
     \let\EmFi@type\EmFi@temp
   \else\ifx\EmFi@temp\EmFi@S@creationdate
@@ -1317,9 +1329,9 @@ You need Acrobat Reader 8 or higher.
     \EmFi@Error{%
       Unknown type `\EmFi@temp'.\MessageBreak
       Supported types: `text', `date', `number', `file',\MessageBreak
-      `desc', `moddate', `creationdate', `size'%
+      `desc', `afrelationship', `moddate', `creationdate', `size'%
     }%
-  \fi\fi\fi\fi\fi\fi\fi\fi
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi
 }
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -1419,6 +1431,11 @@ You need Acrobat Reader 8 or higher.
         \else
           \EmFi@convert\EmFi@desc\EmFi@@desc
         \fi
+        \ifx\EmFi@afrelationship\ltx@empty
+          \let\EmFi@@afrelationship\ltx@empty
+        \else
+          \EmFi@convert\EmFi@afrelationship\EmFi@@afrelationship
+        \fi
         \ifEmFi@item
           \let\do\EmFi@do
           \immediate\pdfobj{%
@@ -1456,6 +1473,10 @@ You need Acrobat Reader 8 or higher.
             \ifx\EmFi@@desc\ltx@empty
             \else
               /Desc(\EmFi@@desc)%
+            \fi
+            \ifx\EmFi@@afrelationship\ltx@empty
+            \else
+              /AFRelationship\EmFi@@afrelationship%
             \fi
             /EF<<%
               /F \the\pdflastobj\ltx@space 0 R%
@@ -1579,6 +1600,17 @@ You need Acrobat Reader 8 or higher.
         }%
         \pdfnames{%
           /EmbeddedFiles \the\pdflastobj\ltx@space 0 R%
+        }%
+      \endgroup
+      \begingroup
+        \def\do##1##2{%
+          \ltx@space##2%
+        }%
+        \immediate\pdfobj{%
+          [\EmFi@list]%
+        }%
+        \pdfcatalog{%
+          /AF \the\pdflastobj\ltx@space 0 R%
         }%
       \endgroup
 %    \end{macrocode}
