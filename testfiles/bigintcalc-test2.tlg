@@ -5730,7 +5730,8 @@ Package qstest Info: Passed: cmp on input line ....
 \qst@expectfinish ->\ifx \qst@defaultvalue \qst@tmpb \else \qst@error { \string \Expect : \unexpanded \expandafter {\qst@tmpc }
  <\qst@tmpb 
  >\qst@defaultvalue }\fi 
-\end #1->\csname end#1\endcsname \@checkend {#1}\expandafter \endgroup \if@endpe \@doendpe \fi \if@ignore \@ignorefalse \ignorespaces \fi 
+\end ->\romannumeral \ifx \protect \@typeset@protect \expandafter \expandafter \expandafter \expandafter \expandafter \expandafter \expandafter \z@ \else \expandafter \z@ \expandafter \protect \fi \end  
+\end  #1->\csname end#1\endcsname \@checkend {#1}\expandafter \endgroup \if@endpe \@doendpe \fi \if@ignore \@ignorefalse \ignorespaces \fi 
 #1<-qstest
 \endqstest ->\StopTime \saved@endqstest 
 \StopTime ->\TestTime =\pdfelapsedtime \global \advance \SummaryTime \TestTime \PrintTime \TimeDescription \TestTime 
