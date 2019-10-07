@@ -9,7 +9,7 @@
   \documentstyle[filecontents,qstest,askinclude,pdftexcmds]{book}%
 \else
   \documentclass{book}%
-  \usepackage{filecontents}%
+  %\usepackage{filecontents}%
   \usepackage{qstest}%
   \usepackage{pdftexcmds}%
   \ifx\AtBeginDocumentMode Y%
@@ -144,7 +144,7 @@
 \START
 \Stack{}
 \CheckAnswer{askinclude-a18}
-\begin{filecontents*}{\jobname.aux}
+\begin{filecontents*}[overwrite]{\jobname.aux}
 \gdef\AskInc@Answer{askinclude-a18}
 \gdef\AskInc@MatchMethod{}
 |AddList
@@ -152,7 +152,7 @@
 \AskInc@AddFile{askinclude-a18}
 \AskInc@AddFile{askinclude-b18}
 \end{filecontents*}
-\begin{filecontents*}{\jobname-aux.aux}
+\begin{filecontents*}[overwrite]{\jobname-aux.aux}
 \relax|space
 \gdef\AskInc@Answer{askinclude-a18}
 \gdef\AskInc@MatchMethod{}

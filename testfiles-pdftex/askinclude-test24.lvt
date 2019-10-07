@@ -8,7 +8,7 @@
   \documentstyle[filecontents,qstest,askinclude,pdftexcmds]{book}%
 \else
   \documentclass{book}%
-  \usepackage{filecontents}%
+  %\usepackage{filecontents}%
   \usepackage{qstest}%
   \usepackage{pdftexcmds}%
   \ifx\AtBeginDocumentMode Y%
@@ -145,10 +145,10 @@
 \Stack{{pdfmatch}{.,!askinclude-b24}}
 \CheckAnswer{.,!askinclude-b24}
 \CheckMatchMethod{pdfmatch}
-\begin{filecontents*}{\jobname.aux}
+\begin{filecontents*}[overwrite]{\jobname.aux}
 \relax
 \end{filecontents*}
-\begin{filecontents*}{\jobname-aux.aux}
+\begin{filecontents*}[overwrite]{\jobname-aux.aux}
 \relax|space
 \gdef\AskInc@Answer{.,!askinclude-b24}
 \gdef\AskInc@MatchMethod{pdfmatch}
