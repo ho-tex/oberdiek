@@ -1,0 +1,12 @@
+attachfile2 ????
+
+config-noxetex luatex+pdftex:
+askinclude-test7  filecontents, error!!
+askinclude-test8  filecontents, error!!
+askinclude-test11 filecontents, error!!
+askinclude-test15 filecontents, error!!
+askinclude-test16 filecontents, error!!
+askinclude-test23 filecontents, error!!
+
+config-pdftex
+askinclude-test24 filecontents, error!!
