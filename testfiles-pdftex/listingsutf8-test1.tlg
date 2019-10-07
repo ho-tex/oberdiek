@@ -21,14 +21,14 @@ Package: keyval ....-..-.. v... key=value parser (DPC)
 \belowcaptionskip=\skip...
 \lst@maxwidth=\dimen...
 (../lstmisc.sty
-File: lstmisc.sty ....-..-.. 1.8b (Carsten Heinz)
+File: lstmisc.sty ....-..-.. 1.8c (Carsten Heinz)
 \c@lstnumber=\count...
 \lst@skipnumbers=\count...
 \lst@framebox=\box...
 ) (../listings.cfg
-File: listings.cfg ....-..-.. 1.8b listings configuration
+File: listings.cfg ....-..-.. 1.8c listings configuration
 ))
-Package: listings ....-..-.. 1.8b (Carsten Heinz)
+Package: listings ....-..-.. 1.8c (Carsten Heinz)
 (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (infwarerr.sty
