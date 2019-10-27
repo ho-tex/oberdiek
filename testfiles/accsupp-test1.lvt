@@ -25,7 +25,8 @@
   \repeat
 }
 \def\Test{%
-  \RangeCatcodeInvalid{0}{47}%
+  \RangeCatcodeInvalid{0}{33}%
+  \RangeCatcodeInvalid{35}{47}%
   \RangeCatcodeInvalid{58}{64}%
   \RangeCatcodeInvalid{91}{96}%
   \RangeCatcodeInvalid{123}{127}%

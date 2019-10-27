@@ -43,7 +43,6 @@ doc/latex/oberdiek/flags.pdf
 doc/latex/oberdiek/gettitlestring.pdf
 doc/latex/oberdiek/grfext.pdf
 doc/latex/oberdiek/grffile.pdf
-doc/latex/oberdiek/hobsub.pdf
 doc/latex/oberdiek/hologo.pdf
 doc/latex/oberdiek/holtxdoc.pdf
 doc/latex/oberdiek/hopatch.pdf
@@ -57,9 +56,6 @@ doc/latex/oberdiek/hypgotoe.pdf
 doc/latex/oberdiek/hyphsubst.pdf
 doc/latex/oberdiek/ifdraft.pdf
 doc/latex/oberdiek/iflang.pdf
-doc/latex/oberdiek/ifluatex.pdf
-doc/latex/oberdiek/ifpdf.pdf
-doc/latex/oberdiek/ifvtex.pdf
 doc/latex/oberdiek/infwarerr.pdf
 doc/latex/oberdiek/inputenx-licrcmds.txt
 doc/latex/oberdiek/inputenx-utf8enc.txt
@@ -252,9 +248,6 @@ tex/generic/oberdiek/hobsub.sty
 tex/generic/oberdiek/hologo.sty
 tex/generic/oberdiek/hyphsubst.sty
 tex/generic/oberdiek/iflang.sty
-tex/generic/oberdiek/ifluatex.sty
-tex/generic/oberdiek/ifpdf.sty
-tex/generic/oberdiek/ifvtex.sty
 tex/generic/oberdiek/infwarerr.sty
 tex/generic/oberdiek/intcalc.sty
 tex/generic/oberdiek/kvdefinekeys.sty

@@ -6,10 +6,12 @@
 \newcommand*{\Subject}{CTAN:\CTANdir}
 \newcommand*{\Author}{Heiko Oberdiek}
 \newcommand*{\Email}{ho-tex at tug.org}
-\newcommand*{\Date}{2019/07/27}
+\newcommand*{\Date}{2019/10/27}
 
-% Copyright (C) 2006-2019 by
-%    Heiko Oberdiek <heiko.oberdiek at googlemail.com>
+% Copyright (C) 2006-2016 by
+%    Heiko Oberdiek
+% Copyright (C) 2016-2019 by
+%    Oberdiek Package Support Group
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -21,7 +23,7 @@
 %
 % This work has the LPPL maintenance status "maintained".
 %
-% This Current Maintainer of this work is Heiko Oberdiek.
+% This Current Maintainer of this work is the Oberdiek Package Support Group.
 %
 % This work consists of the overview "oberdiek.pdf", its source
 % "oberdiek.tex", and the installation script "oberdiek.ins"
@@ -259,12 +261,12 @@
 [\entrysep]
 \entry{iflang}{2007/11/11}{1.5}{Checks for the current language}%
 [\entrysep]
-\entry{ifluatex}{2010/03/01}{1.3}{Provides the ifluatex switch}%
-[\entrysep]
-\entry{ifpdf}{2011/01/30}{2.3}{Provides the ifpdf switch}%
-[\entrysep]
-\entry{ifvtex}{2010/03/01}{1.5}{Detect \hologo{VTeX} and its facilities}%
-[\entrysep]
+% iftex distribution \entry{ifluatex}{2010/03/01}{1.3}{Provides the ifluatex switch}%
+% iftex distribution [\entrysep]
+% iftex distribution \entry{ifpdf}{2011/01/30}{2.3}{Provides the ifpdf switch}%
+% iftex distribution [\entrysep]
+% iftex distribution \entry{ifvtex}{2010/03/01}{1.5}{Detect \hologo{VTeX} and its facilities}%
+% iftex distribution [\entrysep]
 \entry{infwarerr}{2010/04/08}{1.3}{Providing info/warning/error messages}%
 [\entrysep]
 \entry{inputenx}{2011/05/27}{1.10}{Enhanced input encoding handling}%
@@ -684,7 +686,7 @@ contain spaces.
 Package \xpackage{hobsub} implements the idea of loading
 several packages in one big collection package.
 \end{abstract}
-\tocinclude{hobsub}
+%\tocinclude{hobsub}
 
 \newpage
 \subsection{\pkgsectformat{hologo}}
@@ -819,7 +821,7 @@ and provides the switch \cs{ifluatex}. Also it makes
 \cs{luatexversion} available if it is not present.
 It works with \plainTeX\ or \LaTeX.
 \end{abstract}
-\tocinclude{ifluatex}
+%\tocinclude{ifluatex}
 
 \newpage
 \subsection{\pkgsectformat{ifpdf}}
@@ -831,7 +833,7 @@ The detection is based on \cs{pdfoutput} and
 the package will not change this value.
 It works with plain or \LaTeX\ formats.
 \end{abstract}
-\tocinclude{ifpdf}
+%\tocinclude{ifpdf}
 
 \newpage
 \subsection{\pkgsectformat{ifvtex}}
@@ -841,7 +843,7 @@ This package looks for \VTeX, implements
 and sets the switches \cs{ifvtex}, \cs{ifvtex}\texttt{\meta{mode}},
 \cs{ifvtexgex}. It works with plain or \LaTeX\ formats.
 \end{abstract}
-\tocinclude{ifvtex}
+%\tocinclude{ifvtex}
 
 \newpage
 \subsection{\pkgsectformat{infwarerr}}

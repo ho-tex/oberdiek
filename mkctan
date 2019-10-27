@@ -50,6 +50,8 @@ cp \
 
 # make pdf
 rm *.bbl || echo no bbl
+
+gzip hobsub.dtx ifpdf.dtx ifluatex.dtx ifvtex.dtx
 for i in *.dtx
 do
 lualatex ${i}
@@ -63,6 +65,7 @@ if [ -f ${i/.dtx/.idx} ]; then
     lualatex ${i}
 fi
 done
+gunzip hobsub.dtx ifpdf.dtx ifluatex.dtx ifvtex.dtx
 
 lualatex oberdiek
 lualatex oberdiek
@@ -91,6 +94,7 @@ rm -f oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 {README.txt,\
 oberdiek.tex,\
+hobsub*.sty,\
 *.pdf,\
 *.dtx\
 }

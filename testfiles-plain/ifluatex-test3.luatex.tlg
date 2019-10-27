@@ -25,8 +25,7 @@ Defining generic filename parser.
 \@dashdim=\dimen...
 \fboxsep=\dimen...
 \fboxrule=\dimen...
-)
-(ifluatex.sty
+) (ifluatex.sty
 ifluatex: ....-..-.. v... Provides the ifluatex switch (HO)
 ifluatex: LuaTeX detected
 ) (ifluatex.sty
