@@ -1,23 +1,2 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(gettitlestring.sty
-LaTeX Warning: You have requested package `',
-               but the package provides `gettitlestring'.
-Package: gettitlestring ....-..-.. v... Cleanup title references (HO)
-(kvoptions.sty
-Package: kvoptions ....-..-.. v... Key value format for package options (HO)
-(../keyval.sty
-Package: keyval ....-..-.. v... key=value parser (DPC)
-\KV@toks@=\toks...
-) (ltxcmds.sty
-Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (kvsetkeys.sty
-Package: kvsetkeys ....-..-.. v... Key value parser (HO)
-(infwarerr.sty
-Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-) (etexcmds.sty
-Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-(ifluatex.sty
-Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)))))

@@ -301,13 +301,14 @@ Package: keyval ....-..-.. v... key=value parser (DPC)
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
 (etexcmds.sty
 Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-(ifluatex.sty
-Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)))) (pdftexcmds.sty
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
+(../iftex.sty
+Package: iftex ....-..-.. v... TeX engine tests
+))))) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(ifpdf.sty
-Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+(../ifpdf.sty
+Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.

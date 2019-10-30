@@ -97,7 +97,7 @@
   \RangeCatcodeCheck{123}{255}{15}%
   \RestoreCatcodes
 }\START
-\Test
+% invalid \Test
 \csname @@end\endcsname
 \end
 \endinput

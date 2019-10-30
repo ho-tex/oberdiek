@@ -49,8 +49,8 @@
   \RestoreCatcodes
 }
 \START
-\Test{\RequirePackage{kvoptions-patch}}%
-\Test{\RequirePackage{kvoptions}}%
+% invalid \Test{\RequirePackage{kvoptions-patch}}%
+% invalid \Test{\RequirePackage{kvoptions}}%
 \csname @@end\endcsname
 \endinput
 %%

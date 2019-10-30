@@ -453,7 +453,8 @@ catchfile.sty    ....-..-.. v... Catch the contents of a file (HO)
 infwarerr.sty    ....-..-.. v... Providing info/warning/error messages (HO)
  ltxcmds.sty    ....-..-.. v... LaTeX kernel commands for general use (HO)
 etexcmds.sty    ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-ifluatex.sty    ....-..-.. v... Provides the ifluatex switch (HO)
+ifluatex.sty    ....-..-.. v... ifluatex legacy package. Use iftex instead.
+   iftex.sty    ....-..-.. v... TeX engine tests
 "catchfile.sty"
 "catchfile.sty"
 "catchfile.sty"

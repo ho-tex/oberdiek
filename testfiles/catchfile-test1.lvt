@@ -99,7 +99,7 @@
   \RangeCatcodeCheck{123}{255}{15}%
   \RestoreCatcodes
 }
-\Test
+%invalid chars test \Test
 \csname @@end\endcsname
 \end
 \endinput

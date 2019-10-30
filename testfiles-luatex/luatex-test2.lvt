@@ -102,7 +102,7 @@
   \RestoreCatcodes
 }
 \START
-\Test
+% invalid \Test
 \csname @@end\endcsname
 \end
 \endinput

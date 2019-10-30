@@ -8,13 +8,14 @@ Package: iflang ....-..-.. v... Checks for the current language (HO)
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(ifluatex.sty
-Package: ifluatex ....-..-.. v... Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-) (ltxcmds.sty
+(../ifluatex.sty
+Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
+(../iftex.sty
+Package: iftex ....-..-.. v... TeX engine tests
+)) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (ifpdf.sty
-Package: ifpdf ....-..-.. v... Provides the ifpdf switch
+) (../ifpdf.sty
+Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
