@@ -42,7 +42,6 @@ doc/latex/oberdiek/fibnum.pdf
 doc/latex/oberdiek/flags.pdf
 doc/latex/oberdiek/gettitlestring.pdf
 doc/latex/oberdiek/grfext.pdf
-doc/latex/oberdiek/grffile.pdf
 doc/latex/oberdiek/hologo.pdf
 doc/latex/oberdiek/holtxdoc.pdf
 doc/latex/oberdiek/hopatch.pdf
@@ -162,7 +161,6 @@ source/latex/oberdiek/fibnum.dtx
 source/latex/oberdiek/flags.dtx
 source/latex/oberdiek/gettitlestring.dtx
 source/latex/oberdiek/grfext.dtx
-source/latex/oberdiek/grffile.dtx
 source/latex/oberdiek/hobsub.dtx
 source/latex/oberdiek/hologo.dtx
 source/latex/oberdiek/holtxdoc.dtx
@@ -349,7 +347,6 @@ tex/latex/oberdiek/epstopdf-base.sty
 tex/latex/oberdiek/epstopdf.sty
 tex/latex/oberdiek/flags.sty
 tex/latex/oberdiek/grfext.sty
-tex/latex/oberdiek/grffile.sty
 tex/latex/oberdiek/holtxdoc.sty
 tex/latex/oberdiek/hopatch.sty
 tex/latex/oberdiek/hycolor.sty

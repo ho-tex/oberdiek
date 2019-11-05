@@ -233,8 +233,6 @@
 [\entrysep]
 \entry{grfext}{2010/08/19}{1.1}{Manage graphics extensions}%
 [\entrysep]
-\entry{grffile}{2012/04/05}{1.16}{Extended file name support for graphics}%
-[\entrysep]
 \entry{hobsub}{2012/04/25}{1.12}{Construct package bundles}%
 [\entrysep]
 \entry{hologo}{2012/04/26}{1.10}{A logo collection with bookmark support}%
@@ -668,16 +666,6 @@ graphics extensions of package \xpackage{graphics}.
 \end{abstract}
 \tocinclude{grfext}
 
-\newpage
-\subsection{\pkgsectformat{grffile}}
-\label{grffile}
-\begin{abstract}
-The package extends the file name processing of package \xpackage{graphics}
-to support a larger range of file names. For example, the file name
-may contain several dots. Or in case of \pdfTeX\ in PDF mode the file name may
-contain spaces.
-\end{abstract}
-\tocinclude{grffile}
 
 \newpage
 \subsection{\pkgsectformat{hobsub}}
@@ -811,39 +799,6 @@ This package provides expandible checks for the current language
 based on macro \cs{languagename} or hyphenation patterns.
 \end{abstract}
 \tocinclude{iflang}
-
-\newpage
-\subsection{\pkgsectformat{ifluatex}}
-\label{ifluatex}
-\begin{abstract}
-This package looks for \LuaTeX\ regardless of its mode
-and provides the switch \cs{ifluatex}. Also it makes
-\cs{luatexversion} available if it is not present.
-It works with \plainTeX\ or \LaTeX.
-\end{abstract}
-%\tocinclude{ifluatex}
-
-\newpage
-\subsection{\pkgsectformat{ifpdf}}
-\label{ifpdf}
-\begin{abstract}
-This package looks for \pdfTeX\ in pdf mode and
-implements and sets the switch \cs{ifpdf}.
-The detection is based on \cs{pdfoutput} and
-the package will not change this value.
-It works with plain or \LaTeX\ formats.
-\end{abstract}
-%\tocinclude{ifpdf}
-
-\newpage
-\subsection{\pkgsectformat{ifvtex}}
-\label{ifvtex}
-\begin{abstract}
-This package looks for \VTeX, implements
-and sets the switches \cs{ifvtex}, \cs{ifvtex}\texttt{\meta{mode}},
-\cs{ifvtexgex}. It works with plain or \LaTeX\ formats.
-\end{abstract}
-%\tocinclude{ifvtex}
 
 \newpage
 \subsection{\pkgsectformat{infwarerr}}
