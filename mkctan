@@ -10,9 +10,13 @@ INSTALLDIR=$HOME/texmf
 
 
 #
-# cleanup
-rm -r bibtex doc scripts source tex 2> /dev/null || echo target directories not present
-rm *.pdf *.aux  2> /dev/null  || echo no pdf or aux here
+# make clean build area
+rm -rf build
+mkdir build
+cd build
+mkdir oberdiek
+cd oberdiek
+
 mkdir -p $HOME/texmf/scripts/oberdiek
 
 
@@ -30,6 +34,7 @@ mkdir -p tex/latex/oberdiek
 
 # unpack
 #
+cp ../../*.dtx ../../*.ins ../../hobsub*.sty ../../*.tex ../../*.bib ../../*.txt .
 tex oberdiek.ins
 
 ## Lua need to be here for doc generation must fix this one day
@@ -99,5 +104,5 @@ hobsub*.sty,\
 *.dtx\
 }
 
-mv oberdiek*.zip oberdiek
+mv oberdiek.zip  oberdiek/oberdiek.pdf ..
 
