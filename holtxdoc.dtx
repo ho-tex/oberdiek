@@ -402,6 +402,14 @@ and the derived files
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\newcommand*{\bibpackage}[4]{%
+  \bibitem{#1}
+  Package \xpackage{#1}, #2, #3.%
+  \ifx\\#4\\\else\space#4\fi\par
+}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \newcommand*{\CTAN}[1]{%
   \href{https://ctan.org/#1}{\nolinkurl{CTAN:#1}}%
 }
