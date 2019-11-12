@@ -11,7 +11,6 @@ checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config
 maxprintline=10000
 checkruns = 2
 
-bundlectan= {error('Use ./mkctan for now')}
 
 kpse.set_program_name ("kpsewhich")
 if not release_date then
