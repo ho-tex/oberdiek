@@ -947,47 +947,6 @@ and the derived files
 %\end{verbatim}
 % \end{quote}
 %
-% \section{Catalogue}
-%
-% The following XML file can be used as source for the
-% \href{http://mirror.ctan.org/help/Catalogue/catalogue.html}{\TeX\ Catalogue}.
-% The elements \texttt{caption} and \texttt{description} are imported
-% from the original XML file from the Catalogue.
-% The name of the XML file in the Catalogue is \xfile{pdfcolmk.xml}.
-%    \begin{macrocode}
-%<*catalogue>
-<?xml version='1.0' encoding='us-ascii'?>
-<!DOCTYPE entry SYSTEM 'catalogue.dtd'>
-<entry datestamp='$Date$' modifier='$Author$' id='pdfcolmk'>
-  <name>pdfcolmk</name>
-  <caption>Improving colour support under pdftex.</caption>
-  <authorref id='auth:oberdiek'/>
-  <copyright owner='Heiko Oberdiek' year='2000,2005-2008'/>
-  <license type='lppl1.3'/>
-  <version number='1.3'/>
-  <description>
-    The package provides macros that emulate the &#x2018;colour stack&#x2019;
-    functionality of dvips.  The colour stack deals with colour
-    manipulations when asynchronous events (like page-breaking) occur;
-    pdftex does not (yet) have such a stack, but dvips does, and the
-    <xref refid='color'>color</xref> package makes extensive use of
-    it.
-    <p/>
-    This package is an experimental solution to the problem, and works
-    best with pdf-e-tex.
-    <p/>
-    The package is part of the <xref refid='oberdiek'>oberdiek</xref> bundle.
-  </description>
-  <documentation details='Package documentation'
-      href='ctan:/macros/latex/contrib/oberdiek/pdfcolmk.pdf'/>
-  <ctan file='true' path='/macros/latex/contrib/oberdiek/pdfcolmk.dtx'/>
-  <miktex location='oberdiek'/>
-  <texlive location='oberdiek'/>
-  <install path='/macros/latex/contrib/oberdiek/oberdiek.tds.zip'/>
-</entry>
-%</catalogue>
-%    \end{macrocode}
-%
 % \begin{History}
 %   \begin{Version}{2000/08/27 v0.1}
 %   \item

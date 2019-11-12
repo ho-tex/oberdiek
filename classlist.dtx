@@ -590,50 +590,6 @@ and the derived files
 %\end{verbatim}
 % \end{quote}
 %
-% \section{Catalogue}
-%
-% The following XML file can be used as source for the
-% \href{http://mirror.ctan.org/help/Catalogue/catalogue.html}{\TeX\ Catalogue}.
-% The elements \texttt{caption} and \texttt{description} are imported
-% from the original XML file from the Catalogue.
-% The name of the XML file in the Catalogue is \xfile{classlist.xml}.
-%    \begin{macrocode}
-%<*catalogue>
-<?xml version='1.0' encoding='us-ascii'?>
-<!DOCTYPE entry SYSTEM 'catalogue.dtd'>
-<entry datestamp='$Date$' modifier='$Author$' id='classlist'>
-  <name>classlist</name>
-  <caption>Record classes used in a document.</caption>
-  <authorref id='auth:oberdiek'/>
-  <copyright owner='Heiko Oberdiek' year='2005,2006,2008,2011'/>
-  <license type='lppl1.3'/>
-  <version number='1.5'/>
-  <description>
-    Load this package before \documentclass:
-    <p/>
-    &nbsp;&nbsp;<tt>\RequirePackage{classlist}</tt><br/>
-    &nbsp;&nbsp;<tt>\documentclass[some,options]{whatever}</tt>
-    <p/>
-    After doing this, <tt>\MainClass</tt> contains the name of the
-    first loaded class, <tt>\ClassList</tt> contains a set of triples
-    &lt;class name&gt;, &lt;options directly requested&gt;, and
-    &lt;version requested&gt;.  (The package may also be loaded after
-    <tt>\documentclass</tt>, in which case some information is not
-    available.)
-    <p/>
-    The package is part of the <xref refid='oberdiek'>oberdiek</xref>
-    bundle.
-  </description>
-  <documentation details='Package documentation'
-      href='ctan:/macros/latex/contrib/oberdiek/classlist.pdf'/>
-  <ctan file='true' path='/macros/latex/contrib/oberdiek/classlist.dtx'/>
-  <miktex location='oberdiek'/>
-  <texlive location='oberdiek'/>
-  <install path='/macros/latex/contrib/oberdiek/oberdiek.tds.zip'/>
-</entry>
-%</catalogue>
-%    \end{macrocode}
-%
 % \begin{History}
 %   \begin{Version}{2005/06/19 v1.0}
 %   \item

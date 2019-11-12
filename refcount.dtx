@@ -1489,55 +1489,6 @@ and the derived files
 %\end{verbatim}
 % \end{quote}
 %
-% \section{Catalogue}
-%
-% The following XML file can be used as source for the
-% \href{http://mirror.ctan.org/help/Catalogue/catalogue.html}{\TeX\ Catalogue}.
-% The elements \texttt{caption} and \texttt{description} are imported
-% from the original XML file from the Catalogue.
-% The name of the XML file in the Catalogue is \xfile{refcount.xml}.
-%    \begin{macrocode}
-%<*catalogue>
-<?xml version='1.0' encoding='us-ascii'?>
-<!DOCTYPE entry SYSTEM 'catalogue.dtd'>
-<entry datestamp='$Date$' modifier='$Author$' id='refcount'>
-  <name>refcount</name>
-  <caption>Counter operations with label references.</caption>
-  <authorref id='auth:oberdiek'/>
-  <copyright owner='Heiko Oberdiek' year='1998,2000,2006,2008,2010,2011'/>
-  <license type='lppl1.3'/>
-  <version number='3.5'/>
-  <description>
-    Provides commands <tt>\setcounterref</tt> and
-    <tt>\addtocounterref</tt> which use the section (or whatever)
-    number from the reference as the value to put into the counter, as
-    in:
-
-    <pre>
-    ...\label{sec:foo}
-    ...
-    \setcounterref{foonum}{sec:foo}
-    </pre>
-    Commands <tt>\setcounterpageref</tt> and
-    <tt>\addtocounterpageref</tt> do the corresponding thing with the
-    page reference of the label.
-    <p/>
-    No <tt>.ins</tt> file is distributed; process the
-    <tt>.dtx</tt> with plain TeX to create one.
-    <p/>
-    The package is part of the <xref refid='oberdiek'>oberdiek</xref>
-    bundle.
-  </description>
-  <documentation details='Package documentation'
-      href='ctan:/macros/latex/contrib/oberdiek/refcount.pdf'/>
-  <ctan file='true' path='/macros/latex/contrib/oberdiek/refcount.dtx'/>
-  <miktex location='oberdiek'/>
-  <texlive location='oberdiek'/>
-  <install path='/macros/latex/contrib/oberdiek/oberdiek.tds.zip'/>
-</entry>
-%</catalogue>
-%    \end{macrocode}
-%
 % \begin{History}
 %   \begin{Version}{1998/04/08 v1.0}
 %   \item

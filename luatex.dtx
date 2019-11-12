@@ -1878,49 +1878,6 @@ table.insert(package.searchers or package.loaders, kpse_module_loader)
 %\end{verbatim}
 % \end{quote}
 %
-% \section{Catalogue}
-%
-% The following XML file can be used as source for the
-% \href{http://mirror.ctan.org/help/Catalogue/catalogue.html}{\TeX\ Catalogue}.
-% The elements \texttt{caption} and \texttt{description} are imported
-% from the original XML file from the Catalogue.
-% The name of the XML file in the Catalogue is \xfile{luatex.xml}.
-%    \begin{macrocode}
-%<*catalogue>
-<?xml version='1.0' encoding='us-ascii'?>
-<!DOCTYPE entry SYSTEM 'catalogue.dtd'>
-<entry datestamp='$Date$' modifier='$Author$' id='luatex'>
-  <name>luatex</name>
-  <caption>The LuaTeX engine.</caption>
-  <authorref id='auth:oberdiek'/>
-  <copyright owner='Heiko Oberdiek' year='2007,2009,2010'/>
-  <license type='lppl1.3'/>
-  <version number='0.6'/>
-  <description>
-    LuaTeX is an extended version of pdfTeX using Lua as an embedded
-    scripting language.  The LuaTeX project&#x2019;s main objective
-    is to provide an open and configurable variant of TeX while at the
-    same time offering downward compatibility.
-    <p/>
-    LuaTeX uses Unicode (as UTF-8) as its default input encoding, and
-    is able to use modern (OpenType) fonts (for both text and mathematics).
-    <p/>
-    It should be noted that LuaTeX is still under development; its
-    specification has been declared stable, but absolute stability
-    may not in practice be assumed.
-    <p/>
-    The package is part of the <xref refid='oberdiek'>oberdiek</xref> bundle.
-  </description>
-  <documentation details='Package documentation'
-      href='ctan:/macros/latex/contrib/oberdiek/luatex.pdf'/>
-  <ctan file='true' path='/macros/latex/contrib/oberdiek/luatex.dtx'/>
-  <miktex location='oberdiek'/>
-  <texlive location='oberdiek'/>
-  <install path='/macros/latex/contrib/oberdiek/oberdiek.tds.zip'/>
-</entry>
-%</catalogue>
-%    \end{macrocode}
-%
 % \begin{History}
 %   \begin{Version}{2007/12/12 v0.1}
 %   \item
