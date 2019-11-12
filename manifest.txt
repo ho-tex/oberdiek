@@ -72,8 +72,6 @@ doc/latex/oberdiek/luacolor.pdf
 doc/latex/oberdiek/luatex.pdf
 doc/latex/oberdiek/magicnum.pdf
 doc/latex/oberdiek/magicnum.txt
-doc/latex/oberdiek/makerobust-example.tex
-doc/latex/oberdiek/makerobust.pdf
 doc/latex/oberdiek/mleftright.pdf
 doc/latex/oberdiek/oberdiek.pdf
 doc/latex/oberdiek/pagegrid.pdf
@@ -189,7 +187,6 @@ source/latex/oberdiek/ltxcmds.dtx
 source/latex/oberdiek/luacolor.dtx
 source/latex/oberdiek/luatex.dtx
 source/latex/oberdiek/magicnum.dtx
-source/latex/oberdiek/makerobust.dtx
 source/latex/oberdiek/mleftright.dtx
 source/latex/oberdiek/oberdiek.ins
 source/latex/oberdiek/oberdiek.tex
@@ -368,7 +365,6 @@ tex/latex/oberdiek/kvoptions.sty
 tex/latex/oberdiek/letltxmacro.sty
 tex/latex/oberdiek/listingsutf8.sty
 tex/latex/oberdiek/luacolor.sty
-tex/latex/oberdiek/makerobust.sty
 tex/latex/oberdiek/pagegrid.sty
 tex/latex/oberdiek/pagesel.sty
 tex/latex/oberdiek/pdfcolfoot.sty
