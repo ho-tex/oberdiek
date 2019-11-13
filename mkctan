@@ -56,7 +56,6 @@ cp \
 # make pdf
 rm *.bbl || echo no bbl
 
-gzip hobsub.dtx ifpdf.dtx ifluatex.dtx ifvtex.dtx
 for i in *.dtx
 do
 lualatex ${i}
@@ -70,7 +69,7 @@ if [ -f ${i/.dtx/.idx} ]; then
     lualatex ${i}
 fi
 done
-gunzip hobsub.dtx ifpdf.dtx ifluatex.dtx ifvtex.dtx
+
 
 lualatex oberdiek
 lualatex oberdiek
