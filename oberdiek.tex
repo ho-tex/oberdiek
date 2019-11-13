@@ -31,7 +31,7 @@
 %
 \documentclass[a4paper,12pt]{article}
 
-\usepackage{ifluatex}
+\usepackage{iftex}
 \ifluatex
   \usepackage{fontspec}[2011/09/18]%
   \usepackage{unicode-math}[2011/09/19]%
@@ -284,8 +284,6 @@
 \entry{ltxcmds}{2011/11/09}{1.22}{\hologo{LaTeX} kernel commands for general use}%
 [\entrysep]
 \entry{luacolor}{2019/07/25}{1.12}{Color support via \hologo{LuaTeX}'s attributes}%
-[\entrysep]
-\entry{luatex}{2019/07/25}{0.7}{\hologo{LuaTeX} basic definition package}%
 [\entrysep]
 \entry{magicnum}{2019/07/25}{1.6}{Magic numbers}%
 [\entrysep]
@@ -666,15 +664,6 @@ graphics extensions of package \xpackage{graphics}.
 
 
 \newpage
-\subsection{\pkgsectformat{hobsub}}
-\label{hobsub}
-\begin{abstract}
-Package \xpackage{hobsub} implements the idea of loading
-several packages in one big collection package.
-\end{abstract}
-%\tocinclude{hobsub}
-
-\newpage
 \subsection{\pkgsectformat{hologo}}
 \label{hologo}
 \begin{abstract}
@@ -899,16 +888,6 @@ Package \xpackage{luacolor} implements color support based
 on \LuaTeX's node attributes.
 \end{abstract}
 \tocinclude{luacolor}
-
-\newpage
-\subsection{\pkgsectformat{luatex}}
-\label{luatex}
-\begin{abstract}
-This package manages the new and extended features and resources
-that \LuaTeX\ provides. Examples are attributes and catcode
-tables.
-\end{abstract}
-\tocinclude{luatex}
 
 \newpage
 \subsection{\pkgsectformat{magicnum}}
