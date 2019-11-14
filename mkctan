@@ -34,7 +34,7 @@ mkdir -p tex/latex/oberdiek
 
 # unpack
 #
-cp ../../*.dtx ../../*.ins ../../hobsub*.sty ../../*.tex ../../*.bib ../../*.txt .
+cp ../../*.dtx ../../*.ins  ../../*.tex ../../*.bib ../../manifest.txt ../../README.txt .
 tex oberdiek.ins
 
 ## Lua need to be here for doc generation must fix this one day
