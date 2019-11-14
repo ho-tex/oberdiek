@@ -98,7 +98,6 @@ rm -f oberdiek.zip
 zip oberdiek.zip oberdiek.tds.zip oberdiek/\
 {README.txt,\
 oberdiek.tex,\
-hobsub*.sty,\
 *.pdf,\
 *.dtx\
 }
