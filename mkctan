@@ -42,7 +42,6 @@ cp \
     luacolor.lua \
     pdftexcmds.lua oberdiek.pdftexcmds.lua \
     magicnum.lua oberdiek.magicnum.lua \
-    oberdiek.luatex.lua \
     scripts/oberdiek
 
 # cp \
