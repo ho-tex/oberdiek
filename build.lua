@@ -6,7 +6,7 @@ module = "oberdiek"
 installfiles = {'*.def','*.sty','*.dfu','oberdiek.luatex.lua', 'luacolor.lua','magicnum.lua','pdftexcmds.lua','bmpsize-test.tex'}
 -- unpackfile = {'oberdiek.ins'}
 
-
+-- "config-plain-noxetex" "config-plain-luatex"
 checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config-pdftex"}
 maxprintline=10000
 checkruns = 2
