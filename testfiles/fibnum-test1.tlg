@@ -14,12 +14,8 @@ Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-) (../ifluatex.sty
-Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
-(../iftex.sty
+) (../iftex.sty
 Package: iftex ....-..-.. v... TeX engine tests
-)) (../ifpdf.sty
-Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.

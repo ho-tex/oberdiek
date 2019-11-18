@@ -20,13 +20,12 @@ Package: iftex ....-..-.. v... TeX engine tests
 Package: kvdefinekeys ....-..-.. v... Define keys (HO)
 ) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(../ifpdf.sty
-Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
-)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks...
+) (../ifpdf.sty
+Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
 ) (../ifxetex.sty
 Package: ifxetex ....-..-.. v... ifxetex legacy package. Use iftex instead.
 ) (../ifvtex.sty
