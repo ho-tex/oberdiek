@@ -290,7 +290,7 @@ LaTeX Font Info:    ... okay on input line ....
 \MPnumerator=\count...
 \makeMPintoPDFobject=\count...
 \everyMPtoPDFconversion=\toks...
-) (epstopdf-base.sty
+) (../epstopdf-base.sty
 Package: epstopdf-base ....-..-.. v... Base part for package epstopdf
 (kvoptions.sty
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
@@ -307,9 +307,6 @@ Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
 Package: iftex ....-..-.. v... TeX engine tests
 ))))) (pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(../ifpdf.sty
-Package: ifpdf ....-..-.. v... ifpdf legacy package. Use iftex instead.
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.

@@ -32,9 +32,9 @@ Completed box being shipped out [1]
 .....\localrightbox=null
 ....\hbox(10.0+2.0)x0.0, direction TLT
 .....\hbox(10.0+2.0)x36.0, direction TLT
-......\pdfliteral direct <lua data reference 770>
+......\pdfliteral direct <lua data reference ...>
 ......\rule(10.0+2.0)x36.0
-....\pdfliteral direct <lua data reference 772>
+....\pdfliteral direct <lua data reference ...>
 ....\TU/lmr/m/n/12 t
 ....\TU/lmr/m/n/12 e
 ....\TU/lmr/m/n/12 s
@@ -53,9 +53,9 @@ Completed box being shipped out [1]
 ....\discretionary (penalty 50)
 .....= \hbox(10.0+2.0)x0.0, direction TLT
 .....= .\hbox(10.0+2.0)x36.0, direction TLT
-.....= ..\pdfliteral direct <lua data reference 773>
+.....= ..\pdfliteral direct <lua data reference ...>
 .....= ..\rule(10.0+2.0)x36.0
-.....= \pdfliteral direct <lua data reference 774>
+.....= \pdfliteral direct <lua data reference ...>
 .....= \TU/lmr/m/n/12 t
 .....= \TU/lmr/m/n/12 e
 .....= \TU/lmr/m/n/12 s
@@ -83,8 +83,9 @@ regression-test.tex
   luatex.def    ....-..-.. v... Graphics/color driver for luatex
 luacolor.sty    ....-..-.. v... Color support via LuaTeX's attributes (HO)
 infwarerr.sty    ....-..-.. v... Providing info/warning/error messages (HO)
-ifluatex.sty    ....-..-.. v... Provides the ifluatex switch (HO)
-   ifpdf.sty    ....-..-.. v... Provides the ifpdf switch
+ifluatex.sty    ....-..-.. v... ifluatex legacy package. Use iftex instead.
+   iftex.sty    ....-..-.. v... TeX engine tests
+   ifpdf.sty    ....-..-.. v... ifpdf legacy package. Use iftex instead.
  ltxcmds.sty    ....-..-.. v... LaTeX kernel commands for general use (HO)
 atbegshi.sty    ....-..-.. v... At begin shipout hook (HO)
 supp-pdf.mkii
