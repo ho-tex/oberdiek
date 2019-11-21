@@ -2902,9 +2902,9 @@ while(<IN>) {
             print "!!! Warning: File `$file' not found!\n";
         }
         else {
-            my $size = @s[7];
-            my $mtime = @s[9];
-            my $ctime = @s[10]; # inode change time
+            my $size = $s[7];
+            my $mtime = $s[9];
+            my $ctime = $s[10]; # inode change time
 
             my ($sec, $min, $hour, $mday, $mon, $year) =
                     localtime($mtime);
@@ -3285,6 +3285,8 @@ __END__
 %   \begin{Version}{2019/11/24 v2.10}
 %   \item
 %     Fix perl header comment 
+%   \item
+%     Address perl warning \verb|Scalar value @s[7] better written as $s[7] at pdfatfi.pl line 147|
 %   \end{Version}
 % \end{History}
 %
