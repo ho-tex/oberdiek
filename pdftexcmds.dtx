@@ -1145,20 +1145,6 @@ and the derived files
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\ifnum\luatexversion<80
-  \begingroup\expandafter\expandafter\expandafter\endgroup
-  \expandafter\ifx\csname RequirePackage\endcsname\relax
-    \def\TMP@RequirePackage#1[#2]{%
-      \begingroup\expandafter\expandafter\expandafter\endgroup
-      \expandafter\ifx\csname ver@#1.sty\endcsname\relax
-        \input #1.sty\relax
-      \fi
-    }%
-    \TMP@RequirePackage{luatex-loader}[2009/04/10]%
-  \else
-    \RequirePackage{luatex-loader}[2009/04/10]%
-  \fi
-\fi
 \pdftexcmds@directlua{%
   require("pdftexcmds")%
 }
