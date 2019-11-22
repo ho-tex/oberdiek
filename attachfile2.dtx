@@ -440,9 +440,7 @@ and the derived files
 % \subsubsection{Loading of packages}
 %
 %    \begin{macrocode}
-\RequirePackage{ifpdf}[2009/04/10]
-\RequirePackage{ifxetex}
-\RequirePackage{ifluatex}[2009/04/10]
+\RequirePackage{iftex}[2019/11/07]
 \RequirePackage{keyval}
 \RequirePackage{color}
 \RequirePackage{infwarerr}[2010/04/08]
@@ -3287,6 +3285,8 @@ __END__
 %     Fix perl header comment 
 %   \item
 %     Address perl warning \verb|Scalar value @s[7] better written as $s[7] at pdfatfi.pl line 147|
+%   \item
+%     use \CTANpkg{iftex} not \CTANpkg{ifpdf}, \CTANpkg{ifxetex}, \CTANpkg{ifluatex}.
 %   \end{Version}
 % \end{History}
 %
