@@ -12,10 +12,6 @@ Just download
   CTAN:install/macros/latex/contrib/oberdiek.tds.zip
 and unzip it in your preferred TDS (texmf) tree.
 
-Hint for attachfile2: This package comes with a Perl script pdfatfi.pl
-that should be installed somewhere in PATH as `pdfatfi', see also
-package documentation.
-
 
 Other files in the CTAN directory:
 * README: This file.

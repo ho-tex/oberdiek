@@ -10,7 +10,6 @@ doc/latex/oberdiek/atbegshi-example1.tex
 doc/latex/oberdiek/atbegshi-example2.tex
 doc/latex/oberdiek/atbegshi.pdf
 doc/latex/oberdiek/atenddvi.pdf
-doc/latex/oberdiek/attachfile2.pdf
 doc/latex/oberdiek/atveryend.pdf
 doc/latex/oberdiek/auxhook.pdf
 doc/latex/oberdiek/bigintcalc.pdf
@@ -122,14 +121,12 @@ doc/latex/oberdiek/zref.pdf
 scripts/oberdiek/luacolor.lua
 scripts/oberdiek/magicnum.lua
 scripts/oberdiek/oberdiek.magicnum.lua
-scripts/oberdiek/pdfatfi.pl
 source/latex/oberdiek/accsupp.dtx
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/alphalph.dtx
 source/latex/oberdiek/askinclude.dtx
 source/latex/oberdiek/atbegshi.dtx
 source/latex/oberdiek/atenddvi.dtx
-source/latex/oberdiek/attachfile2.dtx
 source/latex/oberdiek/atveryend.dtx
 source/latex/oberdiek/auxhook.dtx
 source/latex/oberdiek/bigintcalc.dtx
@@ -292,11 +289,6 @@ tex/latex/oberdiek/accsupp.sty
 tex/latex/oberdiek/aliascnt.sty
 tex/latex/oberdiek/askinclude.sty
 tex/latex/oberdiek/atenddvi.sty
-tex/latex/oberdiek/atfi-dvipdfmx.def
-tex/latex/oberdiek/atfi-dvips.def
-tex/latex/oberdiek/atfi-pdftex.def
-tex/latex/oberdiek/atfi-luatex.def
-tex/latex/oberdiek/attachfile2.sty
 tex/latex/oberdiek/atveryend.sty
 tex/latex/oberdiek/auxhook.sty
 tex/latex/oberdiek/bkm-dvipdfm.def
