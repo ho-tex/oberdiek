@@ -23,8 +23,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-0
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-0
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-30
 #2<-
@@ -125,8 +125,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-0
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-0
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-30
 #2<-
@@ -222,8 +222,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-0
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-0
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-30
 #2<-
@@ -255,8 +255,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-0
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-0
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-30
 #2<-
@@ -357,8 +357,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-0
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-0
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-30
 #2<-
@@ -636,8 +636,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-1
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-1
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-31
 #2<-
@@ -734,8 +734,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-1
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-1
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-31
 #2<-
@@ -827,8 +827,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-1
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-1
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-31
 #2<-
@@ -856,8 +856,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-1
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-1
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-31
 #2<-
@@ -954,8 +954,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-1
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-1
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-31
 #2<-
@@ -1229,8 +1229,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-2
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-2
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-32
 #2<-
@@ -1327,8 +1327,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-2
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-2
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-32
 #2<-
@@ -1420,8 +1420,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-2
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-2
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-32
 #2<-
@@ -1449,8 +1449,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-2
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-2
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-32
 #2<-
@@ -1547,8 +1547,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-2
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-2
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-32
 #2<-
@@ -1822,8 +1822,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-3
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-3
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-33
 #2<-
@@ -1920,8 +1920,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-3
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-3
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-33
 #2<-
@@ -2013,8 +2013,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-3
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-3
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-33
 #2<-
@@ -2042,8 +2042,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-3
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-3
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-33
 #2<-
@@ -2140,8 +2140,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-3
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-3
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-33
 #2<-
@@ -2415,8 +2415,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-14
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-14
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3134
 #2<-
@@ -2516,8 +2516,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-14
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-14
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3134
 #2<-
@@ -2612,8 +2612,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-14
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-14
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3134
 #2<-
@@ -2644,8 +2644,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-14
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-14
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3134
 #2<-
@@ -2745,8 +2745,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-14
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-14
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3134
 #2<-
@@ -3032,8 +3032,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-15
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-15
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3135
 #2<-
@@ -3133,8 +3133,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-15
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-15
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3135
 #2<-
@@ -3229,8 +3229,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-15
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-15
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3135
 #2<-
@@ -3261,8 +3261,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-15
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-15
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3135
 #2<-
@@ -3362,8 +3362,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-15
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-15
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3135
 #2<-
@@ -3649,8 +3649,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567896
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567896
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383936
 #2<-
@@ -3804,8 +3804,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567896
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567896
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383936
 #2<-
@@ -3954,8 +3954,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567896
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567896
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383936
 #2<-
@@ -4040,8 +4040,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567896
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567896
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383936
 #2<-
@@ -4195,8 +4195,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567896
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567896
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383936
 #2<-
@@ -4698,8 +4698,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567897
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567897
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383937
 #2<-
@@ -4853,8 +4853,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567897
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567897
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383937
 #2<-
@@ -5003,8 +5003,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567897
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567897
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383937
 #2<-
@@ -5089,8 +5089,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567897
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567897
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383937
 #2<-
@@ -5244,8 +5244,8 @@ Package qstest Info: Passed: cmp on input line ....
 #1<-12345678901234567897
 \BIC@Expand #1->\romannumeral 0\expandafter \expandafter \expandafter \BIC@Space \pdf@unescapehex {\expandafter \expandafter \expandafter \BIC@StripHexSpace \pdf@escapehex {#1}20\@nil }
 #1<-12345678901234567897
-\pdf@unescapehex {->\pdfunescapehex {
-\pdf@escapehex {->\pdfescapehex {
+\pdf@unescapehex ->\pdfunescapehex 
+\pdf@escapehex ->\pdfescapehex 
 \BIC@StripHexSpace #120#2\@nil ->#1\ifx \\#2\\\else \BIC@AfterFi {\BIC@StripHexSpace #2\@nil }\BIC@Fi 
 #1<-3132333435363738393031323334353637383937
 #2<-

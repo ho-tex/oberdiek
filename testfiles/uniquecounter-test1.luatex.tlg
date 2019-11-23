@@ -6,7 +6,7 @@ LaTeX Warning: You have requested package `',
 Package: uniquecounter ....-..-.. v... Provide unlimited unique counter (HO)
 (bigintcalc.sty
 Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
-(pdftexcmds.sty
+(../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)

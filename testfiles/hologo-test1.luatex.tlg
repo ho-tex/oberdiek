@@ -18,7 +18,7 @@ Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
 Package: iftex ....-..-.. v... TeX engine tests
 )))) (kvdefinekeys.sty
 Package: kvdefinekeys ....-..-.. v... Define keys (HO)
-) (pdftexcmds.sty
+) (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.

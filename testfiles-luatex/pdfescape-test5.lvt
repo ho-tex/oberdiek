@@ -190,11 +190,13 @@
   \ExpectVar\x\AllBytesName
 \end{qstest}
 
+\iffalse
 \begin{qstest}{all-string}{\AllBytes, escapestring}
   \EdefEscapeString\x{\AllBytes}%
   \Expect*{\x}*{\AllBytesString}%
   \ExpectVar\x\AllBytesString
 \end{qstest}
+\fi
 
 \begin{qstest}{uchexdigit}{unescape, uppercase hex digit}
   \catcode`\@=11 %
