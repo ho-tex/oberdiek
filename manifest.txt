@@ -64,8 +64,6 @@ doc/latex/oberdiek/letltxmacro.pdf
 doc/latex/oberdiek/listingsutf8.pdf
 doc/latex/oberdiek/ltxcmds.pdf
 doc/latex/oberdiek/luacolor.pdf
-doc/latex/oberdiek/magicnum.pdf
-doc/latex/oberdiek/magicnum.txt
 doc/latex/oberdiek/mleftright.pdf
 doc/latex/oberdiek/oberdiek.pdf
 doc/latex/oberdiek/pagegrid.pdf
@@ -112,8 +110,6 @@ doc/latex/oberdiek/twoopt.pdf
 doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
 scripts/oberdiek/luacolor.lua
-scripts/oberdiek/magicnum.lua
-scripts/oberdiek/oberdiek.magicnum.lua
 source/latex/oberdiek/accsupp.dtx
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/alphalph.dtx
@@ -162,7 +158,6 @@ source/latex/oberdiek/letltxmacro.dtx
 source/latex/oberdiek/listingsutf8.dtx
 source/latex/oberdiek/ltxcmds.dtx
 source/latex/oberdiek/luacolor.dtx
-source/latex/oberdiek/magicnum.dtx
 source/latex/oberdiek/mleftright.dtx
 source/latex/oberdiek/oberdiek.ins
 source/latex/oberdiek/oberdiek.tex
@@ -218,7 +213,6 @@ tex/generic/oberdiek/intcalc.sty
 tex/generic/oberdiek/kvdefinekeys.sty
 tex/generic/oberdiek/kvsetkeys.sty
 tex/generic/oberdiek/ltxcmds.sty
-tex/generic/oberdiek/magicnum.sty
 tex/generic/oberdiek/mleftright.sty
 tex/generic/oberdiek/pdfcol.sty
 tex/generic/oberdiek/pdfcrypt.sty
