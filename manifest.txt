@@ -35,7 +35,6 @@ doc/latex/oberdiek/example/eolgrab-example-env.tex
 doc/latex/oberdiek/example/eolgrab-example-ltx.tex
 doc/latex/oberdiek/example/eolgrab-example-sec.tex
 doc/latex/oberdiek/example/hologo-example.tex
-doc/latex/oberdiek/example-mycolorsetup.sty
 doc/latex/oberdiek/fibnum.pdf
 doc/latex/oberdiek/flags.pdf
 doc/latex/oberdiek/gettitlestring.pdf
