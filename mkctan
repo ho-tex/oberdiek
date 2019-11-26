@@ -40,7 +40,6 @@ tex oberdiek.ins
 ## Lua need to be here for doc generation must fix this one day
 cp \
     luacolor.lua \
-    magicnum.lua oberdiek.magicnum.lua \
     scripts/oberdiek
 
 
