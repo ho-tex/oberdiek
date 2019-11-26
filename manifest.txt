@@ -63,7 +63,6 @@ doc/latex/oberdiek/letltxmacro-showcases.tex
 doc/latex/oberdiek/letltxmacro.pdf
 doc/latex/oberdiek/listingsutf8.pdf
 doc/latex/oberdiek/ltxcmds.pdf
-doc/latex/oberdiek/luacolor.pdf
 doc/latex/oberdiek/mleftright.pdf
 doc/latex/oberdiek/oberdiek.pdf
 doc/latex/oberdiek/pagegrid.pdf
@@ -109,7 +108,6 @@ doc/latex/oberdiek/transparent.pdf
 doc/latex/oberdiek/twoopt.pdf
 doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
-scripts/oberdiek/luacolor.lua
 source/latex/oberdiek/accsupp.dtx
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/alphalph.dtx
@@ -157,7 +155,6 @@ source/latex/oberdiek/kvsetkeys.dtx
 source/latex/oberdiek/letltxmacro.dtx
 source/latex/oberdiek/listingsutf8.dtx
 source/latex/oberdiek/ltxcmds.dtx
-source/latex/oberdiek/luacolor.dtx
 source/latex/oberdiek/mleftright.dtx
 source/latex/oberdiek/oberdiek.ins
 source/latex/oberdiek/oberdiek.tex
@@ -317,7 +314,6 @@ tex/latex/oberdiek/kvoptions-patch.sty
 tex/latex/oberdiek/kvoptions.sty
 tex/latex/oberdiek/letltxmacro.sty
 tex/latex/oberdiek/listingsutf8.sty
-tex/latex/oberdiek/luacolor.sty
 tex/latex/oberdiek/pagegrid.sty
 tex/latex/oberdiek/pagesel.sty
 tex/latex/oberdiek/pdfcolfoot.sty

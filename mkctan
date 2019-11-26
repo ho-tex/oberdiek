@@ -37,11 +37,6 @@ mkdir -p tex/latex/oberdiek
 cp ../../*.dtx ../../*.ins  ../../*.tex ../../*.bib ../../manifest.txt ../../README.txt .
 tex oberdiek.ins
 
-## Lua need to be here for doc generation must fix this one day
-cp \
-    luacolor.lua \
-    scripts/oberdiek
-
 
 # make pdf
 rm *.bbl || echo no bbl
