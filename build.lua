@@ -3,7 +3,7 @@
 -- Build script for oberdiek bundle (check only)
 module = "oberdiek"
 --sourcefiles = {'*.dtx'}
-installfiles = {'*.def','*.sty','*.dfu','luacolor.lua','bmpsize-test.tex'}
+installfiles = {'*.def','*.sty','*.dfu','bmpsize-test.tex'}
 -- unpackfile = {'oberdiek.ins'}
 
 -- "config-plain-noxetex" "config-plain-luatex"
