@@ -56,7 +56,6 @@ doc/latex/oberdiek/iflang.pdf
 doc/latex/oberdiek/infwarerr.pdf
 doc/latex/oberdiek/intcalc.pdf
 doc/latex/oberdiek/kvdefinekeys.pdf
-doc/latex/oberdiek/kvoptions.pdf
 doc/latex/oberdiek/kvsetkeys-example.tex
 doc/latex/oberdiek/kvsetkeys.pdf
 doc/latex/oberdiek/letltxmacro-showcases.tex
@@ -150,7 +149,6 @@ source/latex/oberdiek/iflang.dtx
 source/latex/oberdiek/infwarerr.dtx
 source/latex/oberdiek/intcalc.dtx
 source/latex/oberdiek/kvdefinekeys.dtx
-source/latex/oberdiek/kvoptions.dtx
 source/latex/oberdiek/kvsetkeys.dtx
 source/latex/oberdiek/letltxmacro.dtx
 source/latex/oberdiek/listingsutf8.dtx
@@ -310,8 +308,6 @@ tex/latex/oberdiek/ix-name.def
 tex/latex/oberdiek/ix-slot.def
 tex/latex/oberdiek/ix-uc.def
 tex/latex/oberdiek/ix-utf8enc.dfu
-tex/latex/oberdiek/kvoptions-patch.sty
-tex/latex/oberdiek/kvoptions.sty
 tex/latex/oberdiek/letltxmacro.sty
 tex/latex/oberdiek/listingsutf8.sty
 tex/latex/oberdiek/pagegrid.sty
