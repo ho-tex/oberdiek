@@ -17,12 +17,9 @@ cd build
 mkdir oberdiek
 cd oberdiek
 
-mkdir -p $HOME/texmf/scripts/oberdiek
-
 
 #  make target tds structure
 mkdir -p bibtex/bib/oberdiek
-mkdir -p scripts/oberdiek
 mkdir -p doc/latex/oberdiek
 mkdir -p doc/latex/oberdiek/example
 # mkdir -p doc/latex/oberdiek/test
@@ -75,7 +72,7 @@ echo making tds zip
 
 rm -f ../oberdiek.tds.zip
 zip -r ../oberdiek.tds.zip \
-    bibtex doc scripts source tex
+    bibtex doc source tex
 
 cd ..
 echo making main zip
