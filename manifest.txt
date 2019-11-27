@@ -101,8 +101,6 @@ doc/latex/oberdiek/tabularkv-example.tex
 doc/latex/oberdiek/tabularkv.pdf
 doc/latex/oberdiek/telprint.pdf
 doc/latex/oberdiek/thepdfnumber.pdf
-doc/latex/oberdiek/transparent-example.tex
-doc/latex/oberdiek/transparent.pdf
 doc/latex/oberdiek/twoopt.pdf
 doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
@@ -185,7 +183,6 @@ source/latex/oberdiek/tabularht.dtx
 source/latex/oberdiek/tabularkv.dtx
 source/latex/oberdiek/telprint.dtx
 source/latex/oberdiek/thepdfnumber.dtx
-source/latex/oberdiek/transparent.dtx
 source/latex/oberdiek/twoopt.dtx
 source/latex/oberdiek/uniquecounter.dtx
 tex/generic/oberdiek/alphalph.sty
@@ -322,6 +319,5 @@ tex/latex/oberdiek/stackrel.sty
 tex/latex/oberdiek/stampinclude.sty
 tex/latex/oberdiek/tabularht.sty
 tex/latex/oberdiek/tabularkv.sty
-tex/latex/oberdiek/transparent.sty
 tex/latex/oberdiek/twoopt.sty
 tex/latex/oberdiek/xcolor-patch.sty
