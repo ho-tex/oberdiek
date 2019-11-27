@@ -301,12 +301,6 @@ tex/latex/oberdiek/hypdestopt.sty
 tex/latex/oberdiek/hypdoc.sty
 tex/latex/oberdiek/hypgotoe.sty
 tex/latex/oberdiek/ifdraft.sty
-tex/latex/oberdiek/ix-alias.def
-tex/latex/oberdiek/ix-math.def
-tex/latex/oberdiek/ix-name.def
-tex/latex/oberdiek/ix-slot.def
-tex/latex/oberdiek/ix-uc.def
-tex/latex/oberdiek/ix-utf8enc.dfu
 tex/latex/oberdiek/letltxmacro.sty
 tex/latex/oberdiek/listingsutf8.sty
 tex/latex/oberdiek/pagegrid.sty
