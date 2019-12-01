@@ -19,6 +19,8 @@ checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config
 maxprintline=10000
 checkruns = 2
 
+--typesetexe = "lualatex-dev"
+
 function docinit_hook ()
  return  cp("*.bib", "build/unpacked" ,"build/doc")
 end
