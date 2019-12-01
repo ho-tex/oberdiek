@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `iflang'.
 Package: iflang ....-..-.. v... Checks for the current language (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)

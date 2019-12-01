@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `bitset'.
 Package: bitset ....-..-.. v... Handle bit-vector datatype (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (intcalc.sty
 Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)

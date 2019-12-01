@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `rotchiffre'.
 Package: rotchiffre ....-..-.. v... Perform simple rotation ciphers (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)

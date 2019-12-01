@@ -6,6 +6,6 @@ LaTeX Warning: You have requested package `',
 Package: eolgrab ....-..-.. v... Catch arguments delimited by end of line (HO)
 (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (infwarerr.sty
+) (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ))

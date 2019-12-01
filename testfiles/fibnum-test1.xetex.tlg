@@ -12,7 +12,7 @@ Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)
 Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
 (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (../iftex.sty
 Package: iftex ....-..-.. v... TeX engine tests

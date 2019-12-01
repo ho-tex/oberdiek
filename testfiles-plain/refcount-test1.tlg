@@ -4,6 +4,6 @@ Don't change this file in any respect.
 Package: refcount ....-..-.. v... Data extraction from label references (HO)
 (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (infwarerr.sty
+) (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ))

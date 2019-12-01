@@ -31,7 +31,7 @@ File: listings.cfg ....-..-.. 1.8c listings configuration
 Package: listings ....-..-.. 1.8c (Carsten Heinz)
 (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (../iftex.sty
 Package: iftex ....-..-.. v... TeX engine tests
@@ -41,7 +41,7 @@ Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (stringenc.sty
+) (../stringenc.sty
 Package: stringenc ....-..-.. v... Convert strings between diff. encodings (HO)
 (pdfescape.sty
 Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)

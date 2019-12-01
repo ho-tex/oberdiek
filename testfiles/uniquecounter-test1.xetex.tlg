@@ -8,7 +8,7 @@ Package: uniquecounter ....-..-.. v... Provide unlimited unique counter (HO)
 Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
 (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
-(infwarerr.sty
+(../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (../iftex.sty
 Package: iftex ....-..-.. v... TeX engine tests
