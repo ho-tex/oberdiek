@@ -3,8 +3,14 @@
 -- Build script for oberdiek bundle (check only)
 module = "oberdiek"
 
-installfiles = {'*.def','*.sty','*.dfu',"*.bib",'*.tex','*.dtx','*.pdf','*.cfg','oberdiek.ins'}
-textfiles={"*.md","README.txt"}
+installfiles = {'*.def','*.sty','*.dfu',
+"oberdiek-*.bib",
+'*example*.tex',
+'letltxmacro-showcases.tex',
+'oberdiek.tex',
+'bmpsize-test.tex',
+'*.dtx','*.pdf','*.cfg','oberdiek.ins'}
+textfiles={"README.txt"}
 unpackfile = {'oberdiek.ins'}
 typesetfiles={"*.dtx","oberdiek.tex"}
 docfiles={"*.tex"}
@@ -19,7 +25,7 @@ function no_ctan()
 error("use mkctan script")
 end
 
-target_list.ctan={
+target_list.zzzzzzzctan={
 bundle_func=no_ctan,
 desc="CTAN packaging disabled",
 func=no_ctan
