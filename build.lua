@@ -256,7 +256,6 @@ tdslocations={
 "tex/latex/oberdiek/chemarr.sty",
 "tex/latex/oberdiek/classlist.sty",
 "tex/latex/oberdiek/colonequals.sty",
-"tex/latex/oberdiek/dtx-attach.sty",
 "tex/latex/oberdiek/dvipscol.sty",
 "tex/latex/oberdiek/enparen.sty",
 "tex/latex/oberdiek/flags.sty",
