@@ -19,6 +19,10 @@ checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config
 maxprintline=10000
 checkruns = 2
 
+function docinit_hook ()
+ return  cp("*.bib", "build/unpacked" ,"build/doc")
+end
+
 packtdszip  = true
 
 function no_ctan()
