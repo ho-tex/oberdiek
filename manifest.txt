@@ -22,9 +22,6 @@ doc/latex/oberdiek/chemarr.pdf
 doc/latex/oberdiek/classlist.pdf
 doc/latex/oberdiek/colonequals.pdf
 doc/latex/oberdiek/dvipscol.pdf
-doc/latex/oberdiek/embedfile-example-collection.tex
-doc/latex/oberdiek/embedfile-example-plain.tex
-doc/latex/oberdiek/embedfile.pdf
 doc/latex/oberdiek/engord.pdf
 doc/latex/oberdiek/enparen.pdf
 doc/latex/oberdiek/eolgrab.pdf
@@ -116,7 +113,6 @@ source/latex/oberdiek/chemarr.dtx
 source/latex/oberdiek/classlist.dtx
 source/latex/oberdiek/colonequals.dtx
 source/latex/oberdiek/dvipscol.dtx
-source/latex/oberdiek/embedfile.dtx
 source/latex/oberdiek/engord.dtx
 source/latex/oberdiek/enparen.dtx
 source/latex/oberdiek/eolgrab.dtx
@@ -181,7 +177,6 @@ tex/generic/oberdiek/atbegshi.sty
 tex/generic/oberdiek/bigintcalc.sty
 tex/generic/oberdiek/bitset.sty
 tex/generic/oberdiek/catchfile.sty
-tex/generic/oberdiek/embedfile.sty
 tex/generic/oberdiek/engord.sty
 tex/generic/oberdiek/eolgrab.sty
 tex/generic/oberdiek/etexcmds.sty
