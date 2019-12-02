@@ -6,7 +6,6 @@ module = "oberdiek"
 installfiles = {'*.def','*.sty','*.dfu',
 "oberdiek-*.bib",
 '*example*.tex',
-'letltxmacro-showcases.tex',
 'oberdiek.tex',
 'bmpsize-test.tex',
 '*.dtx','*.pdf','*.cfg','oberdiek.ins'}
