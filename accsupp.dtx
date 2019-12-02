@@ -880,63 +880,6 @@ ed as
 %    \begin{macrocode}
 %</dvips>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-% \subsection{Catcode checks for loading}
-%
-%    \begin{macrocode}
-%<*test1>
-%    \end{macrocode}
-%    \begin{macrocode}
-\NeedsTeXFormat{LaTeX2e}
-\documentclass{minimal}
-\makeatletter
-\def\RestoreCatcodes{}
-\count@=0 %
-\loop
-  \edef\RestoreCatcodes{%
-    \RestoreCatcodes
-    \catcode\the\count@=\the\catcode\count@\relax
-  }%
-\ifnum\count@<255 %
-  \advance\count@\@ne
-\repeat
-
-\def\RangeCatcodeInvalid#1#2{%
-  \count@=#1\relax
-  \loop
-    \catcode\count@=15 %
-  \ifnum\count@<#2\relax
-    \advance\count@\@ne
-  \repeat
-}
-\def\Test{%
-  \RangeCatcodeInvalid{0}{47}%
-  \RangeCatcodeInvalid{58}{64}%
-  \RangeCatcodeInvalid{91}{96}%
-  \RangeCatcodeInvalid{123}{127}%
-  \catcode`\@=12 %
-  \catcode`\\=0 %
-  \catcode`\{=1 %
-  \catcode`\}=2 %
-  \catcode`\#=6 %
-  \catcode`\[=12 %
-  \catcode`\]=12 %
-  \catcode`\%=14 %
-  \catcode`\ =10 %
-  \catcode13=5 %
-  \RequirePackage{accsupp}[2018/03/28]\relax
-  \RestoreCatcodes
-}
-\Test
-\csname @@end\endcsname
-\end
-%    \end{macrocode}
-%    \begin{macrocode}
-%</test1>
-%    \end{macrocode}
-%
 % \section{Installation}
 %
 % \subsection{Download}

@@ -505,60 +505,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-%    The test file is a modified version of the file that
-%    Donald Goodman has posted in \xnewsgroup{comp.text.tex}: ^^A
-%    \URL{``\link{Re: \xpackage{xcolor} glitches}''}^^A
-%    {https://groups.google.com/group/comp.text.tex/msg/8eda74ed292012bb}
-%    \begin{macrocode}
-%<*test1>
-\NeedsTeXFormat{LaTeX2e}
-\AtEndDocument{%
-  \typeout{}%
-  \typeout{**************************************}%
-  \typeout{*** \space Check the PDF file manually! \space ***}%
-  \typeout{**************************************}%
-  \typeout{}%
-}
-\documentclass{article}
-\usepackage{xcolor}
-\usepackage{pdfcolparcolumns}
-
-\newcommand{\instruct}[1]{%
-  \noindent
-  \footnotesize
-  \textcolor{red}{#1}%
-}
-
-\begin{document}
-  \begin{parcolumns}[colwidths={1=2.3in,2=2.3in},sloppy]{2}%
-    \colchunk[1]{%
-      \instruct{Et non dicitur versus} %
-      Fidelium anim\ae\ %
-      \instruct{%
-        sed immediate subiungitur antiphona finalis %
-        beat\ae\ Mari\ae\ Virginis%
-      } %
-      100.%
-    }%
-    \colchunk[2]{%
-      \instruct{%
-        And the verse %
-        \textcolor{black}{May the souls of the faithful} %
-        is not said, but the final antiphon of the %
-        Blessed Virgin Mary, %
-        \textcolor{black}{100,} %
-        is immediately joined.%
-      }%
-    }%
-  \end{parcolumns}%
-\end{document}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %

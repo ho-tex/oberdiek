@@ -482,35 +482,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-%    \begin{macrocode}
-%<*test1>
-\NeedsTeXFormat{LaTeX2e}
-\AtEndDocument{%
-  \typeout{}%
-  \typeout{**************************************}%
-  \typeout{*** \space Check the PDF file manually! \space ***}%
-  \typeout{**************************************}%
-  \typeout{}%
-}
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname pdfcompresslevel\endcsname\relax
-\else
-  \pdfcompresslevel=0 %
-\fi
-\documentclass[12pt,a5paper]{article}
-\usepackage{pdfcolfoot}[2016/05/16]
-\dimen\footins=\baselineskip % for testing
-\begin{document}
-  Black\footnote{Black \textcolor{blue}{Blue\\Blue} Black} %
-  \textcolor{red}{Red\newpage Red} Black%
-\end{document}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
