@@ -263,8 +263,6 @@
 [\entrysep]
 \entry{ltxcmds}{2011/11/09}{1.22}{\hologo{LaTeX} kernel commands for general use}%
 [\entrysep]
-\entry{mleftright}{2010/09/25}{1.0}{Math left/right delim.\@ as open/close}%
-[\entrysep]
 \entry{pagegrid}{2009/12/04}{1.4}{Print page grid in background}%
 [\entrysep]
 \entry{pagesel}{2008/08/11}{1.8}{Select pages of a document for output}%
@@ -750,18 +748,6 @@ from the \LaTeX\ kernel into a separate namespace and
 also provides them for other formats such as plain-\TeX.
 \end{abstract}
 \tocinclude{ltxcmds}
-
-\newpage
-\subsection{\pkgsectformat{mleftright}}
-\label{mleftright}
-\begin{abstract}
-\TeX\ sets subformulas by \cs{left} and \cs{right} as inner formulas
-with additional surrounding spaces in some situations. This package
-provides \cs{mleft} and \cs{mright} that call \cs{left} and \cs{right},
-but the delimiters will act as normal \cs{mathopen} and \cs{mathclose}
-delimiters without the additional space of an inner formula.
-\end{abstract}
-\tocinclude{mleftright}
 
 \newpage
 \subsection{\pkgsectformat{pagegrid}}
