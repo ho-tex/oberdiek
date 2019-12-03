@@ -13,7 +13,7 @@ textfiles={"README.txt"}
 unpackfile = {'oberdiek.ins'}
 typesetfiles={"*.dtx","oberdiek.tex"}
 docfiles={"*.tex"}
--- "config-plain-noxetex" "config-plain-luatex"
+-- "config-plain-noxetex"
 checkconfigs = {"build","config-plain", "config-noxetex","config-luatex","config-pdftex"}
 maxprintline=10000
 checkruns = 2
