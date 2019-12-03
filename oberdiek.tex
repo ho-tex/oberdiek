@@ -3,6 +3,9 @@
 \newcommand*{\Title}{Overview}
 \newcommand*{\CTANdir}{macros/latex/contrib/oberdiek/}
 \newcommand*{\CTANroot}{http://mirror.ctan.org/}
+\newcommand*{\CTANpkg}[1]{%
+  \href{http://ctan.org/pkg/#1}{[ctan]}%
+}
 \newcommand*{\Subject}{CTAN:\CTANdir}
 \newcommand*{\Author}{Heiko Oberdiek}
 
@@ -34,9 +37,7 @@
 
 \usepackage{iftex}
 \ifluatex
-  \usepackage{fontspec}[2011/09/18]%
   \usepackage{unicode-math}[2011/09/19]%
-  \setmathfont{latinmodern-math.otf}%
 \fi
 
 \usepackage[
@@ -140,24 +141,20 @@
 \newenvironment{overview}{%
   \setlength{\tabcolsep}{0.8\tabcolsep}%
   \setlength{\LTleft}{0pt}%
-  \longtable{@{}llll@{}}
+  \longtable{@{}lll@{}}
 }{%
   \endlongtable
 }
-\newcommand*{\entry}[4]{%
+\newcommand*{\entry}[2]{%
   \href{file:#1.pdf}{%
     \bfseries\xpackage{#1}%
   }%
-  & #2%
-  & v#3%
-  & \href{\CTANroot\CTANdir #1.pdf}{[pdf]} %
-    \href{\CTANroot\CTANdir #1.dtx}{[dtx]}
+   &
+    #2%
+  & \CTANpkg{#1} %
   \\*%
   \hyperref[{#1}]{\small (contents)}%
   &
-  \multicolumn{2}{l}{%
-    #4%
-  }%
   \\%
 }
 \newcommand*{\entrysep}{1.5ex}
@@ -177,147 +174,147 @@
 
 \section{Overview}
 \begin{overview}
-\entry{accsupp}{2010/01/16}{0.3}{Accessibility support by marked content}%
+\entry{accsupp}{Accessibility support by marked content}%
 [\entrysep]
-\entry{aliascnt}{2009/09/08}{1.3}{Alias counters}%
+\entry{aliascnt}{Alias counters}%
 [\entrysep]
-\entry{alphalph}{2011/05/13}{2.4}{Convert numbers to letters}%
+\entry{alphalph}{Convert numbers to letters}%
 [\entrysep]
-\entry{askinclude}{2011/12/02}{2.2}{Interactive asking of included files}%
+\entry{askinclude}{Interactive asking of included files}%
 [\entrysep]
-\entry{atbegshi}{2011/10/05}{1.16}{At begin shipout hook}%
+\entry{atbegshi}{At begin shipout hook}%
 [\entrysep]
-\entry{atenddvi}{2007/04/17}{1.1}{At end DVI hook}%
+\entry{atenddvi}{At end DVI hook}%
 [\entrysep]
-\entry{atveryend}{2011/06/30}{1.8}{Hooks at the very end of document}%
+\entry{atveryend}{Hooks at the very end of document}%
 [\entrysep]
-\entry{auxhook}{2011/03/04}{1.3}{Hooks for auxiliary files}%
+\entry{auxhook}{Hooks for auxiliary files}%
 [\entrysep]
-\entry{bigintcalc}{2012/04/08}{1.3}{Expandable calculations on big integers}%
+\entry{bigintcalc}{Expandable calculations on big integers}%
 [\entrysep]
-\entry{bitset}{2011/01/30}{1.1}{Handle bit-vector datatype}%
+\entry{bitset}{Handle bit-vector datatype}%
 [\entrysep]
-\entry{bmpsize}{2009/09/04}{1.6}{Extract size/resolution from bitmap files}%
+\entry{bmpsize}{Extract size/resolution from bitmap files}%
 [\entrysep]
-\entry{catchfile}{2011/03/01}{1.6}{Catch the contents of a file}%
+\entry{catchfile}{Catch the contents of a file}%
 [\entrysep]
-\entry{centernot}{2011/07/11}{1.3}{Centers the not symbol horizontally}%
+\entry{centernot}{Centers the not symbol horizontally}%
 [\entrysep]
-\entry{chemarr}{2006/02/20}{1.2}{Arrows for chemical reactions}%
+\entry{chemarr}{Arrows for chemical reactions}%
 [\entrysep]
-\entry{classlist}{2011/10/17}{1.4}{Record classes used in a document}%
+\entry{classlist}{Record classes used in a document}%
 [\entrysep]
-\entry{colonequals}{2006/08/01}{1.0}{Colon equals symbols}%
+\entry{colonequals}{Colon equals symbols}%
 [\entrysep]
-\entry{dvipscol}{2008/08/11}{1.2}{Alter the usage of the dvips color stack}%
+\entry{dvipscol}{Alter the usage of the dvips color stack}%
 [\entrysep]
-\entry{engord}{2010/03/01}{1.8}{Provides English ordinal numbers}%
+\entry{engord}{Provides English ordinal numbers}%
 [\entrysep]
-\entry{enparen}{2012/01/07}{1.0}{Parentheses nesting}%
+\entry{enparen}{Parentheses nesting}%
 [\entrysep]
-\entry{eolgrab}{2011/01/12}{1.0}{Catch arguments delimited by end of line}%
+\entry{eolgrab}{Catch arguments delimited by end of line}%
 [\entrysep]
-\entry{etexcmds}{2011/02/16}{1.5}{Avoid name clashes with \hologo{eTeX} commands}%
+\entry{etexcmds}{Avoid name clashes with \hologo{eTeX} commands}%
 [\entrysep]
-\entry{fibnum}{2012/04/08}{1.0}{Fibonacci numbers}%
+\entry{fibnum}{Fibonacci numbers}%
 [\entrysep]
-\entry{flags}{2007/09/30}{0.4}{Setting/clearing of flags in bit fields}%
+\entry{flags}{Setting/clearing of flags in bit fields}%
 [\entrysep]
-\entry{gettitlestring}{2010/12/03}{1.4}{Cleanup title references}%
+\entry{gettitlestring}{Cleanup title references}%
 [\entrysep]
-\entry{hologo}{2012/04/26}{1.10}{A logo collection with bookmark support}%
+\entry{hologo}{A logo collection with bookmark support}%
 [\entrysep]
-\entry{holtxdoc}{2012/03/21}{0.24}{Private additional ltxdoc support}%
+\entry{holtxdoc}{Private additional ltxdoc support}%
 [\entrysep]
-\entry{hopatch}{2011/06/24}{1.1}{Wrapper for package hooks}%
+\entry{hopatch}{Wrapper for package hooks}%
 [\entrysep]
-\entry{hycolor}{2011/01/30}{1.7}{Color options for hyperref/bookmark}%
+\entry{hycolor}{Color options for hyperref/bookmark}%
 [\entrysep]
-\entry{hypbmsec}{2007/04/11}{2.4}{Bookmarks in sectioning commands}%
+\entry{hypbmsec}{Bookmarks in sectioning commands}%
 [\entrysep]
-\entry{hypcap}{2011/02/16}{1.11}{Adjusting the anchors of captions}%
+\entry{hypcap}{Adjusting the anchors of captions}%
 [\entrysep]
-\entry{hypdestopt}{2011/05/13}{2.3}{Hyperref destination optimizer}%
+\entry{hypdestopt}{Hyperref destination optimizer}%
 [\entrysep]
-\entry{hypdoc}{2011/08/19}{1.11}{Hyper extensions for doc.sty}%
+\entry{hypdoc}{Hyper extensions for doc.sty}%
 [\entrysep]
-\entry{hypgotoe}{2007/10/30}{0.1}{Links to embedded files}%
+\entry{hypgotoe}{Links to embedded files}%
 [\entrysep]
-\entry{hyphsubst}{2008/06/09}{0.2}{Substitute hyphenation patterns}%
+\entry{hyphsubst}{Substitute hyphenation patterns}%
 [\entrysep]
-\entry{ifdraft}{2008/08/11}{1.3}{Detect class options draft and final}%
+\entry{ifdraft}{Detect class options draft and final}%
 [\entrysep]
-\entry{iflang}{2007/11/11}{1.5}{Checks for the current language}%
+\entry{iflang}{Checks for the current language}%
 [\entrysep]
-\entry{intcalc}{2007/09/27}{1.1}{Expandable calculations with integers}%
+\entry{intcalc}{Expandable calculations with integers}%
 [\entrysep]
-\entry{kvdefinekeys}{2011/04/07}{1.3}{Define keys}%
+\entry{kvdefinekeys}{Define keys}%
 [\entrysep]
-\entry{kvsetkeys}{2012/04/25}{1.16}{Key value parser}%
+\entry{kvsetkeys}{Key value parser}%
 [\entrysep]
-\entry{listingsutf8}{2011/11/10}{1.2}{Allow UTF-8 in listings input}%
+\entry{listingsutf8}{Allow UTF-8 in listings input}%
 [\entrysep]
-\entry{ltxcmds}{2011/11/09}{1.22}{\hologo{LaTeX} kernel commands for general use}%
+\entry{ltxcmds}{\hologo{LaTeX} kernel commands for general use}%
 [\entrysep]
-\entry{pagegrid}{2009/12/04}{1.4}{Print page grid in background}%
+\entry{pagegrid}{Print page grid in background}%
 [\entrysep]
-\entry{pagesel}{2008/08/11}{1.8}{Select pages of a document for output}%
+\entry{pagesel}{Select pages of a document for output}%
 [\entrysep]
-\entry{pdfcol}{2007/12/12}{1.2}{Handle new color stacks for \hologo{pdfTeX}}%
+\entry{pdfcol}{Handle new color stacks for \hologo{pdfTeX}}%
 [\entrysep]
-\entry{pdfcolfoot}{2012/01/02}{1.2}{Color stack for footnotes with \hologo{pdfTeX}}%
+\entry{pdfcolfoot}{Color stack for footnotes with \hologo{pdfTeX}}%
 [\entrysep]
-\entry{pdfcolparallel}{2010/01/11}{1.3}{Color stacks support for parallel}%
+\entry{pdfcolparallel}{Color stacks support for parallel}%
 [\entrysep]
-\entry{pdfcolparcolumns}{2010/01/11}{1.3}{Color stacks for parcolumns}%
+\entry{pdfcolparcolumns}{Color stacks for parcolumns}%
 [\entrysep]
-\entry{pdfcrypt}{2007/04/26}{1.0}{Allows the setting of PDF encryption}%
+\entry{pdfcrypt}{Allows the setting of PDF encryption}%
 [\entrysep]
-\entry{pdfescape}{2011/11/25}{1.13}{Implements \hologo{pdfTeX}'s escape features}%
+\entry{pdfescape}{Implements \hologo{pdfTeX}'s escape features}%
 [\entrysep]
-\entry{pdflscape}{2008/08/11}{0.10}{Display of landscape pages in PDF}%
+\entry{pdflscape}{Display of landscape pages in PDF}%
 [\entrysep]
-\entry{pdfrender}{2010/01/28}{1.2}{Access to some PDF graphics parameters}%
+\entry{pdfrender}{Access to some PDF graphics parameters}%
 [\entrysep]
-\entry{picture}{2009/10/11}{1.3}{Dimens for picture macros}%
+\entry{picture}{Dimens for picture macros}%
 [\entrysep]
-\entry{pmboxdraw}{2011/03/24}{1.1}{Poor man's box drawing characters}%
+\entry{pmboxdraw}{Poor man's box drawing characters}%
 [\entrysep]
-\entry{protecteddef}{2011/01/31}{1.0}{Define protected commands}%
+\entry{protecteddef}{Define protected commands}%
 [\entrysep]
-\entry{refcount}{2011/10/16}{3.4}{Data extraction from label references}%
+\entry{refcount}{Data extraction from label references}%
 [\entrysep]
-\entry{rerunfilecheck}{2011/04/15}{1.7}{Rerun checks for auxiliary files}%
+\entry{rerunfilecheck}{Rerun checks for auxiliary files}%
 [\entrysep]
-\entry{resizegather}{2010/03/01}{1.2}{Resize overly large equations}%
+\entry{resizegather}{Resize overly large equations}%
 [\entrysep]
-\entry{rotchiffre}{2010/11/12}{1.0}{Perform simple rotation ciphers}%
+\entry{rotchiffre}{Perform simple rotation ciphers}%
 [\entrysep]
-\entry{scrindex}{2008/08/11}{1.1}{Package index with \hologo{KOMAScript} classes}%
+\entry{scrindex}{Package index with \hologo{KOMAScript} classes}%
 [\entrysep]
-\entry{selinput}{2007/09/09}{1.2}{Semi-automatic input encoding detection}%
+\entry{selinput}{Semi-automatic input encoding detection}%
 [\entrysep]
-\entry{setouterhbox}{2007/09/09}{1.7}{Set hbox in outer horizontal mode}%
+\entry{setouterhbox}{Set hbox in outer horizontal mode}%
 [\entrysep]
-\entry{settobox}{2008/08/11}{1.4}{Assign box dimensions to length registers}%
+\entry{settobox}{Assign box dimensions to length registers}%
 [\entrysep]
-\entry{soulutf8}{2007/09/09}{1.0}{Permit use of UTF-8 characters in soul}%
+\entry{soulutf8}{Permit use of UTF-8 characters in soul}%
 [\entrysep]
-\entry{stackrel}{2007/11/11}{1.2}{Adding subscript option to stackrel}%
+\entry{stackrel}{Adding subscript option to stackrel}%
 [\entrysep]
-\entry{stampinclude}{2008/07/14}{1.0}{Include files based on time stamps}%
+\entry{stampinclude}{Include files based on time stamps}%
 [\entrysep]
-\entry{tabularht}{2007/04/11}{2.5}{Tabular with height specified}%
+\entry{tabularht}{Tabular with height specified}%
 [\entrysep]
-\entry{tabularkv}{2006/02/20}{1.1}{Tabular with key value interface}%
+\entry{tabularkv}{Tabular with key value interface}%
 [\entrysep]
-\entry{telprint}{2008/08/11}{1.10}{Format German phone numbers}%
+\entry{telprint}{Format German phone numbers}%
 [\entrysep]
-\entry{thepdfnumber}{2011/11/24}{1.0}{Print PDF numbers with minimal digits}%
+\entry{thepdfnumber}{Print PDF numbers with minimal digits}%
 [\entrysep]
-\entry{twoopt}{2008/08/11}{1.5}{Definitions with two optional arguments}%
+\entry{twoopt}{Definitions with two optional arguments}%
 [\entrysep]
-\entry{uniquecounter}{2011/01/30}{1.2}{Provide unlimited unique counter}%
+\entry{uniquecounter}{Provide unlimited unique counter}%
 \end{overview}
 
 \section{Packages}
