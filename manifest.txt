@@ -21,11 +21,9 @@ doc/latex/oberdiek/etexcmds.pdf
 doc/latex/oberdiek/example/eolgrab-example-env.tex
 doc/latex/oberdiek/example/eolgrab-example-ltx.tex
 doc/latex/oberdiek/example/eolgrab-example-sec.tex
-doc/latex/oberdiek/example/hologo-example.tex
 doc/latex/oberdiek/fibnum.pdf
 doc/latex/oberdiek/flags.pdf
 doc/latex/oberdiek/gettitlestring.pdf
-doc/latex/oberdiek/hologo.pdf
 doc/latex/oberdiek/holtxdoc.pdf
 doc/latex/oberdiek/hopatch.pdf
 doc/latex/oberdiek/hycolor.pdf
@@ -105,7 +103,6 @@ source/latex/oberdiek/etexcmds.dtx
 source/latex/oberdiek/fibnum.dtx
 source/latex/oberdiek/flags.dtx
 source/latex/oberdiek/gettitlestring.dtx
-source/latex/oberdiek/hologo.dtx
 source/latex/oberdiek/holtxdoc.dtx
 source/latex/oberdiek/hopatch.dtx
 source/latex/oberdiek/hycolor.dtx
@@ -164,7 +161,6 @@ tex/generic/oberdiek/eolgrab.sty
 tex/generic/oberdiek/etexcmds.sty
 tex/generic/oberdiek/fibnum.sty
 tex/generic/oberdiek/gettitlestring.sty
-tex/generic/oberdiek/hologo.sty
 tex/generic/oberdiek/hyphsubst.sty
 tex/generic/oberdiek/iflang.sty
 tex/generic/oberdiek/intcalc.sty
