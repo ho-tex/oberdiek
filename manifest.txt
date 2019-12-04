@@ -198,7 +198,7 @@ tex/generic/oberdiek/uniquecounter.sty
 tex/latex/oberdiek/accsupp-dvipdfm.def
 tex/latex/oberdiek/accsupp-dvips.def
 tex/latex/oberdiek/accsupp-luatex.def
-tex/lategx/oberdiek/accsupp-pdftex.def
+tex/latex/oberdiek/accsupp-pdftex.def
 tex/latex/oberdiek/accsupp.sty
 tex/latex/oberdiek/aliascnt.sty
 tex/latex/oberdiek/askinclude.sty
