@@ -3,9 +3,6 @@ bibtex/bib/oberdiek/oberdiek-source.bib
 doc/latex/oberdiek/aliascnt.pdf
 doc/latex/oberdiek/alphalph.pdf
 doc/latex/oberdiek/askinclude.pdf
-doc/latex/oberdiek/atbegshi-example1.tex
-doc/latex/oberdiek/atbegshi-example2.tex
-doc/latex/oberdiek/atbegshi.pdf
 doc/latex/oberdiek/atenddvi.pdf
 doc/latex/oberdiek/atveryend.pdf
 doc/latex/oberdiek/auxhook.pdf
@@ -93,7 +90,6 @@ doc/latex/oberdiek/uniquecounter.pdf
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/alphalph.dtx
 source/latex/oberdiek/askinclude.dtx
-source/latex/oberdiek/atbegshi.dtx
 source/latex/oberdiek/atenddvi.dtx
 source/latex/oberdiek/atveryend.dtx
 source/latex/oberdiek/auxhook.dtx
@@ -164,7 +160,6 @@ source/latex/oberdiek/thepdfnumber.dtx
 source/latex/oberdiek/twoopt.dtx
 source/latex/oberdiek/uniquecounter.dtx
 tex/generic/oberdiek/alphalph.sty
-tex/generic/oberdiek/atbegshi.sty
 tex/generic/oberdiek/bigintcalc.sty
 tex/generic/oberdiek/bitset.sty
 tex/generic/oberdiek/catchfile.sty
