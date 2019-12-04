@@ -180,8 +180,6 @@
 [\entrysep]
 \entry{askinclude}{Interactive asking of included files}%
 [\entrysep]
-\entry{atenddvi}{At end DVI hook}%
-[\entrysep]
 \entry{atveryend}{Hooks at the very end of document}%
 [\entrysep]
 \entry{auxhook}{Hooks for auxiliary files}%
@@ -341,19 +339,6 @@ This package replaces \cs{includeonly} by an interactive user
 interface.
 \end{abstract}
 \tocinclude{askinclude}
-
-\newpage
-\subsection{\pkgsectformat{atenddvi}}
-\label{atenddvi}
-\begin{abstract}
-\LaTeX\ offers \cs{AtBeginDvi}. This package \xpackage{atenddvi}
-provides the counterpart \cs{AtEndDvi}. The execution of its
-argument is delayed to the end of the document at the end of the
-last page. Thus \cs{special} and \cs{write} remain effective, because
-they are put into the last page. This is the main difference
-to \cs{AtEndDocument}.
-\end{abstract}
-\tocinclude{atenddvi}
 
 \newpage
 \subsection{\pkgsectformat{atveryend}}
