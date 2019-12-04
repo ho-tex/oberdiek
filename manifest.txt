@@ -1,8 +1,5 @@
 bibtex/bib/oberdiek/oberdiek-bundle.bib
 bibtex/bib/oberdiek/oberdiek-source.bib
-doc/latex/oberdiek/accsupp-example1.tex
-doc/latex/oberdiek/accsupp-example2.tex
-doc/latex/oberdiek/accsupp.pdf
 doc/latex/oberdiek/aliascnt.pdf
 doc/latex/oberdiek/alphalph.pdf
 doc/latex/oberdiek/askinclude.pdf
@@ -93,7 +90,6 @@ doc/latex/oberdiek/thepdfnumber.pdf
 doc/latex/oberdiek/twoopt.pdf
 doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
-source/latex/oberdiek/accsupp.dtx
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/alphalph.dtx
 source/latex/oberdiek/askinclude.dtx
@@ -195,11 +191,6 @@ tex/generic/oberdiek/soulutf8.sty
 tex/generic/oberdiek/telprint.sty
 tex/generic/oberdiek/thepdfnumber.sty
 tex/generic/oberdiek/uniquecounter.sty
-tex/latex/oberdiek/accsupp-dvipdfm.def
-tex/latex/oberdiek/accsupp-dvips.def
-tex/latex/oberdiek/accsupp-luatex.def
-tex/latex/oberdiek/accsupp-pdftex.def
-tex/latex/oberdiek/accsupp.sty
 tex/latex/oberdiek/aliascnt.sty
 tex/latex/oberdiek/askinclude.sty
 tex/latex/oberdiek/atenddvi.sty
