@@ -51,7 +51,6 @@ doc/latex/oberdiek/pdfcolparallel.pdf
 doc/latex/oberdiek/pdfcolparcolumns.pdf
 doc/latex/oberdiek/pdfcrypt.pdf
 doc/latex/oberdiek/pdfescape.pdf
-doc/latex/oberdiek/pdflscape.pdf
 doc/latex/oberdiek/pdfrender.pdf
 doc/latex/oberdiek/picture-example.tex
 doc/latex/oberdiek/picture.pdf
@@ -129,7 +128,6 @@ source/latex/oberdiek/pdfcolparallel.dtx
 source/latex/oberdiek/pdfcolparcolumns.dtx
 source/latex/oberdiek/pdfcrypt.dtx
 source/latex/oberdiek/pdfescape.dtx
-source/latex/oberdiek/pdflscape.dtx
 source/latex/oberdiek/pdfrender.dtx
 source/latex/oberdiek/picture.dtx
 source/latex/oberdiek/pmboxdraw.dtx
@@ -209,7 +207,6 @@ tex/latex/oberdiek/pagesel.sty
 tex/latex/oberdiek/pdfcolfoot.sty
 tex/latex/oberdiek/pdfcolparallel.sty
 tex/latex/oberdiek/pdfcolparcolumns.sty
-tex/latex/oberdiek/pdflscape.sty
 tex/latex/oberdiek/picture.sty
 tex/latex/oberdiek/pmboxdraw.sty
 tex/latex/oberdiek/pmboxdrawenc.dfu
