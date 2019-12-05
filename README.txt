@@ -1,4 +1,4 @@
-README           2019/12/15
+README           2019/12/05
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
