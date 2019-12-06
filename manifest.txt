@@ -5,7 +5,6 @@ doc/latex/oberdiek/alphalph.pdf
 doc/latex/oberdiek/askinclude.pdf
 doc/latex/oberdiek/auxhook.pdf
 doc/latex/oberdiek/bigintcalc.pdf
-doc/latex/oberdiek/bitset.pdf
 doc/latex/oberdiek/bmpsize.pdf
 doc/latex/oberdiek/centernot.pdf
 doc/latex/oberdiek/chemarr-example.tex
@@ -83,7 +82,6 @@ source/latex/oberdiek/alphalph.dtx
 source/latex/oberdiek/askinclude.dtx
 source/latex/oberdiek/auxhook.dtx
 source/latex/oberdiek/bigintcalc.dtx
-source/latex/oberdiek/bitset.dtx
 source/latex/oberdiek/bmpsize.dtx
 source/latex/oberdiek/centernot.dtx
 source/latex/oberdiek/chemarr.dtx
@@ -145,7 +143,6 @@ source/latex/oberdiek/twoopt.dtx
 source/latex/oberdiek/uniquecounter.dtx
 tex/generic/oberdiek/alphalph.sty
 tex/generic/oberdiek/bigintcalc.sty
-tex/generic/oberdiek/bitset.sty
 tex/generic/oberdiek/engord.sty
 tex/generic/oberdiek/eolgrab.sty
 tex/generic/oberdiek/etexcmds.sty
