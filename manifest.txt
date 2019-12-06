@@ -59,7 +59,6 @@ doc/latex/oberdiek/rotchiffre.pdf
 doc/latex/oberdiek/scrindex-example1.tex
 doc/latex/oberdiek/scrindex-example2.tex
 doc/latex/oberdiek/scrindex.pdf
-doc/latex/oberdiek/selinput.pdf
 doc/latex/oberdiek/setouterhbox-example.tex
 doc/latex/oberdiek/setouterhbox.pdf
 doc/latex/oberdiek/settobox-example.tex
@@ -129,7 +128,6 @@ source/latex/oberdiek/refcount.dtx
 source/latex/oberdiek/resizegather.dtx
 source/latex/oberdiek/rotchiffre.dtx
 source/latex/oberdiek/scrindex.dtx
-source/latex/oberdiek/selinput.dtx
 source/latex/oberdiek/setouterhbox.dtx
 source/latex/oberdiek/settobox.dtx
 source/latex/oberdiek/soulutf8.dtx
@@ -200,7 +198,6 @@ tex/latex/oberdiek/picture.sty
 tex/latex/oberdiek/refcount.sty
 tex/latex/oberdiek/resizegather.sty
 tex/latex/oberdiek/scrindex.sty
-tex/latex/oberdiek/selinput.sty
 tex/latex/oberdiek/settobox.sty
 tex/latex/oberdiek/stackrel.sty
 tex/latex/oberdiek/stampinclude.sty
