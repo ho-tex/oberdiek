@@ -1,7 +1,6 @@
 bibtex/bib/oberdiek/oberdiek-bundle.bib
 bibtex/bib/oberdiek/oberdiek-source.bib
 doc/latex/oberdiek/aliascnt.pdf
-doc/latex/oberdiek/askinclude.pdf
 doc/latex/oberdiek/auxhook.pdf
 doc/latex/oberdiek/bigintcalc.pdf
 doc/latex/oberdiek/bmpsize.pdf
@@ -73,7 +72,6 @@ doc/latex/oberdiek/twoopt.pdf
 doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
 source/latex/oberdiek/aliascnt.dtx
-source/latex/oberdiek/askinclude.dtx
 source/latex/oberdiek/auxhook.dtx
 source/latex/oberdiek/bigintcalc.dtx
 source/latex/oberdiek/bmpsize.dtx
@@ -155,7 +153,6 @@ tex/generic/oberdiek/telprint.sty
 tex/generic/oberdiek/thepdfnumber.sty
 tex/generic/oberdiek/uniquecounter.sty
 tex/latex/oberdiek/aliascnt.sty
-tex/latex/oberdiek/askinclude.sty
 tex/latex/oberdiek/auxhook.sty
 tex/latex/oberdiek/bmpsize-base.sty
 tex/latex/oberdiek/bmpsize-dvipdfm.def
