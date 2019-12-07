@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: holtxdoc.dtx
-% Version: 2019/11/12 v0.29
+% Version: 2019/12/15 v0.30
 % Info: Private additional ltxdoc support
 %
 % Copyright (C)
@@ -79,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: holtxdoc 2019/11/12 v0.29 Private additional ltxdoc support (HO)}
+\Msg{* Package: holtxdoc 2019/12/15 v0.30 Private additional ltxdoc support (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +91,7 @@
 This is a generated file.
 
 Project: holtxdoc
-Version: 2019/11/12 v0.29
+Version: 2019/12/15 v0.30
 
 Copyright (C)
    1999-2012 Heiko Oberdiek
@@ -152,7 +152,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{holtxdoc.drv}%
-  [2019/11/12 v0.29 Private additional ltxdoc support (HO)]%
+  [2019/12/15 v0.30 Private additional ltxdoc support (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -166,7 +166,7 @@ and the derived files
 % \GetFileInfo{holtxdoc.drv}
 %
 % \title{The \xpackage{holtxdoc} package}
-% \date{2019/11/12 v0.29}
+% \date{2019/12/15 v0.30}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -207,7 +207,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{holtxdoc}%
-  [2019/11/12 v0.29 Private additional ltxdoc support (HO)]
+  [2019/12/15 v0.30 Private additional ltxdoc support (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -217,7 +217,6 @@ and the derived files
 \RequirePackage{pdftexcmds}[2010/04/01]
 \RequirePackage{ltxcmds}[2010/03/09]
 \RequirePackage{hologo}[2011/11/22]
-\RequirePackage{ifluatex}[2010/03/01]
 \RequirePackage{array}
 %    \end{macrocode}
 %
@@ -799,6 +798,11 @@ and the derived files
 %   \item
 %     Add \verb|\bibpackage| (previously defined inline in some of the packages).
 %     Adjust CTAN links.
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v0.30}
+%   \item
+%     Documentation updates.
+%   \item Don't use \xpackage{ifluatex} legacy package.
 %   \end{Version}
 % \end{History}
 %
