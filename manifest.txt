@@ -49,8 +49,6 @@ doc/latex/oberdiek/pdfcolparallel.pdf
 doc/latex/oberdiek/pdfcolparcolumns.pdf
 doc/latex/oberdiek/pdfcrypt.pdf
 doc/latex/oberdiek/pdfrender.pdf
-doc/latex/oberdiek/picture-example.tex
-doc/latex/oberdiek/picture.pdf
 doc/latex/oberdiek/protecteddef.pdf
 doc/latex/oberdiek/refcount.pdf
 doc/latex/oberdiek/resizegather.pdf
@@ -119,7 +117,6 @@ source/latex/oberdiek/pdfcolparallel.dtx
 source/latex/oberdiek/pdfcolparcolumns.dtx
 source/latex/oberdiek/pdfcrypt.dtx
 source/latex/oberdiek/pdfrender.dtx
-source/latex/oberdiek/picture.dtx
 source/latex/oberdiek/protecteddef.dtx
 source/latex/oberdiek/README.txt
 source/latex/oberdiek/refcount.dtx
@@ -191,7 +188,6 @@ tex/latex/oberdiek/pagesel.sty
 tex/latex/oberdiek/pdfcolfoot.sty
 tex/latex/oberdiek/pdfcolparallel.sty
 tex/latex/oberdiek/pdfcolparcolumns.sty
-tex/latex/oberdiek/picture.sty
 tex/latex/oberdiek/refcount.sty
 tex/latex/oberdiek/resizegather.sty
 tex/latex/oberdiek/scrindex.sty
