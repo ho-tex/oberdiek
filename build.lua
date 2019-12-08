@@ -21,6 +21,10 @@ checkruns = 2
 --typesetexe = "lualatex-dev"
 
 
+function docinit_hook ()
+ return  cp("*.bib", "build/unpacked" ,"build/doc")
+end
+
 packtdszip  = true
 
 function no_ctan()
