@@ -3,7 +3,7 @@
 -- Build script for oberdiek bundle (check only)
 module = "oberdiek"
 
-installfiles = {'*.def','*.sty','*.dfu',
+installfiles = {'*.def','*.sty',
 "oberdiek-*.bib",
 '*example*.tex',
 'oberdiek.tex',
