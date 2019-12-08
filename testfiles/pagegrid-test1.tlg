@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `pagegrid'.
 Package: pagegrid ....-..-.. v... Print page grid in background (HO)
-(atbegshi.sty
+(../atbegshi.sty
 Package: atbegshi ....-..-.. v... At begin shipout hook (HO)
 (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
