@@ -2,7 +2,6 @@ bibtex/bib/oberdiek/oberdiek-bundle.bib
 bibtex/bib/oberdiek/oberdiek-source.bib
 doc/latex/oberdiek/aliascnt.pdf
 doc/latex/oberdiek/auxhook.pdf
-doc/latex/oberdiek/bigintcalc.pdf
 doc/latex/oberdiek/bmpsize.pdf
 doc/latex/oberdiek/centernot.pdf
 doc/latex/oberdiek/chemarr-example.tex
@@ -69,7 +68,6 @@ doc/latex/oberdiek/uniquecounter-example.tex
 doc/latex/oberdiek/uniquecounter.pdf
 source/latex/oberdiek/aliascnt.dtx
 source/latex/oberdiek/auxhook.dtx
-source/latex/oberdiek/bigintcalc.dtx
 source/latex/oberdiek/bmpsize.dtx
 source/latex/oberdiek/centernot.dtx
 source/latex/oberdiek/chemarr.dtx
@@ -123,7 +121,6 @@ source/latex/oberdiek/telprint.dtx
 source/latex/oberdiek/thepdfnumber.dtx
 source/latex/oberdiek/twoopt.dtx
 source/latex/oberdiek/uniquecounter.dtx
-tex/generic/oberdiek/bigintcalc.sty
 tex/generic/oberdiek/engord.sty
 tex/generic/oberdiek/eolgrab.sty
 tex/generic/oberdiek/etexcmds.sty
