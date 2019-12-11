@@ -33,7 +33,6 @@ doc/latex/oberdiek/hyphsubst.pdf
 doc/latex/oberdiek/ifdraft.pdf
 doc/latex/oberdiek/iflang.pdf
 doc/latex/oberdiek/intcalc.pdf
-doc/latex/oberdiek/kvdefinekeys.pdf
 doc/latex/oberdiek/ltxcmds.pdf
 doc/latex/oberdiek/oberdiek.pdf
 doc/latex/oberdiek/pagegrid.pdf
@@ -96,7 +95,6 @@ source/latex/oberdiek/hyphsubst.dtx
 source/latex/oberdiek/ifdraft.dtx
 source/latex/oberdiek/iflang.dtx
 source/latex/oberdiek/intcalc.dtx
-source/latex/oberdiek/kvdefinekeys.dtx
 source/latex/oberdiek/ltxcmds.dtx
 source/latex/oberdiek/oberdiek.ins
 source/latex/oberdiek/oberdiek.tex
@@ -134,7 +132,6 @@ tex/generic/oberdiek/gettitlestring.sty
 tex/generic/oberdiek/hyphsubst.sty
 tex/generic/oberdiek/iflang.sty
 tex/generic/oberdiek/intcalc.sty
-tex/generic/oberdiek/kvdefinekeys.sty
 tex/generic/oberdiek/ltxcmds.sty
 tex/generic/oberdiek/pdfcol.sty
 tex/generic/oberdiek/pdfcrypt.sty
