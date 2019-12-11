@@ -234,8 +234,6 @@
 [\entrysep]
 \entry{kvdefinekeys}{Define keys}%
 [\entrysep]
-\entry{kvsetkeys}{Key value parser}%
-[\entrysep]
 \entry{ltxcmds}{\hologo{LaTeX} kernel commands for general use}%
 [\entrysep]
 \entry{pagegrid}{Print page grid in background}%
@@ -585,18 +583,6 @@ keys the same way as \xpackage{keyval}'s \cs{define@key}. However, it
 works also using \iniTeX.
 \end{abstract}
 \tocinclude{kvdefinekeys}
-
-\newpage
-\subsection{\pkgsectformat{kvsetkeys}}
-\label{kvsetkeys}
-\begin{abstract}
-Package \xpackage{kvsetkeys} provides \cs{kvsetkeys}, a variant
-of package \xpackage{keyval}'s \cs{setkeys}. It allows to specify
-a handler that deals with unknown options. Active commas and equal
-signs may be used (e.g. see \xpackage{babel}'s shorthands) and
-only one level of curly braces is removed from the values.
-\end{abstract}
-\tocinclude{kvsetkeys}
 
 \newpage
 \subsection{\pkgsectformat{ltxcmds}}
