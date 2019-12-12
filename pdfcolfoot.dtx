@@ -63,7 +63,6 @@
 % Installation:
 %    TDS:tex/latex/oberdiek/pdfcolfoot.sty
 %    TDS:doc/latex/oberdiek/pdfcolfoot.pdf
-%    TDS:doc/latex/oberdiek/test/pdfcolfoot-test1.tex
 %    TDS:source/latex/oberdiek/pdfcolfoot.dtx
 %
 %<*ignore>
@@ -131,10 +130,6 @@ and the derived files
   \file{pdfcolfoot.sty}{\from{pdfcolfoot.dtx}{package}}%
 %  \usedir{doc/latex/oberdiek/test}%
 %  \file{pdfcolfoot-test1.tex}{\from{pdfcolfoot.dtx}{test1}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{pdfcolfoot.xml}{\from{pdfcolfoot.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -171,21 +166,6 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{pdfcolfoot.drv}
 %
@@ -502,35 +482,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-%    \begin{macrocode}
-%<*test1>
-\NeedsTeXFormat{LaTeX2e}
-\AtEndDocument{%
-  \typeout{}%
-  \typeout{**************************************}%
-  \typeout{*** \space Check the PDF file manually! \space ***}%
-  \typeout{**************************************}%
-  \typeout{}%
-}
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname pdfcompresslevel\endcsname\relax
-\else
-  \pdfcompresslevel=0 %
-\fi
-\documentclass[12pt,a5paper]{article}
-\usepackage{pdfcolfoot}[2016/05/16]
-\dimen\footins=\baselineskip % for testing
-\begin{document}
-  Black\footnote{Black \textcolor{blue}{Blue\\Blue} Black} %
-  \textcolor{red}{Red\newpage Red} Black%
-\end{document}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
@@ -579,7 +531,6 @@ and the derived files
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   pdfcolfoot.sty & tex/latex/oberdiek/pdfcolfoot.sty\\
 %   pdfcolfoot.pdf & doc/latex/oberdiek/pdfcolfoot.pdf\\
-%   test/pdfcolfoot-test1.tex & doc/latex/oberdiek/test/pdfcolfoot-test1.tex\\
 %   pdfcolfoot.dtx & source/latex/oberdiek/pdfcolfoot.dtx\\
 % \end{tabular}^^A
 % }^^A
@@ -695,7 +646,7 @@ and the derived files
 % \bibitem{pdfcol}
 %   Heiko Oberdiek: \textit{The \xpackage{pdfcol} package};
 %   2007/09/09;\\
-%   \CTAN{macros/latex/contrib/oberdiek/pdfcol.pdf}.
+%   \CTANpkg{pdfcol}.
 %
 % \end{thebibliography}
 %

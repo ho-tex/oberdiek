@@ -63,7 +63,6 @@
 % Installation:
 %    TDS:tex/latex/oberdiek/resizegather.sty
 %    TDS:doc/latex/oberdiek/resizegather.pdf
-%    TDS:doc/latex/oberdiek/test/resizegather-test1.tex
 %    TDS:source/latex/oberdiek/resizegather.dtx
 %
 %<*ignore>
@@ -131,10 +130,6 @@ and the derived files
   \file{resizegather.sty}{\from{resizegather.dtx}{package}}%
 %  \usedir{doc/latex/oberdiek/test}%
 %  \file{resizegather-test1.tex}{\from{resizegather.dtx}{test1}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{resizegather.xml}{\from{resizegather.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -164,7 +159,7 @@ and the derived files
   [2016/05/16 v1.3 Resize overly large equations (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
-\usepackage{ifluatex}
+\usepackage{iftex}[2019/11/07]
 \ifluatex
 \else
   \usepackage[T1]{fontenc}%
@@ -178,21 +173,6 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{resizegather.drv}
 %
@@ -681,118 +661,7 @@ and the derived files
 \ResizeGather@AtEnd%
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-% \subsection{Catcode checks for loading}
-%
-%    \begin{macrocode}
-%<*test1>
-%    \end{macrocode}
-%    \begin{macrocode}
-\catcode`\{=1 %
-\catcode`\}=2 %
-\catcode`\#=6 %
-\catcode`\@=11 %
-\expandafter\ifx\csname count@\endcsname\relax
-  \countdef\count@=255 %
-\fi
-\expandafter\ifx\csname @gobble\endcsname\relax
-  \long\def\@gobble#1{}%
-\fi
-\expandafter\ifx\csname @firstofone\endcsname\relax
-  \long\def\@firstofone#1{#1}%
-\fi
-\expandafter\ifx\csname loop\endcsname\relax
-  \expandafter\@firstofone
-\else
-  \expandafter\@gobble
-\fi
-{%
-  \def\loop#1\repeat{%
-    \def\body{#1}%
-    \iterate
-  }%
-  \def\iterate{%
-    \body
-      \let\next\iterate
-    \else
-      \let\next\relax
-    \fi
-    \next
-  }%
-  \let\repeat=\fi
-}%
-\def\RestoreCatcodes{}
-\count@=0 %
-\loop
-  \edef\RestoreCatcodes{%
-    \RestoreCatcodes
-    \catcode\the\count@=\the\catcode\count@\relax
-  }%
-\ifnum\count@<255 %
-  \advance\count@ 1 %
-\repeat
-
-\def\RangeCatcodeInvalid#1#2{%
-  \count@=#1\relax
-  \loop
-    \catcode\count@=15 %
-  \ifnum\count@<#2\relax
-    \advance\count@ 1 %
-  \repeat
-}
-\def\RangeCatcodeCheck#1#2#3{%
-  \count@=#1\relax
-  \loop
-    \ifnum#3=\catcode\count@
-    \else
-      \errmessage{%
-        Character \the\count@\space
-        with wrong catcode \the\catcode\count@\space
-        instead of \number#3%
-      }%
-    \fi
-  \ifnum\count@<#2\relax
-    \advance\count@ 1 %
-  \repeat
-}
-\def\space{ }
-\expandafter\ifx\csname LoadCommand\endcsname\relax
-  \def\LoadCommand{\input resizegather.sty\relax}%
-\fi
-\def\Test{%
-  \RangeCatcodeInvalid{0}{47}%
-  \RangeCatcodeInvalid{58}{64}%
-  \RangeCatcodeInvalid{91}{96}%
-  \RangeCatcodeInvalid{123}{255}%
-  \catcode`\@=12 %
-  \catcode`\\=0 %
-  \catcode`\%=14 %
-  \LoadCommand
-  \RangeCatcodeCheck{0}{36}{15}%
-  \RangeCatcodeCheck{37}{37}{14}%
-  \RangeCatcodeCheck{38}{47}{15}%
-  \RangeCatcodeCheck{48}{57}{12}%
-  \RangeCatcodeCheck{58}{63}{15}%
-  \RangeCatcodeCheck{64}{64}{12}%
-  \RangeCatcodeCheck{65}{90}{11}%
-  \RangeCatcodeCheck{91}{91}{15}%
-  \RangeCatcodeCheck{92}{92}{0}%
-  \RangeCatcodeCheck{93}{96}{15}%
-  \RangeCatcodeCheck{97}{122}{11}%
-  \RangeCatcodeCheck{123}{255}{15}%
-  \RestoreCatcodes
-}
-\Test
-\csname @@end\endcsname
-\end
-%    \end{macrocode}
-%    \begin{macrocode}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
@@ -841,7 +710,6 @@ and the derived files
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   resizegather.sty & tex/latex/oberdiek/resizegather.sty\\
 %   resizegather.pdf & doc/latex/oberdiek/resizegather.pdf\\
-%   test/resizegather-test1.tex & doc/latex/oberdiek/test/resizegather-test1.tex\\
 %   resizegather.dtx & source/latex/oberdiek/resizegather.dtx\\
 % \end{tabular}^^A
 % }^^A

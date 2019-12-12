@@ -63,7 +63,6 @@
 % Installation:
 %    TDS:tex/latex/oberdiek/pdfcolparcolumns.sty
 %    TDS:doc/latex/oberdiek/pdfcolparcolumns.pdf
-%    TDS:doc/latex/oberdiek/test/pdfcolparcolumns-test1.tex
 %    TDS:source/latex/oberdiek/pdfcolparcolumns.dtx
 %
 %<*ignore>
@@ -131,10 +130,6 @@ and the derived files
   \file{pdfcolparcolumns.sty}{\from{pdfcolparcolumns.dtx}{package}}%
 %  \usedir{doc/latex/oberdiek/test}%
 %  \file{pdfcolparcolumns-test1.tex}{\from{pdfcolparcolumns.dtx}{test1}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{pdfcolparcolumns.xml}{\from{pdfcolparcolumns.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -171,21 +166,6 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{pdfcolparcolumns.drv}
 %
@@ -525,60 +505,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-%    The test file is a modified version of the file that
-%    Donald Goodman has posted in \xnewsgroup{comp.text.tex}: ^^A
-%    \URL{``\link{Re: \xpackage{xcolor} glitches}''}^^A
-%    {https://groups.google.com/group/comp.text.tex/msg/8eda74ed292012bb}
-%    \begin{macrocode}
-%<*test1>
-\NeedsTeXFormat{LaTeX2e}
-\AtEndDocument{%
-  \typeout{}%
-  \typeout{**************************************}%
-  \typeout{*** \space Check the PDF file manually! \space ***}%
-  \typeout{**************************************}%
-  \typeout{}%
-}
-\documentclass{article}
-\usepackage{xcolor}
-\usepackage{pdfcolparcolumns}
-
-\newcommand{\instruct}[1]{%
-  \noindent
-  \footnotesize
-  \textcolor{red}{#1}%
-}
-
-\begin{document}
-  \begin{parcolumns}[colwidths={1=2.3in,2=2.3in},sloppy]{2}%
-    \colchunk[1]{%
-      \instruct{Et non dicitur versus} %
-      Fidelium anim\ae\ %
-      \instruct{%
-        sed immediate subiungitur antiphona finalis %
-        beat\ae\ Mari\ae\ Virginis%
-      } %
-      100.%
-    }%
-    \colchunk[2]{%
-      \instruct{%
-        And the verse %
-        \textcolor{black}{May the souls of the faithful} %
-        is not said, but the final antiphon of the %
-        Blessed Virgin Mary, %
-        \textcolor{black}{100,} %
-        is immediately joined.%
-      }%
-    }%
-  \end{parcolumns}%
-\end{document}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
@@ -627,7 +554,6 @@ and the derived files
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   pdfcolparcolumns.sty & tex/latex/oberdiek/pdfcolparcolumns.sty\\
 %   pdfcolparcolumns.pdf & doc/latex/oberdiek/pdfcolparcolumns.pdf\\
-%   test/pdfcolparcolumns-test1.tex & doc/latex/oberdiek/test/pdfcolparcolumns-test1.tex\\
 %   pdfcolparcolumns.dtx & source/latex/oberdiek/pdfcolparcolumns.dtx\\
 % \end{tabular}^^A
 % }^^A
@@ -743,12 +669,12 @@ and the derived files
 % \bibitem{parcolumns}
 %   Jonathan Sauer: \textit{The \xpackage{parcolumns} package};
 %   2004/11/25;\\
-%   \CTAN{macros/latex/contrib/sauerj/parcolumns.pdf}.
+%   \CTANpkg{parcolumns}.
 %
 % \bibitem{pdfcol}
 %   Heiko Oberdiek: \textit{The \xpackage{pdfcol} package};
 %   2007/09/09;\\
-%   \CTAN{macros/latex/contrib/oberdiek/pdfcol.pdf}.
+%   \CTANpkg{pdfcol}.
 %
 % \end{thebibliography}
 %

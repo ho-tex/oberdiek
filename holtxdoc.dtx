@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: holtxdoc.dtx
-% Version: 2019/11/12 v0.29
+% Version: 2019/12/09 v0.30
 % Info: Private additional ltxdoc support
 %
 % Copyright (C)
@@ -79,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: holtxdoc 2019/11/12 v0.29 Private additional ltxdoc support (HO)}
+\Msg{* Package: holtxdoc 2019/12/09 v0.30 Private additional ltxdoc support (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +91,7 @@
 This is a generated file.
 
 Project: holtxdoc
-Version: 2019/11/12 v0.29
+Version: 2019/12/09 v0.30
 
 Copyright (C)
    1999-2012 Heiko Oberdiek
@@ -126,10 +126,6 @@ and the derived files
   \file{holtxdoc.drv}{\from{holtxdoc.dtx}{driver}}%
   \usedir{tex/latex/oberdiek}%
   \file{holtxdoc.sty}{\from{holtxdoc.dtx}{package}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{holtxdoc.xml}{\from{holtxdoc.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -156,7 +152,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{holtxdoc.drv}%
-  [2019/11/12 v0.29 Private additional ltxdoc support (HO)]%
+  [2019/12/09 v0.30 Private additional ltxdoc support (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -166,26 +162,11 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{holtxdoc.drv}
 %
 % \title{The \xpackage{holtxdoc} package}
-% \date{2019/11/12 v0.29}
+% \date{2019/12/09 v0.30}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -226,7 +207,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{holtxdoc}%
-  [2019/11/12 v0.29 Private additional ltxdoc support (HO)]
+  [2019/12/09 v0.30 Private additional ltxdoc support (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -236,7 +217,6 @@ and the derived files
 \RequirePackage{pdftexcmds}[2010/04/01]
 \RequirePackage{ltxcmds}[2010/03/09]
 \RequirePackage{hologo}[2011/11/22]
-\RequirePackage{ifluatex}[2010/03/01]
 \RequirePackage{array}
 %    \end{macrocode}
 %
@@ -486,12 +466,12 @@ and the derived files
 \def\XeTeX{\hologo{XeTeX}}
 \def\XeLaTeX{\hologo{XeLaTeX}}
 \def\plainTeX{\hologo{plainTeX}}
-\providecommand*{\teTeX}{te\TeX}
-\providecommand*{\mikTeX}{mik\TeX}
+\providecommand*{\teTeX}{\hologo{teTeX}}
+\providecommand*{\mikTeX}{\hologo{MiKTeX}}
 \providecommand*{\MakeIndex}{\textsl{MakeIndex}}
 \providecommand*{\docstrip}{\textsf{docstrip}}
-\providecommand*{\iniTeX}{\mbox{ini-\TeX}}
-\providecommand*{\VTeX}{V\TeX}
+\providecommand*{\iniTeX}{\hologo{iniTeX}}
+\providecommand*{\VTeX}{\hologo{VTeX}}
 %    \end{macrocode}
 %
 % \subsection{Setup}
@@ -818,6 +798,12 @@ and the derived files
 %   \item
 %     Add \verb|\bibpackage| (previously defined inline in some of the packages).
 %     Adjust CTAN links.
+%   \end{Version}
+%   \begin{Version}{2019/12/09 v0.30}
+%   \item
+%     Documentation updates.
+%   \item Don't use \xpackage{ifluatex} legacy package.
+%   \item use `\xpackage{hologo} definitions in more cases.
 %   \end{Version}
 % \end{History}
 %

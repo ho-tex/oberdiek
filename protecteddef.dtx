@@ -66,8 +66,6 @@
 % Installation:
 %    TDS:tex/generic/oberdiek/protecteddef.sty
 %    TDS:doc/latex/oberdiek/protecteddef.pdf
-%    TDS:doc/latex/oberdiek/test/protecteddef-test1.tex
-%    TDS:doc/latex/oberdiek/test/protecteddef-test2.tex
 %    TDS:source/latex/oberdiek/protecteddef.dtx
 %
 %<*ignore>
@@ -139,10 +137,6 @@ and the derived files
 %  \usedir{doc/latex/oberdiek/test}%
 %  \file{protecteddef-test1.tex}{\from{protecteddef.dtx}{test1}}%
 %  \file{protecteddef-test2.tex}{\from{protecteddef.dtx}{test2}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{protecteddef.xml}{\from{protecteddef.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -179,21 +173,6 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{protecteddef.drv}
 %
@@ -553,275 +532,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-% \subsection{Catcode checks for loading}
-%
-%    \begin{macrocode}
-%<*test1>
-%    \end{macrocode}
-%    \begin{macrocode}
-\catcode`\{=1 %
-\catcode`\}=2 %
-\catcode`\#=6 %
-\catcode`\@=11 %
-\expandafter\ifx\csname count@\endcsname\relax
-  \countdef\count@=255 %
-\fi
-\expandafter\ifx\csname @gobble\endcsname\relax
-  \long\def\@gobble#1{}%
-\fi
-\expandafter\ifx\csname @firstofone\endcsname\relax
-  \long\def\@firstofone#1{#1}%
-\fi
-\expandafter\ifx\csname loop\endcsname\relax
-  \expandafter\@firstofone
-\else
-  \expandafter\@gobble
-\fi
-{%
-  \def\loop#1\repeat{%
-    \def\body{#1}%
-    \iterate
-  }%
-  \def\iterate{%
-    \body
-      \let\next\iterate
-    \else
-      \let\next\relax
-    \fi
-    \next
-  }%
-  \let\repeat=\fi
-}%
-\def\RestoreCatcodes{}
-\count@=0 %
-\loop
-  \edef\RestoreCatcodes{%
-    \RestoreCatcodes
-    \catcode\the\count@=\the\catcode\count@\relax
-  }%
-\ifnum\count@<255 %
-  \advance\count@ 1 %
-\repeat
-
-\def\RangeCatcodeInvalid#1#2{%
-  \count@=#1\relax
-  \loop
-    \catcode\count@=15 %
-  \ifnum\count@<#2\relax
-    \advance\count@ 1 %
-  \repeat
-}
-\def\RangeCatcodeCheck#1#2#3{%
-  \count@=#1\relax
-  \loop
-    \ifnum#3=\catcode\count@
-    \else
-      \errmessage{%
-        Character \the\count@\space
-        with wrong catcode \the\catcode\count@\space
-        instead of \number#3%
-      }%
-    \fi
-  \ifnum\count@<#2\relax
-    \advance\count@ 1 %
-  \repeat
-}
-\def\space{ }
-\expandafter\ifx\csname LoadCommand\endcsname\relax
-  \def\LoadCommand{\input protecteddef.sty\relax}%
-\fi
-\def\Test{%
-  \RangeCatcodeInvalid{0}{47}%
-  \RangeCatcodeInvalid{58}{64}%
-  \RangeCatcodeInvalid{91}{96}%
-  \RangeCatcodeInvalid{123}{255}%
-  \catcode`\@=12 %
-  \catcode`\\=0 %
-  \catcode`\%=14 %
-  \LoadCommand
-  \RangeCatcodeCheck{0}{36}{15}%
-  \RangeCatcodeCheck{37}{37}{14}%
-  \RangeCatcodeCheck{38}{47}{15}%
-  \RangeCatcodeCheck{48}{57}{12}%
-  \RangeCatcodeCheck{58}{63}{15}%
-  \RangeCatcodeCheck{64}{64}{12}%
-  \RangeCatcodeCheck{65}{90}{11}%
-  \RangeCatcodeCheck{91}{91}{15}%
-  \RangeCatcodeCheck{92}{92}{0}%
-  \RangeCatcodeCheck{93}{96}{15}%
-  \RangeCatcodeCheck{97}{122}{11}%
-  \RangeCatcodeCheck{123}{255}{15}%
-  \RestoreCatcodes
-}
-\Test
-\csname @@end\endcsname
-\end
-%    \end{macrocode}
-%    \begin{macrocode}
-%</test1>
-%    \end{macrocode}
-%
-% \subsection{Test without \hologo{LaTeX} and \cs{protected}}
-%
-%    \begin{macrocode}
-%<*test2>
-\errorcontextlines=10000 %
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname RequirePackage\endcsname\relax
-  \input protecteddef.sty\relax
-  \catcode`\{=1 %
-  \catcode`\}=2 %
-  \catcode`\#=6 %
-\else
-  \RequirePackage{protecteddef}[2016/05/16]%
-\fi
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname protected\endcsname\relax
-  \let\pdef\def
-\else
-  \def\pdef{\protected\def}%
-\fi
-\def\msg#{\immediate\write16}
-\countdef\errcount=2 %
-\long\def\BeginCheck#1\ProtectedDef#2\EndCheck{%
-  \begingroup
-    \toks0={\ProtectedDef#2}%
-    \msg{<<\the\toks0>>}%
-  \endgroup
-  \setbox0=\hbox{%
-    #1%
-    \ProtectedDef#2%
-    \check\foo
-  }%
-  \ifdim\wd0=0pt\relax
-  \else
-    \errmessage{[Definition] Unwanted spaces?!}%
-  \fi
-  \setbox0=\hbox{%
-    \def\fooinitial{XYZ}%
-    \let\foo\fooinitial
-    \errcount=0 %
-    \expandafter\def\csname @PackageError\endcsname##1##2##3{%
-      \advance\errcount by 1 %
-    }%
-    \expandafter\def\csname @notdefinable\endcsname{%
-      \advance\errcount by 1 %
-    }%
-    \ProtectedDef#2%
-    \ifnum\errcount=1 %
-    \else
-      \errmessage{1 error expected, but found: \the\errcount}%
-    \fi
-    \ifx\foo\fooinitial
-    \else
-      \def\space{ }%
-      \errmessage{\string\foo\space is overwritten}%
-    \fi
-  }%
-  \ifdim\wd0=0pt\relax
-  \else
-    \errmessage{[Error] Unwanted spaces?!}%
-  \fi
-}
-\chardef\DeclareVersion=0 %
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname protected\endcsname\relax
-  \begingroup\expandafter\expandafter\expandafter\endgroup
-  \expandafter\ifx\csname DeclareRobustCommand\endcsname\relax
-  \else
-    \chardef\DeclareVersion=1 %
-  \fi
-\fi
-\ifnum\DeclareVersion=0 %
-  \def\check#1{%
-    \ifx\cmp#1%
-      \msg{* Test passed.}%
-    \else
-      \msg{}%
-      \msg{[\meaning#1]}%
-      \msg{[\meaning\cmp]}%
-      \errmessage{Test failed!}%
-    \fi
-  }%
-\else
-  \def\check#1{%
-    \begingroup
-      \escapechar=-1 %
-    \edef\x{\endgroup
-      \def\noexpand\cs/{\string#1}%
-    }\x
-    \edef\CMP{%
-      \noexpand\protect
-      \expandafter\noexpand\csname\cs/ \endcsname
-    }%
-    \ifx\CMP#1%
-      \expandafter\ifx\csname\cs/ \endcsname\cmp
-        \msg{Test passed.}%
-      \else
-        \msg{}%
-        \msg{[\expandafter\meaning\csname\cs/ \endcsname]}%
-        \msg{[\meaning\cmp]}%
-        \errmessage{Test failed!}%
-      \fi
-    \else
-      \msg{}%
-      \msg{[\meaning#1]}%
-      \msg{[\meaning\CMP]}%
-      \errmessage{Test failed!}%
-    \fi
-  }%
-\fi
-
-\tracingmacros=1
-
-\BeginCheck
-  \pdef\cmp{}%
-  \ProtectedDef*\foo{}%
-\EndCheck
-
-\BeginCheck
-  \pdef\cmp{}%
-  \ProtectedDef*\foo[0]{}%
-\EndCheck
-
-\BeginCheck
-  \pdef\cmp#1{<#1>}%
-  \ProtectedDef*\foo[1]{<#1>}%
-\EndCheck
-
-\BeginCheck
-  \pdef\cmp(#1){<#1>}%
-  \ProtectedDef*\foo(#1){<#1>}%
-\EndCheck
-
-\BeginCheck
-  \long\pdef\cmp{}%
-  \ProtectedDef\foo{}%
-\EndCheck
-
-\BeginCheck
-  \long\pdef\cmp{}%
-  \ProtectedDef\foo[0]{}%
-\EndCheck
-
-\BeginCheck
-  \long\pdef\cmp#1{<#1>}%
-  \ProtectedDef\foo[1]{<#1>}%
-\EndCheck
-
-\BeginCheck
-  \long\pdef\cmp(#1){<#1>}%
-  \ProtectedDef\foo(#1){<#1>}%
-\EndCheck
-
-\csname @@end\endcsname\end
-%</test2>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
@@ -870,8 +581,6 @@ and the derived files
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   protecteddef.sty & tex/generic/oberdiek/protecteddef.sty\\
 %   protecteddef.pdf & doc/latex/oberdiek/protecteddef.pdf\\
-%   test/protecteddef-test1.tex & doc/latex/oberdiek/test/protecteddef-test1.tex\\
-%   test/protecteddef-test2.tex & doc/latex/oberdiek/test/protecteddef-test2.tex\\
 %   protecteddef.dtx & source/latex/oberdiek/protecteddef.dtx\\
 % \end{tabular}^^A
 % }^^A

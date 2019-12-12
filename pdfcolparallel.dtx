@@ -63,7 +63,6 @@
 % Installation:
 %    TDS:tex/latex/oberdiek/pdfcolparallel.sty
 %    TDS:doc/latex/oberdiek/pdfcolparallel.pdf
-%    TDS:doc/latex/oberdiek/test/pdfcolparallel-test1.tex
 %    TDS:source/latex/oberdiek/pdfcolparallel.dtx
 %
 %<*ignore>
@@ -131,10 +130,6 @@ and the derived files
   \file{pdfcolparallel.sty}{\from{pdfcolparallel.dtx}{package}}%
 %  \usedir{doc/latex/oberdiek/test}%
 %  \file{pdfcolparallel-test1.tex}{\from{pdfcolparallel.dtx}{test1}}%
-  \nopreamble
-  \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
-%  \file{pdfcolparallel.xml}{\from{pdfcolparallel.dtx}{catalogue}}%
 }
 
 \catcode32=13\relax% active space
@@ -171,21 +166,6 @@ and the derived files
 % \fi
 %
 %
-% \CharacterTable
-%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%   Digits        \0\1\2\3\4\5\6\7\8\9
-%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%   Dollar        \$     Percent       \%     Ampersand     \&
-%   Acute accent  \'     Left paren    \(     Right paren   \)
-%   Asterisk      \*     Plus          \+     Comma         \,
-%   Minus         \-     Point         \.     Solidus       \/
-%   Colon         \:     Semicolon     \;     Less than     \<
-%   Equals        \=     Greater than  \>     Question mark \?
-%   Commercial at \@     Left bracket  \[     Backslash     \\
-%   Right bracket \]     Circumflex    \^     Underscore    \_
-%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%   Right brace   \}     Tilde         \~}
 %
 % \GetFileInfo{pdfcolparallel.drv}
 %
@@ -797,105 +777,7 @@ and the derived files
 %    \begin{macrocode}
 %</package>
 %    \end{macrocode}
-%
-% \section{Test}
-%
-%    The test file is a modified version of the file that
-%    Alexander Hirsch has posted in \xnewsgroup{de.comp.text.tex}:
-%    \URL{``\link{\texttt{parallel.sty} und farbiger Text}''}^^A
-%    {https://groups.google.com/group/de.comp.text.tex/msg/6a759cf33bb071a5}
-%    \begin{macrocode}
-%<*test1>
-\AtEndDocument{%
-  \typeout{}%
-  \typeout{**************************************}%
-  \typeout{*** \space Check the PDF file manually! \space ***}%
-  \typeout{**************************************}%
-  \typeout{}%
-}
-\documentclass{article}
-\usepackage{xcolor}
-\usepackage{pdfcolparallel}[2016/05/16]
-
-\begin{document}
-  \color{green}%
-  Green%
-  \begin{Parallel}{0.47\textwidth}{0.47\textwidth}%
-    \ParallelLText{%
-      \textcolor{red}{%
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
-      }%
-    }%
-    \ParallelRText{%
-      \textcolor{blue}{%
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
-      }%
-    }%
-    \ParallelPar
-    \ParallelLText{%
-      Default %
-      \color{red}%
-      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
-    }%
-    \ParallelRText{%
-      Default %
-      \color{blue}%
-      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-      Ein Absatz, der sich ueber zwei Zeilen erstrecken soll.%
-    }%
-    \ParallelPar
-    \ParallelLText{%
-      \begin{enumerate}%
-      \item left text, left text, left text, left text, %
-            left text, left text, left text, left text,%
-      \item left text, left text, left text, left text, %
-            left text, left text, left text, left text.%
-      \end{enumerate}%
-    }%
-    \ParallelRText{%
-      \begin{enumerate}%
-      \item right text, right text, right text, right text, %
-            right text, right text, right text, right text.%
-      \item right text, right text, right text, right text, %
-            right text, right text, right text, right text.%
-      \end{enumerate}%
-    }%
-  \end{Parallel}%
-  \begin{Parallel}[p]{\textwidth}{\textwidth}%
-    \ParallelLText{%
-      \textcolor{red}{%
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Foo bar bla bla bla.%
-      }%
-      \par
-      Und noch ein Absatz.%
-    }%
-    \ParallelRText{%
-      \textcolor{blue}{%
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Ein Absatz, der sich ueber zwei Zeilen erstrecken soll. %
-        Foo bar bla bla bla.%
-      }%
-    }%
-  \end{Parallel}%
-  \begin{Parallel}[p]{\textwidth}{\textwidth}%
-    \ParallelLText{%
-      \rule{1pt}{.98\textheight}\Huge g%
-    }%
-    \ParallelRText{%
-      \rule{1pt}{.98\textheight}y%
-    }%
-  \end{Parallel}%
-  Green%
-\end{document}
-%</test1>
-%    \end{macrocode}
-%
-% \section{Installation}
+%% \section{Installation}
 %
 % \subsection{Download}
 %
@@ -944,7 +826,6 @@ and the derived files
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
 %   pdfcolparallel.sty & tex/latex/oberdiek/pdfcolparallel.sty\\
 %   pdfcolparallel.pdf & doc/latex/oberdiek/pdfcolparallel.pdf\\
-%   test/pdfcolparallel-test1.tex & doc/latex/oberdiek/test/pdfcolparallel-test1.tex\\
 %   pdfcolparallel.dtx & source/latex/oberdiek/pdfcolparallel.dtx\\
 % \end{tabular}^^A
 % }^^A
@@ -1065,7 +946,7 @@ and the derived files
 % \bibitem{pdfcol}
 %   Heiko Oberdiek: \textit{The \xpackage{pdfcol} package};
 %   2007/09/09;\\
-%   \CTAN{macros/latex/contrib/oberdiek/pdfcol.pdf}.
+%   \CTANpkg{pdfcol}.
 %
 % \end{thebibliography}
 %

@@ -8,7 +8,7 @@ Package: rotchiffre ....-..-.. v... Perform simple rotation ciphers (HO)
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 ) (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (pdfescape.sty
+) (../pdfescape.sty
 Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
 (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
