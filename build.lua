@@ -209,5 +209,4 @@ tdslocations={
 "tex/latex/oberdiek/tabularht.sty",
 "tex/latex/oberdiek/tabularkv.sty",
 "tex/latex/oberdiek/twoopt.sty",
-"tex/latex/oberdiek/xcolor-patch.sty"
 }

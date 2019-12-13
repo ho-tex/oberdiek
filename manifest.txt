@@ -20,7 +20,6 @@ doc/latex/oberdiek/flags.pdf
 doc/latex/oberdiek/gettitlestring.pdf
 doc/latex/oberdiek/holtxdoc.pdf
 doc/latex/oberdiek/hopatch.pdf
-doc/latex/oberdiek/hycolor.pdf
 doc/latex/oberdiek/hypbmsec.pdf
 doc/latex/oberdiek/hypcap.pdf
 doc/latex/oberdiek/hypdestopt.pdf
@@ -79,7 +78,6 @@ source/latex/oberdiek/flags.dtx
 source/latex/oberdiek/gettitlestring.dtx
 source/latex/oberdiek/holtxdoc.dtx
 source/latex/oberdiek/hopatch.dtx
-source/latex/oberdiek/hycolor.dtx
 source/latex/oberdiek/hypbmsec.dtx
 source/latex/oberdiek/hypcap.dtx
 source/latex/oberdiek/hypdestopt.dtx
@@ -148,7 +146,6 @@ tex/latex/oberdiek/enparen.sty
 tex/latex/oberdiek/flags.sty
 tex/latex/oberdiek/holtxdoc.sty
 tex/latex/oberdiek/hopatch.sty
-tex/latex/oberdiek/hycolor.sty
 tex/latex/oberdiek/hypbmsec.sty
 tex/latex/oberdiek/hypcap.sty
 tex/latex/oberdiek/hypdestopt.sty
@@ -169,4 +166,3 @@ tex/latex/oberdiek/stampinclude.sty
 tex/latex/oberdiek/tabularht.sty
 tex/latex/oberdiek/tabularkv.sty
 tex/latex/oberdiek/twoopt.sty
-tex/latex/oberdiek/xcolor-patch.sty
