@@ -238,8 +238,6 @@
 [\entrysep]
 \entry{protecteddef}{Define protected commands}%
 [\entrysep]
-\entry{refcount}{Data extraction from label references}%
-[\entrysep]
 \entry{resizegather}{Resize overly large equations}%
 [\entrysep]
 \entry{rotchiffre}{Perform simple rotation ciphers}%
@@ -595,20 +593,6 @@ First \hologo{eTeX}'s \cs{protected} is tried, then
 Otherwise the macro is not made robust.
 \end{abstract}
 \tocinclude{protecteddef}
-
-\newpage
-\subsection{\pkgsectformat{refcount}}
-\label{refcount}
-\begin{abstract}
-References are not numbers, however they often store numerical
-data such as section or page numbers. \cs{ref} or \cs{pageref}
-cannot be used for counter assignments or calculations because
-they are not expandable, generate warnings, or can even be links.
-The package provides expandable macros to extract the data
-from references. Packages \xpackage{hyperref}, \xpackage{nameref},
-\xpackage{titleref}, and \xpackage{babel} are supported.
-\end{abstract}
-\tocinclude{refcount}
 
 \newpage
 \subsection{\pkgsectformat{resizegather}}
