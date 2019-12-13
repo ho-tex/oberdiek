@@ -46,7 +46,6 @@ doc/latex/oberdiek/setouterhbox-example.tex
 doc/latex/oberdiek/setouterhbox.pdf
 doc/latex/oberdiek/settobox-example.tex
 doc/latex/oberdiek/settobox.pdf
-doc/latex/oberdiek/soulutf8.pdf
 doc/latex/oberdiek/stackrel.pdf
 doc/latex/oberdiek/stampinclude.pdf
 doc/latex/oberdiek/tabularht-example1.tex
@@ -96,7 +95,6 @@ source/latex/oberdiek/rotchiffre.dtx
 source/latex/oberdiek/scrindex.dtx
 source/latex/oberdiek/setouterhbox.dtx
 source/latex/oberdiek/settobox.dtx
-source/latex/oberdiek/soulutf8.dtx
 source/latex/oberdiek/stackrel.dtx
 source/latex/oberdiek/stampinclude.dtx
 source/latex/oberdiek/tabularht.dtx
@@ -115,7 +113,6 @@ tex/generic/oberdiek/pdfrender.sty
 tex/generic/oberdiek/protecteddef.sty
 tex/generic/oberdiek/rotchiffre.sty
 tex/generic/oberdiek/setouterhbox.sty
-tex/generic/oberdiek/soulutf8.sty
 tex/generic/oberdiek/telprint.sty
 tex/generic/oberdiek/thepdfnumber.sty
 tex/latex/oberdiek/aliascnt.sty
