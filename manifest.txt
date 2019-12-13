@@ -31,7 +31,6 @@ doc/latex/oberdiek/hypgotoe.pdf
 doc/latex/oberdiek/hyphsubst.pdf
 doc/latex/oberdiek/ifdraft.pdf
 doc/latex/oberdiek/iflang.pdf
-doc/latex/oberdiek/ltxcmds.pdf
 doc/latex/oberdiek/oberdiek.pdf
 doc/latex/oberdiek/pagegrid.pdf
 doc/latex/oberdiek/pagesel.pdf
@@ -91,7 +90,6 @@ source/latex/oberdiek/hypgotoe.dtx
 source/latex/oberdiek/hyphsubst.dtx
 source/latex/oberdiek/ifdraft.dtx
 source/latex/oberdiek/iflang.dtx
-source/latex/oberdiek/ltxcmds.dtx
 source/latex/oberdiek/oberdiek.ins
 source/latex/oberdiek/oberdiek.tex
 source/latex/oberdiek/pagegrid.dtx
@@ -126,7 +124,6 @@ tex/generic/oberdiek/fibnum.sty
 tex/generic/oberdiek/gettitlestring.sty
 tex/generic/oberdiek/hyphsubst.sty
 tex/generic/oberdiek/iflang.sty
-tex/generic/oberdiek/ltxcmds.sty
 tex/generic/oberdiek/pdfcol.sty
 tex/generic/oberdiek/pdfcrypt.sty
 tex/generic/oberdiek/pdfrender.sty
