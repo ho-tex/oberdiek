@@ -196,8 +196,6 @@
 [\entrysep]
 \entry{eolgrab}{Catch arguments delimited by end of line}%
 [\entrysep]
-\entry{etexcmds}{Avoid name clashes with \hologo{eTeX} commands}%
-[\entrysep]
 \entry{fibnum}{Fibonacci numbers}%
 [\entrysep]
 \entry{flags}{Setting/clearing of flags in bit fields}%
@@ -387,17 +385,6 @@ This package implements a generic argument grabber
 to catch an argument that is delimited by the line end.
 \end{abstract}
 \tocinclude{eolgrab}
-
-\newpage
-\subsection{\pkgsectformat{etexcmds}}
-\label{etexcmds}
-\begin{abstract}
-New primitive commands are introduced in \eTeX. Sometimes the
-names collide with existing macros. This package solves this
-name clashes by adding a prefix to \eTeX's commands. For example,
-\eTeX's \cs{unexpanded} is provided as \cs{etex@unexpanded}.
-\end{abstract}
-\tocinclude{etexcmds}
 
 \newpage
 \subsection{\pkgsectformat{fibnum}}

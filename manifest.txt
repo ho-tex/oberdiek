@@ -12,7 +12,6 @@ doc/latex/oberdiek/dvipscol.pdf
 doc/latex/oberdiek/engord.pdf
 doc/latex/oberdiek/enparen.pdf
 doc/latex/oberdiek/eolgrab.pdf
-doc/latex/oberdiek/etexcmds.pdf
 doc/latex/oberdiek/example/eolgrab-example-env.tex
 doc/latex/oberdiek/example/eolgrab-example-ltx.tex
 doc/latex/oberdiek/example/eolgrab-example-sec.tex
@@ -75,7 +74,6 @@ source/latex/oberdiek/dvipscol.dtx
 source/latex/oberdiek/engord.dtx
 source/latex/oberdiek/enparen.dtx
 source/latex/oberdiek/eolgrab.dtx
-source/latex/oberdiek/etexcmds.dtx
 source/latex/oberdiek/fibnum.dtx
 source/latex/oberdiek/flags.dtx
 source/latex/oberdiek/gettitlestring.dtx
@@ -119,7 +117,6 @@ source/latex/oberdiek/twoopt.dtx
 source/latex/oberdiek/uniquecounter.dtx
 tex/generic/oberdiek/engord.sty
 tex/generic/oberdiek/eolgrab.sty
-tex/generic/oberdiek/etexcmds.sty
 tex/generic/oberdiek/fibnum.sty
 tex/generic/oberdiek/gettitlestring.sty
 tex/generic/oberdiek/hyphsubst.sty
