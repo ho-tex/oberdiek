@@ -16,7 +16,6 @@ doc/latex/oberdiek/example/eolgrab-example-ltx.tex
 doc/latex/oberdiek/example/eolgrab-example-sec.tex
 doc/latex/oberdiek/fibnum.pdf
 doc/latex/oberdiek/flags.pdf
-doc/latex/oberdiek/gettitlestring.pdf
 doc/latex/oberdiek/holtxdoc.pdf
 doc/latex/oberdiek/hopatch.pdf
 doc/latex/oberdiek/hypbmsec.pdf
@@ -70,7 +69,6 @@ source/latex/oberdiek/enparen.dtx
 source/latex/oberdiek/eolgrab.dtx
 source/latex/oberdiek/fibnum.dtx
 source/latex/oberdiek/flags.dtx
-source/latex/oberdiek/gettitlestring.dtx
 source/latex/oberdiek/holtxdoc.dtx
 source/latex/oberdiek/hopatch.dtx
 source/latex/oberdiek/hypbmsec.dtx
@@ -109,7 +107,6 @@ source/latex/oberdiek/twoopt.dtx
 tex/generic/oberdiek/engord.sty
 tex/generic/oberdiek/eolgrab.sty
 tex/generic/oberdiek/fibnum.sty
-tex/generic/oberdiek/gettitlestring.sty
 tex/generic/oberdiek/hyphsubst.sty
 tex/generic/oberdiek/iflang.sty
 tex/generic/oberdiek/pdfcol.sty
