@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `fibnum'.
 Package: fibnum ....-..-.. v... Fibonacci numbers (HO)
-(ltxcmds.sty
+(../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (../intcalc.sty
 Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)

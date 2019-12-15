@@ -10,7 +10,7 @@ Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
 (../iftex.sty
 Package: iftex ....-..-.. v... TeX engine tests
-) (ltxcmds.sty
+) (../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.

@@ -4,7 +4,7 @@ Don't change this file in any respect.
 LaTeX Warning: You have requested package `',
                but the package provides `eolgrab'.
 Package: eolgrab ....-..-.. v... Catch arguments delimited by end of line (HO)
-(ltxcmds.sty
+(../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)

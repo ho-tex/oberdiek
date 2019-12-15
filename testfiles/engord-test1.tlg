@@ -6,6 +6,6 @@ LaTeX Warning: You have requested package `',
 Package: engord ....-..-.. v... Provides English ordinal numbers (HO)
 (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-) (ltxcmds.sty
+) (../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ))

@@ -6,7 +6,7 @@ LaTeX Warning: You have requested package `',
 Package: rotchiffre ....-..-.. v... Perform simple rotation ciphers (HO)
 (../infwarerr.sty
 Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
-) (ltxcmds.sty
+) (../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
 ) (../pdfescape.sty
 Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
