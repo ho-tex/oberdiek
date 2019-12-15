@@ -6,9 +6,9 @@ LaTeX Warning: You have requested package `',
 Package: fibnum ....-..-.. v... Fibonacci numbers (HO)
 (ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
-) (intcalc.sty
+) (../intcalc.sty
 Package: intcalc ....-..-.. v... Expandable calculations with integers (HO)
-) (bigintcalc.sty
+) (../bigintcalc.sty
 Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
 (../pdftexcmds.sty
 Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
