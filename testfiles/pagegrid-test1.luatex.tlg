@@ -16,11 +16,7 @@ Package: iftex ....-..-.. v... TeX engine tests
 Package: kvoptions ....-..-.. v... Key value format for package options (HO)
 (../kvsetkeys.sty
 Package: kvsetkeys ....-..-.. v... Key value parser (HO)
-(../etexcmds.sty
-Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
-(../ifluatex.sty
-Package: ifluatex ....-..-.. v... ifluatex legacy package. Use iftex instead.
-))))
+))
 \pagegrid@step=\skip...
 \pagegrid@arrowlength=\skip...
 )
