@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfcolparcolumns.dtx
-% Version: 2016/05/16 v1.4
+% Version: 2019/12/29 v1.5
 % Info: Color stacks for parcolumns
 %
 % Copyright (C)
@@ -80,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfcolparcolumns 2016/05/16 v1.4 Color stacks for parcolumns (HO)}
+\Msg{* Package: pdfcolparcolumns 2019/12/29 v1.5 Color stacks for parcolumns (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +92,7 @@
 This is a generated file.
 
 Project: pdfcolparcolumns
-Version: 2016/05/16 v1.4
+Version: 2019/12/29 v1.5
 
 Copyright (C)
    2007, 2008, 2010 Heiko Oberdiek
@@ -156,7 +156,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfcolparcolumns.drv}%
-  [2016/05/16 v1.4 Color stacks for parcolumns (HO)]%
+  [2019/12/29 v1.5 Color stacks for parcolumns (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -170,7 +170,7 @@ and the derived files
 % \GetFileInfo{pdfcolparcolumns.drv}
 %
 % \title{The \xpackage{pdfcolparcolumns} package}
-% \date{2016/05/16 v1.4}
+% \date{2019/12/29 v1.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -248,7 +248,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{pdfcolparcolumns}%
-  [2016/05/16 v1.4 Color stacks for parcolumns (HO)]%
+  [2019/12/29 v1.5 Color stacks for parcolumns (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Load packages}
@@ -261,7 +261,7 @@ and the derived files
 %    package \xpackage{parcolumns}.
 %    \begin{macrocode}
 \DeclareOption*{%
-  \PassoptionsToPackage{\CurrentOption}{parcolumns}%
+  \PassOptionsToPackage{\CurrentOption}{parcolumns}%
 }
 \ProcessOptions\relax
 \RequirePackage{parcolumns}[2004/11/25]
@@ -711,6 +711,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.4}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v1.5}
+%   \item
+%     \cs{PassOptionsToPackage} not \cs{PassoptionsToPackage}
 %   \end{Version}
 % \end{History}
 %

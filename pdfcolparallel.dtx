@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfcolparallel.dtx
-% Version: 2016/05/16 v1.4
+% Version: 2019/12/29 v1.5
 % Info: Color stacks support for parallel
 %
 % Copyright (C)
@@ -80,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfcolparallel 2016/05/16 v1.4 Color stacks support for parallel (HO)}
+\Msg{* Package: pdfcolparallel 2019/12/29 v1.5 Color stacks support for parallel (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -92,7 +92,7 @@
 This is a generated file.
 
 Project: pdfcolparallel
-Version: 2016/05/16 v1.4
+Version: 2019/12/29 v1.5
 
 Copyright (C)
    2007, 2008, 2010 Heiko Oberdiek
@@ -156,7 +156,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfcolparallel.drv}%
-  [2016/05/16 v1.4 Color stacks support for parallel (HO)]%
+  [2019/12/29 v1.5 Color stacks support for parallel (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -170,7 +170,7 @@ and the derived files
 % \GetFileInfo{pdfcolparallel.drv}
 %
 % \title{The \xpackage{pdfcolparallel} package}
-% \date{2016/05/16 v1.4}
+% \date{2019/12/29 v1.5}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -230,7 +230,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{pdfcolparallel}%
-  [2016/05/16 v1.4 Color stacks support for parallel (HO)]%
+  [2019/12/29 v1.5 Color stacks support for parallel (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Load and fix package \xpackage{parallel}}
@@ -239,7 +239,7 @@ and the derived files
 %    \xpackage{pdfcolparallel} are passed to package \xpackage{parallel}.
 %    \begin{macrocode}
 \DeclareOption*{%
-  \PassoptionsToPackage{\CurrentOption}{parallel}%
+  \PassOptionsToPackage{\CurrentOption}{parallel}%
 }
 \ProcessOptions\relax
 \RequirePackage{parallel}[2003/04/13]
@@ -980,6 +980,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.4}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v1.5}
+%   \item
+%     \cs{PassOptionsToPackage} not \cs{PassoptionsToPackage}
 %   \end{Version}
 % \end{History}
 %
