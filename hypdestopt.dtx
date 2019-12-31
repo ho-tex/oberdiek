@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: hypdestopt.dtx
-% Version: 2016/05/21 v2.5
+% Version: 2019/12/29 v2.6
 % Info: Hyperref destination optimizer
 %
 % Copyright (C)
@@ -79,7 +79,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypdestopt 2016/05/21 v2.5 Hyperref destination optimizer (HO)}
+\Msg{* Package: hypdestopt 2019/12/29 v2.6 Hyperref destination optimizer (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -91,7 +91,7 @@
 This is a generated file.
 
 Project: hypdestopt
-Version: 2016/05/21 v2.5
+Version: 2019/12/29 v2.6
 
 Copyright (C)
    2006-2008, 2011 Heiko Oberdiek
@@ -152,7 +152,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypdestopt.drv}%
-  [2016/05/21 v2.5 Hyperref destination optimizer (HO)]%
+  [2019/12/29 v2.6 Hyperref destination optimizer (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -166,7 +166,7 @@ and the derived files
 % \GetFileInfo{hypdestopt.drv}
 %
 % \title{The \xpackage{hypdestopt} package}
-% \date{2016/05/21 v2.5}
+% \date{2019/12/29 v2.6}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -201,7 +201,7 @@ and the derived files
 %       (\cite{hyperref}).
 % \item Package \xpackage{alphalph} 2006/05/30 v1.4 or newer
 %       (\cite{alphalph}), if option \xoption{name} is used.
-% \item Package \xpackage{ifpdf} (\cite{ifpdf}).
+% \item Package \xpackage{iftex}.
 % \item \pdfTeX\ 1.30.0 or newer.
 % \item \pdfTeX\ in PDF mode.
 % \item \eTeX\ extensions enabled.
@@ -289,7 +289,7 @@ and the derived files
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypdestopt}%
-  [2016/05/21 v2.5 Hyperref destination optimizer (HO)]%
+  [2019/12/29 v2.6 Hyperref destination optimizer (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Options}
@@ -331,7 +331,7 @@ and the derived files
 %
 %    First \pdfTeX\ must running in PDF mode.
 %    \begin{macrocode}
-\RequirePackage{ifpdf}[2007/09/09]
+\RequirePackage{iftex}[2019/11/07]
 \RequirePackage{pdftexcmds}[2007/11/11]
 \ifpdf
 \else
@@ -917,11 +917,6 @@ and the derived files
 %   2006/06/01 v6.75a;
 %   \CTANpkg{hyperref}.
 %
-% \bibitem{ifpdf}
-%   Heiko Oberdiek: \textit{The \xpackage{ifpdf} package};
-%   2006/02/20 v1.4;
-%   \CTANpkg{ifpdf}.
-%
 % \end{thebibliography}
 %
 % \begin{History}
@@ -958,6 +953,10 @@ and the derived files
 %   \begin{Version}{2016/05/21 v2.5}
 %   \item
 %     LuaTeX compatibility
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v2.6}
+%   \item
+%     use \xpackage{iftex} package.
 %   \end{Version}
 % \end{History}
 %
