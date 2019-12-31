@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfcol.dtx
-% Version: 2018/11/01 v1.5
+% Version: 2019/12/29 v1.6
 % Info: Handle new color stacks for pdfTeX
 %
 % Copyright (C)
@@ -83,7 +83,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfcol 2018/11/01 v1.5 Handle new color stacks for pdfTeX (HO)}
+\Msg{* Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -95,7 +95,7 @@
 This is a generated file.
 
 Project: pdfcol
-Version: 2018/11/01 v1.5
+Version: 2019/12/29 v1.6
 
 Copyright (C)
    2007 Heiko Oberdiek
@@ -165,7 +165,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfcol.drv}%
-  [2018/11/01 v1.5 Handle new color stacks for pdfTeX (HO)]%
+  [2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -179,7 +179,7 @@ and the derived files
 % \GetFileInfo{pdfcol.drv}
 %
 % \title{The \xpackage{pdfcol} package}
-% \date{2018/11/01 v1.5}
+% \date{2019/12/29 v1.6}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -361,7 +361,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdfcol.sty\endcsname
 \ProvidesPackage{pdfcol}%
-  [2018/11/01 v1.5 Handle new color stacks for pdfTeX (HO)]%
+  [2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -462,7 +462,7 @@ and the derived files
 %
 %    \begin{macrocode}
 \PDFCOL@RequirePackage{infwarerr}[2007/09/09]
-\PDFCOL@RequirePackage{ifpdf}[2007/09/09]
+\PDFCOL@RequirePackage{iftex}[2019/11/07]
 \ifcase\ifpdf\ifPDFCOL@luacolor 1\fi\else 1\fi0 %
   \def\PDFCOL@Message{%
     \@PackageWarningNoLine{pdfcol}%
@@ -926,6 +926,10 @@ and the derived files
 %   \begin{Version}{2018/11/01 v1.5}
 %   \item
 %     Remove luatex85 dependency
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v1.6}
+%   \item
+%    \xpackage{iftex} package.
 %   \end{Version}
 % \end{History}
 %
