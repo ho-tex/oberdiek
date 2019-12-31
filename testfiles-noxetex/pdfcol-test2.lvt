@@ -5,7 +5,7 @@
 \input{regression-test}
 \NeedsTeXFormat{LaTeX2e}
 \nofiles
-\RequirePackage{ifluatex}
+\RequirePackage{iftex}
 \ifluatex 
  \outputmode =0
 \else

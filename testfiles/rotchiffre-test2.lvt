@@ -17,8 +17,7 @@
   \input rotchiffre.sty\relax
 \else
   \RequirePackage{rotchiffre}[2016/05/16]%
-  \RequirePackage{ifluatex}[2010/03/01]%
-  \RequirePackage{ifxetex}[2010/09/12]%
+  \RequirePackage{iftex}
 \fi
 \catcode`\@=11 %
 \begingroup\expandafter\expandafter\expandafter\endgroup
@@ -227,9 +226,9 @@
 \expandafter\ifx\csname XeTeXrevision\endcsname\relax
   \begingroup\expandafter\expandafter\expandafter\endgroup
   \expandafter\ifx\csname RequirePackage\endcsname\relax
-    \input ifluatex.sty\relax
+    \input iftex.sty\relax
   \else
-    \RequirePackage{ifluatex}[2010/03/01]%
+    \RequirePackage{iftex}%
   \fi
   \begingroup\expandafter\expandafter\expandafter\endgroup
   \expandafter\ifx\csname luatexversion\endcsname\relax
