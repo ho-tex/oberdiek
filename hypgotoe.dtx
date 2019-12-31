@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: hypgotoe.dtx
-% Version: 2016/05/16 v0.2
+% Version: 2019/12/29 v0.3
 % Info: Links to embedded files
 %
 % Copyright (C)
@@ -81,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: hypgotoe 2016/05/16 v0.2 Links to embedded files (HO)}
+\Msg{* Package: hypgotoe 2019/12/29 v0.3 Links to embedded files (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +93,7 @@
 This is a generated file.
 
 Project: hypgotoe
-Version: 2016/05/16 v0.2
+Version: 2019/12/29 v0.3
 
 Copyright (C)
    2007 Heiko Oberdiek
@@ -157,7 +157,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{hypgotoe.drv}%
-  [2016/05/16 v0.2 Links to embedded files (HO)]%
+  [2019/12/29 v0.3 Links to embedded files (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -171,7 +171,7 @@ and the derived files
 % \GetFileInfo{hypgotoe.drv}
 %
 % \title{The \xpackage{hypgotoe} package}
-% \date{2016/05/16 v0.2}
+% \date{2019/12/29 v0.3}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -236,7 +236,7 @@ and the derived files
 \begin{filecontents}{hypgotoe-child.tex}
 \NeedsTeXFormat{LaTeX2e}
 \documentclass{article}
-\usepackage{hypgotoe}[2016/05/16]
+\usepackage{hypgotoe}[2019/12/29]
 \begin{document}
 \section{This is the child document.}
 \href{gotoe:%
@@ -259,7 +259,7 @@ Anker foobar is here.
 \end{document}
 \end{filecontents}
 \documentclass{article}
-\usepackage{hypgotoe}[2016/05/16]
+\usepackage{hypgotoe}[2019/12/29]
 \usepackage{embedfile}
 \IfFileExists{hypgotoe-child.pdf}{%
   \embedfile{hypgotoe-child.pdf}%
@@ -305,13 +305,13 @@ Anker foobar is here.
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hypgotoe}%
-  [2016/05/16 v0.2 Links to embedded files (HO)]%
+  [2019/12/29 v0.3 Links to embedded files (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Load packages}
 %
 %    \begin{macrocode}
-\RequirePackage{ifpdf}[2007/09/09]
+\RequirePackage{iftex}[2019/11/07]
 \ifpdf
 \else
   \PackageError{hypgotoe}{%
@@ -322,7 +322,7 @@ Anker foobar is here.
   \expandafter\endinput
 \fi
 \RequirePackage{pdfescape}[2007/10/27]
-\RequirePackage{hyperref}[2016/05/16]
+\RequirePackage{hyperref}[2019/12/29]
 %    \end{macrocode}
 %
 % \subsection{Color support}
@@ -647,6 +647,10 @@ Anker foobar is here.
 %   \begin{Version}{2016/05/16 v0.2}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v0.3}
+%   \item
+%     \xpackage{iftex} package
 %   \end{Version}
 % \end{History}
 %
