@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: bmpsize.dtx
-% Version: 2016/05/16 v1.7
+% Version: 2019/12/29 v1.8
 % Info: Extract size/resolution from bitmap files
 %
 % Copyright (C)
@@ -85,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: bmpsize 2016/05/16 v1.7 Extract size/resolution from bitmap files (HO)}
+\Msg{* Package: bmpsize 2019/12/29 v1.8 Extract size/resolution from bitmap files (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +97,7 @@
 This is a generated file.
 
 Project: bmpsize
-Version: 2016/05/16 v1.7
+Version: 2019/12/29 v1.8
 
 Copyright (C)
    2006-2009 Heiko Oberdiek
@@ -167,7 +167,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{bmpsize.drv}%
-  [2016/05/16 v1.7 Extract size/resolution from bitmap files (HO)]%
+  [2019/12/29 v1.8 Extract size/resolution from bitmap files (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -181,7 +181,7 @@ and the derived files
 % \GetFileInfo{bmpsize.drv}
 %
 % \title{The \xpackage{bmpsize} package}
-% \date{2016/05/16 v1.7}
+% \date{2019/12/29 v1.8}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -384,7 +384,7 @@ and the derived files
 %    \begin{macrocode}
 %<*base>
 \ProvidesPackage{bmpsize-base}%
-  [2016/05/16 v1.7 Basic part of bmpsize (HO)]%
+  [2019/12/29 v1.8 Basic part of bmpsize (HO)]%
 %    \end{macrocode}
 %    Modules of package \xpackage{fp} are used for calculations.
 %    \begin{macrocode}
@@ -3081,7 +3081,7 @@ and the derived files
 %    \begin{macrocode}
 %<*package>
 \ProvidesPackage{bmpsize}%
-  [2016/05/16 v1.7 Extract size/resolution from bitmap files (HO)]%
+  [2019/12/29 v1.8 Extract size/resolution from bitmap files (HO)]%
 \RequirePackage{ifpdf}
 \ifpdf
   \PackageInfo{bmpsize}{Superseded by pdfTeX in PDF mode}%
@@ -3269,7 +3269,7 @@ and the derived files
 %    \begin{macrocode}
 %<*dvips>
 \ProvidesFile{bmpsize-dvips.def}%
-  [2016/05/16 v1.7 Graphics bitmap driver for dvips (HO)]%
+  [2019/12/29 v1.8 Graphics bitmap driver for dvips (HO)]%
 %    \end{macrocode}
 %    Ensure correct catcodes.
 %    \begin{macrocode}
@@ -3392,11 +3392,11 @@ and the derived files
 %    \begin{macrocode}
 %<*dvipdfm>
 \ProvidesFile{bmpsize-dvipdfm.def}%
-  [2016/05/16 v1.7 Graphics bitmap driver for dvipdfm (HO)]%
+  [2019/12/29 v1.8 Graphics bitmap driver for dvipdfm (HO)]%
 %</dvipdfm>
 %<*dvipdfmx>
 \ProvidesFile{bmpsize-dvipdfmx.def}%
-  [2016/05/16 v1.7 Graphics bitmap driver for dvipdfmx (HO)]%
+  [2019/12/29 v1.8 Graphics bitmap driver for dvipdfmx (HO)]%
 %</dvipdfmx>
 %<*dvipdfm|dvipdfmx>
 %    \end{macrocode}
@@ -4006,6 +4006,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v1.7}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v1.8}
+%   \item
+%     Use \xpackage{iftex} package not \xpackage{ifpdf}.
 %   \end{Version}
 % \end{History}
 %
