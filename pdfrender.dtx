@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: pdfrender.dtx
-% Version: 2018/11/01 v1.5
+% Version: 2019/12/29 v1.6
 % Info: Access to some PDF graphics parameters
 %
 % Copyright (C)
@@ -85,7 +85,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pdfrender 2018/11/01 v1.5 Access to some PDF graphics parameters (HO)}
+\Msg{* Package: pdfrender 2019/12/29 v1.6 Access to some PDF graphics parameters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -97,7 +97,7 @@
 This is a generated file.
 
 Project: pdfrender
-Version: 2018/11/01 v1.5
+Version: 2019/12/29 v1.6
 
 Copyright (C)
    2010 Heiko Oberdiek
@@ -170,7 +170,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pdfrender.drv}%
-  [2018/11/01 v1.5 Access to some PDF graphics parameters (HO)]%
+  [2019/12/29 v1.6 Access to some PDF graphics parameters (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{longtable}
@@ -186,7 +186,7 @@ and the derived files
 % \GetFileInfo{pdfrender.drv}
 %
 % \title{The \xpackage{pdfrender} package}
-% \date{2018/11/01 v1.5}
+% \date{2019/12/29 v1.6}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -441,7 +441,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pdfrender.sty\endcsname
 \ProvidesPackage{pdfrender}%
-  [2018/11/01 v1.5 Access to some PDF graphics parameters (HO)]%
+  [2019/12/29 v1.6 Access to some PDF graphics parameters (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -574,7 +574,7 @@ and the derived files
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\PdfRender@RequirePackage{ifpdf}[2010/01/28]
+\PdfRender@RequirePackage{iftex}[2019/11/07]
 \PdfRender@RequirePackage{infwarerr}[2007/09/09]
 \PdfRender@RequirePackage{ltxcmds}[2010/01/28]
 %    \end{macrocode}
@@ -1590,6 +1590,10 @@ and the derived files
 %   \begin{Version}{2018/11/01 v1.5}
 %   \item
 %     Remove luatex85 dependency
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v1.6}
+%   \item
+%     \xpackage{iftex} package.
 %   \end{Version}
 % \end{History}
 %
