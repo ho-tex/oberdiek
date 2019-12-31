@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: tabularht.dtx
-% Version: 2016/05/16 v2.6
+% Version: 2019/12/29 v2.7
 % Info: Tabular with height specified
 %
 % Copyright (C)
@@ -82,7 +82,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: tabularht 2016/05/16 v2.6 Tabular with height specified (HO)}
+\Msg{* Package: tabularht 2019/12/29 v2.7 Tabular with height specified (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +94,7 @@
 This is a generated file.
 
 Project: tabularht
-Version: 2016/05/16 v2.6
+Version: 2019/12/29 v2.7
 
 Copyright (C)
    2005-2007 Heiko Oberdiek
@@ -159,7 +159,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{tabularht.drv}%
-  [2016/05/16 v2.6 Tabular with height specified (HO)]%
+  [2019/12/29 v2.7 Tabular with height specified (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -173,7 +173,7 @@ and the derived files
 % \GetFileInfo{tabularht.drv}
 %
 % \title{The \xpackage{tabularht} package}
-% \date{2016/05/16 v2.6}
+% \date{2019/12/29 v2.7}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
 %
@@ -395,7 +395,7 @@ and the derived files
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{tabularht}%
-  [2016/05/16 v2.6 Tabular with height specified (HO)]
+  [2019/12/29 v2.7 Tabular with height specified (HO)]
 %    \end{macrocode}
 %
 % \subsection{Environments}
@@ -620,7 +620,7 @@ and the derived files
 % \subsection{Driver pdftex}
 %
 %    \begin{macrocode}
-\RequirePackage{ifpdf}
+\RequirePackage{iftex}[2019/11/07]
 \ifpdf
   \begingroup
     \@ifundefined{pdfsavepos}{%
@@ -1177,6 +1177,10 @@ and the derived files
 %   \begin{Version}{2016/05/16 v2.6}
 %   \item
 %     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/29 v2.7}
+%   \item
+%     Use \cs{iftex} package.
 %   \end{Version}
 % \end{History}
 %
