@@ -3082,7 +3082,7 @@ and the derived files
 %<*package>
 \ProvidesPackage{bmpsize}%
   [2019/12/29 v1.8 Extract size/resolution from bitmap files (HO)]%
-\RequirePackage{ifpdf}
+\RequirePackage{iftex}
 \ifpdf
   \PackageInfo{bmpsize}{Superseded by pdfTeX in PDF mode}%
   \expandafter\endinput
