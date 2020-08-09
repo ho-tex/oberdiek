@@ -11,7 +11,7 @@ stream
 0 g 0 G
 1 0 0 rg 1 0 0 RG
 BT
-/F15 7.9701 Tf 148.712 657.235 Td [(Et)-591(n)1(on)-591(dicitur)-590(v)29(ersus)]TJ
+/F30 7.9701 Tf 148.712 657.235 Td [(Et)-591(n)1(on)-591(dicitur)-590(v)29(ersus)]TJ
 0 g 0 G
  [-590(Fidelium)-591(anim\032)]TJ
 0 g 0 G
@@ -56,7 +56,7 @@ endobj
 endobj
 1 0 obj
 <<
-/Font << /F15 4 0 R /F8 5 0 R >>
+/Font << /F30 4 0 R /F8 5 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 endobj

@@ -208,7 +208,7 @@ q
 []0 d 0 J 0.996 w 0 0 m 0 536.984 l S
 Q
 BT
-/F15 24.7871 Tf 149.709 130.214 Td [(g)]TJ
+/F30 24.7871 Tf 149.709 130.214 Td [(g)]TJ
 0 g 0 G
 /F8 9.9626 Tf 153.424 -40.849 Td [(4)]TJ
 0 1 0 rg 0 1 0 RG
@@ -226,7 +226,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Font << /F15 15 0 R /F8 4 0 R >>
+/Font << /F30 15 0 R /F8 4 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 endobj
