@@ -9,7 +9,7 @@ installfiles = {'*.def','*.sty',
 'oberdiek.tex',
 'bmpsize-test.tex',
 '*.dtx','*.pdf','*.cfg','oberdiek.ins'}
-textfiles={"README.txt"}
+textfiles={"README.md"}
 unpackfile = {'oberdiek.ins'}
 typesetfiles={"*.dtx","oberdiek.tex"}
 docfiles={"*.tex"}
