@@ -1,6 +1,6 @@
 # Oberdiek bundle
 
-Version: 2020-08-01
+Version: 2020-09-02
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
@@ -49,7 +49,6 @@ Other files in the CTAN directory:
 * holtxdoc: extra documentation macros;
 * hypbmsec: bookmarks in sectioning commands;
 * hypcap: anjusting anchors of captions;
-* hypdestopt: optimising hyperref’s pdfTeX driver destinations;
 * hypdoc: hyper-references in the LaTeX standard doc package;
 * hypgotoe: experimental package for links to embedded files;
 * hyphsubst: substitute hyphenation patterns;
