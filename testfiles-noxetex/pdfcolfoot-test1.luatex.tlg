@@ -12,6 +12,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line ....
 Completed box being shipped out [1]
 \vbox(432.5+0.0)x276.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 20.0
 .\vbox(412.5+0.0)x276.0, direction TLT
 ..\vbox(12.0+0.0)x276.0, glue set 12.0fil, direction TLT
@@ -37,6 +44,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.82529
 ...\hbox(9.67471+0.252)x276.0, glue set 200.38fil, direction TLT
 ....\localpar
@@ -117,11 +125,19 @@ Completed box being shipped out [1]
 ....\TU/lmr/m/n/12 1
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
+.\kern0.0
 **************************************
 ***  Check the PDF file manually!  ***
 **************************************
 Completed box being shipped out [2]
 \vbox(432.5+0.0)x276.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 20.0
 .\vbox(412.5+0.0)x276.0, direction TLT
 ..\vbox(12.0+0.0)x276.0, glue set 12.0fil, direction TLT
@@ -193,4 +209,5 @@ Completed box being shipped out [2]
 ....\TU/lmr/m/n/12 2
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
+.\kern0.0
 (pdfcolfoot-test1.aux)

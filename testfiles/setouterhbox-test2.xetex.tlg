@@ -129,11 +129,14 @@ Overfull \hbox (144.0pt too wide) in paragraph at lines 26--27
 .\glue(\rightskip) 0.0 plus 1.0fil
 Completed box being shipped out [1]
 \vbox(432.0+0.0)x276.0
+.\hbox(0.0+0.0)x0.0
+..\special{pdfcolorstackinit 1 page direct (0 g 0 G)}
 .\glue 19.0
 .\vbox(413.0+0.0)x276.0
 ..\vbox(12.0+0.0)x276.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x276.0
+....\hbox(0.0+0.0)x276.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(346.0+0.0)x276.0, glue set 247.97351fil
@@ -281,6 +284,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0 plus 1.0fil
 ...\glue(\parskip) 20.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 2.77
 ...\hbox(6.94+2.29)x276.0
 ....\hbox(0.0+0.0)x0.0
@@ -404,6 +408,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0 plus 1.0fil
 ...\glue(\parskip) 20.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 2.77
 ...\hbox(6.94+2.29)x276.0, glue set 8.25fil
 ....\hbox(0.0+0.0)x0.0
@@ -551,7 +556,9 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x276.0, glue set 135.5fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x276.0
+...\hbox(6.66+0.0)x276.0, glue set 135.5fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern 0.0

@@ -9,9 +9,12 @@ Result: [0123456789NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm]
 Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 ==> Ok
- Input: [
-Expect: [
-Result: [
+ Input: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Expect: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Result: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
 ==> Ok
  Input: []
 Expect: []
@@ -54,9 +57,12 @@ Result: [5678901234ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]
 Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 ==> Ok
- Input: [
-Expect: [
-Result: [
+ Input: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Expect: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Result: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
 ==> Ok
 * CMD: ROT18
  Input: [ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz]
@@ -67,22 +73,28 @@ Result: [STUVWXYZ0123456789ABCDEFGHIJKLMNOPQRnopqrstuvwxyzabcdefghijklm]
 Expect: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 Result: [ !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]
 ==> Ok
- Input: [
-Expect: [
-Result: [
+ Input: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Expect: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Result: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
 ==> Ok
 * CMD: ROT47
  Input: [!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~]
 Expect: [PQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO]
 Result: [PQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNO]
 ==> Ok
- Input: [
-Expect: [
-Result: [
+ Input: [^^@]
+Expect: [^^@]
+Result: [^^@]
 ==> Ok
- Input: [
-Expect: [
-Result: [
+ Input: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Expect: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
+Result: [^^@^^A^^B^^C^^D^^E^^F^^G^^H^^I
+^^K^^L^^M^^N^^O^^P^^Q^^R^^S^^T^^U^^V^^W^^X^^Y^^Z^^[^^\^^]^^^^^_^^?^^81^^fe^^ff]
 ==> Ok
 * Big chars
 * CMD: ROT5

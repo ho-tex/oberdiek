@@ -12,6 +12,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line ....
 Completed box being shipped out [1]
 \vbox(432.5+0.0)x276.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 20.0
 .\vbox(412.5+0.0)x276.0
 ..\vbox(12.0+0.0)x276.0, glue set 12.0fil
@@ -91,11 +98,19 @@ Completed box being shipped out [1]
 ....\OT1/cmr/m/n/12 1
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
+.\kern 0.0
 **************************************
 ***  Check the PDF file manually!  ***
 **************************************
 Completed box being shipped out [2]
 \vbox(432.5+0.0)x276.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 20.0
 .\vbox(412.5+0.0)x276.0
 ..\vbox(12.0+0.0)x276.0, glue set 12.0fil
@@ -161,4 +176,5 @@ Completed box being shipped out [2]
 ....\OT1/cmr/m/n/12 2
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
+.\kern 0.0
 (pdfcolfoot-test1.aux)
