@@ -53,7 +53,6 @@ Other files in the CTAN directory:
 * hyphsubst: substitute hyphenation patterns;
 * ifdraft: switch for option draft;
 * iflang: provides expandable checks for the current language;
-* pagegrid: prints a page grid in the background;
 * pdfcolfoot: using pdfTeX’s color stack for footnotes;
 * pdfcol: macros for setting and maintaining new color stacks;
 * pdfcolparallel: fixes colour problems in package parallel;
