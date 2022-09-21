@@ -212,8 +212,6 @@
 [\entrysep]
 \entry{iflang}{Checks for the current language}%
 [\entrysep]
-\entry{pdfcol}{Handle new color stacks for \hologo{pdfTeX}}%
-[\entrysep]
 \entry{pdfcolfoot}{Color stack for footnotes with \hologo{pdfTeX}}%
 [\entrysep]
 \entry{pdfcolparallel}{Color stacks support for parallel}%
@@ -446,18 +444,6 @@ This package provides expandible checks for the current language
 based on macro \cs{languagename} or hyphenation patterns.
 \end{abstract}
 \tocinclude{iflang}
-
-\newpage
-\subsection{\pkgsectformat{pdfcol}}
-\label{pdfcol}
-\begin{abstract}
-Since version 1.40 \pdfTeX\ supports color stacks.
-The driver file \xfile{pdftex.def} for package \xpackage{color}
-defines and uses a main color stack since version v0.04b.
-Package \xpackage{pdfcol} is intended for package writers.
-It defines macros for setting and maintaining new color stacks.
-\end{abstract}
-\tocinclude{pdfcol}
 
 \newpage
 \subsection{\pkgsectformat{pdfcolfoot}}

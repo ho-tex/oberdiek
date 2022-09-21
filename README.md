@@ -54,7 +54,6 @@ Other files in the CTAN directory:
 * ifdraft: switch for option draft;
 * iflang: provides expandable checks for the current language;
 * pdfcolfoot: using pdfTeX’s color stack for footnotes;
-* pdfcol: macros for setting and maintaining new color stacks;
 * pdfcolparallel: fixes colour problems in package parallel;
 * pdfcolparcolumns: fixes colour problems in package parcolumns;
 * pdfcrypt: setting PDF encryption;
