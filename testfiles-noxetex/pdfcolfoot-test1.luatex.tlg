@@ -29,23 +29,9 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 pop
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(345.5+0.0)x276.0, glue set 299.76797fil, direction TLT
+..\vbox(345.5+0.0)x276.0, glue set 314.26645fil, direction TLT
 ...\write-{}
-...\glue(\topskip) 7.668
-...\hbox(4.332+0.0)x276.0, glue set 248.856fil, direction TLT
-....\localpar
-.....\localinterlinepenalty=0
-.....\localbrokenpenalty=0
-.....\localleftbox=null
-.....\localrightbox=null
-....\hbox(0.0+0.0)x18.0, direction TLT
-....\TU/lmr/m/n/12 =
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 4.82529
+...\glue(\topskip) 2.32529
 ...\hbox(9.67471+0.252)x276.0, glue set 200.38fil, direction TLT
 ....\localpar
 .....\localinterlinepenalty=0
