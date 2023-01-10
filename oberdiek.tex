@@ -1,3 +1,4 @@
+
 \NeedsTeXFormat{LaTeX2e}
 
 \newcommand*{\Title}{Overview}
@@ -10,11 +11,11 @@
 \newcommand*{\Author}{Heiko Oberdiek}
 
 \newcommand*{\Email}{ho-tex at tug.org}
-\newcommand*{\Date}{2022/09/21}
+\newcommand*{\Date}{2023/01/10}
 
 % Copyright (C) 2006-2016 by
 %    Heiko Oberdiek
-% Copyright (C) 2016-2020 by
+% Copyright (C) 2016-2023 by
 %    Oberdiek Package Support Group
 %
 % This work may be distributed and/or modified under the
@@ -211,8 +212,6 @@
 \entry{ifdraft}{Detect class options draft and final}%
 [\entrysep]
 \entry{iflang}{Checks for the current language}%
-[\entrysep]
-\entry{pdfcolfoot}{Color stack for footnotes with \hologo{pdfTeX}}%
 [\entrysep]
 \entry{pdfcolparallel}{Color stacks support for parallel}%
 [\entrysep]
@@ -444,16 +443,6 @@ This package provides expandible checks for the current language
 based on macro \cs{languagename} or hyphenation patterns.
 \end{abstract}
 \tocinclude{iflang}
-
-\newpage
-\subsection{\pkgsectformat{pdfcolfoot}}
-\label{pdfcolfoot}
-\begin{abstract}
-Since version 1.40 \pdfTeX\ supports several color stacks. This
-package uses a separate color stack for footnotes that can break
-across pages.
-\end{abstract}
-\tocinclude{pdfcolfoot}
 
 \newpage
 \subsection{\pkgsectformat{pdfcolparallel}}

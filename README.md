@@ -1,6 +1,6 @@
 # Oberdiek bundle
 
-Version: 2022-09-21
+Version: 2023-01-10
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
@@ -11,7 +11,7 @@ It contains several packages:
 
 ## Copyright (C)
 * 2007, 2009-2011  Heiko Oberdiek
-* 2016-2022        Oberdiek Package Support Group
+* 2016-2023        Oberdiek Package Support Group
 
 ## License
 LATEX Project Public License, version 1.3c or later.
@@ -53,7 +53,6 @@ Other files in the CTAN directory:
 * hyphsubst: substitute hyphenation patterns;
 * ifdraft: switch for option draft;
 * iflang: provides expandable checks for the current language;
-* pdfcolfoot: using pdfTeX’s color stack for footnotes;
 * pdfcolparallel: fixes colour problems in package parallel;
 * pdfcolparcolumns: fixes colour problems in package parcolumns;
 * pdfcrypt: setting PDF encryption;
