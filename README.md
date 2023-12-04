@@ -56,7 +56,6 @@ Other files in the CTAN directory:
 * pdfcolparallel: fixes colour problems in package parallel;
 * pdfcolparcolumns: fixes colour problems in package parcolumns;
 * pdfcrypt: setting PDF encryption;
-* pdfrender: control PDF rendering modes;
 * protecteddef: define a command that protected against expansion;
 * resizegather: automatically resize overly large equations;
 * rotchiffre: performs simple rotation cyphers;
