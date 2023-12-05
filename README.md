@@ -1,6 +1,6 @@
 # Oberdiek bundle
 
-Version: 2023-01-10
+Version: 2023-12-04
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
@@ -20,7 +20,7 @@ LATEX Project Public License, version 1.3c or later.
 
 ## Installation
 
-If you want to install all packages j ust download
+If you want to install all packages just download
 
     CTAN:install/macros/latex/contrib/oberdiek.tds.zip
 
