@@ -57,7 +57,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex iflang.dtx
 %       makeindex -s gind.ist iflang.idx
 %       pdflatex iflang.dtx
@@ -200,7 +200,7 @@ and the derived files
 % Package \xpackage{babel} defines \cs{iflanguagename}. As first
 % argument it takes a language name and executes the second or
 % third argument depending on the current language. This
-% language test is based on hypenation patterns. However, it
+% language test is based on hyphenation patterns. However, it
 % is possible that different languages or dialects share the
 % same patterns. In such cases \cs{iflanguagename} fails.
 %
@@ -211,7 +211,7 @@ and the derived files
 %
 % \begin{declcs}{IfLanguageName} \M{lang} \M{then} \M{else}
 % \end{declcs}
-% Makro \cs{IfLanguageName} compares language \meta{lang} with
+% Macro \cs{IfLanguageName} compares language \meta{lang} with
 % the current setting of macro \cs{languagename}. If both
 % contains the same name then the \meta{then} part is called,
 % otherwise the \meta{else} part.
@@ -562,7 +562,7 @@ and the derived files
 %    at the conference Bacho\TeX~2005:
 %    \url{http://www.gust.org.pl/projects/pearls/2005p/david-kastrup/bachotex2005-david-kastrup-pearl1.pdf}
 %
-%    The orignal code allows macros inside the second string.
+%    The original code allows macros inside the second string.
 %    Because also \cs{languagename} might consists of further
 %    macros, we need a variant that allows macros in the first
 %    string, too.

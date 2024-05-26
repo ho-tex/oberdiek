@@ -52,7 +52,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex hypbmsec.dtx
 %       makeindex -s gind.ist hypbmsec.idx
 %       pdflatex hypbmsec.dtx
@@ -260,7 +260,7 @@ and the derived files
 %    \begin{itemize}
 %    \item An additional second optional argument in square brackets.
 %    \item An additional optional argument in parentheses (in
-%          assoziation with a pdf string that is internally surrounded
+%          association with a pdf string that is internally surrounded
 %          by parentheses, too).
 %    \end{itemize}
 %    Because \Package{\filename} stores the original meaning of the
@@ -375,7 +375,7 @@ and the derived files
   [2016/05/16 v2.5 Bookmarks in sectioning commands (HO)]
 %    \end{macrocode}
 %
-%    Because of redifining the sectioning commands, it is dangerous
+%    Because of redefining the sectioning commands, it is dangerous
 %    to reload the package several times.
 %    \begin{macrocode}
 \@ifundefined{hbs@do}{}{%
@@ -554,7 +554,7 @@ and the derived files
 %    \end{macrocode}
 %
 %    Other packages are allowed to redefine the sectioning commands,
-%    if they does not change the syntax. Therefore the redefinitons
+%    if they does not change the syntax. Therefore the redefinitions
 %    of this package should be done after the other packages.
 %    \begin{macrocode}
   \let\hbs@part         \part

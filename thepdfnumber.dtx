@@ -57,7 +57,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex thepdfnumber.dtx
 %       makeindex -s gind.ist thepdfnumber.idx
 %       pdflatex thepdfnumber.dtx
@@ -256,7 +256,7 @@ and the derived files
 % \item The decimal part is omitted, if the number is an integer (5, 7).
 % \item Trailing zeros from the decimal part are stripped (5, 6, 7, 9).
 % \end{itemize}
-% The resulting number representation can be catched with one of the
+% The resulting number representation can be caught with one of the
 % following Perl regular expressions:
 % \begin{itemize}
 % \item |^0$| (zero)
@@ -295,11 +295,11 @@ and the derived files
 % \subsection{Input number}
 %
 % The user macros expect a number as argument. The number can either
-% be given explicitely or as macro that expands in one step
-% to an explicite number, because the first token of the argument
+% be given explicitly or as macro that expands in one step
+% to an explicit number, because the first token of the argument
 % is expanded once.
 %
-% The explicite number consists of
+% The explicit number consists of
 % \begin{itemize}
 % \item optional signs `\texttt{+}' and `\texttt{-}',
 % \item digits `\texttt{0}' upto `\texttt{9}' and
@@ -320,7 +320,7 @@ and the derived files
 % The package is not intended for validating numbers or to
 % decide if an argument is a number. Therefore it is an usage
 % error to use the user macros with arguments that are not
-% explicite numbers as specified in the previous sections.
+% explicit numbers as specified in the previous sections.
 % Nevertheless some error conditions are sometimes recognized.
 % Errors are given in form of an undefined command sequence.
 % It is the only way to notify \hologo{TeX} in expandable context.
