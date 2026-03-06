@@ -685,4 +685,4 @@ Don't change this file in any respect.
 \use_ii:nn #1#2->#2
 #1<-\mode_if_inner:F {\tex_unskip:D \hook_use:n {para/end}\@kernel@after@para@end \mode_if_horizontal:TF {\if_int_compare:w 11=\tex_lastnodetype:D \tex_hskip:D \c_zero_dim \fi: \tex_par:D \hook_use:n {para/after}\@kernel@after@para@after }{\msg_error:nnnn {hooks}{para-mode}{end}{horizontal}}}
 #2<-\tex_par:D 
-\@@end ->\ifnum \currentgrouplevel >0 \LONGTYPEOUT {Bad grouping: \the \currentgrouplevel !}\fi \ifnum \currentiflevel >2 \LONGTYPEOUT {Bad conditionals: \the \numexpr \currentiflevel -2!}\fi \LONGTYPEOUT {
+\@@end ->\ifnum \currentgrouplevel >0 \LONGTYPEOUT {Bad grouping: \the \currentgrouplevel !}\fi \ifnum \currentiflevel >1 \LONGTYPEOUT {Bad conditionals: \the \numexpr \currentiflevel -1!}\fi \LONGTYPEOUT {

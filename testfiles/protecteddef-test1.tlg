@@ -1,8 +1,8 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 (protecteddef.sty
-LaTeX Warning: You have requested package `',
-               but the package provides `protecteddef'.
+LaTeX Warning: You have requested file `',
+               but the file provides `protecteddef'.
 Package: protecteddef ....-..-.. v... Define protected commands (HO)
 (../ltxcmds.sty
 Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)

@@ -1,7 +1,7 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 (thepdfnumber.sty
-LaTeX Warning: You have requested package `',
-               but the package provides `thepdfnumber'.
+LaTeX Warning: You have requested file `',
+               but the file provides `thepdfnumber'.
 Package: thepdfnumber ....-..-.. v... Print PDF numbers with minimal digits (HO)
 )

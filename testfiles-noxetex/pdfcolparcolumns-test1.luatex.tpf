@@ -1,4 +1,4 @@
-%PDF-1.5
+%PDF-1.7
 %Ã’¡‘≈ÿ–ƒ∆
 3 0 obj
 << /Length 1774 >>       
@@ -66,7 +66,7 @@ endobj
 << /Type /FontDescriptor /FontName /JFRMQG+LMRoman10-Regular /Flags 4 /FontBBox [ -430 -290 1417 1127 ] /Ascent 1127 /CapHeight 683 /Descent -290 /ItalicAngle 0 /StemV 93 /XHeight 431 /FontFile3 10 0 R /CIDSet 9 0 R >>
 endobj
 11 0 obj
-<< /Length 692 >>        
+<< /Length 666 >>        
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -88,8 +88,6 @@ begincmap
 1 begincodespacerange
 <0000> <FFFF>
 endcodespacerange
-0 beginbfrange
-endbfrange
 1 beginbfchar
 <0052> <0031>
 endbfchar
@@ -122,7 +120,7 @@ endobj
 << /Type /FontDescriptor /FontName /NNCMRD+LMRoman8-Regular /Flags 4 /FontBBox [ -456 -292 1497 1125 ] /Ascent 1125 /CapHeight 683 /Descent -292 /ItalicAngle 0 /StemV 98 /XHeight 431 /FontFile3 16 0 R /CIDSet 15 0 R >>
 endobj
 17 0 obj
-<< /Length 1154 >>       
+<< /Length 1128 >>       
 stream
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
@@ -144,8 +142,6 @@ begincmap
 1 begincodespacerange
 <0000> <FFFF>
 endcodespacerange
-0 beginbfrange
-endbfrange
 34 beginbfchar
 <001B> <0041>
 <001C> <0061>
@@ -211,25 +207,25 @@ xref
 0000001959 00000 n 
 0000001853 00000 n 
 0000000020 00000 n 
-0000010733 00000 n 
-0000003782 00000 n 
-0000011084 00000 n 
+0000010681 00000 n 
+0000003756 00000 n 
+0000011032 00000 n 
 0000002038 00000 n 
 0000002796 00000 n 
 0000002068 00000 n 
 0000002138 00000 n 
 0000003030 00000 n 
-0000003935 00000 n 
-0000004133 00000 n 
-0000009284 00000 n 
-0000004478 00000 n 
-0000004559 00000 n 
-0000009519 00000 n 
-0000010885 00000 n 
-0000011144 00000 n 
-0000011194 00000 n 
+0000003909 00000 n 
+0000004107 00000 n 
+0000009258 00000 n 
+0000004452 00000 n 
+0000004533 00000 n 
+0000009493 00000 n 
+0000010833 00000 n 
+0000011092 00000 n 
+0000011142 00000 n 
 trailer
 << /Size 21 /Root 19 0 R /Info 20 0 R >>
 startxref
-11266
+11214
 %%EOF
