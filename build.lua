@@ -40,7 +40,6 @@ func=no_ctan
 tdslocations={
 "bibtex/bib/oberdiek/oberdiek-bundle.bib",
 "bibtex/bib/oberdiek/oberdiek-source.bib",
-"doc/latex/oberdiek/aliascnt.pdf",
 "doc/latex/oberdiek/bmpsize.pdf",
 "doc/latex/oberdiek/centernot.pdf",
 "doc/latex/oberdiek/chemarr-example.tex",
@@ -88,7 +87,6 @@ tdslocations={
 "doc/latex/oberdiek/tabularkv.pdf",
 "doc/latex/oberdiek/thepdfnumber.pdf",
 "doc/latex/oberdiek/twoopt.pdf",
-"source/latex/oberdiek/aliascnt.dtx",
 "source/latex/oberdiek/bmpsize.dtx",
 "source/latex/oberdiek/centernot.dtx",
 "source/latex/oberdiek/chemarr.dtx",
@@ -136,7 +134,6 @@ tdslocations={
 "tex/generic/oberdiek/rotchiffre.sty",
 "tex/generic/oberdiek/setouterhbox.sty",
 "tex/generic/oberdiek/thepdfnumber.sty",
-"tex/latex/oberdiek/aliascnt.sty",
 "tex/latex/oberdiek/bmpsize-base.sty",
 "tex/latex/oberdiek/bmpsize-dvipdfm.def",
 "tex/latex/oberdiek/bmpsize-dvipdfmx.def",

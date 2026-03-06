@@ -11,7 +11,7 @@ It contains several packages:
 
 ## Copyright (C)
 * 2007, 2009-2011  Heiko Oberdiek
-* 2016-2024        Oberdiek Package Support Group
+* 2016-2026        Oberdiek Package Support Group
 
 ## License
 LATEX Project Public License, version 1.3c or later.
@@ -36,7 +36,6 @@ Other files in the CTAN directory:
 
 ## Content
 
-* aliascnt: ‘alias counters’;
 * bmpsize: get bitmap size and resolution data;
 * centernot: a horizontally-centred \not symbol;
 * chemarr: extensible chemists’ reaction arrows;
