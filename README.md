@@ -1,6 +1,6 @@
 # Oberdiek bundle
 
-Version: 2024-08-07
+Version: 2026-05-13
 
 This file describes the directory
   CTAN:macros/latex/contrib/oberdiek/
@@ -62,7 +62,5 @@ Other files in the CTAN directory:
 * settobox: getting box sizes;
 * stackrel: extensions of the \stackrel command;
 * stampinclude: selects the files for \include by inspecting the timestamp of the .aux file(s);
-* tabularht: tabulars with height specification;
-* tabularkv: key value interface for tabular parameters;
 * thepdfnumber: canonical numbers for use in PDF files and elsewhere;
 * twoopt: commands with two optional arguments;
